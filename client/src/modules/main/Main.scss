@@ -1,0 +1,35 @@
+@import 'common/utils/colours';
+
+.dark-mode {
+  a {
+    color: $dark-main-color;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  button {
+    color: $dark-main-color;
+  }
+}
+
+.light-mode {
+  background: $light-bg;
+  color: $light-main-color;
+
+  button {
+    color: $light-main-color !important;
+  }
+}
+
+body:not(.light-mode) {
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.7);
+}

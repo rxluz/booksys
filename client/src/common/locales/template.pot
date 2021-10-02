@@ -1,0 +1,4 @@
+#: src/modules/main/index.js
+msgid "Hello world"
+msgstr ""
+

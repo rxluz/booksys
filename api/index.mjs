@@ -1,8 +1,6 @@
-import express from 'express'
-const app = express()
+import dotenv from 'dotenv'
+import app from './config/express.mjs'
 
-app.get('/', function (req, res) {
-  res.send('hello world')
-})
+dotenv.config()
 
-app.listen(3000)
+app.listen(process.env.API_PORT)

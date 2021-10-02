@@ -1,0 +1,76 @@
+@import 'common/utils/colours';
+
+.icon {
+  position: relative;
+  display: initial;
+
+  &--round {
+    padding: 20px;
+    border-radius: 50%;
+    background: $light-colour-yellow;
+
+    border-width: 0px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+  }
+
+  &__state {
+    &--active {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: -8px;
+        right: -2px;
+        border-radius: 50%;
+      }
+    }
+
+    &--clickable {
+      cursor: pointer;
+    }
+  }
+}
+
+.dark-mode {
+  .icon {
+    &--round {
+      box-shadow: 1px 2px 10px #2632385c;
+
+      svg {
+        color: $dark-bg;
+      }
+    }
+
+    &__state {
+      &--active {
+        &::before {
+          background: $dark-main-color;
+        }
+      }
+    }
+  }
+}
+
+.light-mode {
+  .icon {
+    &--round {
+      box-shadow: 1px 2px 10px #2632385c;
+
+      svg {
+        color: $dark-main-color;
+      }
+    }
+
+    &__state {
+      &--active {
+        &::before {
+          background: $light-main-color;
+        }
+      }
+    }
+  }
+}
