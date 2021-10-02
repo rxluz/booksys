@@ -1,0 +1,25 @@
+{
+  "name": "booksys",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/rxluz/booksys",
+  "author": "rxluz <hi@rxluz.dev>",
+  "license": "MIT",
+  "scripts": {
+    "client:start": "",
+    "client:watch": "",
+    "client:test": "",
+    "client:test-watch": "",
+    "client:build": "",
+    "client:publish": "",
+    "api:start": "",
+    "api:watch": "",
+    "api:test": "",
+    "api:test-watch": "",
+    "api:build": "",
+    "api:publish": ""
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
