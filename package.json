@@ -1,0 +1,26 @@
+{
+  "name": "booksys",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/rxluz/booksys",
+  "author": "Ricardo Luz <hi@rxluz.dev>",
+  "license": "MIT",
+  "scripts": {
+    "client:start": "cd client && yarn start",
+    "client:watch": "",
+    "client:test": "",
+    "client:test-watch": "",
+    "client:build": "",
+    "client:publish": "",
+    "client:translation:extract": "cd client && i18n_extract --pattern=translate --source=src --locales=src/common/locales",
+    "client:translation:import": "cd client && i18n_import --translations=src/common/locales --locales=src/common/locales",
+    "client:storybook:run": "cd client && yarn storybook",
+    "client:storybook:build": "cd client && yarn build-storybook",
+    "api:start": "",
+    "api:watch": "cd api && gulp",
+    "api:test": "",
+    "api:test-watch": "",
+    "api:build": "",
+    "api:publish": ""
+  }
+}
