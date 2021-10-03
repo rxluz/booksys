@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://rxluz.github.io/booksys",
+  "author": "Ricardo Luz <hi@rxluz.dev>",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -34,11 +36,11 @@
     "start": "react-scripts start",
     "build": "PUBLIC_URL=https://rxluz.github.io/booksys && react-scripts build",
     "test": "react-scripts test",
-    "build-storybook": "build-storybook -c .storybook -o build/storybook",
+    "build-storybook": "build-storybook -c  .storybook -o build/storybook",
     "eject": "react-scripts eject",
     "translation:extract": "i18n_extract --pattern=translate --source=src --locales=src/common/locales",
     "translation:import": "i18n_import --translations=src/common/locales --locales=src/common/locales",
-    "storybook": "start-storybook -p 9009 -s public"
+    "storybook": "start-storybook  --debug-webpack --no-manager-cache -p 9009 -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -56,11 +58,11 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
-    "@storybook/preset-create-react-app": "^2.1.1",
-    "@storybook/react": "^5.3.18",
+    "@storybook/addon-actions": "^6.3.9",
+    "@storybook/addon-links": "^6.3.9",
+    "@storybook/addons": "^6.3.9",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@storybook/react": "^6.3.9",
     "gh-pages": "^2.2.0",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8"
