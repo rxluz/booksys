@@ -1,0 +1,80 @@
+@import 'common/utils/colours';
+
+.companyCard {
+  background-color: white;
+  margin: 0 auto;
+  width: 450px;
+  min-height: 768px;
+  display: inline-block;
+  box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.2);
+
+  &__header {
+    height: 200px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    background-size: cover;
+
+    &--row {
+      clear: both;
+    }
+
+    &--title,
+    &--date {
+      text-transform: uppercase;
+      height: calc(200px - 60px);
+      vertical-align: middle;
+    }
+
+    &--title {
+      float: left;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 45px;
+
+      letter-spacing: 0.12em;
+      width: 35%;
+      border-right: 3px solid #ffffff;
+      text-align: left;
+    }
+
+    &--date {
+      float: right;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 50px;
+      text-align: right;
+      color: #ffffff;
+      line-height: calc(200px - 60px);
+    }
+
+    &--address {
+      float: left;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 55px;
+    }
+
+    &--directions {
+      float: right;
+      text-align: right;
+      a {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 55px;
+        text-align: right;
+        text-decoration-line: underline;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__content {
+    padding: 25px;
+  }
+}
