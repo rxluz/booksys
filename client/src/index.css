@@ -1,10 +1,6 @@
 body {
-  margin: 0;
-  font-family: 'Baloo Tammudu 2', cursive;
+  font-family: 'Maven Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  margin: 0;
 }
