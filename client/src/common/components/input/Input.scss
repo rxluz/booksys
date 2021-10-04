@@ -1,5 +1,55 @@
 @import 'common/utils/colours';
 
 .input {
-  display: inline-block;
+  margin-top: 20px;
+  display: block;
+  clear: both;
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    clear: both;
+    display: block;
+  }
+
+  &__warning {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+
+    &--icon,
+    &--text {
+      display: inline-block;
+      max-width: calc(100% - 29px);
+    }
+
+    &--icon {
+      svg {
+        color: #cd1732;
+      }
+    }
+
+    &--text {
+      text-align: left;
+      top: -2px;
+      position: relative;
+      margin-left: 12px;
+    }
+  }
+
+  &__element {
+    &--text,
+    &--select {
+      margin-top: 10px;
+      height: 45px;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
 }

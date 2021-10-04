@@ -1,8 +1,26 @@
 import React from 'react'
 import * as PropTypes from 'prop-types'
 import { onChangeValue } from 'common/utils/general.utils'
-
 import './Input.scss'
+import { AiOutlineWarning } from 'react-icons/ai'
+
+const ValidationMessage = ({ displayErrors, isValid, validation, value }) => {
+  if (!validation) {
+    return null
+  }
+
+  return (
+    displayErrors &&
+    !isValid && (
+      <aside role="alert" className="animate__animated animate__fadeIn input__warning">
+        <i className="input__warning--icon">
+          <AiOutlineWarning size="16px" />
+        </i>
+        <p className="input__warning--text">{validation.message(value)}</p>
+      </aside>
+    )
+  )
+}
 
 const Input = ({
   title,
@@ -15,6 +33,7 @@ const Input = ({
   isValid: isValidOuter,
   validation,
   list,
+  disabled,
 }) => {
   const isValid = !!validation ? validation.test(value) : !!isValidOuter
   const onBlur = () => onChange({ value, isValid, isTouched: value !== '' })
@@ -23,6 +42,7 @@ const Input = ({
     text: () => (
       <input
         id={id}
+        disabled={disabled}
         onChange={onChangeValue(onChange, isValid)}
         onBlur={onBlur}
         value={value}
@@ -33,6 +53,7 @@ const Input = ({
     select: () => (
       <select
         id={id}
+        disabled={disabled}
         onChange={onChangeValue(onChange, isValid)}
         className="input__element--select"
       >
@@ -43,7 +64,7 @@ const Input = ({
         )}
         {list &&
           list.map(({ value: innerValue, text }) => (
-            <option selected={value === innerValue} key={innerValue} value={value}>
+            <option selected={value === innerValue} key={innerValue} value={innerValue}>
               {text}
             </option>
           ))}
@@ -52,7 +73,7 @@ const Input = ({
   }
 
   return (
-    <p className="input__wrapper">
+    <div className="input">
       {!!title && (
         <label className="input__title" htmlFor={id}>
           {title}
@@ -60,8 +81,13 @@ const Input = ({
       )}
 
       {INPUT_ELEMENT[type] && INPUT_ELEMENT[type]()}
-      {displayErrors && !isValid && <div className="input__error">{validation.message}</div>}
-    </p>
+      <ValidationMessage
+        displayErrors={displayErrors}
+        isValid={isValid}
+        validation={validation}
+        value={value}
+      />
+    </div>
   )
 }
 
@@ -81,7 +107,8 @@ Input.propTypes = {
   onChange: PropTypes.func.isRequired,
   isValid: PropTypes.bool,
   displayErrors: PropTypes.bool,
-  validation: PropTypes.func,
+  disabled: PropTypes.bool,
+  validation: PropTypes.object,
   list: PropTypes.array,
 }
 
