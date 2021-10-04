@@ -12,15 +12,15 @@ const RoutesList = () => (
       <Create />
     </Route>
 
-    <Route path="/booking/:bookingId" exact={true}>
+    <Route path="/:companyHash/booking/:bookingId" exact={true}>
       <Booking />
     </Route>
 
-    <Route path="/booking/:bookingId/status" exact={true}>
+    <Route path="/:companyHash/booking/:bookingId/status" exact={true}>
       <Status />
     </Route>
 
-    <Route path="/booking/:bookingId/change" exact={true}>
+    <Route path="/:companyHash/booking/:bookingId/change" exact={true}>
       <Change />
     </Route>
 

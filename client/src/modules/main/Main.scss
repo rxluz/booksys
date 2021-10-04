@@ -1,6 +1,17 @@
 @import 'common/utils/colours';
 
-body:not(.light-mode) {
-  background-color: #121212;
-  color: rgba(255, 255, 255, 0.7);
+// body:not(.light-mode) {
+//   background-color: #121212;
+//   color: rgba(255, 255, 255, 0.7);
+// }
+
+.app {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
 }

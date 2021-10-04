@@ -18,6 +18,6 @@ export const setFieldInitialState = (isValid = true, value = '') => ({
 export const validate = (translate) => ({
   EMAIL: {
     test: (email) => generalConstants.EMAIL_VALIDATION.test(String(email).toLowerCase()),
-    message: translate('Your email is incorrect'),
+    message: (email) => translate('Your email looks incorrect'),
   },
 })
