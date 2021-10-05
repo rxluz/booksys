@@ -44,6 +44,10 @@ const Company = ({ children, company, setCompanyData }, { t: translate }) => {
     updateCompanyData()
   }, [companyHash])
 
+  if (company.status === companyConstants.STATUS.OUTDATED) {
+    updateCompanyData()
+  }
+
   return (
     <CompanyPage state={pageState} translate={translate} data={company}>
       {children}

@@ -1,7 +1,7 @@
 import * as generalConstants from 'common/utils/general.constants'
 
-export const GET_COMPANY_DATA = (companyHash) =>
-  `${generalConstants.BASE_URL}/companyData/${companyHash}`
+export const COMPANY_DATA_URL = (companyHash) =>
+  `${generalConstants.BASE_URL}/company/${companyHash}`
 
 export const PAGE_STATE = {
   FAILED: 'failed',
