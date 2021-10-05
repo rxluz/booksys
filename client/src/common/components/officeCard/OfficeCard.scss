@@ -1,0 +1,48 @@
+.office-card {
+  display: inline-block;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  width: calc(33% - 10px);
+  margin-bottom: 20px;
+
+  button {
+    border: none;
+    height: 45px;
+  }
+
+  &__content {
+    padding: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  &__time {
+    float: left;
+  }
+
+  &__seats {
+    float: right;
+
+    &--icon {
+      float: left;
+      margin-right: 5px;
+
+      svg {
+        color: #6202ff;
+      }
+    }
+
+    &--text {
+      float: right;
+      top: -2px;
+      position: relative;
+    }
+  }
+}
+
+.office-card:not(:last-child) {
+  margin-right: 10px;
+}
