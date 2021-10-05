@@ -5,25 +5,28 @@ import './Main.scss'
 import 'react-tippy/dist/tippy.css'
 import { Route } from 'react-router-dom'
 
-import BackgroundImage from './background.png'
+import BackgroundImg from './background.png'
+import LogoImg from './logo.svg'
 
 import RoutesList from 'common/routes/RoutesList'
 import BodyClasses from 'modules/main/BodyClasses'
 import Company from 'modules/company/Company'
 
-const Main = (_props, context) => {
-  return (
-    <BodyClasses>
-      <div className="app" style={{ backgroundImage: `url(${BackgroundImage})` }}>
-        <Route path="/:companyHash">
-          <Company>
-            <RoutesList />
-          </Company>
-        </Route>
+const Main = (_props, { t: translate }) => (
+  <BodyClasses>
+    <div className="app" style={{ backgroundImage: `url(${BackgroundImg})` }}>
+      <div className="app__logo">
+        <img src={LogoImg} alt={translate('Booksys logo')} />
       </div>
-    </BodyClasses>
-  )
-}
+
+      <Route path="/:companyHash">
+        <Company>
+          <RoutesList />
+        </Company>
+      </Route>
+    </div>
+  </BodyClasses>
+)
 
 Main.contextTypes = {
   t: PropTypes.func,
