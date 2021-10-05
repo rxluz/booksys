@@ -1,8 +1,35 @@
 .warning {
+  text-align: center;
   &__title {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__image img {
+    max-width: 50%;
+  }
+
+  &__description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 12px;
     text-align: center;
     color: #000000;
   }

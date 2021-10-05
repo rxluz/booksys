@@ -5,23 +5,29 @@ import './Warning.scss'
 
 const Warning = ({
   image,
+  imageAlt,
   title,
   description,
   footerMessage,
   callToActionText,
+  callToActionType,
   onClickCallToAction,
 }) => (
   <div className="warning">
     {image && (
       <div className="warning__image">
-        <img src={image} />
+        <img alt={imageAlt} src={image} />
       </div>
     )}
     {title && <div className="warning__title">{title}</div>}
     {description && <div className="warning__description">{description}</div>}
     {footerMessage && <div className="warning__footer-message">{footerMessage}</div>}
     {callToActionText && (
-      <Button className="warning__footer-message" onClick={onClickCallToAction}>
+      <Button
+        type={callToActionType}
+        className="warning__footer-message"
+        onClick={onClickCallToAction}
+      >
         {callToActionText}
       </Button>
     )}

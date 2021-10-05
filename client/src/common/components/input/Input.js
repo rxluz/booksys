@@ -3,6 +3,7 @@ import * as PropTypes from 'prop-types'
 import { onChangeValue } from 'common/utils/general.utils'
 import './Input.scss'
 import { AiOutlineWarning } from 'react-icons/ai'
+import { BiX } from 'react-icons/bi'
 
 const ValidationMessage = ({ displayErrors, isValid, validation, value }) => {
   if (!validation) {
@@ -34,9 +35,16 @@ const Input = ({
   validation,
   list,
   disabled,
+  showClearButton,
+  onClear,
 }) => {
   const isValid = !!validation ? validation.test(value) : !!isValidOuter
   const onBlur = () => onChange({ value, isValid, isTouched: value !== '' })
+
+  const emptyValue = () => {
+    onChangeValue(onChange, isValid, '')()
+    onClear && onClear()
+  }
 
   const INPUT_ELEMENT = {
     text: () => (
@@ -51,24 +59,31 @@ const Input = ({
       />
     ),
     select: () => (
-      <select
-        id={id}
-        disabled={disabled}
-        onChange={onChangeValue(onChange, isValid)}
-        className="input__element--select"
-      >
-        {!!placeholder && (
-          <option selected={value === ''} disabled>
-            {placeholder}
-          </option>
+      <>
+        {!disabled && value !== '' && showClearButton && (
+          <div className="input__element--clear" onClick={emptyValue}>
+            <BiX />
+          </div>
         )}
-        {list &&
-          list.map(({ value: innerValue, text }) => (
-            <option selected={value === innerValue} key={innerValue} value={innerValue}>
-              {text}
+        <select
+          id={id}
+          disabled={disabled}
+          onChange={onChangeValue(onChange, isValid)}
+          className="input__element--select"
+        >
+          {!!placeholder && (
+            <option selected={value === ''} disabled>
+              {placeholder}
             </option>
-          ))}
-      </select>
+          )}
+          {list &&
+            list.map(({ value: innerValue, text }) => (
+              <option selected={value === innerValue} key={innerValue} value={innerValue}>
+                {text}
+              </option>
+            ))}
+        </select>
+      </>
     ),
   }
 

@@ -4,6 +4,7 @@
   margin-top: 20px;
   display: block;
   clear: both;
+  position: relative;
 
   &__title {
     font-weight: 500;
@@ -41,6 +42,14 @@
   }
 
   &__element {
+    &--clear {
+      position: absolute;
+      right: 15px;
+      top: 24px;
+      z-index: 1;
+      cursor: pointer;
+    }
+
     &--text,
     &--select {
       margin-top: 10px;
@@ -50,6 +59,10 @@
       width: 100%;
       padding-left: 10px;
       padding-right: 10px;
+    }
+
+    &--select:disabled {
+      border: 2px solid #aaaaaa;
     }
   }
 }
