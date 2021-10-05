@@ -27,7 +27,9 @@ const getPageState = ({ eventEndTime, showSuccessState }) => {
   return createConstants.PAGE_STATE.FORM
 }
 
-const CreatePageWrapper = ({ children }) => <section className="create-page">{children}</section>
+const CreatePageWrapper = ({ children }) => (
+  <section className="create-page animate__animated animate__fadeIn">{children}</section>
+)
 
 const CreatePage = ({
   translate,
@@ -86,7 +88,7 @@ const CreatePage = ({
     ),
 
     [createConstants.PAGE_STATE.FORM]: () => (
-      <>
+      <div className="animate__animated animate__fadeIn">
         <div className="create-page__title">
           {translate('Fill in the details below to make your office reservation')}
         </div>
@@ -139,7 +141,7 @@ const CreatePage = ({
         >
           {isSubmitting ? translate('Please wait ...') : translate('Continue')}
         </Button>
-      </>
+      </div>
     ),
   }
 

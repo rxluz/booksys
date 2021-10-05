@@ -7,7 +7,7 @@ import Button from 'common/components/button'
 import './OfficeCard.scss'
 
 const OfficeCard = ({ time, seat, onBook, translate }) => (
-  <div className="office-card">
+  <div className="office-card animate__animated animate__fadeIn">
     <div className="office-card__content">
       <div className="office-card__time">
         {moment.unix(time).format(generalConstants.MOMENT_TIME)}

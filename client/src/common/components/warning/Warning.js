@@ -13,7 +13,7 @@ const Warning = ({
   callToActionType,
   onClickCallToAction,
 }) => (
-  <div className="warning">
+  <div className="warning animate__animated animate__fadeIn">
     {image && (
       <div className="warning__image">
         <img alt={imageAlt} src={image} />

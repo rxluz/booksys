@@ -49,7 +49,7 @@ const Status = ({ translate, data, onNewBooking, onCancel, processing }) => {
   const isCancelled = data.status === bookingConstants.PAGE_STATE.CANCELLED
 
   return (
-    <section className="booking-status">
+    <section className="booking-status animate__animated animate__fadeIn">
       <div className="booking-status__title">{translate('Hey {name},', { name: data.name })}</div>
       <Message status={data.status} translate={translate} />
 

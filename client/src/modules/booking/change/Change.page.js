@@ -35,8 +35,22 @@ const Change = ({ translate, event, onBook }) => {
   const [preferredTime, setPreferredTime] = useState(generalUtils.setFieldInitialState())
   const [page, setPage] = useState(1)
 
+  const resetPage = () => setPage(1)
+
   const clearPreferredTime = () => {
     setSeats(generalUtils.setFieldInitialState())
+    resetPage()
+  }
+
+  const setPreferredTimeInner = (value) => {
+    setPreferredTime(value)
+    setSeats(generalUtils.setFieldInitialState())
+    resetPage()
+  }
+
+  const setSeatsInner = (value) => {
+    setSeats(value)
+    resetPage()
   }
 
   const filteredAvailableTimesAndTimes = filterAvailableSeatsAndTimes({
@@ -54,7 +68,7 @@ const Change = ({ translate, event, onBook }) => {
   const displayPaginator = totalRecords > itemsPerPage
 
   return (
-    <section className="booking-change">
+    <section className="booking-change animate__animated animate__fadeIn">
       <div className="booking-change__title">
         {translate(
           "Unfortunately the time that you selected isn't available anymore. Please select a new option below",
@@ -66,7 +80,7 @@ const Change = ({ translate, event, onBook }) => {
             type="select"
             id="booking-change-time"
             value={preferredTime.value}
-            onChange={setPreferredTime}
+            onChange={setPreferredTimeInner}
             showClearButton={true}
             onClear={clearPreferredTime}
             list={generalUtils.getPreferredTimeData(availableTimesAndSeats)}
@@ -78,7 +92,7 @@ const Change = ({ translate, event, onBook }) => {
             type="select"
             disabled={preferredTime.value === ''}
             value={seats.value}
-            onChange={setSeats}
+            onChange={setSeatsInner}
             showClearButton={true}
             id="booking-change-seats"
             list={generalUtils.getSeatsList({ preferredTime, availableTimesAndSeats, translate })}
