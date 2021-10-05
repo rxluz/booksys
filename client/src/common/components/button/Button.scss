@@ -1,6 +1,7 @@
 @import 'common/utils/colours';
 
 .button {
+  cursor: pointer;
   margin-top: 20px;
   width: 100%;
   display: inline-block;
@@ -9,9 +10,19 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.2em;
-  color: #ffffff;
+
   text-transform: uppercase;
-  background: #000000;
+
+  &--primary {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  &--secondary {
+    border: 2px solid #000000;
+    color: #000000;
+    background: white;
+  }
 
   &:disabled {
     background-color: #bfcacf;
