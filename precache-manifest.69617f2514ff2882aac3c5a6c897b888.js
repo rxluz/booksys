@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "25246567df167866adf0509b4f6ac08f",
+    "revision": "59172e4f0f31654129629feea34c5b32",
     "url": "/booksys/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/booksys/static/css/2.b73a64a5.chunk.css"
   },
   {
-    "revision": "20e4baf322642c78ddb8",
-    "url": "/booksys/static/css/main.8b232b39.chunk.css"
+    "revision": "41c433e0e0fd7303df1f",
+    "url": "/booksys/static/css/main.7619d5c4.chunk.css"
   },
   {
     "revision": "858db7d93ae2b56ba811",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/booksys/static/js/2.f36b0fe2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "20e4baf322642c78ddb8",
+    "revision": "41c433e0e0fd7303df1f",
     "url": "/booksys/static/js/main.9b5daff3.chunk.js"
   },
   {
