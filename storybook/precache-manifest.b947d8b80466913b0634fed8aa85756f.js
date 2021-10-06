@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "iframe.html"
   },
   {
-    "revision": "c0066cee4c3f98ad93a0",
+    "revision": "83c2683f49f5679c5734",
     "url": "main.1986f2b6.iframe.bundle.js"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "runtime~main.57a359f6.iframe.bundle.js"
   },
   {
-    "revision": "c0066cee4c3f98ad93a0",
-    "url": "static/css/main.15d51090.chunk.css"
+    "revision": "83c2683f49f5679c5734",
+    "url": "static/css/main.dfb5d1a5.chunk.css"
   },
   {
     "revision": "b2695cc66b3d4d85fd1924538870f2f4",
