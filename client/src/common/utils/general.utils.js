@@ -93,3 +93,6 @@ export const getSeatsList = ({ preferredTime, availableTimesAndSeats, translate 
 
 export const filterByPage = ({ items, itemsPerPage, page }) =>
   items.slice((page - 1) * itemsPerPage, page * itemsPerPage)
+
+export const removeEmptyObjValues = (obj) =>
+  Object.fromEntries(Object.entries(obj).filter(([_, value]) => Boolean(value)))

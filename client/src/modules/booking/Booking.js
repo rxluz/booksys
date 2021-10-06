@@ -27,9 +27,9 @@ const Booking = (
   const { bookingId, companyHash } = useParams()
   const [processing, setProcessing] = useState(false)
 
-  const getBookingData = () => {
+  const getBookingData = ({ seat = null, time = null } = {}) => {
     bookingServices
-      .confirmBooking(bookingId)
+      .confirmBooking({ seat, time, bookingId })
       .then((response) => {
         setBookingStatus(bookingConstants.BOOKING_STATUS[response.status])
         setProcessing(false)
@@ -72,7 +72,7 @@ const Booking = (
     [bookingConstants.PAGE_STATE.CANCELLED]: () => statusPage,
     [bookingConstants.PAGE_STATE.CONFIRMED]: () => statusPage,
     [bookingConstants.PAGE_STATE.UNAVAILABLE]: () => (
-      <ChangePage translate={translate} event={company.event} onBook={console.log} />
+      <ChangePage translate={translate} event={company.event} onBook={getBookingData} />
     ),
     [bookingConstants.PAGE_STATE.LOADING]: () => translate('Please wait ...'),
     [bookingConstants.PAGE_STATE.NOT_FOUND]: () => (
