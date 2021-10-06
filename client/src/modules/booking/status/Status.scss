@@ -1,0 +1,150 @@
+.desktop {
+  .booking-status {
+    width: 480px;
+
+    &__status {
+      height: 20px;
+    }
+  }
+}
+
+.mobile-tablet {
+  .booking-status {
+    &__status {
+      min-height: 20px;
+      &--code {
+        width: 55%;
+      }
+    }
+  }
+}
+
+.light-mode {
+  .booking-status {
+    &__title {
+      color: #000000;
+    }
+
+    &__message {
+      color: #000000;
+    }
+
+    &__status {
+      border-bottom: 2px solid #000000;
+
+      &--code {
+        color: #000000;
+      }
+    }
+
+    &__row {
+      color: #000000;
+    }
+  }
+}
+
+.dark-mode {
+  .booking-status {
+    &__status {
+      border-bottom: 2px solid #2e2e2e;
+    }
+  }
+}
+
+.booking-status {
+  text-align: left;
+
+  &__title,
+  &__message,
+  &__status,
+  &__row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__message {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  &__status {
+    padding-bottom: 10px;
+
+    &--cancelled::before {
+      background: #cd1732;
+    }
+
+    &--confirmed::before {
+      background: #6202ff;
+    }
+
+    &--cancelled {
+      color: #cd1732;
+    }
+
+    &--confirmed {
+      color: #6202ff;
+    }
+
+    &--confirmed::before,
+    &--cancelled::before {
+      content: '';
+
+      width: 10px;
+      height: 10px;
+      position: relative;
+      top: 16px;
+      left: -15px;
+      display: block;
+      z-index: 1;
+      border-radius: 50%;
+    }
+
+    &--confirmed,
+    &--cancelled {
+      float: left;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 23px;
+      left: 15px;
+      position: relative;
+      top: -10px;
+    }
+
+    &--code {
+      float: right;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 23px;
+      text-align: right;
+    }
+  }
+
+  &__row {
+    clear: both;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    min-height: 25px;
+
+    &--title {
+      float: left;
+    }
+
+    &--value {
+      float: right;
+    }
+  }
+}

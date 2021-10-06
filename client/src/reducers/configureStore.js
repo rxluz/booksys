@@ -8,7 +8,7 @@ import loggerMiddleware from 'middleware/logger'
 import rootReducer from '.'
 
 const persistConfig = {
-  key: 'root',
+  key: 'settings',
   storage,
 }
 

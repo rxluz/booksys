@@ -1,0 +1,101 @@
+@import 'common/utils/colours';
+
+.light-mode {
+  .input {
+    color: #000000;
+
+    &__warning {
+      &--text {
+        color: #000000;
+      }
+    }
+
+    &__element {
+      &--text,
+      &--select {
+        background-color: white;
+        border: 2px solid #000000;
+      }
+    }
+  }
+}
+
+.dark-mode {
+  .input {
+    color: #dddddd;
+
+    &__element {
+      &--text,
+      &--select {
+        color: #dddddd;
+        background: #1a1c1b;
+        border: none;
+      }
+    }
+  }
+}
+
+.input {
+  margin-top: 20px;
+  display: block;
+  clear: both;
+  position: relative;
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    clear: both;
+    display: block;
+  }
+
+  &__warning {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+
+    &--icon,
+    &--text {
+      display: inline-block;
+      max-width: calc(100% - 29px);
+    }
+
+    &--icon {
+      svg {
+        color: #cd1732;
+      }
+    }
+
+    &--text {
+      text-align: left;
+      top: -2px;
+      position: relative;
+      margin-left: 12px;
+    }
+  }
+
+  &__element {
+    &--clear {
+      position: absolute;
+      right: 15px;
+      top: 24px;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    &--text,
+    &--select {
+      margin-top: 10px;
+      height: 45px;
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &--select:disabled {
+      border: 2px solid #aaaaaa;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.desktop {
+  .booking-change {
+    width: 550px;
+  }
+}
+
+.light-mode {
+  .booking-change {
+    &__title {
+      color: #000000;
+    }
+
+    &__subtitle {
+      color: #000000;
+    }
+  }
+}
+
+.booking-change {
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__options {
+    clear: both;
+    height: 85px;
+  }
+
+  &__column {
+    width: 48%;
+
+    &--left {
+      float: left;
+    }
+
+    &--right {
+      float: right;
+    }
+  }
+
+  .input {
+    clear: none;
+    width: 100%;
+    display: inline-block;
+
+    &:first {
+      float: left;
+    }
+
+    select {
+      position: relative;
+    }
+  }
+
+  &__content {
+    width: calc(100% + 16px);
+    margin: 0;
+    text-align: left;
+  }
+
+  &__paginator {
+    float: right;
+  }
+}
