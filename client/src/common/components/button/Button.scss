@@ -1,5 +1,48 @@
 @import 'common/utils/colours';
 
+.light-mode {
+  .button {
+    &--primary {
+      background: #000000;
+      color: #ffffff;
+      border: 2px solid #000000;
+    }
+
+    &--secondary {
+      border: 2px solid #000000;
+      color: #000000;
+      background: white;
+    }
+
+    &:disabled {
+      background-color: #bfcacf;
+      border: none;
+    }
+  }
+}
+
+.dark-mode {
+  .button {
+    &--primary {
+      background: #2e2e2e;
+      color: #dddddd;
+      border: 2px solid #000000;
+    }
+
+    &--secondary {
+      border: 2px solid #000000;
+      color: #000000;
+      background: white;
+    }
+
+    &:disabled {
+      background-color: #000;
+      color: #bfcacf;
+      border: none;
+    }
+  }
+}
+
 .button {
   cursor: pointer;
   margin-top: 20px;
@@ -12,20 +55,4 @@
   letter-spacing: 0.2em;
 
   text-transform: uppercase;
-
-  &--primary {
-    background: #000000;
-    color: #ffffff;
-  }
-
-  &--secondary {
-    border: 2px solid #000000;
-    color: #000000;
-    background: white;
-  }
-
-  &:disabled {
-    background-color: #bfcacf;
-    border: none;
-  }
 }

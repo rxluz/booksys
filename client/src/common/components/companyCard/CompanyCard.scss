@@ -1,17 +1,102 @@
 @import 'common/utils/colours';
 
+.desktop {
+  .companyCard {
+    min-width: 450px;
+    min-height: 768px;
+
+    &__header {
+      height: 200px;
+
+      &--title,
+      &--date {
+        height: calc(200px - 60px);
+      }
+
+      &--title {
+        width: 35%;
+        font-size: 40px;
+        line-height: 45px;
+      }
+
+      &--date {
+        font-size: 30px;
+        line-height: 50px;
+      }
+
+      &--address {
+        line-height: 55px;
+      }
+    }
+  }
+}
+
+.mobile-tablet {
+  .companyCard {
+    &__header {
+      padding-top: 75px;
+      height: 175px;
+      &--title,
+      &--date {
+        max-height: 100px;
+        overflow: hidden;
+      }
+      &--title {
+        width: 50%;
+        font-size: 40px;
+        line-height: 45px;
+      }
+
+      &--row {
+        margin-bottom: 10px;
+      }
+
+      &--address,
+      &--directions {
+        margin-top: 20px;
+      }
+
+      &--address {
+        width: 50%;
+        text-align: left;
+      }
+
+      &--date {
+        padding-left: 10px;
+        font-size: 25px;
+        line-height: 35px;
+        width: calc(50% - 15px);
+      }
+    }
+
+    &__content {
+      min-height: calc(100vh - 300px);
+    }
+  }
+}
+
+.light-mode {
+  .companyCard {
+    background-color: white;
+  }
+}
+
+.dark-mode {
+  .companyCard {
+    background-color: #000000;
+    color: #dddddd;
+  }
+}
+
 .companyCard {
   z-index: 1;
   position: relative;
-  background-color: white;
   margin: 0 auto;
-  min-width: 450px;
-  min-height: 768px;
   display: inline-block;
   box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.2);
 
   &__header {
-    height: 200px;
+    word-break: break-word;
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
@@ -25,7 +110,6 @@
     &--title,
     &--date {
       text-transform: uppercase;
-      height: calc(200px - 60px);
       vertical-align: middle;
     }
 
@@ -33,11 +117,9 @@
       float: left;
       font-style: normal;
       font-weight: bold;
-      font-size: 40px;
-      line-height: 45px;
 
       letter-spacing: 0.12em;
-      width: 35%;
+
       border-right: 3px solid #ffffff;
       text-align: left;
     }
@@ -46,8 +128,7 @@
       float: right;
       font-style: normal;
       font-weight: bold;
-      font-size: 30px;
-      line-height: 50px;
+
       text-align: right;
       color: #ffffff;
       line-height: calc(200px - 60px);
@@ -58,7 +139,6 @@
       font-style: normal;
       font-weight: 500;
       font-size: 15px;
-      line-height: 55px;
     }
 
     &--directions {

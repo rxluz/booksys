@@ -63,6 +63,9 @@ const CreatePage = ({
     resetFormAction()
   }
 
+  const setCorporateEmailInner = ({ value, ...fields }) =>
+    setCorporateEmail({ value: value.trim(), ...fields })
+
   const PAGES_BY_STATE = {
     [createConstants.PAGE_STATE.SUCCESS]: () => (
       <Warning
@@ -92,55 +95,59 @@ const CreatePage = ({
         <div className="create-page__title">
           {translate('Fill in the details below to make your office reservation')}
         </div>
-        <Input
-          id="name"
-          type="text"
-          value={name.value}
-          onChange={setName}
-          title={translate('Name')}
-        />
-        <Input
-          id="corporateEmail"
-          type="text"
-          value={corporateEmail.value}
-          onChange={setCorporateEmail}
-          title={translate('Corporate email')}
-          displayErrors={corporateEmail.isTouched}
-          validation={generalUtils.validateEmail(translate, acceptedDomains)}
-          translate={translate}
-        />
+        <div className="create-page__content">
+          <Input
+            id="name"
+            type="text"
+            value={name.value}
+            onChange={setName}
+            title={translate('Name')}
+          />
+          <Input
+            id="corporateEmail"
+            type="text"
+            value={corporateEmail.value}
+            onChange={setCorporateEmailInner}
+            title={translate('Corporate email')}
+            displayErrors={corporateEmail.isTouched}
+            validation={generalUtils.validateEmail(translate, acceptedDomains)}
+            translate={translate}
+          />
 
-        <Input
-          id="preferredTime"
-          title={translate('Book your preferences for this event')}
-          type="select"
-          list={generalUtils.getPreferredTimeData(availableTimesAndSeats)}
-          value={preferredTime.value}
-          onChange={setPreferredTime}
-          placeholder={translate('Preferred time')}
-        />
+          <Input
+            id="preferredTime"
+            title={translate('Book your preferences for this event')}
+            type="select"
+            list={generalUtils.getPreferredTimeData(availableTimesAndSeats)}
+            value={preferredTime.value}
+            onChange={setPreferredTime}
+            placeholder={translate('Preferred time')}
+          />
 
-        <Input
-          id="seats"
-          type="select"
-          disabled={preferredTime.value === ''}
-          list={generalUtils.getSeatsList({ preferredTime, availableTimesAndSeats, translate })}
-          value={seats.value}
-          onChange={setSeats}
-          placeholder={translate('Number of seats')}
-          displayErrors={showInvalidBookingMessage}
-          validation={{
-            test: () => !showInvalidBookingMessage,
-            message: () => translate('Your booking preferences has changed'),
-          }}
-        />
+          <Input
+            id="seats"
+            type="select"
+            disabled={preferredTime.value === ''}
+            list={generalUtils.getSeatsList({ preferredTime, availableTimesAndSeats, translate })}
+            value={seats.value}
+            onChange={setSeats}
+            placeholder={translate('Number of seats')}
+            displayErrors={showInvalidBookingMessage}
+            validation={{
+              test: () => !showInvalidBookingMessage,
+              message: () => translate('Your booking preferences has changed'),
+            }}
+          />
+        </div>
 
-        <Button
-          onClick={() => !isSubmitButtonDisabled && onSubmit(fieldsValue)}
-          isDisabled={isSubmitButtonDisabled}
-        >
-          {isSubmitting ? translate('Please wait ...') : translate('Continue')}
-        </Button>
+        <div className="create-page__footer">
+          <Button
+            onClick={() => !isSubmitButtonDisabled && onSubmit(fieldsValue)}
+            isDisabled={isSubmitButtonDisabled}
+          >
+            {isSubmitting ? translate('Please wait ...') : translate('Continue')}
+          </Button>
+        </div>
       </div>
     ),
   }

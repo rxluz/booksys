@@ -14,22 +14,26 @@ const Warning = ({
   onClickCallToAction,
 }) => (
   <div className="warning animate__animated animate__fadeIn">
-    {image && (
-      <div className="warning__image">
-        <img alt={imageAlt} src={image} />
-      </div>
-    )}
-    {title && <div className="warning__title">{title}</div>}
-    {description && <div className="warning__description">{description}</div>}
-    {footerMessage && <div className="warning__footer-message">{footerMessage}</div>}
+    <div className="warning__content">
+      {image && (
+        <div className="warning__image">
+          <img alt={imageAlt} src={image} />
+        </div>
+      )}
+      {title && <div className="warning__title">{title}</div>}
+      {description && <div className="warning__description">{description}</div>}
+      {footerMessage && <div className="warning__footer-message">{footerMessage}</div>}
+    </div>
     {callToActionText && (
-      <Button
-        type={callToActionType}
-        className="warning__footer-message"
-        onClick={onClickCallToAction}
-      >
-        {callToActionText}
-      </Button>
+      <div className="warning__footer">
+        <Button
+          type={callToActionType}
+          className="warning__footer--button"
+          onClick={onClickCallToAction}
+        >
+          {callToActionText}
+        </Button>
+      </div>
     )}
   </div>
 )

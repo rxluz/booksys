@@ -4,11 +4,13 @@ import hash from 'object-hash'
 
 export const emptyFunc = (param) => param
 
-export const onChangeValue = (cb, isValid, valueForced = 'NO') => (event) =>
-  cb({
+export const onChangeValue = ({ onChange, isValid, valueForced = 'NO', isTouched = false }) => (
+  event,
+) =>
+  onChange({
     value: valueForced !== 'NO' ? valueForced : event.target.value,
     isValid,
-    isTouched: false,
+    isTouched,
   })
 
 export const setFieldInitialState = (isValid = true, value = '') => ({

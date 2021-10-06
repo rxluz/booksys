@@ -1,13 +1,28 @@
-.booking-change {
-  width: 550px;
+.desktop {
+  .booking-change {
+    width: 550px;
+  }
+}
 
+.light-mode {
+  .booking-change {
+    &__title {
+      color: #000000;
+    }
+
+    &__subtitle {
+      color: #000000;
+    }
+  }
+}
+
+.booking-change {
   &__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     text-align: left;
     text-transform: uppercase;
-    color: #000000;
   }
 
   &__subtitle {
@@ -15,7 +30,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #000000;
+
     text-align: left;
     margin-top: 10px;
     margin-bottom: 10px;

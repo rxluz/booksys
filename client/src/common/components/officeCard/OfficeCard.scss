@@ -1,8 +1,35 @@
+.desktop {
+  .office-card {
+    width: calc(33% - 10px);
+  }
+}
+
+.mobile-tablet {
+  .office-card {
+    width: calc(50% - 10px);
+  }
+}
+
+.light-mode {
+  .office-card {
+    border: 2px solid #000000;
+
+    &__content {
+      color: #000000;
+    }
+  }
+}
+
+.dark-mode {
+  .office-card {
+    border: 2px solid #2e2e2e;
+  }
+}
+
 .office-card {
   display: inline-block;
-  border: 2px solid #000000;
+
   box-sizing: border-box;
-  width: calc(33% - 10px);
   margin-bottom: 20px;
 
   button {
@@ -16,7 +43,6 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
-    color: #000000;
   }
 
   &__time {

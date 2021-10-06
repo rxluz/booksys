@@ -16,12 +16,10 @@ const addBrowserClasses = () => {
   body.classList.add(normalise(os))
 }
 
-const addDarkModeClasses = ({ darkMode = 'browser' } = {}) => {
-  const isDarkModeCheck = darkMode === 'browser' ? isDarkMode() : darkMode
-
+const addDarkModeClasses = () => {
   body.classList.remove(`dark-mode`)
   body.classList.remove(`light-mode`)
-  body.classList.add(`${isDarkModeCheck ? 'dark' : 'light'}-mode`)
+  body.classList.add(`${isDarkMode() ? 'dark' : 'light'}-mode`)
 }
 
 const addMobileDesktopClasses = () => {

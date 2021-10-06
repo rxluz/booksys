@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useRef, useMemo } from 'react'
 import * as PropTypes from 'prop-types'
 import { onChangeValue } from 'common/utils/general.utils'
 import './Input.scss'
 import { AiOutlineWarning } from 'react-icons/ai'
 import { BiX } from 'react-icons/bi'
+import { isMobileOrTablet } from 'common/utils/browser.utils'
 
 const ValidationMessage = ({ displayErrors, isValid, validation, value }) => {
   if (!validation) {
@@ -38,20 +39,40 @@ const Input = ({
   showClearButton,
   onClear,
 }) => {
+  const inputRef = useRef()
   const isValid = !!validation ? validation.test(value) : !!isValidOuter
   const onBlur = () => onChange({ value, isValid, isTouched: value !== '' })
 
   const emptyValue = () => {
-    onChangeValue(onChange, isValid, '')()
+    onChangeValue({ onChange, isValid, valueForced: '' })()
     onClear && onClear()
+  }
+
+  const onFocus = () => {
+    if (isMobileOrTablet()) {
+      inputRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'start',
+      })
+    }
+  }
+
+  const onKeyUp = () => {
+    if (isMobileOrTablet()) {
+      onBlur()
+    }
   }
 
   const INPUT_ELEMENT = {
     text: () => (
       <input
         id={id}
+        onFocus={onFocus}
+        ref={inputRef}
         disabled={disabled}
-        onChange={onChangeValue(onChange, isValid)}
+        onChange={onChangeValue({ onChange, isValid, isTouched: isMobileOrTablet() })}
+        onKeyUp={onKeyUp}
         onBlur={onBlur}
         value={value}
         className="input__element--text"
@@ -67,8 +88,10 @@ const Input = ({
         )}
         <select
           id={id}
+          onFocus={onFocus}
+          ref={inputRef}
           disabled={disabled}
-          onChange={onChangeValue(onChange, isValid)}
+          onChange={onChangeValue({ onChange, isValid })}
           className="input__element--select"
         >
           {!!placeholder && (

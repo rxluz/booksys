@@ -1,6 +1,40 @@
-.pagination {
-  border: 2px solid #000000;
+.light-mode {
+  .pagination {
+    border: 2px solid #000000;
+  }
 
+  .page-link {
+    color: black;
+  }
+
+  .active {
+    .page-link {
+      background-color: #000;
+      border-color: #000;
+      color: white;
+    }
+  }
+}
+
+.dark-mode {
+  .pagination {
+    border: 2px solid #2e2e2e;
+  }
+
+  .page-link {
+    color: white;
+  }
+
+  .active {
+    .page-link {
+      background-color: #2e2e2e;
+      border-color: #2e2e2e;
+      color: white;
+    }
+  }
+}
+
+.pagination {
   .disabled {
     opacity: 0.5;
     cursor: not-allowed;
@@ -24,18 +58,6 @@
   display: flex;
   padding-left: 0;
   list-style: none;
-
-  .page-link {
-    color: black;
-  }
-
-  .active {
-    .page-link {
-      background-color: #000;
-      border-color: #000;
-      color: white;
-    }
-  }
 }
 
 .sr-only {
