@@ -1,6 +1,53 @@
 .desktop {
   .booking-status {
     width: 480px;
+
+    &__status {
+      height: 20px;
+    }
+  }
+}
+
+.mobile-tablet {
+  .booking-status {
+    &__status {
+      min-height: 20px;
+      &--code {
+        width: 55%;
+      }
+    }
+  }
+}
+
+.light-mode {
+  .booking-status {
+    &__title {
+      color: #000000;
+    }
+
+    &__message {
+      color: #000000;
+    }
+
+    &__status {
+      border-bottom: 2px solid #000000;
+
+      &--code {
+        color: #000000;
+      }
+    }
+
+    &__row {
+      color: #000000;
+    }
+  }
+}
+
+.dark-mode {
+  .booking-status {
+    &__status {
+      border-bottom: 2px solid #2e2e2e;
+    }
   }
 }
 
@@ -20,7 +67,6 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
   }
 
   &__message {
@@ -28,13 +74,10 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 23px;
-    color: #000000;
   }
 
   &__status {
     padding-bottom: 10px;
-    height: 20px;
-    border-bottom: 2px solid #000000;
 
     &--cancelled::before {
       background: #cd1732;
@@ -85,7 +128,6 @@
       font-size: 13px;
       line-height: 23px;
       text-align: right;
-      color: #000000;
     }
   }
 
@@ -96,7 +138,6 @@
     font-size: 22px;
     line-height: 24px;
     min-height: 25px;
-    color: #000000;
 
     &--title {
       float: left;
