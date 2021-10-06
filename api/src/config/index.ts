@@ -8,7 +8,7 @@ dotenv.config({ path: path.resolve(__dirname, `./environments/${environment}.env
 
 const config: IConfigInterface = {
   api: {
-    port: parseInt(process.env.API_PORT || '3000', 10),
+    port: parseInt(process.env.PORT || '3000', 10),
   },
   db: {
     host: process.env.DB_HOST || 'localhost',
