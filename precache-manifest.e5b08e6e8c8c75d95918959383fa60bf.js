@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "034d869de432a2829cda45d9f6f4825d",
+    "revision": "f7ce06578b055f15824b21f3c17269b0",
     "url": "/booksys/index.html"
   },
   {
-    "revision": "4b51f82663cee3871e4a",
+    "revision": "858db7d93ae2b56ba811",
     "url": "/booksys/static/css/2.b73a64a5.chunk.css"
   },
   {
-    "revision": "b3a2ee3327a24a15aefe",
+    "revision": "05949bb94b523e90ba9a",
     "url": "/booksys/static/css/main.bc5129fa.chunk.css"
   },
   {
-    "revision": "4b51f82663cee3871e4a",
-    "url": "/booksys/static/js/2.240bc97b.chunk.js"
+    "revision": "858db7d93ae2b56ba811",
+    "url": "/booksys/static/js/2.f36b0fe2.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/booksys/static/js/2.240bc97b.chunk.js.LICENSE.txt"
+    "url": "/booksys/static/js/2.f36b0fe2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b3a2ee3327a24a15aefe",
-    "url": "/booksys/static/js/main.08b8464b.chunk.js"
+    "revision": "05949bb94b523e90ba9a",
+    "url": "/booksys/static/js/main.9b5daff3.chunk.js"
   },
   {
     "revision": "891595b8757c81a4bb4f",
