@@ -6,6 +6,8 @@
   "author": "Ricardo Luz <hi@rxluz.dev>",
   "license": "MIT",
   "dependencies": {
+    "@geometricpanda/storybook-addon-badges": "^0.2.1",
+    "@storybook/addon-storysource": "^6.3.10",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -40,14 +42,24 @@
     "start": "react-scripts start",
     "build": "PUBLIC_URL=https://rxluz.github.io/booksys && react-scripts build",
     "test": "react-scripts test",
-    "build-storybook": "build-storybook -c  .storybook -o build/storybook",
+    "build-storybook": "build-storybook -s public -o build/storybook",
     "eject": "react-scripts eject",
     "translation:extract": "i18n_extract --pattern=translate --source=src --locales=src/common/locales",
     "translation:import": "i18n_import --translations=src/common/locales --locales=src/common/locales",
-    "storybook": "start-storybook  --debug-webpack --no-manager-cache -p 9009 -s public"
+    "storybook": "start-storybook -p 6006 -s public"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
@@ -62,13 +74,17 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.3.9",
-    "@storybook/addon-links": "^6.3.9",
-    "@storybook/addons": "^6.3.9",
-    "@storybook/preset-create-react-app": "^4.0.0",
-    "@storybook/react": "^6.3.9",
+    "@storybook/addon-a11y": "^6.3.10",
+    "@storybook/addon-actions": "^6.3.10",
+    "@storybook/addon-essentials": "^6.3.10",
+    "@storybook/addon-knobs": "^6.3.1",
+    "@storybook/addon-links": "^6.3.10",
+    "@storybook/node-logger": "^6.3.10",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.10",
     "gh-pages": "^2.2.0",
     "redux-devtools": "^3.5.0",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "storybook-addon-designs": "^6.2.0"
   }
 }

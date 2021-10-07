@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from 'react'
+import React, { useRef } from 'react'
 import * as PropTypes from 'prop-types'
 import { onChangeValue } from 'common/utils/general.utils'
 import './Input.scss'

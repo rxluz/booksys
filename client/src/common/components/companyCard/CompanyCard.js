@@ -19,7 +19,11 @@ const CompanyCard = ({ translate, event, children }) => (
       <div className="companyCard__header--row">
         <div className="companyCard__header--address">{event.address}</div>
         <div className="companyCard__header--directions">
-          <a target="_blank" href={generalConstants.MAPS_URL(event.address)}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={generalConstants.MAPS_URL(event.address)}
+          >
             {translate('Get directions')}
           </a>
         </div>
