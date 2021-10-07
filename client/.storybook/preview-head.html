@@ -1,19 +1,30 @@
-<script src="//cdn.polyfill.io/v3/polyfill.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap"
   rel="stylesheet"
 />
 
-<style>
-  body {
-    font-family: 'Baloo Tammudu 2', cursive;
-  }
-</style>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<script src="//cdn.polyfill.io/v3/polyfill.min.js"></script>
 
 <script>
-  alert('hall')
+  console.log('hehe1h')
+  document.addEventListener('DOMContentLoaded', function () {
+    document.body.className += ' light-mode'
+  })
+
+  if (!Object.entries) {
+    Object.entries = function (obj) {
+      var ownProps = Object.keys(obj),
+        i = ownProps.length,
+        resArray = new Array(i) // preallocate the Array
+      while (i--) resArray[i] = [ownProps[i], obj[ownProps[i]]]
+
+      return resArray
+    }
+  }
 </script>
