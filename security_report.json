@@ -1,0 +1,2880 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@jest/core": {
+      "name": "@jest/core",
+      "severity": "moderate",
+      "via": [
+        "@jest/reporters",
+        "jest-validate",
+        "strip-ansi"
+      ],
+      "effects": [
+        "jest-cli"
+      ],
+      "range": "<=25.5.4",
+      "nodes": [
+        "node_modules/@jest/core"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "@jest/environment": {
+      "name": "@jest/environment",
+      "severity": "high",
+      "via": [
+        "@jest/transform"
+      ],
+      "effects": [
+        "jest-runner"
+      ],
+      "range": "<=24.9.0",
+      "nodes": [
+        "node_modules/@jest/environment"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/fake-timers": {
+      "name": "@jest/fake-timers",
+      "severity": "high",
+      "via": [
+        "jest-message-util"
+      ],
+      "effects": [
+        "jest-environment-jsdom",
+        "jest-environment-jsdom-fourteen",
+        "jest-environment-node",
+        "jest-util"
+      ],
+      "range": "<=24.9.0",
+      "nodes": [
+        "node_modules/@jest/fake-timers"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "@jest/reporters": {
+      "name": "@jest/reporters",
+      "severity": "moderate",
+      "via": [
+        "jest-runtime",
+        "node-notifier",
+        "string-length"
+      ],
+      "effects": [
+        "@jest/core"
+      ],
+      "range": "<=26.4.0",
+      "nodes": [
+        "node_modules/@jest/reporters"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "@jest/test-sequencer": {
+      "name": "@jest/test-sequencer",
+      "severity": "moderate",
+      "via": [
+        "jest-runtime"
+      ],
+      "effects": [
+        "jest-config"
+      ],
+      "range": "<=24.9.0",
+      "nodes": [
+        "node_modules/@jest/test-sequencer"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "@jest/transform": {
+      "name": "@jest/transform",
+      "severity": "high",
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "@jest/environment",
+        "babel-jest",
+        "jest-runtime"
+      ],
+      "range": "<=24.9.0",
+      "nodes": [
+        "node_modules/@jest/transform"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "@storybook/core": {
+      "name": "@storybook/core",
+      "severity": "high",
+      "via": [
+        "cli-table3",
+        "corejs-upgrade-webpack-plugin",
+        "glob-base",
+        "react-dev-utils",
+        "webpack"
+      ],
+      "effects": [
+        "@storybook/react"
+      ],
+      "range": "4.0.0-alpha.0 - 6.2.0-rc.13",
+      "nodes": [
+        "node_modules/@storybook/core"
+      ],
+      "fixAvailable": true
+    },
+    "@storybook/react": {
+      "name": "@storybook/react",
+      "severity": "high",
+      "via": [
+        "@storybook/core",
+        "@svgr/webpack",
+        "react-dev-utils",
+        "webpack"
+      ],
+      "effects": [],
+      "range": ">=3.4.0-alpha.0",
+      "nodes": [
+        "node_modules/@storybook/react"
+      ],
+      "fixAvailable": true
+    },
+    "@svgr/plugin-svgo": {
+      "name": "@svgr/plugin-svgo",
+      "severity": "moderate",
+      "via": [
+        "svgo"
+      ],
+      "effects": [
+        "@svgr/webpack"
+      ],
+      "range": "<=5.5.0",
+      "nodes": [
+        "node_modules/@svgr/plugin-svgo"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "@svgr/webpack": {
+      "name": "@svgr/webpack",
+      "severity": "moderate",
+      "via": [
+        "@svgr/plugin-svgo"
+      ],
+      "effects": [
+        "@storybook/react",
+        "react-scripts"
+      ],
+      "range": "4.0.0 - 5.5.0",
+      "nodes": [
+        "node_modules/@svgr/webpack"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "@testing-library/dom": {
+      "name": "@testing-library/dom",
+      "severity": "moderate",
+      "via": [
+        "@types/testing-library__dom"
+      ],
+      "effects": [
+        "@testing-library/react"
+      ],
+      "range": "6.15.0 - 7.1.0",
+      "nodes": [
+        "node_modules/@testing-library/dom"
+      ],
+      "fixAvailable": {
+        "name": "@testing-library/react",
+        "version": "12.1.2",
+        "isSemVerMajor": true
+      }
+    },
+    "@testing-library/jest-dom": {
+      "name": "@testing-library/jest-dom",
+      "severity": "moderate",
+      "via": [
+        "pretty-format"
+      ],
+      "effects": [],
+      "range": "<=5.0.2",
+      "nodes": [
+        "node_modules/@testing-library/jest-dom"
+      ],
+      "fixAvailable": {
+        "name": "@testing-library/jest-dom",
+        "version": "5.14.1",
+        "isSemVerMajor": true
+      }
+    },
+    "@testing-library/react": {
+      "name": "@testing-library/react",
+      "severity": "moderate",
+      "via": [
+        "@testing-library/dom"
+      ],
+      "effects": [],
+      "range": "9.5.0 - 10.0.0-beta.2",
+      "nodes": [
+        "node_modules/@testing-library/react"
+      ],
+      "fixAvailable": {
+        "name": "@testing-library/react",
+        "version": "12.1.2",
+        "isSemVerMajor": true
+      }
+    },
+    "@types/testing-library__dom": {
+      "name": "@types/testing-library__dom",
+      "severity": "moderate",
+      "via": [
+        "pretty-format"
+      ],
+      "effects": [
+        "@testing-library/dom"
+      ],
+      "range": "6.0.2 - 6.14.0",
+      "nodes": [
+        "node_modules/@types/testing-library__dom"
+      ],
+      "fixAvailable": {
+        "name": "@testing-library/react",
+        "version": "12.1.2",
+        "isSemVerMajor": true
+      }
+    },
+    "adjust-sourcemap-loader": {
+      "name": "adjust-sourcemap-loader",
+      "severity": "high",
+      "via": [
+        "object-path"
+      ],
+      "effects": [
+        "resolve-url-loader"
+      ],
+      "range": "0.1.0 - 2.0.0",
+      "nodes": [
+        "node_modules/adjust-sourcemap-loader"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "ansi-align": {
+      "name": "ansi-align",
+      "severity": "moderate",
+      "via": [
+        "string-width"
+      ],
+      "effects": [],
+      "range": "3.0.0",
+      "nodes": [
+        "node_modules/ansi-align"
+      ],
+      "fixAvailable": true
+    },
+    "ansi-html": {
+      "name": "ansi-html",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002522,
+          "name": "ansi-html",
+          "dependency": "ansi-html",
+          "title": "Uncontrolled Resource Consumption in ansi-html",
+          "url": "https://github.com/advisories/GHSA-whgm-jr23-g3j9",
+          "severity": "high",
+          "range": "<=0.0.7"
+        }
+      ],
+      "effects": [
+        "webpack-dev-server",
+        "webpack-hot-middleware"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/ansi-html"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "ansi-regex": {
+      "name": "ansi-regex",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002401,
+          "name": "ansi-regex",
+          "dependency": "ansi-regex",
+          "title": " Inefficient Regular Expression Complexity in chalk/ansi-regex",
+          "url": "https://github.com/advisories/GHSA-93q8-gq69-wqmw",
+          "severity": "moderate",
+          "range": ">2.1.1 <5.0.1"
+        }
+      ],
+      "effects": [
+        "pretty-format",
+        "strip-ansi"
+      ],
+      "range": ">2.1.1 <5.0.1",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/ansi-regex",
+        "node_modules/@storybook/react/node_modules/ansi-regex",
+        "node_modules/ansi-regex",
+        "node_modules/cli-table3/node_modules/ansi-regex",
+        "node_modules/pretty-format/node_modules/ansi-regex",
+        "node_modules/react-dev-utils/node_modules/ansi-regex",
+        "node_modules/react-dev-utils/node_modules/strip-ansi/node_modules/ansi-regex",
+        "node_modules/string-length/node_modules/ansi-regex",
+        "node_modules/strip-ansi/node_modules/ansi-regex",
+        "node_modules/webpack-dev-server/node_modules/cliui/node_modules/ansi-regex",
+        "node_modules/webpack-dev-server/node_modules/string-width/node_modules/ansi-regex",
+        "node_modules/wide-align/node_modules/ansi-regex"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "anymatch": {
+      "name": "anymatch",
+      "severity": "high",
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "jest-haste-map"
+      ],
+      "range": "2.0.0",
+      "nodes": [
+        "node_modules/anymatch"
+      ],
+      "fixAvailable": true
+    },
+    "babel-jest": {
+      "name": "babel-jest",
+      "severity": "high",
+      "via": [
+        "@jest/transform"
+      ],
+      "effects": [
+        "jest-config"
+      ],
+      "range": "24.2.0-alpha.0 - 24.9.0",
+      "nodes": [
+        "node_modules/babel-jest"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "base": {
+      "name": "base",
+      "severity": "high",
+      "via": [
+        "cache-base"
+      ],
+      "effects": [
+        "snapdragon"
+      ],
+      "range": ">=0.7.0",
+      "nodes": [
+        "node_modules/base"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "braces": {
+      "name": "braces",
+      "severity": "high",
+      "via": [
+        "snapdragon"
+      ],
+      "effects": [
+        "chokidar"
+      ],
+      "range": "2.0.0 - 2.3.2",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/chokidar/node_modules/braces",
+        "node_modules/@storybook/core/node_modules/fork-ts-checker-webpack-plugin/node_modules/braces",
+        "node_modules/@storybook/core/node_modules/readdirp/node_modules/braces",
+        "node_modules/braces"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "browserslist": {
+      "name": "browserslist",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002655,
+          "name": "browserslist",
+          "dependency": "browserslist",
+          "title": "Regular Expression Denial of Service in browserslist",
+          "url": "https://github.com/advisories/GHSA-w8qv-6jwh-64r5",
+          "severity": "moderate",
+          "range": ">=4.0.0 <4.16.5"
+        }
+      ],
+      "effects": [
+        "react-dev-utils"
+      ],
+      "range": "4.0.0 - 4.16.4",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/browserslist",
+        "node_modules/@storybook/react/node_modules/browserslist",
+        "node_modules/browserslist",
+        "node_modules/react-dev-utils/node_modules/browserslist"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "cache-base": {
+      "name": "cache-base",
+      "severity": "high",
+      "via": [
+        "set-value",
+        "union-value"
+      ],
+      "effects": [
+        "base"
+      ],
+      "range": ">=0.7.0",
+      "nodes": [
+        "node_modules/cache-base"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "chokidar": {
+      "name": "chokidar",
+      "severity": "high",
+      "via": [
+        "braces",
+        "glob-parent",
+        "readdirp"
+      ],
+      "effects": [
+        "fork-ts-checker-webpack-plugin",
+        "watchpack",
+        "webpack-dev-server"
+      ],
+      "range": "1.0.0-rc1 - 2.1.8",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/chokidar",
+        "node_modules/@storybook/react/node_modules/chokidar",
+        "node_modules/watchpack/node_modules/chokidar",
+        "node_modules/webpack-dev-server/node_modules/chokidar"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "cli-table3": {
+      "name": "cli-table3",
+      "severity": "moderate",
+      "via": [
+        "string-width"
+      ],
+      "effects": [
+        "@storybook/core"
+      ],
+      "range": "0.5.0 - 0.5.1",
+      "nodes": [
+        "node_modules/cli-table3"
+      ],
+      "fixAvailable": true
+    },
+    "cliui": {
+      "name": "cliui",
+      "severity": "moderate",
+      "via": [
+        "strip-ansi",
+        "wrap-ansi"
+      ],
+      "effects": [
+        "yargs"
+      ],
+      "range": "4.0.0 - 5.0.0",
+      "nodes": [
+        "node_modules/cliui",
+        "node_modules/webpack-dev-server/node_modules/cliui"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "color-string": {
+      "name": "color-string",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002581,
+          "name": "color-string",
+          "dependency": "color-string",
+          "title": "Regular Expression Denial of Service (ReDOS)",
+          "url": "https://github.com/advisories/GHSA-257v-vj4p-3w2h",
+          "severity": "moderate",
+          "range": "<1.5.5"
+        }
+      ],
+      "effects": [],
+      "range": "<1.5.5",
+      "nodes": [
+        "node_modules/color-string"
+      ],
+      "fixAvailable": true
+    },
+    "corejs-upgrade-webpack-plugin": {
+      "name": "corejs-upgrade-webpack-plugin",
+      "severity": "high",
+      "via": [
+        "webpack"
+      ],
+      "effects": [
+        "@storybook/core"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/corejs-upgrade-webpack-plugin"
+      ],
+      "fixAvailable": true
+    },
+    "css-select": {
+      "name": "css-select",
+      "severity": "moderate",
+      "via": [
+        "nth-check"
+      ],
+      "effects": [
+        "renderkid",
+        "svgo"
+      ],
+      "range": "<=3.1.0",
+      "nodes": [
+        "node_modules/css-select",
+        "node_modules/renderkid/node_modules/css-select"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "dns-packet": {
+      "name": "dns-packet",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002648,
+          "name": "dns-packet",
+          "dependency": "dns-packet",
+          "title": "Potential memory exposure in dns-packet",
+          "url": "https://github.com/advisories/GHSA-3wcq-x3mq-6r9p",
+          "severity": "high",
+          "range": "<1.3.2"
+        }
+      ],
+      "effects": [],
+      "range": "<1.3.2",
+      "nodes": [
+        "node_modules/dns-packet"
+      ],
+      "fixAvailable": true
+    },
+    "elliptic": {
+      "name": "elliptic",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002927,
+          "name": "elliptic",
+          "dependency": "elliptic",
+          "title": "Use of a Broken or Risky Cryptographic Algorithm",
+          "url": "https://github.com/advisories/GHSA-r9p9-mrjm-926w",
+          "severity": "moderate",
+          "range": "<6.5.4"
+        },
+        {
+          "source": 1004052,
+          "name": "elliptic",
+          "dependency": "elliptic",
+          "title": "Signature Malleabillity in elliptic",
+          "url": "https://github.com/advisories/GHSA-vh7m-p724-62c2",
+          "severity": "high",
+          "range": "<6.5.3"
+        }
+      ],
+      "effects": [],
+      "range": "<=6.5.3",
+      "nodes": [
+        "node_modules/elliptic"
+      ],
+      "fixAvailable": true
+    },
+    "eslint": {
+      "name": "eslint",
+      "severity": "moderate",
+      "via": [
+        "strip-ansi",
+        "table"
+      ],
+      "effects": [
+        "react-scripts"
+      ],
+      "range": "4.5.0 - 7.15.0",
+      "nodes": [
+        "node_modules/eslint"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "expand-brackets": {
+      "name": "expand-brackets",
+      "severity": "high",
+      "via": [
+        "snapdragon"
+      ],
+      "effects": [],
+      "range": "1.0.0 - 2.1.4",
+      "nodes": [
+        "node_modules/expand-brackets"
+      ],
+      "fixAvailable": true
+    },
+    "expect": {
+      "name": "expect",
+      "severity": "high",
+      "via": [
+        "jest-matcher-utils",
+        "jest-message-util"
+      ],
+      "effects": [
+        "jest-snapshot"
+      ],
+      "range": "21.0.0-beta.1 - 24.9.0",
+      "nodes": [
+        "node_modules/expect"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "extglob": {
+      "name": "extglob",
+      "severity": "high",
+      "via": [
+        "snapdragon"
+      ],
+      "effects": [],
+      "range": "1.0.0 - 2.0.4",
+      "nodes": [
+        "node_modules/extglob"
+      ],
+      "fixAvailable": true
+    },
+    "fast-glob": {
+      "name": "fast-glob",
+      "severity": "high",
+      "via": [
+        "glob-parent",
+        "micromatch"
+      ],
+      "effects": [
+        "globby"
+      ],
+      "range": "<=2.2.7",
+      "nodes": [
+        "node_modules/fast-glob"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "fork-ts-checker-webpack-plugin": {
+      "name": "fork-ts-checker-webpack-plugin",
+      "severity": "high",
+      "via": [
+        "chokidar",
+        "micromatch"
+      ],
+      "effects": [
+        "react-dev-utils"
+      ],
+      "range": "<=4.1.6",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/fork-ts-checker-webpack-plugin",
+        "node_modules/@storybook/react/node_modules/fork-ts-checker-webpack-plugin",
+        "node_modules/fork-ts-checker-webpack-plugin"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "glob-base": {
+      "name": "glob-base",
+      "severity": "high",
+      "via": [
+        "glob-parent"
+      ],
+      "effects": [
+        "@storybook/core"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/glob-base"
+      ],
+      "fixAvailable": true
+    },
+    "glob-parent": {
+      "name": "glob-parent",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002627,
+          "name": "glob-parent",
+          "dependency": "glob-parent",
+          "title": "Regular expression denial of service",
+          "url": "https://github.com/advisories/GHSA-ww39-953v-wcq6",
+          "severity": "high",
+          "range": "<5.1.2"
+        }
+      ],
+      "effects": [
+        "chokidar",
+        "fast-glob",
+        "glob-base"
+      ],
+      "range": "<5.1.2",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/glob-parent",
+        "node_modules/@storybook/react/node_modules/glob-parent",
+        "node_modules/fast-glob/node_modules/glob-parent",
+        "node_modules/glob-base/node_modules/glob-parent",
+        "node_modules/glob-parent",
+        "node_modules/watchpack/node_modules/glob-parent",
+        "node_modules/webpack-dev-server/node_modules/glob-parent"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "globby": {
+      "name": "globby",
+      "severity": "high",
+      "via": [
+        "fast-glob"
+      ],
+      "effects": [
+        "react-dev-utils"
+      ],
+      "range": "8.0.0 - 9.2.0",
+      "nodes": [
+        "node_modules/globby"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "highlight.js": {
+      "name": "highlight.js",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1003013,
+          "name": "highlight.js",
+          "dependency": "highlight.js",
+          "title": "ReDOS vulnerabities: multiple grammars",
+          "url": "https://github.com/advisories/GHSA-7wwv-vh3v-89cq",
+          "severity": "moderate",
+          "range": ">=9.0.0 <10.4.1"
+        },
+        {
+          "source": 1003016,
+          "name": "highlight.js",
+          "dependency": "highlight.js",
+          "title": "Prototype Pollution in highlight.js",
+          "url": "https://github.com/advisories/GHSA-vfrc-7r7c-w9mx",
+          "severity": "low",
+          "range": "<9.18.2"
+        }
+      ],
+      "effects": [
+        "lowlight",
+        "react-syntax-highlighter"
+      ],
+      "range": "<=10.4.0",
+      "nodes": [
+        "node_modules/highlight.js"
+      ],
+      "fixAvailable": true
+    },
+    "hosted-git-info": {
+      "name": "hosted-git-info",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002692,
+          "name": "hosted-git-info",
+          "dependency": "hosted-git-info",
+          "title": "Regular Expression Denial of Service in hosted-git-info",
+          "url": "https://github.com/advisories/GHSA-43f8-2h32-f4cj",
+          "severity": "moderate",
+          "range": "<2.8.9"
+        }
+      ],
+      "effects": [],
+      "range": "<2.8.9",
+      "nodes": [
+        "node_modules/hosted-git-info"
+      ],
+      "fixAvailable": true
+    },
+    "http-proxy": {
+      "name": "http-proxy",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1003087,
+          "name": "http-proxy",
+          "dependency": "http-proxy",
+          "title": "Denial of Service in http-proxy",
+          "url": "https://github.com/advisories/GHSA-6x33-pw7p-hmpq",
+          "severity": "high",
+          "range": "<1.18.1"
+        }
+      ],
+      "effects": [],
+      "range": "<1.18.1",
+      "nodes": [
+        "node_modules/http-proxy"
+      ],
+      "fixAvailable": true
+    },
+    "http-proxy-middleware": {
+      "name": "http-proxy-middleware",
+      "severity": "high",
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "webpack-dev-server"
+      ],
+      "range": "0.18.0 - 0.19.2",
+      "nodes": [
+        "node_modules/http-proxy-middleware"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "immer": {
+      "name": "immer",
+      "severity": "critical",
+      "via": [
+        {
+          "source": 1002492,
+          "name": "immer",
+          "dependency": "immer",
+          "title": "Prototype Pollution in immer",
+          "url": "https://github.com/advisories/GHSA-33f9-j839-rf8h",
+          "severity": "critical",
+          "range": "<9.0.6"
+        },
+        {
+          "source": 1002973,
+          "name": "immer",
+          "dependency": "immer",
+          "title": "Prototype Pollution in immer",
+          "url": "https://github.com/advisories/GHSA-9qmh-276g-x5pj",
+          "severity": "high",
+          "range": "<8.0.1"
+        }
+      ],
+      "effects": [
+        "react-dev-utils"
+      ],
+      "range": "<=9.0.5",
+      "nodes": [
+        "node_modules/immer"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "ini": {
+      "name": "ini",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1003007,
+          "name": "ini",
+          "dependency": "ini",
+          "title": "Prototype Pollution",
+          "url": "https://github.com/advisories/GHSA-qqgx-2p2h-9c37",
+          "severity": "high",
+          "range": "<1.3.6"
+        }
+      ],
+      "effects": [],
+      "range": "<1.3.6",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/fsevents/node_modules/ini",
+        "node_modules/@storybook/react/node_modules/fsevents/node_modules/ini",
+        "node_modules/ini",
+        "node_modules/jest-haste-map/node_modules/fsevents/node_modules/ini",
+        "node_modules/watchpack/node_modules/fsevents/node_modules/ini",
+        "node_modules/webpack-dev-server/node_modules/fsevents/node_modules/ini"
+      ],
+      "fixAvailable": true
+    },
+    "inquirer": {
+      "name": "inquirer",
+      "severity": "moderate",
+      "via": [
+        "string-width",
+        "strip-ansi"
+      ],
+      "effects": [
+        "react-dev-utils"
+      ],
+      "range": "3.2.0 - 7.0.4",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/react-dev-utils/node_modules/inquirer",
+        "node_modules/@storybook/react/node_modules/inquirer",
+        "node_modules/react-dev-utils/node_modules/inquirer"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "is-svg": {
+      "name": "is-svg",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002911,
+          "name": "is-svg",
+          "dependency": "is-svg",
+          "title": "Regular Expression Denial of Service (ReDoS)",
+          "url": "https://github.com/advisories/GHSA-7r28-3m3f-r2pr",
+          "severity": "high",
+          "range": ">=2.1.0 <4.2.2"
+        }
+      ],
+      "effects": [
+        "postcss-svgo"
+      ],
+      "range": "2.1.0 - 4.2.1",
+      "nodes": [
+        "node_modules/is-svg"
+      ],
+      "fixAvailable": true
+    },
+    "jest": {
+      "name": "jest",
+      "severity": "moderate",
+      "via": [
+        "jest-cli"
+      ],
+      "effects": [
+        "react-scripts"
+      ],
+      "range": "24.2.0-alpha.0 - 24.9.0",
+      "nodes": [
+        "node_modules/jest"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-cli": {
+      "name": "jest-cli",
+      "severity": "moderate",
+      "via": [
+        "@jest/core",
+        "jest-config",
+        "jest-validate",
+        "yargs"
+      ],
+      "effects": [
+        "jest"
+      ],
+      "range": "20.1.0-alpha.1 - 25.0.0",
+      "nodes": [
+        "node_modules/jest/node_modules/jest-cli"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-config": {
+      "name": "jest-config",
+      "severity": "high",
+      "via": [
+        "@jest/test-sequencer",
+        "babel-jest",
+        "jest-jasmine2",
+        "micromatch",
+        "pretty-format"
+      ],
+      "effects": [
+        "jest-cli",
+        "jest-runner",
+        "jest-runtime"
+      ],
+      "range": "20.1.0-alpha.1 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-config"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-diff": {
+      "name": "jest-diff",
+      "severity": "moderate",
+      "via": [
+        "pretty-format"
+      ],
+      "effects": [
+        "jest-matcher-utils"
+      ],
+      "range": "20.1.0-alpha.1 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-diff"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-each": {
+      "name": "jest-each",
+      "severity": "high",
+      "via": [
+        "jest-util",
+        "pretty-format"
+      ],
+      "effects": [
+        "jest-jasmine2"
+      ],
+      "range": "23.0.1 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-each"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-environment-jsdom": {
+      "name": "jest-environment-jsdom",
+      "severity": "high",
+      "via": [
+        "@jest/fake-timers"
+      ],
+      "effects": [],
+      "range": "24.2.0-alpha.0 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-environment-jsdom"
+      ],
+      "fixAvailable": true
+    },
+    "jest-environment-jsdom-fourteen": {
+      "name": "jest-environment-jsdom-fourteen",
+      "severity": "high",
+      "via": [
+        "@jest/fake-timers"
+      ],
+      "effects": [
+        "react-scripts"
+      ],
+      "range": ">=1.0.0-alpha.0",
+      "nodes": [
+        "node_modules/jest-environment-jsdom-fourteen"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-environment-node": {
+      "name": "jest-environment-node",
+      "severity": "high",
+      "via": [
+        "@jest/fake-timers"
+      ],
+      "effects": [],
+      "range": "24.2.0-alpha.0 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-environment-node"
+      ],
+      "fixAvailable": true
+    },
+    "jest-haste-map": {
+      "name": "jest-haste-map",
+      "severity": "high",
+      "via": [
+        "anymatch",
+        "jest-util",
+        "micromatch",
+        "sane"
+      ],
+      "effects": [],
+      "range": "23.2.0 || 24.0.0-alpha.0 - 26.6.2",
+      "nodes": [
+        "node_modules/jest-haste-map"
+      ],
+      "fixAvailable": true
+    },
+    "jest-jasmine2": {
+      "name": "jest-jasmine2",
+      "severity": "high",
+      "via": [
+        "jest-each",
+        "jest-message-util",
+        "jest-runtime",
+        "jest-snapshot",
+        "pretty-format"
+      ],
+      "effects": [
+        "jest-config",
+        "jest-runner"
+      ],
+      "range": "20.1.0-alpha.1 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-jasmine2"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-leak-detector": {
+      "name": "jest-leak-detector",
+      "severity": "moderate",
+      "via": [
+        "pretty-format"
+      ],
+      "effects": [
+        "jest-runner"
+      ],
+      "range": "21.3.0-beta.9 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-leak-detector"
+      ],
+      "fixAvailable": true
+    },
+    "jest-matcher-utils": {
+      "name": "jest-matcher-utils",
+      "severity": "moderate",
+      "via": [
+        "jest-diff",
+        "pretty-format"
+      ],
+      "effects": [
+        "expect"
+      ],
+      "range": "20.1.0-alpha.1 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-matcher-utils"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-message-util": {
+      "name": "jest-message-util",
+      "severity": "high",
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "@jest/fake-timers",
+        "expect",
+        "jest-jasmine2",
+        "jest-runner",
+        "jest-runtime",
+        "jest-snapshot"
+      ],
+      "range": "23.2.0 - 23.3.0 || 24.0.0-alpha.0 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-message-util"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-resolve-dependencies": {
+      "name": "jest-resolve-dependencies",
+      "severity": "moderate",
+      "via": [
+        "jest-snapshot"
+      ],
+      "effects": [],
+      "range": "23.0.0-alpha.5 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-resolve-dependencies"
+      ],
+      "fixAvailable": true
+    },
+    "jest-runner": {
+      "name": "jest-runner",
+      "severity": "high",
+      "via": [
+        "@jest/environment",
+        "jest-config",
+        "jest-jasmine2",
+        "jest-leak-detector",
+        "jest-message-util",
+        "jest-runtime"
+      ],
+      "effects": [],
+      "range": "21.0.0-alpha.1 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-runner"
+      ],
+      "fixAvailable": true
+    },
+    "jest-runtime": {
+      "name": "jest-runtime",
+      "severity": "high",
+      "via": [
+        "@jest/transform",
+        "jest-config",
+        "jest-message-util",
+        "jest-snapshot",
+        "jest-validate",
+        "yargs"
+      ],
+      "effects": [
+        "@jest/reporters",
+        "@jest/test-sequencer",
+        "jest-jasmine2",
+        "jest-runner"
+      ],
+      "range": "20.1.0-alpha.1 - 25.0.0",
+      "nodes": [
+        "node_modules/jest-runtime"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-snapshot": {
+      "name": "jest-snapshot",
+      "severity": "high",
+      "via": [
+        "expect",
+        "jest-message-util",
+        "pretty-format"
+      ],
+      "effects": [
+        "jest-jasmine2",
+        "jest-resolve-dependencies",
+        "jest-runtime"
+      ],
+      "range": "20.1.0-alpha.1 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-snapshot"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-util": {
+      "name": "jest-util",
+      "severity": "high",
+      "via": [
+        "@jest/fake-timers"
+      ],
+      "effects": [
+        "jest-each",
+        "jest-haste-map",
+        "jest-watcher"
+      ],
+      "range": "24.2.0-alpha.0 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-util"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-validate": {
+      "name": "jest-validate",
+      "severity": "moderate",
+      "via": [
+        "pretty-format"
+      ],
+      "effects": [
+        "@jest/core",
+        "jest-cli",
+        "jest-runtime"
+      ],
+      "range": "20.1.0-alpha.1 - 24.9.0",
+      "nodes": [
+        "node_modules/jest-validate"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-watch-typeahead": {
+      "name": "jest-watch-typeahead",
+      "severity": "moderate",
+      "via": [
+        "jest-watcher",
+        "string-length",
+        "strip-ansi"
+      ],
+      "effects": [
+        "react-scripts"
+      ],
+      "range": "<=0.5.0",
+      "nodes": [
+        "node_modules/jest-watch-typeahead"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "jest-watcher": {
+      "name": "jest-watcher",
+      "severity": "high",
+      "via": [
+        "jest-util",
+        "string-length"
+      ],
+      "effects": [
+        "jest-watch-typeahead"
+      ],
+      "range": "<=26.0.0-alpha.2",
+      "nodes": [
+        "node_modules/jest-watcher"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "lodash": {
+      "name": "lodash",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002847,
+          "name": "lodash",
+          "dependency": "lodash",
+          "title": "Command Injection in lodash",
+          "url": "https://github.com/advisories/GHSA-35jh-r3h4-6jhm",
+          "severity": "high",
+          "range": "<4.17.21"
+        },
+        {
+          "source": 1004063,
+          "name": "lodash",
+          "dependency": "lodash",
+          "title": "Prototype Pollution in lodash",
+          "url": "https://github.com/advisories/GHSA-p6mc-m468-83gw",
+          "severity": "high",
+          "range": "<4.17.19"
+        }
+      ],
+      "effects": [],
+      "range": "<=4.17.20",
+      "nodes": [
+        "node_modules/lodash"
+      ],
+      "fixAvailable": true
+    },
+    "lowlight": {
+      "name": "lowlight",
+      "severity": "low",
+      "via": [
+        "highlight.js"
+      ],
+      "effects": [
+        "react-syntax-highlighter"
+      ],
+      "range": "1.2.0 - 1.13.1",
+      "nodes": [
+        "node_modules/lowlight"
+      ],
+      "fixAvailable": true
+    },
+    "markdown-to-jsx": {
+      "name": "markdown-to-jsx",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1003325,
+          "name": "markdown-to-jsx",
+          "dependency": "markdown-to-jsx",
+          "title": "Cross-Site Scripting in markdown-to-jsx",
+          "url": "https://github.com/advisories/GHSA-ccrp-c664-8p4j",
+          "severity": "high",
+          "range": "<6.11.4"
+        }
+      ],
+      "effects": [],
+      "range": "<6.11.4",
+      "nodes": [
+        "node_modules/markdown-to-jsx"
+      ],
+      "fixAvailable": true
+    },
+    "meow": {
+      "name": "meow",
+      "severity": "high",
+      "via": [
+        "trim-newlines"
+      ],
+      "effects": [
+        "node-sass"
+      ],
+      "range": "3.4.0 - 5.0.0",
+      "nodes": [
+        "node_modules/meow"
+      ],
+      "fixAvailable": {
+        "name": "node-sass",
+        "version": "6.0.1",
+        "isSemVerMajor": true
+      }
+    },
+    "merge-deep": {
+      "name": "merge-deep",
+      "severity": "critical",
+      "via": [
+        {
+          "source": 1002632,
+          "name": "merge-deep",
+          "dependency": "merge-deep",
+          "title": "Prototype pollution in Merge-deep",
+          "url": "https://github.com/advisories/GHSA-r6rj-9ch6-g264",
+          "severity": "critical",
+          "range": "<3.0.3"
+        }
+      ],
+      "effects": [],
+      "range": "<3.0.3",
+      "nodes": [
+        "node_modules/merge-deep"
+      ],
+      "fixAvailable": true
+    },
+    "micromatch": {
+      "name": "micromatch",
+      "severity": "high",
+      "via": [
+        "snapdragon"
+      ],
+      "effects": [
+        "@jest/transform",
+        "anymatch",
+        "fast-glob",
+        "fork-ts-checker-webpack-plugin",
+        "http-proxy-middleware",
+        "jest-config",
+        "jest-haste-map",
+        "jest-message-util",
+        "readdirp",
+        "sane",
+        "webpack"
+      ],
+      "range": "3.0.0 - 3.1.10",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/fork-ts-checker-webpack-plugin/node_modules/micromatch",
+        "node_modules/@storybook/core/node_modules/readdirp/node_modules/micromatch",
+        "node_modules/micromatch"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "minimist": {
+      "name": "minimist",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1004153,
+          "name": "minimist",
+          "dependency": "minimist",
+          "title": "Prototype Pollution in minimist",
+          "url": "https://github.com/advisories/GHSA-vh95-rmgr-6w4m",
+          "severity": "moderate",
+          "range": "<0.2.1"
+        }
+      ],
+      "effects": [
+        "optimist"
+      ],
+      "range": "<0.2.1",
+      "nodes": [
+        "node_modules/optimist/node_modules/minimist"
+      ],
+      "fixAvailable": {
+        "name": "redux-i18n",
+        "version": "1.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "nanomatch": {
+      "name": "nanomatch",
+      "severity": "high",
+      "via": [
+        "snapdragon"
+      ],
+      "effects": [],
+      "range": ">=0.1.1",
+      "nodes": [
+        "node_modules/nanomatch"
+      ],
+      "fixAvailable": true
+    },
+    "node-fetch": {
+      "name": "node-fetch",
+      "severity": "low",
+      "via": [
+        {
+          "source": 1003055,
+          "name": "node-fetch",
+          "dependency": "node-fetch",
+          "title": "The `size` option isn't honored after following a redirect in node-fetch",
+          "url": "https://github.com/advisories/GHSA-w7rc-rwvf-8q5r",
+          "severity": "low",
+          "range": "<2.6.1"
+        }
+      ],
+      "effects": [],
+      "range": "<2.6.1",
+      "nodes": [
+        "node_modules/node-fetch"
+      ],
+      "fixAvailable": true
+    },
+    "node-forge": {
+      "name": "node-forge",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1003051,
+          "name": "node-forge",
+          "dependency": "node-forge",
+          "title": "Prototype Pollution in node-forge",
+          "url": "https://github.com/advisories/GHSA-92xj-mqp7-vmcj",
+          "severity": "high",
+          "range": "<0.10.0"
+        }
+      ],
+      "effects": [
+        "selfsigned"
+      ],
+      "range": "<0.10.0",
+      "nodes": [
+        "node_modules/node-forge"
+      ],
+      "fixAvailable": true
+    },
+    "node-gyp": {
+      "name": "node-gyp",
+      "severity": "high",
+      "via": [
+        "tar"
+      ],
+      "effects": [
+        "node-sass"
+      ],
+      "range": "<=3.8.0",
+      "nodes": [
+        "node_modules/node-gyp"
+      ],
+      "fixAvailable": {
+        "name": "node-sass",
+        "version": "6.0.1",
+        "isSemVerMajor": true
+      }
+    },
+    "node-notifier": {
+      "name": "node-notifier",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002996,
+          "name": "node-notifier",
+          "dependency": "node-notifier",
+          "title": "OS Command Injection in node-notifier",
+          "url": "https://github.com/advisories/GHSA-5fw9-fq32-wv5p",
+          "severity": "moderate",
+          "range": "<8.0.1"
+        }
+      ],
+      "effects": [
+        "@jest/reporters"
+      ],
+      "range": "<8.0.1",
+      "nodes": [
+        "node_modules/node-notifier"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "node-sass": {
+      "name": "node-sass",
+      "severity": "high",
+      "via": [
+        "meow",
+        "node-gyp"
+      ],
+      "effects": [],
+      "range": "3.3.3 - 6.0.0",
+      "nodes": [
+        "node_modules/node-sass"
+      ],
+      "fixAvailable": {
+        "name": "node-sass",
+        "version": "6.0.1",
+        "isSemVerMajor": true
+      }
+    },
+    "nth-check": {
+      "name": "nth-check",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002423,
+          "name": "nth-check",
+          "dependency": "nth-check",
+          "title": "Inefficient Regular Expression Complexity in nth-check",
+          "url": "https://github.com/advisories/GHSA-rp65-9cf3-cjxr",
+          "severity": "moderate",
+          "range": "<2.0.1"
+        }
+      ],
+      "effects": [
+        "css-select"
+      ],
+      "range": "<2.0.1",
+      "nodes": [
+        "node_modules/nth-check"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "object-path": {
+      "name": "object-path",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002424,
+          "name": "object-path",
+          "dependency": "object-path",
+          "title": "Prototype Pollution in object-path",
+          "url": "https://github.com/advisories/GHSA-8v63-cqqc-6r2c",
+          "severity": "high",
+          "range": "<0.11.8"
+        },
+        {
+          "source": 1002513,
+          "name": "object-path",
+          "dependency": "object-path",
+          "title": "Prototype Pollution in object-path",
+          "url": "https://github.com/advisories/GHSA-v39p-96qg-c8rf",
+          "severity": "moderate",
+          "range": "<0.11.6"
+        },
+        {
+          "source": 1003029,
+          "name": "object-path",
+          "dependency": "object-path",
+          "title": "Prototype pollution in object-path",
+          "url": "https://github.com/advisories/GHSA-cwx2-736x-mf6w",
+          "severity": "high",
+          "range": "<0.11.5"
+        }
+      ],
+      "effects": [
+        "adjust-sourcemap-loader"
+      ],
+      "range": "<=0.11.7",
+      "nodes": [
+        "node_modules/object-path"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "optimist": {
+      "name": "optimist",
+      "severity": "moderate",
+      "via": [
+        "minimist"
+      ],
+      "effects": [
+        "redux-i18n"
+      ],
+      "range": ">=0.6.0",
+      "nodes": [
+        "node_modules/optimist"
+      ],
+      "fixAvailable": {
+        "name": "redux-i18n",
+        "version": "1.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "path-parse": {
+      "name": "path-parse",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002536,
+          "name": "path-parse",
+          "dependency": "path-parse",
+          "title": "Regular Expression Denial of Service in path-parse",
+          "url": "https://github.com/advisories/GHSA-hj48-42vr-x3v9",
+          "severity": "moderate",
+          "range": "<1.0.7"
+        }
+      ],
+      "effects": [],
+      "range": "<1.0.7",
+      "nodes": [
+        "node_modules/path-parse"
+      ],
+      "fixAvailable": true
+    },
+    "postcss": {
+      "name": "postcss",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002594,
+          "name": "postcss",
+          "dependency": "postcss",
+          "title": "Regular Expression Denial of Service in postcss",
+          "url": "https://github.com/advisories/GHSA-hwj9-h5mp-3pm3",
+          "severity": "moderate",
+          "range": ">=7.0.0 <7.0.36"
+        }
+      ],
+      "effects": [
+        "resolve-url-loader"
+      ],
+      "range": "7.0.0 - 7.0.35",
+      "nodes": [
+        "node_modules/postcss",
+        "node_modules/resolve-url-loader/node_modules/postcss"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "postcss-svgo": {
+      "name": "postcss-svgo",
+      "severity": "high",
+      "via": [
+        "is-svg",
+        "svgo"
+      ],
+      "effects": [],
+      "range": "4.0.0-nightly.2020.1.9 - 5.0.0-rc.2",
+      "nodes": [
+        "node_modules/postcss-svgo"
+      ],
+      "fixAvailable": true
+    },
+    "pretty-format": {
+      "name": "pretty-format",
+      "severity": "moderate",
+      "via": [
+        "ansi-regex"
+      ],
+      "effects": [
+        "@testing-library/jest-dom",
+        "@types/testing-library__dom",
+        "jest-config",
+        "jest-diff",
+        "jest-each",
+        "jest-jasmine2",
+        "jest-leak-detector",
+        "jest-matcher-utils",
+        "jest-snapshot",
+        "jest-validate"
+      ],
+      "range": "20.1.0-alpha.1 - 25.0.0",
+      "nodes": [
+        "node_modules/pretty-format"
+      ],
+      "fixAvailable": {
+        "name": "@testing-library/jest-dom",
+        "version": "5.14.1",
+        "isSemVerMajor": true
+      }
+    },
+    "prismjs": {
+      "name": "prismjs",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002422,
+          "name": "prismjs",
+          "dependency": "prismjs",
+          "title": "Regular Expression Denial of Service in prismjs",
+          "url": "https://github.com/advisories/GHSA-hqhp-5p83-hx96",
+          "severity": "moderate",
+          "range": "<1.25.0"
+        },
+        {
+          "source": 1002580,
+          "name": "prismjs",
+          "dependency": "prismjs",
+          "title": "Regular Expression Denial of Service (ReDoS) in Prism",
+          "url": "https://github.com/advisories/GHSA-gj77-59wh-66hg",
+          "severity": "high",
+          "range": "<1.24.0"
+        },
+        {
+          "source": 1002944,
+          "name": "prismjs",
+          "dependency": "prismjs",
+          "title": "Denial of service in prismjs",
+          "url": "https://github.com/advisories/GHSA-h4hr-7fg3-h35w",
+          "severity": "high",
+          "range": "<1.23.0"
+        },
+        {
+          "source": 1004043,
+          "name": "prismjs",
+          "dependency": "prismjs",
+          "title": "Cross-Site Scripting in Prism",
+          "url": "https://github.com/advisories/GHSA-wvhm-4hhf-97x9",
+          "severity": "high",
+          "range": ">=1.1.0 <1.21.0"
+        }
+      ],
+      "effects": [
+        "refractor"
+      ],
+      "range": "<=1.24.1",
+      "nodes": [
+        "node_modules/prismjs",
+        "node_modules/refractor/node_modules/prismjs"
+      ],
+      "fixAvailable": true
+    },
+    "react-dev-utils": {
+      "name": "react-dev-utils",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002925,
+          "name": "react-dev-utils",
+          "dependency": "react-dev-utils",
+          "title": "Improper Neutralization of Special Elements used in an OS Command.",
+          "url": "https://github.com/advisories/GHSA-5q6m-3h65-w53x",
+          "severity": "moderate",
+          "range": ">=0.4.0 <11.0.4"
+        },
+        "browserslist",
+        "fork-ts-checker-webpack-plugin",
+        "fork-ts-checker-webpack-plugin",
+        "globby",
+        "immer",
+        "inquirer",
+        "strip-ansi"
+      ],
+      "effects": [
+        "@storybook/core",
+        "@storybook/react",
+        "react-scripts"
+      ],
+      "range": "0.4.0 - 12.0.0-next.37",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/react-dev-utils",
+        "node_modules/@storybook/react/node_modules/react-dev-utils",
+        "node_modules/react-dev-utils"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "react-scripts": {
+      "name": "react-scripts",
+      "severity": "high",
+      "via": [
+        "@svgr/webpack",
+        "eslint",
+        "jest",
+        "jest-environment-jsdom-fourteen",
+        "jest-watch-typeahead",
+        "react-dev-utils",
+        "resolve-url-loader",
+        "terser-webpack-plugin",
+        "webpack",
+        "webpack-dev-server"
+      ],
+      "effects": [],
+      "range": ">=0.8.0",
+      "nodes": [
+        "node_modules/react-scripts"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "react-syntax-highlighter": {
+      "name": "react-syntax-highlighter",
+      "severity": "high",
+      "via": [
+        "highlight.js",
+        "lowlight",
+        "refractor"
+      ],
+      "effects": [],
+      "range": "2.0.4 - 12.2.1",
+      "nodes": [
+        "node_modules/react-syntax-highlighter"
+      ],
+      "fixAvailable": true
+    },
+    "readdirp": {
+      "name": "readdirp",
+      "severity": "high",
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "chokidar"
+      ],
+      "range": "2.2.0 - 2.2.1",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/readdirp",
+        "node_modules/@storybook/react/node_modules/readdirp",
+        "node_modules/watchpack/node_modules/readdirp",
+        "node_modules/webpack-dev-server/node_modules/readdirp"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "redux-i18n": {
+      "name": "redux-i18n",
+      "severity": "moderate",
+      "via": [
+        "optimist"
+      ],
+      "effects": [],
+      "range": ">=1.0.4",
+      "nodes": [
+        "node_modules/redux-i18n"
+      ],
+      "fixAvailable": {
+        "name": "redux-i18n",
+        "version": "1.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "refractor": {
+      "name": "refractor",
+      "severity": "high",
+      "via": [
+        "prismjs"
+      ],
+      "effects": [
+        "react-syntax-highlighter"
+      ],
+      "range": "<=3.0.0",
+      "nodes": [
+        "node_modules/refractor"
+      ],
+      "fixAvailable": true
+    },
+    "renderkid": {
+      "name": "renderkid",
+      "severity": "moderate",
+      "via": [
+        "css-select"
+      ],
+      "effects": [],
+      "range": "1.0.0 - 2.0.5",
+      "nodes": [
+        "node_modules/renderkid"
+      ],
+      "fixAvailable": true
+    },
+    "resolve-url-loader": {
+      "name": "resolve-url-loader",
+      "severity": "high",
+      "via": [
+        "adjust-sourcemap-loader",
+        "postcss"
+      ],
+      "effects": [
+        "react-scripts"
+      ],
+      "range": "0.0.1-experiment-postcss || 2.0.0 - 3.1.3 || 4.0.0-alpha.1 - 4.0.0-beta.2",
+      "nodes": [
+        "node_modules/resolve-url-loader"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "sane": {
+      "name": "sane",
+      "severity": "high",
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "jest-haste-map"
+      ],
+      "range": "2.5.0 - 4.1.0",
+      "nodes": [
+        "node_modules/sane"
+      ],
+      "fixAvailable": true
+    },
+    "selfsigned": {
+      "name": "selfsigned",
+      "severity": "high",
+      "via": [
+        "node-forge"
+      ],
+      "effects": [],
+      "range": "1.1.1 - 1.10.7",
+      "nodes": [
+        "node_modules/selfsigned"
+      ],
+      "fixAvailable": true
+    },
+    "serialize-javascript": {
+      "name": "serialize-javascript",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1004041,
+          "name": "serialize-javascript",
+          "dependency": "serialize-javascript",
+          "title": "Insecure serialization leading to RCE in serialize-javascript",
+          "url": "https://github.com/advisories/GHSA-hxcc-f52p-wc94",
+          "severity": "high",
+          "range": "<3.1.0"
+        }
+      ],
+      "effects": [
+        "terser-webpack-plugin"
+      ],
+      "range": "<3.1.0",
+      "nodes": [
+        "node_modules/serialize-javascript"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "set-value": {
+      "name": "set-value",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002475,
+          "name": "set-value",
+          "dependency": "set-value",
+          "title": "Prototype Pollution in set-value",
+          "url": "https://github.com/advisories/GHSA-4jqc-8m5r-9rpr",
+          "severity": "high",
+          "range": "<4.0.1"
+        }
+      ],
+      "effects": [
+        "cache-base",
+        "union-value"
+      ],
+      "range": "<4.0.1",
+      "nodes": [
+        "node_modules/set-value"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "snapdragon": {
+      "name": "snapdragon",
+      "severity": "high",
+      "via": [
+        "base"
+      ],
+      "effects": [
+        "braces",
+        "expand-brackets",
+        "extglob",
+        "micromatch",
+        "nanomatch"
+      ],
+      "range": "0.6.0 - 0.10.1",
+      "nodes": [
+        "node_modules/snapdragon"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "sockjs": {
+      "name": "sockjs",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002786,
+          "name": "sockjs",
+          "dependency": "sockjs",
+          "title": "Improper Input Validation in SocksJS-Node",
+          "url": "https://github.com/advisories/GHSA-c9g6-9335-x697",
+          "severity": "moderate",
+          "range": "<0.3.20"
+        }
+      ],
+      "effects": [
+        "webpack-dev-server"
+      ],
+      "range": "<0.3.20",
+      "nodes": [
+        "node_modules/sockjs"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "ssri": {
+      "name": "ssri",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002662,
+          "name": "ssri",
+          "dependency": "ssri",
+          "title": "Regular Expression Denial of Service (ReDoS)",
+          "url": "https://github.com/advisories/GHSA-vx3p-948g-6vhq",
+          "severity": "high",
+          "range": ">=7.0.0 <7.1.1"
+        },
+        {
+          "source": 1002807,
+          "name": "ssri",
+          "dependency": "ssri",
+          "title": "Regular Expression Denial of Service (ReDoS)",
+          "url": "https://github.com/advisories/GHSA-vx3p-948g-6vhq",
+          "severity": "high",
+          "range": ">=5.2.2 <6.0.2"
+        }
+      ],
+      "effects": [],
+      "range": "5.2.2 - 6.0.1 || 7.0.0 - 7.1.0",
+      "nodes": [
+        "node_modules/ssri",
+        "node_modules/webpack/node_modules/ssri"
+      ],
+      "fixAvailable": true
+    },
+    "string-length": {
+      "name": "string-length",
+      "severity": "moderate",
+      "via": [
+        "strip-ansi"
+      ],
+      "effects": [
+        "@jest/reporters",
+        "jest-watch-typeahead",
+        "jest-watcher"
+      ],
+      "range": "2.0.0 - 3.1.0",
+      "nodes": [
+        "node_modules/jest-watch-typeahead/node_modules/string-length",
+        "node_modules/string-length"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "string-width": {
+      "name": "string-width",
+      "severity": "moderate",
+      "via": [
+        "strip-ansi"
+      ],
+      "effects": [
+        "ansi-align",
+        "cli-table3",
+        "inquirer",
+        "table",
+        "wrap-ansi",
+        "yargs"
+      ],
+      "range": "2.1.0 - 4.1.0",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/string-width",
+        "node_modules/@storybook/react/node_modules/string-width",
+        "node_modules/ansi-align/node_modules/string-width",
+        "node_modules/cli-table3/node_modules/string-width",
+        "node_modules/cliui/node_modules/string-width",
+        "node_modules/table/node_modules/string-width",
+        "node_modules/webpack-dev-server/node_modules/string-width",
+        "node_modules/wide-align/node_modules/string-width",
+        "node_modules/wrap-ansi/node_modules/string-width",
+        "node_modules/yargs/node_modules/string-width"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "strip-ansi": {
+      "name": "strip-ansi",
+      "severity": "moderate",
+      "via": [
+        "ansi-regex"
+      ],
+      "effects": [
+        "@jest/core",
+        "cliui",
+        "eslint",
+        "inquirer",
+        "jest-watch-typeahead",
+        "react-dev-utils",
+        "string-length",
+        "string-width",
+        "wrap-ansi"
+      ],
+      "range": "4.0.0 - 5.2.0",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/string-width/node_modules/strip-ansi",
+        "node_modules/@storybook/react/node_modules/string-width/node_modules/strip-ansi",
+        "node_modules/cli-table3/node_modules/strip-ansi",
+        "node_modules/react-dev-utils/node_modules/inquirer/node_modules/strip-ansi",
+        "node_modules/string-length/node_modules/strip-ansi",
+        "node_modules/strip-ansi",
+        "node_modules/webpack-dev-server/node_modules/cliui/node_modules/strip-ansi",
+        "node_modules/webpack-dev-server/node_modules/string-width/node_modules/strip-ansi",
+        "node_modules/wide-align/node_modules/strip-ansi"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "svgo": {
+      "name": "svgo",
+      "severity": "moderate",
+      "via": [
+        "css-select"
+      ],
+      "effects": [
+        "@svgr/plugin-svgo",
+        "postcss-svgo"
+      ],
+      "range": "1.0.0 - 1.3.2",
+      "nodes": [
+        "node_modules/svgo"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "table": {
+      "name": "table",
+      "severity": "moderate",
+      "via": [
+        "string-width"
+      ],
+      "effects": [
+        "eslint"
+      ],
+      "range": "4.0.2 - 5.4.6",
+      "nodes": [
+        "node_modules/table"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "tar": {
+      "name": "tar",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002506,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning using symbolic links",
+          "url": "https://github.com/advisories/GHSA-qq89-hq3f-393p",
+          "severity": "high",
+          "range": "<4.4.18"
+        },
+        {
+          "source": 1002509,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning using symbolic links",
+          "url": "https://github.com/advisories/GHSA-9r2w-394v-53qc",
+          "severity": "high",
+          "range": "<4.4.16"
+        },
+        {
+          "source": 1002541,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "Arbitrary File Creation/Overwrite due to insufficient absolute path sanitization",
+          "url": "https://github.com/advisories/GHSA-3jfq-g458-7qm9",
+          "severity": "high",
+          "range": ">=4.0.0 <4.4.14"
+        },
+        {
+          "source": 1002542,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "Arbitrary File Creation/Overwrite due to insufficient absolute path sanitization",
+          "url": "https://github.com/advisories/GHSA-3jfq-g458-7qm9",
+          "severity": "high",
+          "range": "<3.2.2"
+        },
+        {
+          "source": 1002545,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning",
+          "url": "https://github.com/advisories/GHSA-r628-mhmh-qjhw",
+          "severity": "high",
+          "range": ">=4.0.0 <4.4.15"
+        },
+        {
+          "source": 1002546,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning",
+          "url": "https://github.com/advisories/GHSA-r628-mhmh-qjhw",
+          "severity": "high",
+          "range": "<3.2.3"
+        }
+      ],
+      "effects": [
+        "node-gyp"
+      ],
+      "range": "<=4.4.17",
+      "nodes": [
+        "node_modules/@storybook/core/node_modules/fsevents/node_modules/tar",
+        "node_modules/@storybook/react/node_modules/fsevents/node_modules/tar",
+        "node_modules/jest-haste-map/node_modules/fsevents/node_modules/tar",
+        "node_modules/tar",
+        "node_modules/watchpack/node_modules/fsevents/node_modules/tar",
+        "node_modules/webpack-dev-server/node_modules/fsevents/node_modules/tar"
+      ],
+      "fixAvailable": {
+        "name": "node-sass",
+        "version": "6.0.1",
+        "isSemVerMajor": true
+      }
+    },
+    "terser-webpack-plugin": {
+      "name": "terser-webpack-plugin",
+      "severity": "high",
+      "via": [
+        "serialize-javascript"
+      ],
+      "effects": [
+        "react-scripts"
+      ],
+      "range": "<=1.4.3 || 2.0.0 - 2.3.5",
+      "nodes": [
+        "node_modules/terser-webpack-plugin",
+        "node_modules/webpack/node_modules/terser-webpack-plugin"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "tmpl": {
+      "name": "tmpl",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002466,
+          "name": "tmpl",
+          "dependency": "tmpl",
+          "title": "Regular Expression Denial of Service in tmpl",
+          "url": "https://github.com/advisories/GHSA-jgrx-mgxx-jf9v",
+          "severity": "moderate",
+          "range": "<1.0.5"
+        }
+      ],
+      "effects": [],
+      "range": "<1.0.5",
+      "nodes": [
+        "node_modules/tmpl"
+      ],
+      "fixAvailable": true
+    },
+    "trim-newlines": {
+      "name": "trim-newlines",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002624,
+          "name": "trim-newlines",
+          "dependency": "trim-newlines",
+          "title": "Regular Expression Denial of Service in trim-newlines",
+          "url": "https://github.com/advisories/GHSA-7p7h-4mm5-852v",
+          "severity": "high",
+          "range": "<3.0.1"
+        }
+      ],
+      "effects": [
+        "meow"
+      ],
+      "range": "<3.0.1",
+      "nodes": [
+        "node_modules/trim-newlines"
+      ],
+      "fixAvailable": {
+        "name": "node-sass",
+        "version": "6.0.1",
+        "isSemVerMajor": true
+      }
+    },
+    "union-value": {
+      "name": "union-value",
+      "severity": "high",
+      "via": [
+        "set-value"
+      ],
+      "effects": [
+        "cache-base"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/union-value"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "url-parse": {
+      "name": "url-parse",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002549,
+          "name": "url-parse",
+          "dependency": "url-parse",
+          "title": "Open redirect in url-parse",
+          "url": "https://github.com/advisories/GHSA-hh27-ffr2-f2jc",
+          "severity": "moderate",
+          "range": "<1.5.2"
+        },
+        {
+          "source": 1002886,
+          "name": "url-parse",
+          "dependency": "url-parse",
+          "title": "Path traversal in url-parse",
+          "url": "https://github.com/advisories/GHSA-9m6j-fcg5-2442",
+          "severity": "high",
+          "range": "<1.5.0"
+        }
+      ],
+      "effects": [],
+      "range": "<=1.5.1",
+      "nodes": [
+        "node_modules/url-parse"
+      ],
+      "fixAvailable": true
+    },
+    "watchpack": {
+      "name": "watchpack",
+      "severity": "high",
+      "via": [
+        "chokidar"
+      ],
+      "effects": [],
+      "range": "0.2.2 - 1.6.1",
+      "nodes": [
+        "node_modules/watchpack"
+      ],
+      "fixAvailable": true
+    },
+    "webpack": {
+      "name": "webpack",
+      "severity": "high",
+      "via": [
+        "micromatch"
+      ],
+      "effects": [
+        "@storybook/core",
+        "@storybook/react",
+        "corejs-upgrade-webpack-plugin",
+        "react-scripts"
+      ],
+      "range": "4.0.0-alpha.0 - 5.0.0-rc.6",
+      "nodes": [
+        "node_modules/webpack"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "webpack-dev-server": {
+      "name": "webpack-dev-server",
+      "severity": "high",
+      "via": [
+        "ansi-html",
+        "chokidar",
+        "http-proxy-middleware",
+        "sockjs",
+        "yargs"
+      ],
+      "effects": [
+        "react-scripts"
+      ],
+      "range": "2.0.0-beta - 4.1.0",
+      "nodes": [
+        "node_modules/webpack-dev-server"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "webpack-hot-middleware": {
+      "name": "webpack-hot-middleware",
+      "severity": "high",
+      "via": [
+        "ansi-html"
+      ],
+      "effects": [],
+      "range": "2.9.0 - 2.25.0",
+      "nodes": [
+        "node_modules/webpack-hot-middleware"
+      ],
+      "fixAvailable": true
+    },
+    "websocket-extensions": {
+      "name": "websocket-extensions",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1004117,
+          "name": "websocket-extensions",
+          "dependency": "websocket-extensions",
+          "title": "Regular Expression Denial of Service in websocket-extensions (NPM package)",
+          "url": "https://github.com/advisories/GHSA-g78m-2chm-r7qv",
+          "severity": "high",
+          "range": "<0.1.4"
+        }
+      ],
+      "effects": [],
+      "range": "<0.1.4",
+      "nodes": [
+        "node_modules/websocket-extensions"
+      ],
+      "fixAvailable": true
+    },
+    "wrap-ansi": {
+      "name": "wrap-ansi",
+      "severity": "moderate",
+      "via": [
+        "string-width",
+        "strip-ansi"
+      ],
+      "effects": [
+        "cliui"
+      ],
+      "range": "3.0.0 - 6.1.0",
+      "nodes": [
+        "node_modules/wrap-ansi"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "ws": {
+      "name": "ws",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002402,
+          "name": "ws",
+          "dependency": "ws",
+          "title": "ReDoS in Sec-Websocket-Protocol header",
+          "url": "https://github.com/advisories/GHSA-6fc8-4gx4-v693",
+          "severity": "moderate",
+          "range": ">=5.0.0 <5.2.3"
+        },
+        {
+          "source": 1002615,
+          "name": "ws",
+          "dependency": "ws",
+          "title": "ReDoS in Sec-Websocket-Protocol header",
+          "url": "https://github.com/advisories/GHSA-6fc8-4gx4-v693",
+          "severity": "moderate",
+          "range": ">=6.0.0 <6.2.2"
+        }
+      ],
+      "effects": [],
+      "range": "5.0.0 - 5.2.2 || 6.0.0 - 6.2.1",
+      "nodes": [
+        "node_modules/jest-environment-jsdom-fourteen/node_modules/ws",
+        "node_modules/webpack-dev-server/node_modules/ws",
+        "node_modules/ws"
+      ],
+      "fixAvailable": true
+    },
+    "y18n": {
+      "name": "y18n",
+      "severity": "high",
+      "via": [
+        {
+          "source": 1002915,
+          "name": "y18n",
+          "dependency": "y18n",
+          "title": "Prototype Pollution",
+          "url": "https://github.com/advisories/GHSA-c4w7-xm78-47vh",
+          "severity": "high",
+          "range": "=4.0.0"
+        },
+        {
+          "source": 1002916,
+          "name": "y18n",
+          "dependency": "y18n",
+          "title": "Prototype Pollution",
+          "url": "https://github.com/advisories/GHSA-c4w7-xm78-47vh",
+          "severity": "high",
+          "range": "<3.2.2"
+        }
+      ],
+      "effects": [],
+      "range": "<3.2.2 || =4.0.0",
+      "nodes": [
+        "node_modules/sass-graph/node_modules/y18n",
+        "node_modules/y18n"
+      ],
+      "fixAvailable": true
+    },
+    "yargs": {
+      "name": "yargs",
+      "severity": "moderate",
+      "via": [
+        "cliui",
+        "string-width",
+        "yargs-parser"
+      ],
+      "effects": [
+        "jest-cli",
+        "jest-runtime",
+        "webpack-dev-server"
+      ],
+      "range": "8.0.0-candidate.0 - 15.0.0",
+      "nodes": [
+        "node_modules/webpack-dev-server/node_modules/yargs",
+        "node_modules/yargs"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "yargs-parser": {
+      "name": "yargs-parser",
+      "severity": "moderate",
+      "via": [
+        {
+          "source": 1002557,
+          "name": "yargs-parser",
+          "dependency": "yargs-parser",
+          "title": "Prototype Pollution in yargs-parser",
+          "url": "https://github.com/advisories/GHSA-p9pc-299p-vxgp",
+          "severity": "moderate",
+          "range": "<=5.0.0"
+        },
+        {
+          "source": 1003019,
+          "name": "yargs-parser",
+          "dependency": "yargs-parser",
+          "title": "Prototype Pollution in yargs-parser",
+          "url": "https://github.com/advisories/GHSA-p9pc-299p-vxgp",
+          "severity": "moderate",
+          "range": ">=6.0.0 <13.1.2"
+        }
+      ],
+      "effects": [
+        "yargs"
+      ],
+      "range": "<=5.0.0 || 6.0.0 - 13.1.1",
+      "nodes": [
+        "node_modules/sass-graph/node_modules/yargs-parser",
+        "node_modules/webpack-dev-server/node_modules/yargs-parser"
+      ],
+      "fixAvailable": {
+        "name": "react-scripts",
+        "version": "4.0.3",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 2,
+      "moderate": 48,
+      "high": 75,
+      "critical": 2,
+      "total": 127
+    },
+    "dependencies": {
+      "prod": 1781,
+      "dev": 549,
+      "optional": 344,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 2534
+    }
+  }
+}
