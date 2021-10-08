@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import * as PropTypes from 'prop-types'
 import Input from 'common/components/input'
 import Button from 'common/components/button'
 import * as generalUtils from 'common/utils/general.utils'
@@ -164,6 +165,22 @@ const CreatePage = ({
   }
 
   return <CreatePageWrapper>{PAGES_BY_STATE[pageState]()}</CreatePageWrapper>
+}
+
+CreatePage.defaultProps = {
+  translate: (value) => value,
+}
+
+CreatePage.propTypes = {
+  translate: PropTypes.func,
+  availableTimesAndSeats: PropTypes.array,
+  acceptedDomains: PropTypes.arrayOf(PropTypes.string),
+  onSubmit: PropTypes.func,
+  isSubmitting: PropTypes.bool,
+  eventEndTime: PropTypes.number,
+  showSuccessState: PropTypes.bool,
+  showInvalidBookingMessage: PropTypes.bool,
+  resetFormAction: PropTypes.func,
 }
 
 export default CreatePage
