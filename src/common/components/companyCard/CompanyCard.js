@@ -4,6 +4,9 @@ import moment from 'moment'
 import * as generalConstants from 'common/utils/general.constants'
 import './CompanyCard.scss'
 import CompanyCardBackground from './companyCardBackground.png'
+import detectBrowserLanguage from 'detect-browser-language'
+
+moment.locale(detectBrowserLanguage())
 
 const CompanyCard = ({ translate, event, children }) => {
   const accessibleDate = moment

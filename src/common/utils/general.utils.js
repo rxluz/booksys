@@ -1,6 +1,9 @@
 import * as generalConstants from './general.constants'
 import moment from 'moment'
 import hash from 'object-hash'
+import detectBrowserLanguage from 'detect-browser-language'
+
+moment.locale(detectBrowserLanguage())
 
 export const emptyFunc = (param) => param
 

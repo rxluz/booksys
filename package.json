@@ -39,7 +39,7 @@
   },
   "scripts": {
     "predeploy": "npm run build && npm run build-storybook",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run predeploy && gh-pages -d build",
     "start": "react-scripts start",
     "build": "PUBLIC_URL=https://rxluz.github.io/booksys && react-scripts build",
     "test": "react-scripts test",
