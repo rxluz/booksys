@@ -2,6 +2,7 @@ import React from 'react'
 import CompanyCard from 'common/components/companyCard'
 import * as PropTypes from 'prop-types'
 import * as companyConstants from './Company.constants'
+import Loading from 'common/components/loading'
 
 const CompanyPage = ({ state, children, translate, data }) => {
   const INTERNAL_PAGES = () => (
@@ -11,7 +12,7 @@ const CompanyPage = ({ state, children, translate, data }) => {
   )
 
   const PAGES_BY_STATE = {
-    loading: () => <>{translate('Please wait...')}</>,
+    loading: () => <Loading translate={translate} />,
     loaded: INTERNAL_PAGES,
     failed: () => <>{translate('Invalid page')}</>,
     expired: INTERNAL_PAGES,

@@ -8,6 +8,7 @@ import * as createConstants from './Create.constants'
 import Warning from 'common/components/warning'
 import SomethingWrongImg from 'common/components/warning/something-wrong.svg'
 import EmailImg from 'common/components/warning/email.svg'
+import LoadingImg from 'modules/main/loading.svg'
 
 import './Create.scss'
 
@@ -82,7 +83,11 @@ const CreatePage = ({
         onClickCallToAction={resetFormActionInner}
       />
     ),
-    [createConstants.PAGE_STATE.LOADING]: () => <div>{translate('Loading...')}</div>,
+    [createConstants.PAGE_STATE.LOADING]: () => (
+      <div role="presentation">
+        <LoadingImg />
+      </div>
+    ),
     [createConstants.PAGE_STATE.EXPIRED]: () => (
       <Warning
         image={SomethingWrongImg}
