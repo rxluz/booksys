@@ -95,59 +95,70 @@ const CreatePage = ({
         <div className="create-page__title">
           {translate('Fill in the details below to make your office reservation')}
         </div>
-        <div className="create-page__content">
-          <Input
-            id="name"
-            type="text"
-            value={name.value}
-            onChange={setName}
-            title={translate('Name')}
-          />
-          <Input
-            id="corporateEmail"
-            type="text"
-            value={corporateEmail.value}
-            onChange={setCorporateEmailInner}
-            title={translate('Corporate email')}
-            displayErrors={corporateEmail.isTouched}
-            validation={generalUtils.validateEmail(translate, acceptedDomains)}
-            translate={translate}
-          />
+        <form
+          aria-label={translate('Office reservation')}
+          onSubmit={(e) => {
+            e.preventDefault()
+          }}
+        >
+          <div className="create-page__content">
+            <Input
+              translate={translate}
+              id="name"
+              type="text"
+              value={name.value}
+              onChange={setName}
+              title={translate('Name')}
+            />
+            <Input
+              translate={translate}
+              id="corporateEmail"
+              type="text"
+              value={corporateEmail.value}
+              onChange={setCorporateEmailInner}
+              title={translate('Corporate email')}
+              displayErrors={corporateEmail.isTouched}
+              validation={generalUtils.validateEmail(translate, acceptedDomains)}
+              translate={translate}
+            />
 
-          <Input
-            id="preferredTime"
-            title={translate('Book your preferences for this event')}
-            type="select"
-            list={generalUtils.getPreferredTimeData(availableTimesAndSeats)}
-            value={preferredTime.value}
-            onChange={setPreferredTime}
-            placeholder={translate('Preferred time')}
-          />
+            <Input
+              translate={translate}
+              id="preferredTime"
+              title={translate('Book your preferences for this event')}
+              type="select"
+              list={generalUtils.getPreferredTimeData(availableTimesAndSeats)}
+              value={preferredTime.value}
+              onChange={setPreferredTime}
+              placeholder={translate('Preferred time')}
+            />
 
-          <Input
-            id="seats"
-            type="select"
-            disabled={preferredTime.value === ''}
-            list={generalUtils.getSeatsList({ preferredTime, availableTimesAndSeats, translate })}
-            value={seats.value}
-            onChange={setSeats}
-            placeholder={translate('Number of seats')}
-            displayErrors={showInvalidBookingMessage}
-            validation={{
-              test: () => !showInvalidBookingMessage,
-              message: () => translate('Your booking preferences has changed'),
-            }}
-          />
-        </div>
+            <Input
+              translate={translate}
+              id="seats"
+              type="select"
+              disabled={preferredTime.value === ''}
+              list={generalUtils.getSeatsList({ preferredTime, availableTimesAndSeats, translate })}
+              value={seats.value}
+              onChange={setSeats}
+              placeholder={translate('Number of seats')}
+              displayErrors={showInvalidBookingMessage}
+              validation={{
+                test: () => !showInvalidBookingMessage,
+                message: () => translate('Your booking preferences has changed'),
+              }}
+            />
+          </div>
 
-        <div className="create-page__footer">
-          <Button
-            onClick={() => !isSubmitButtonDisabled && onSubmit(fieldsValue)}
-            isDisabled={isSubmitButtonDisabled}
-          >
-            {isSubmitting ? translate('Please wait ...') : translate('Continue')}
-          </Button>
-        </div>
+          <div className="create-page__footer">
+            <Button
+              onClick={() => !isSubmitButtonDisabled && onSubmit(fieldsValue)}
+              isDisabled={isSubmitButtonDisabled}
+            >
+              {isSubmitting ? translate('Please wait ...') : translate('Continue')}
+            </Button>
+          </div>
+        </form>
       </div>
     ),
   }
