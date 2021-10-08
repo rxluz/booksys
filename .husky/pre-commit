@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm audit --json --audit-level=critical
+npm audit --dry-run --json > security_report.json
