@@ -1,4 +1,6 @@
 import React from 'react'
+import * as PropTypes from 'prop-types'
+
 import moment from 'moment'
 import * as generalConstants from 'common/utils/general.constants'
 import { BiChair } from 'react-icons/bi'
@@ -36,4 +38,16 @@ const OfficeCard = ({ time, seat, onBook, translate }) => {
     </div>
   )
 }
+
+OfficeCard.defaultProps = {
+  translate: (value) => value,
+}
+
+OfficeCard.propTypes = {
+  translate: PropTypes.func,
+  time: PropTypes.number,
+  seat: PropTypes.number,
+  onBook: PropTypes.func,
+}
+
 export default OfficeCard
