@@ -27,7 +27,7 @@ const Warning = ({
     {callToActionText && (
       <div className="warning__footer">
         <Button
-          type={callToActionType}
+          styleType={callToActionType}
           className="warning__footer--button"
           onClick={onClickCallToAction}
         >

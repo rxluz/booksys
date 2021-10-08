@@ -2,9 +2,9 @@ import React from 'react'
 
 import './Button.scss'
 
-const Button = ({ children, isDisabled, onClick, type }) => (
+const Button = ({ children, isDisabled, onClick, styleType }) => (
   <button
-    className={`button button--${type}`}
+    className={`button button--${styleType}`}
     onClick={() => (!isDisabled ? onClick() : null)}
     disabled={isDisabled}
   >
@@ -13,7 +13,7 @@ const Button = ({ children, isDisabled, onClick, type }) => (
 )
 
 Button.defaultProps = {
-  type: 'primary',
+  styleType: 'primary',
 }
 
 export default Button
