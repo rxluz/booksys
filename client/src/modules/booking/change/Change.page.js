@@ -69,12 +69,16 @@ const Change = ({ translate, event, onBook }) => {
 
   return (
     <section className="booking-change animate__animated animate__fadeIn">
-      <div className="booking-change__title">
+      <div className="booking-change__title" role="alert">
         {translate(
           "Unfortunately the time that you selected isn't available anymore. Please select a new option below",
         )}
       </div>
-      <div className="booking-change__options">
+      <div
+        className="booking-change__options"
+        role="search"
+        aria-label={translate('Time/Seats filters')}
+      >
         <div className="booking-change__column booking-change__column--left">
           <Input
             type="select"
@@ -100,8 +104,10 @@ const Change = ({ translate, event, onBook }) => {
           />
         </div>
       </div>
-      <div className="booking-change__subtitle">{translate('Available offices')}</div>
-      <div className="booking-change__content">
+      <div className="booking-change__subtitle" role="heading" aria-level="2">
+        {translate('Available offices')}
+      </div>
+      <div className="booking-change__content" role="list">
         {generalUtils
           .filterByPage({ items: seatsAndTimes, page, itemsPerPage })
           .map(({ id, seat, time }) => (
@@ -111,7 +117,13 @@ const Change = ({ translate, event, onBook }) => {
 
       {displayPaginator && (
         <div className="booking-change__paginator">
-          <Pagination current={page} total={totalPages} onPageChange={setPage} />
+          <Pagination
+            current={page}
+            translate={translate}
+            label={translate('Navigate into available offices list')}
+            total={totalPages}
+            onPageChange={setPage}
+          />
         </div>
       )}
     </section>

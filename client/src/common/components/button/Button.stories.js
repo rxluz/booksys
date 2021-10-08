@@ -21,7 +21,7 @@ export default {
       defaultValue: 'This is a button',
       type: 'string',
     },
-    type: {
+    styleType: {
       options: ['primary', 'secondary'],
       control: { type: 'radio' },
     },

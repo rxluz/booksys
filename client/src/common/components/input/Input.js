@@ -15,7 +15,7 @@ const ValidationMessage = ({ displayErrors, isValid, validation, value }) => {
     displayErrors &&
     !isValid && (
       <aside role="alert" className="animate__animated animate__fadeIn input__warning">
-        <i className="input__warning--icon">
+        <i className="input__warning--icon" role="presentation" aria-hidden="true">
           <AiOutlineWarning size="16px" />
         </i>
         <p className="input__warning--text">{validation.message(value)}</p>
@@ -38,6 +38,7 @@ const Input = ({
   disabled,
   showClearButton,
   onClear,
+  translate,
 }) => {
   const inputRef = useRef()
   const isValid = !!validation ? validation.test(value) : !!isValidOuter
@@ -82,7 +83,12 @@ const Input = ({
     select: () => (
       <>
         {!disabled && value !== '' && showClearButton && (
-          <div className="input__element--clear" onClick={emptyValue}>
+          <div
+            className="input__element--clear"
+            role="button"
+            aria-label={translate('Clear field value')}
+            onClick={emptyValue}
+          >
             <BiX />
           </div>
         )}
