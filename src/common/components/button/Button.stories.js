@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './Button'
+import ButtonComponent from './Button'
 import { action } from '@storybook/addon-actions'
 import { BADGE } from '@geometricpanda/storybook-addon-badges'
 import { addDefaults, addArgTypes } from 'common/utils/storybookMode'
@@ -12,7 +12,7 @@ const addTheme = addDefaults({
 })
 
 export default {
-  title: 'Button',
+  title: 'Components/Button',
   parameters: {
     badges: [BADGE.STABLE],
   },
@@ -32,4 +32,6 @@ export default {
   }),
 }
 
-export const ButtonOptions = addTheme((props) => <Button {...props}>{props.content}</Button>)
+export const Button = addTheme((props) => (
+  <ButtonComponent {...props}>{props.content}</ButtonComponent>
+))

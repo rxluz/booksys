@@ -1,5 +1,5 @@
 import React from 'react'
-import OfficeCard from './OfficeCard'
+import OfficeCardComponent from './OfficeCard'
 import { action } from '@storybook/addon-actions'
 import { BADGE } from '@geometricpanda/storybook-addon-badges'
 import { addDefaults, addArgTypes } from 'common/utils/storybookMode'
@@ -12,7 +12,7 @@ const addTheme = addDefaults({
 })
 
 export default {
-  title: 'OfficeCard',
+  title: 'Components/OfficeCard',
   parameters: {
     badges: [BADGE.STABLE],
   },
@@ -28,4 +28,4 @@ export default {
   }),
 }
 
-export const OfficeCardOptions = addTheme((props) => <OfficeCard {...props} />)
+export const OfficeCard = addTheme((props) => <OfficeCardComponent {...props} />)
