@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/booksys/static/css/main.8c8b41b9.chunk.css",
-    "main.js": "/booksys/static/js/main.bb52c3e3.chunk.js",
-    "main.js.map": "/booksys/static/js/main.bb52c3e3.chunk.js.map",
+    "main.css": "/booksys/static/css/main.8abec381.chunk.css",
+    "main.js": "/booksys/static/js/main.3d48d2f3.chunk.js",
+    "main.js.map": "/booksys/static/js/main.3d48d2f3.chunk.js.map",
     "runtime-main.js": "/booksys/static/js/runtime-main.004094f0.js",
     "runtime-main.js.map": "/booksys/static/js/runtime-main.004094f0.js.map",
-    "static/css/2.b73a64a5.chunk.css": "/booksys/static/css/2.b73a64a5.chunk.css",
-    "static/js/2.0a84a6e9.chunk.js": "/booksys/static/js/2.0a84a6e9.chunk.js",
-    "static/js/2.0a84a6e9.chunk.js.map": "/booksys/static/js/2.0a84a6e9.chunk.js.map",
+    "static/css/2.54793866.chunk.css": "/booksys/static/css/2.54793866.chunk.css",
+    "static/js/2.78368abb.chunk.js": "/booksys/static/js/2.78368abb.chunk.js",
+    "static/js/2.78368abb.chunk.js.map": "/booksys/static/js/2.78368abb.chunk.js.map",
     "index.html": "/booksys/index.html",
-    "precache-manifest.f21c9050fdea4fed78c6a60380906e4d.js": "/booksys/precache-manifest.f21c9050fdea4fed78c6a60380906e4d.js",
+    "precache-manifest.feae14e580c355a0c852592a03e5a6de.js": "/booksys/precache-manifest.feae14e580c355a0c852592a03e5a6de.js",
     "service-worker.js": "/booksys/service-worker.js",
-    "static/css/2.b73a64a5.chunk.css.map": "/booksys/static/css/2.b73a64a5.chunk.css.map",
-    "static/css/main.8c8b41b9.chunk.css.map": "/booksys/static/css/main.8c8b41b9.chunk.css.map",
-    "static/js/2.0a84a6e9.chunk.js.LICENSE.txt": "/booksys/static/js/2.0a84a6e9.chunk.js.LICENSE.txt",
+    "static/css/2.54793866.chunk.css.map": "/booksys/static/css/2.54793866.chunk.css.map",
+    "static/css/main.8abec381.chunk.css.map": "/booksys/static/css/main.8abec381.chunk.css.map",
+    "static/js/2.78368abb.chunk.js.LICENSE.txt": "/booksys/static/js/2.78368abb.chunk.js.LICENSE.txt",
     "static/media/background.png": "/booksys/static/media/background.9adfa93a.png",
     "static/media/companyCardBackground.png": "/booksys/static/media/companyCardBackground.b2695cc6.png",
     "static/media/email.svg": "/booksys/static/media/email.90faf953.svg",
@@ -22,9 +22,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.004094f0.js",
-    "static/css/2.b73a64a5.chunk.css",
-    "static/js/2.0a84a6e9.chunk.js",
-    "static/css/main.8c8b41b9.chunk.css",
-    "static/js/main.bb52c3e3.chunk.js"
+    "static/css/2.54793866.chunk.css",
+    "static/js/2.78368abb.chunk.js",
+    "static/css/main.8abec381.chunk.css",
+    "static/js/main.3d48d2f3.chunk.js"
   ]
 }
