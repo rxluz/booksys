@@ -1,5 +1,5 @@
 import React from 'react'
-import CompanyCard from './CompanyCard'
+import CompanyCardComponent from './CompanyCard'
 import { BADGE } from '@geometricpanda/storybook-addon-badges'
 import { addDefaults, addArgTypes } from 'common/utils/storybookMode'
 
@@ -11,7 +11,7 @@ const addTheme = addDefaults({
 })
 
 export default {
-  title: 'CompanyCard',
+  title: 'Components/CompanyCard',
   parameters: {
     badges: [BADGE.STABLE],
   },
@@ -35,8 +35,8 @@ export default {
   }),
 }
 
-export const CompanyCardOptions = addTheme((props) => (
-  <CompanyCard
+export const CompanyCard = addTheme((props) => (
+  <CompanyCardComponent
     event={{
       name: props.eventName,
       eventStartTime: props.eventStartTime,
@@ -45,5 +45,5 @@ export const CompanyCardOptions = addTheme((props) => (
     {...props}
   >
     {props.content}
-  </CompanyCard>
+  </CompanyCardComponent>
 ))

@@ -1,5 +1,5 @@
 import React from 'react'
-import Pagination from './Pagination'
+import PaginationComponent from './Pagination'
 import { action } from '@storybook/addon-actions'
 import { BADGE } from '@geometricpanda/storybook-addon-badges'
 import { addDefaults, addArgTypes } from 'common/utils/storybookMode'
@@ -12,7 +12,7 @@ const addTheme = addDefaults({
 })
 
 export default {
-  title: 'Pagination',
+  title: 'Components/Pagination',
   parameters: {
     badges: [BADGE.STABLE],
   },
@@ -28,4 +28,4 @@ export default {
   }),
 }
 
-export const PaginationOptions = addTheme((props) => <Pagination {...props} />)
+export const Pagination = addTheme((props) => <PaginationComponent {...props} />)

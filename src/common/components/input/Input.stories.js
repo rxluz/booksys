@@ -1,5 +1,5 @@
 import React from 'react'
-import Input from './Input'
+import InputComponent from './Input'
 import { action } from '@storybook/addon-actions'
 import { BADGE } from '@geometricpanda/storybook-addon-badges'
 import { addDefaults, addArgTypes } from 'common/utils/storybookMode'
@@ -14,7 +14,7 @@ const addTheme = addDefaults({
 })
 
 export default {
-  title: 'Input',
+  title: 'Components/Input',
 
   parameters: {
     badges: [BADGE.STABLE],
@@ -57,4 +57,4 @@ export default {
   }),
 }
 
-export const InputOptions = addTheme((props) => <Input {...props} />)
+export const Input = addTheme((props) => <InputComponent {...props} />)

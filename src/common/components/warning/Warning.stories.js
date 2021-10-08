@@ -1,5 +1,5 @@
 import React from 'react'
-import Warning from './Warning'
+import WarningComponent from './Warning'
 import { action } from '@storybook/addon-actions'
 import { BADGE } from '@geometricpanda/storybook-addon-badges'
 import { addDefaults, addArgTypes } from 'common/utils/storybookMode'
@@ -13,7 +13,7 @@ const addTheme = addDefaults({
 })
 
 export default {
-  title: 'Warning',
+  title: 'Components/Warning',
   parameters: {
     badges: [BADGE.STABLE],
   },
@@ -46,4 +46,4 @@ export default {
   }),
 }
 
-export const WarningOptions = addTheme((props) => <Warning image={EmailImg} {...props} />)
+export const Warning = addTheme((props) => <WarningComponent image={EmailImg} {...props} />)
