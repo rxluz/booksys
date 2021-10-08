@@ -1,30 +1,32 @@
 {
   "files": {
     "main.css": "/booksys/static/css/main.8abec381.chunk.css",
-    "main.js": "/booksys/static/js/main.3d48d2f3.chunk.js",
-    "main.js.map": "/booksys/static/js/main.3d48d2f3.chunk.js.map",
+    "main.js": "/booksys/static/js/main.d93aa3a9.chunk.js",
+    "main.js.map": "/booksys/static/js/main.d93aa3a9.chunk.js.map",
     "runtime-main.js": "/booksys/static/js/runtime-main.004094f0.js",
     "runtime-main.js.map": "/booksys/static/js/runtime-main.004094f0.js.map",
     "static/css/2.54793866.chunk.css": "/booksys/static/css/2.54793866.chunk.css",
-    "static/js/2.78368abb.chunk.js": "/booksys/static/js/2.78368abb.chunk.js",
-    "static/js/2.78368abb.chunk.js.map": "/booksys/static/js/2.78368abb.chunk.js.map",
+    "static/js/2.31ab50c3.chunk.js": "/booksys/static/js/2.31ab50c3.chunk.js",
+    "static/js/2.31ab50c3.chunk.js.map": "/booksys/static/js/2.31ab50c3.chunk.js.map",
     "index.html": "/booksys/index.html",
-    "precache-manifest.079a30d377e78aad5c7e6991853addfa.js": "/booksys/precache-manifest.079a30d377e78aad5c7e6991853addfa.js",
+    "precache-manifest.7aa91dd262deb0d53ef8967ac683348b.js": "/booksys/precache-manifest.7aa91dd262deb0d53ef8967ac683348b.js",
     "service-worker.js": "/booksys/service-worker.js",
     "static/css/2.54793866.chunk.css.map": "/booksys/static/css/2.54793866.chunk.css.map",
     "static/css/main.8abec381.chunk.css.map": "/booksys/static/css/main.8abec381.chunk.css.map",
-    "static/js/2.78368abb.chunk.js.LICENSE.txt": "/booksys/static/js/2.78368abb.chunk.js.LICENSE.txt",
+    "static/js/2.31ab50c3.chunk.js.LICENSE.txt": "/booksys/static/js/2.31ab50c3.chunk.js.LICENSE.txt",
+    "static/media/NotFound.svg": "/booksys/static/media/NotFound.df523510.svg",
     "static/media/background.png": "/booksys/static/media/background.9adfa93a.png",
     "static/media/companyCardBackground.png": "/booksys/static/media/companyCardBackground.b2695cc6.png",
-    "static/media/email.svg": "/booksys/static/media/email.90faf953.svg",
+    "static/media/email.svg": "/booksys/static/media/email.ffaebffe.svg",
+    "static/media/loading.svg": "/booksys/static/media/loading.26ad38f4.svg",
     "static/media/logo.svg": "/booksys/static/media/logo.e29d4d3a.svg",
     "static/media/something-wrong.svg": "/booksys/static/media/something-wrong.19763570.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.004094f0.js",
     "static/css/2.54793866.chunk.css",
-    "static/js/2.78368abb.chunk.js",
+    "static/js/2.31ab50c3.chunk.js",
     "static/css/main.8abec381.chunk.css",
-    "static/js/main.3d48d2f3.chunk.js"
+    "static/js/main.d93aa3a9.chunk.js"
   ]
 }
