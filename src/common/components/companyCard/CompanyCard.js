@@ -1,4 +1,5 @@
 import React from 'react'
+import * as PropTypes from 'prop-types'
 import moment from 'moment'
 import * as generalConstants from 'common/utils/general.constants'
 import './CompanyCard.scss'
@@ -40,6 +41,16 @@ const CompanyCard = ({ translate, event, children }) => {
       <div className="companyCard__content">{children}</div>
     </div>
   )
+}
+
+CompanyCard.defaultProps = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  translate: (value) => value,
+  event: PropTypes.shape({
+    name: PropTypes.string,
+    address: PropTypes.string,
+    eventStartTime: PropTypes.number,
+  }),
 }
 
 export default CompanyCard
