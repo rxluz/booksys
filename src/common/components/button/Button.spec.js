@@ -1,12 +1,13 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import Button from './Button'
+import * as testUtils from 'common/utils/test.utils'
 
-const defaultProps = {
+const defaultProps = testUtils.createDefaultProps({
   styleType: 'primary',
-  onClick: () => {},
+  onClick: testUtils.emptyFunc,
   isDisabled: false,
-}
+})
 
 test('Renders button content properly', () => {
   const { getByText } = render(<Button {...defaultProps}>Hello mybutton</Button>)
