@@ -11,7 +11,7 @@ const Message = ({ status, translate }) => {
 }
 
 const Title = ({ status, translate }) => (
-  <div className={`booking-status__status--${status}`}>
+  <div role="status" className={`booking-status__status--${status}`}>
     {bookingConstants.STATUS_NAMES(translate)[status]}
   </div>
 )
@@ -39,7 +39,7 @@ const Seats = ({ seats, translate }) => (
 
 const CancelButton = ({ onCancel, translate, processing }) => (
   <div className="booking-status__row">
-    <Button onClick={onCancel} type="secondary" isDisabled={processing}>
+    <Button onClick={onCancel} styleType="secondary" isDisabled={processing}>
       {processing ? translate('Please wait ...') : translate('Cancel')}
     </Button>
   </div>
@@ -50,7 +50,9 @@ const Status = ({ translate, data, onNewBooking, onCancel, processing }) => {
 
   return (
     <section className="booking-status animate__animated animate__fadeIn">
-      <div className="booking-status__title">{translate('Hey {name},', { name: data.name })}</div>
+      <div className="booking-status__title" role="heading" aria-level="2">
+        {translate('Hey {name},', { name: data.name })}
+      </div>
       <Message status={data.status} translate={translate} />
 
       <div className="booking-status__status">
@@ -70,7 +72,7 @@ const Status = ({ translate, data, onNewBooking, onCancel, processing }) => {
       )}
 
       <div className="booking-status__row">
-        <Button isDisabled={processing} onClick={onNewBooking} type="secondary">
+        <Button isDisabled={processing} onClick={onNewBooking} styleType="secondary">
           {translate('New booking')}
         </Button>
       </div>
