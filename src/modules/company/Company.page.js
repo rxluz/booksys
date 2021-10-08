@@ -20,10 +20,17 @@ const CompanyPage = ({ state, children, translate, data }) => {
   return PAGES_BY_STATE[state]()
 }
 
+CompanyPage.defaultProps = {
+  translate: (value) => value,
+}
+
 CompanyPage.propTypes = {
   state: PropTypes.oneOf(companyConstants.PAGE_STATE).isRequired,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   translate: PropTypes.func,
+  data: PropTypes.shape({
+    event: PropTypes.object,
+  }),
 }
 
 export default CompanyPage

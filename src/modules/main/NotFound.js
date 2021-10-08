@@ -15,6 +15,10 @@ const NotFound = (_props, context) => {
   )
 }
 
+NotFound.defaultProps = {
+  translate: (value) => value,
+}
+
 NotFound.contextTypes = {
   t: PropTypes.func,
 }

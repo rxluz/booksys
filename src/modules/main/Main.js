@@ -28,6 +28,10 @@ const Main = (_props, { t: translate }) => (
   </BodyClasses>
 )
 
+Main.defaultProps = {
+  translate: (value) => value,
+}
+
 Main.contextTypes = {
   t: PropTypes.func,
 }
