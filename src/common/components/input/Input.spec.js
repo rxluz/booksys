@@ -1,8 +1,9 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import Input from './Input'
+import * as testUtils from 'common/utils/test.utils'
 
-const defaultProps = {
+const defaultProps = testUtils.createDefaultProps({
   title: 'input title',
   id: 'input-1',
   placeholder: 'input placeholder',
@@ -11,8 +12,8 @@ const defaultProps = {
   disabled: false,
   showClearButton: false,
   isValid: true,
-  onChange: () => {},
-}
+  onChange: testUtils.emptyFunc,
+})
 
 test('Renders input element title  properly', () => {
   const { getByLabelText } = render(<Input {...defaultProps} />)

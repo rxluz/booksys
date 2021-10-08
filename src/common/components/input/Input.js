@@ -97,17 +97,18 @@ const Input = ({
           onFocus={onFocus}
           ref={inputRef}
           disabled={disabled}
+          defaultValue={value}
           onChange={onChangeValue({ onChange, isValid })}
           className="input__element--select"
         >
           {!!placeholder && (
-            <option selected={value === ''} disabled>
+            <option value="" disabled>
               {placeholder}
             </option>
           )}
           {list &&
             list.map(({ value: innerValue, text }) => (
-              <option selected={value === innerValue} key={innerValue} value={innerValue}>
+              <option key={innerValue} value={innerValue}>
                 {text}
               </option>
             ))}
