@@ -1,4 +1,5 @@
 import React from 'react'
+import * as PropTypes from 'prop-types'
 
 import Button from 'common/components/button'
 import './Warning.scss'
@@ -13,10 +14,10 @@ const Warning = ({
   callToActionType,
   onClickCallToAction,
 }) => (
-  <div className="warning animate__animated animate__fadeIn">
+  <div className="warning animate__animated animate__fadeIn" role="alert">
     <div className="warning__content">
       {image && (
-        <div className="warning__image">
+        <div className="warning__image" role="presentation">
           <img alt={imageAlt} src={image} />
         </div>
       )}
@@ -37,5 +38,16 @@ const Warning = ({
     )}
   </div>
 )
+
+Warning.propTypes = {
+  image: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  imageAlt: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  footerMessage: PropTypes.string,
+  callToActionText: PropTypes.string,
+  callToActionType: PropTypes.oneOf(['primary', 'secondary']),
+  onClickCallToAction: PropTypes.func,
+}
 
 export default Warning
