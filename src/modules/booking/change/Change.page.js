@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import * as PropTypes from 'prop-types'
 import Input from 'common/components/input'
 import OfficeCard from 'common/components/officeCard'
 import Pagination from 'common/components/pagination'
@@ -82,6 +83,7 @@ const Change = ({ translate, event, onBook }) => {
         <div className="booking-change__column booking-change__column--left">
           <Input
             type="select"
+            translate={translate}
             id="booking-change-time"
             value={preferredTime.value}
             onChange={setPreferredTimeInner}
@@ -94,6 +96,7 @@ const Change = ({ translate, event, onBook }) => {
         <div className="booking-change__column booking-change__column--right">
           <Input
             type="select"
+            translate={translate}
             disabled={preferredTime.value === ''}
             value={seats.value}
             onChange={setSeatsInner}
@@ -128,6 +131,16 @@ const Change = ({ translate, event, onBook }) => {
       )}
     </section>
   )
+}
+
+Change.defaultProps = {
+  translate: (value) => value,
+}
+
+Change.propTypes = {
+  translate: PropTypes.func,
+  event: PropTypes.shape({ availableTimesAndSeats: PropTypes.array }),
+  onBook: PropTypes.func,
 }
 
 export default Change

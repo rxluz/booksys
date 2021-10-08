@@ -1,4 +1,5 @@
 import React from 'react'
+import * as PropTypes from 'prop-types'
 import moment from 'moment'
 import Button from 'common/components/button'
 import './Status.scss'
@@ -82,6 +83,18 @@ const Status = ({ translate, data, onNewBooking, onCancel, processing }) => {
       )}
     </section>
   )
+}
+
+Status.defaultProps = {
+  translate: (value) => value,
+}
+
+Status.propTypes = {
+  translate: PropTypes.func,
+  data: PropTypes.object,
+  onNewBooking: PropTypes.func,
+  onCancel: PropTypes.func,
+  processing: PropTypes.bool,
 }
 
 export default Status

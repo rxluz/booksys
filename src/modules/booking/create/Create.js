@@ -58,7 +58,7 @@ const Create = ({ company, setCompanyStatus }, { t: translate }) => {
   )
 }
 
-Create.propTypes = { company: PropTypes.object }
+Create.propTypes = { company: PropTypes.object, setCompanyStatus: PropTypes.func }
 
 Create.contextTypes = {
   t: PropTypes.func,

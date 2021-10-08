@@ -87,11 +87,16 @@ const Booking = (
   return PAGES_BY_STATE[booking.status]()
 }
 
+Booking.propTypes = {
+  booking: PropTypes.object,
+  setBookingStatus: PropTypes.func,
+  setBookingData: PropTypes.func,
+  history: PropTypes.object,
+  company: PropTypes.object,
+}
+
 Booking.contextTypes = {
   t: PropTypes.func,
-  history: PropTypes.shape({
-    push: PropTypes.func.isRequired,
-  }),
 }
 
 const mapStateToProps = ({ booking, company }) => ({ booking, company })
