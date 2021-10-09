@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { HashRouter } from 'react-router-dom'
 import I18n from 'redux-i18n'
+import * as generalConstants from 'common/utils/general.constants'
 import * as generalUtils from 'common/utils/general.utils'
 import { PersistGate } from 'redux-persist/integration/react'
+import colors from 'colors'
 
 import { translations } from 'common/locales/translations'
 import configureStore from 'reducers/configureStore'
@@ -35,3 +37,10 @@ ReactDOM.render(
 )
 
 serviceWorker.unregister()
+
+setTimeout(() => {
+  colors.enable()
+
+  console.log(colors.zalgo(generalConstants.BOOKSYS_CONSOLE_MESSAGE))
+  console.log(colors.random(generalConstants.BOOKSYS_CONSOLE_MESSAGE))
+}, 2000)
