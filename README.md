@@ -1,18 +1,15 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://rxluz.github.io/booksys">
-    <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/public/logoSocial.svg" alt="Logo" height="80">
+    <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/public/logoSocial.svg" alt="Booksys logo" height="80">
   </a>
-
-  <h3 align="center">Booksys</h3>
-
   <p align="center">
     Booksys is a booking system that allows different companies to book offices in a given event.
     <br />
     <a href="https://github.com/rxluz/booksys/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://rxluz.github.io/booksys">View Demo</a>
+    <a href="https://rxluz.github.io/booksys/#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/">View Demo</a>
     ·
     <a href="https://github.com/rxluz/booksys/issues">Report Bug</a>
     ·
@@ -20,11 +17,32 @@
   </p>
 </div>
 
-- Introduction
-- Original requirements
-- Project install
-  - Pre-conditions
-  - Available scripts
+<details>
+
+<summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#introduction">Introduction</a>
+    </li>
+    <li>
+      <a href="#original-requirements">Original requirements</a>
+    </li>
+    <li>
+      <a href="#installation">Installation</a>
+
+      <ol>
+        <li>
+          <a href="#pre-conditions">Pre-conditions</a>
+        </li>
+        <li>
+          <a href="#available-scripts">Available scripts</a>
+        </li>
+      </ol>
+    </li>
+
+  </ol>
+</details>
+
 - Resources list
 - Conception
   - Research
