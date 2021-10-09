@@ -1,17 +1,15 @@
 import React from 'react'
 import * as PropTypes from 'prop-types'
-import detectBrowserLanguage from 'detect-browser-language'
-import moment from 'moment'
+
+import * as generalUtils from 'common/utils/general.utils'
 import * as generalConstants from 'common/utils/general.constants'
 import { BiChair } from 'react-icons/bi'
 import Button from 'common/components/button'
 
 import './OfficeCard.scss'
 
-moment.locale(detectBrowserLanguage())
-
 const OfficeCard = ({ time, seat, onBook, translate }) => {
-  const timeFormatted = moment.unix(time).format(generalConstants.MOMENT_TIME)
+  const timeFormatted = generalUtils.moment.unix(time).format(generalConstants.MOMENT_TIME)
 
   return (
     <div className="office-card animate__animated animate__fadeIn" role="listitem">

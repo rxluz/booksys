@@ -1,9 +1,12 @@
 import * as generalConstants from './general.constants'
-import moment from 'moment'
+import momentLib from 'moment'
+import 'moment/locale/pt'
+
 import hash from 'object-hash'
 import detectBrowserLanguage from 'detect-browser-language'
+momentLib.locale(detectBrowserLanguage())
 
-moment.locale(detectBrowserLanguage())
+export const moment = momentLib
 
 export const emptyFunc = (param) => param
 
@@ -72,7 +75,7 @@ export const getSeatsByTime = (availableTimesAndSeats, translate) =>
     (seatsDict, { time, seats }) => {
       seatsDict[time] = seats.map((seat) => ({
         value: seat,
-        text: translate([`One seat`, `{num} seats`], { num: seat }),
+        text: seat === 1 ? translate('One seat') : translate(`{num} seats`, { num: seat }),
       }))
 
       return seatsDict

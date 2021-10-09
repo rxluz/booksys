@@ -1,6 +1,6 @@
 import React from 'react'
 import * as PropTypes from 'prop-types'
-import moment from 'moment'
+import * as generalUtils from 'common/utils/general.utils'
 import Button from 'common/components/button'
 import './Status.scss'
 import * as bookingConstants from '../Booking.constants'
@@ -20,7 +20,7 @@ const Title = ({ status, translate }) => (
 const Time = ({ time, translate }) => (
   <div className="booking-status__row">
     <div className="booking-status__row--title">{translate('Time')}</div>
-    <div className="booking-status__row--value">{moment.unix(time).format('h A')}</div>
+    <div className="booking-status__row--value">{generalUtils.moment.unix(time).format('h A')}</div>
   </div>
 )
 
