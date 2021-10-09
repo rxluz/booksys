@@ -104,62 +104,187 @@
         </li>
       </ul>
     </li>
-
+    <li>
+      <a href="#frontend">Invalid states</a>
+      <ul>
+        <li>
+          <a href="#empty-invalid-states">Empty/Invalid states</a>
+        </li>
+        <li>
+          <a href="#no-javascript-allowed">No Javascript allowed</a>
+        </li>
+        <li>
+          <a href="#404-pages">404 pages</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#frontend">Components</a>
+      <ul>
+        <li>
+          <a href="#list">List</a>
+        </li>
+        <li>
+          <a href="#storybook">Storybook</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#responsiveness">Responsiveness</a>
+      <ul>
+        <li>
+          <a href="#tests-result-in-light-mode">Tests result in light mode</a>
+        </li>
+        <li>
+          <a href="#tests-result-in-dark-mode">Tests result in dark mode</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#accessibility">Accessibility</a>
+      <ul>
+        <li>
+          <a href="#accessibility-main-actions">Main actions</a>
+        </li>
+        <li>
+          <a href="#accessibility-tests-results">Tests results</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#performance">Performance</a>
+      <ul>
+        <li>
+          <a href="#performance-main-actions">Main actions</a>
+        </li>
+        <li>
+          <a href="#performance-lighthouse-tests">Lighthouse tests</a>
+        </li>
+        <li>
+          <a href="#performance-bundle-size-report">Bundle size report</a>
+        </li>
+        <li>
+          <a href="#performance-assets-split">Assets split</a>
+        </li>
+        <li>
+          <a href="#performance-tests-results">Tests results</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#internationalization">Internationalization</a>
+      <ul>
+        <li>
+          <a href="#internationalization-how-it-works">How it works</a>
+        </li>
+        <li>
+          <a href="#internationalization-use-a-different-language">Use a different language</a>
+        </li>
+        <li>
+          <a href="#internationalization-add-a-new-language">Add a new language</a>
+        </li>
+        <li>
+          <a href="#internationalization-change-translations">Change translations</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#security">Security</a>
+      <ul>
+        <li>
+          <a href="#security-main-actions">Main actions</a>
+        </li>
+        <li>
+          <a href="#security-npm-audit-integrated-with-husky">NPM Audit integrated with Husky</a>
+        </li>
+        <li>
+          <a href="#security-content-security-policy">Content Security Policy (CSP)</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#browser-compatibility">Browser compatibility</a>
+      <ul>
+        <li>
+          <a href="#browser-compatibility-main-actions">Main actions</a>
+        </li>
+        <li>
+          <a href="#browser-tests-results">Tests results</a>
+        </li>
+        <li>
+          <a href="#security-content-security-policy">Content Security Policy (CSP)</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#seo">SEO</a>
+      <ul>
+        <li>
+          <a href="#seo-tracking">Tracking</a>
+        </li>
+        <li>
+          <a href="#seo-social-share">Social share</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#ci-qa">CI / QA</a>
+      <ul>
+        <li>
+          <a href="#ci-qa-eslint-with-airbnb-rules">ESLint with Airbnb rules</a>
+        </li>
+        <li>
+          <a href="#ci-qa-prototypes">Prototypes (React)</a>
+        </li>
+        <li>
+          <a href="#ci-qa-sentry-integration">Sentry integration</a>
+        </li>
+        <li>
+          <a href="#ci-qa-flow-on-open-a-new-pr">Flow on open a new PR</a>
+        </li>
+        <li>
+          <a href="#ci-qa-flow-on-merge-a-pr-with-the-main-branch">Flow on merge a PR with the main branch</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#tests">Tests</a>
+      <ul>
+        <li>
+          <a href="#tests-run-tests">Run tests</a>
+        </li>
+        <li>
+          <a href="#tests-add-new-tests">Add new tests</a>
+        </li>
+        <li>
+          <a href="#tests-coverage-report">Coverage report</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#misc">Misc</a>
+      <ul>
+        <li>
+          <a href="#misc-main-tools">Main tools</a>
+        </li>
+        <li>
+          <a href="#misc-todo-list">Todo list</a>
+        </li>
+        <li>
+          <a href="#misc-project-numbers">Project numbers</a>
+        </li>
+        <li>
+          <a href="#misc-known-issues">Known issues</a>
+        </li>
+        <li>
+          <a href="#misc-acknowledgements">Acknowledgements</a>
+        </li>
+      </ul>
+    </li>
   </ol>
 </details>
 
-- Frontend
-  - Empty/Invalid states
-  - No Javascript allowed
-  - 404 pages
-- Components
-  - List
-  - Storybook
-- Responsiveness
-  - Tests result in light mode
-  - Tests result in dark mode
-- Accessibility
-  - Main actions
-  - Tests results
-- Performance
-  - Main actions
-  - Lighthouse tests
-  - Bundle size report
-  - Assets split
-  - Tests results
-- Internationalization
-  - How it works
-  - Use a different language
-  - Add a new language
-  - Change translations
-- Security
-  - Main actions
-  - NPM Audit integrated with Husky
-  - Content Security Policy (CSP)
-- Browser compatibility
-  - Main actions
-  - Tests results
-- SEO
-  - Tracking
-  - Social share
-- CI / Quality
-  - ESLint with Airbnb rules
-  - Prototypes
-  - Sentry integration
-  - Flow on open a new PR
-  - Flow on merge a PR with the main branch
-- Tests
-  - Run tests
-  - Add new tests
-  - Coverage report
-- Misc
-  - Main tools
-  - Todo list
-  - Project numbers
-  - Known issues
-  - Acknowledgements
-
-## Original requirements
+### Original requirements
 
 Two companies, COKE and PEPSI, are sharing an office building but as they are competitors, they don’t trust each other. Tomorrow is COLA day (for one day), that the two companies are celebrating. They are gathering a number of business partners in the building. In order to optimize space utilization, they have decided to set-up a joint booking system where any user can book one of the 20 meeting rooms available, 10 from each company (C01, C02, ..., C10 and P01, P02, ...., P10).
 
@@ -171,9 +296,13 @@ The booking system has the following functionalities:
 
 ● Users can cancel their own reservations
 
-## Project install
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-## Resources list
+### Project install
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Resources list
 
 | Title                                                                                                    | Description                                                                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -186,3 +315,5 @@ The booking system has the following functionalities:
 | [Wireframes](https://github.com/rxluz/booksys/blob/main/docs/wireframes/wireframes.pdf)                  | The initial draft to build booksys                                                                                                                                                                                                              |
 | [Mockups](https://app.moqups.com/pSG0jJ9bhn/view/page/ad64222d5)                                         | Low fidelity layout                                                                                                                                                                                                                             |
 | [Figma](https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys)                                       | High fidelity layout                                                                                                                                                                                                                            |
+
+<p align="right">(<a href="#top">back to top</a>)</p>
