@@ -1,15 +1,19 @@
 export const translations = {
-  en: {},
+  en: {
+    Hello: 'world',
+  },
   options: {
     plural_rule: 'n > 1',
     plural_number: '2',
   },
   pt: {
+    'One seat': 'Um assento',
     'Event name': 'Nome do evento',
     'Get directions': 'Ver direções',
     'Clear field value': 'Limpar campo',
     'Please wait ...': 'Por favor aguarde …',
     'Time: {time}': 'Horário: {time}',
+    '{num} seats': '{num} assentos',
     'Seats available: {seat}': 'Assentos disponíveis: {seat}',
     Book: 'Agendar',
     'Page {num}': 'Página {num}',

@@ -102,7 +102,7 @@ const Input = ({
           className="input__element--select"
         >
           {!!placeholder && (
-            <option value="" disabled>
+            <option value="" selected={value === ''} disabled>
               {placeholder}
             </option>
           )}
