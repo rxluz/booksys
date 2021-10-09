@@ -3,11 +3,11 @@ import * as PropTypes from 'prop-types'
 import Input from 'common/components/input'
 import Button from 'common/components/button'
 import * as generalUtils from 'common/utils/general.utils'
-import moment from 'moment'
 import * as createConstants from './Create.constants'
 import Warning from 'common/components/warning'
 import SomethingWrongImg from 'common/components/warning/something-wrong.svg'
 import EmailImg from 'common/components/warning/email.svg'
+import LoadingImg from 'modules/main/loading.svg'
 
 import './Create.scss'
 
@@ -15,7 +15,7 @@ const isFormValid = (fields) =>
   Object.values(fields).every(({ value, isValid }) => !!value && isValid)
 
 const getPageState = ({ eventEndTime, showSuccessState }) => {
-  const isEventExpired = eventEndTime < moment().unix()
+  const isEventExpired = eventEndTime < generalUtils.moment().unix()
 
   if (isEventExpired) {
     return createConstants.PAGE_STATE.EXPIRED
@@ -82,7 +82,11 @@ const CreatePage = ({
         onClickCallToAction={resetFormActionInner}
       />
     ),
-    [createConstants.PAGE_STATE.LOADING]: () => <div>{translate('Loading...')}</div>,
+    [createConstants.PAGE_STATE.LOADING]: () => (
+      <div role="presentation">
+        <LoadingImg />
+      </div>
+    ),
     [createConstants.PAGE_STATE.EXPIRED]: () => (
       <Warning
         image={SomethingWrongImg}
@@ -120,7 +124,6 @@ const CreatePage = ({
               title={translate('Corporate email')}
               displayErrors={corporateEmail.isTouched}
               validation={generalUtils.validateEmail(translate, acceptedDomains)}
-              translate={translate}
             />
 
             <Input
@@ -165,10 +168,6 @@ const CreatePage = ({
   }
 
   return <CreatePageWrapper>{PAGES_BY_STATE[pageState]()}</CreatePageWrapper>
-}
-
-CreatePage.defaultProps = {
-  translate: (value) => value,
 }
 
 CreatePage.propTypes = {

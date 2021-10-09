@@ -9,16 +9,19 @@ import * as generalUtils from 'common/utils/general.utils'
 
 const filterAvailableSeatsAndTimes = ({ seats, preferredTime, availableTimesAndSeats }) =>
   availableTimesAndSeats.reduce((availableTimesAndSeatsFinal, timeAndSeats) => {
-    if (preferredTime.value != '' && preferredTime.value != timeAndSeats.time) {
+    if (
+      String(preferredTime.value) !== '' &&
+      String(preferredTime.value) !== String(timeAndSeats.time)
+    ) {
       return availableTimesAndSeatsFinal
     }
 
     const seatsFinal = timeAndSeats.seats.filter((seat) => {
-      if (preferredTime.value == '') {
+      if (String(preferredTime.value) === '') {
         return true
       }
 
-      return seats.value == '' || seats.value == seat ? true : false
+      return String(seats.value) === '' || String(seats.value) === seat ? true : false
     })
 
     availableTimesAndSeatsFinal.push({

@@ -1,19 +1,15 @@
 import React from 'react'
 import * as PropTypes from 'prop-types'
+import NotFoundImg from './NotFound.svg'
 
-const NotFound = (_props, context) => {
-  const { t: translate } = context
-
-  return (
-    <div className="center">
-      <div className="no-javascript">
-        <br />
-        {translate('Page not found', {}, '404 main text')} <br />
-        <a href="/">{translate('Go to home', {}, 'image credits')}</a>
-      </div>
-    </div>
-  )
-}
+const NotFound = (_, { t: translate }) => (
+  <div className="not-found">
+    <img src={NotFoundImg} alt={translate('Image with a alien spaceship abducting somebody')} />
+    <br />
+    <br />
+    {translate('Page not found', {}, '404 main text')} <br />
+  </div>
+)
 
 NotFound.defaultProps = {
   translate: (value) => value,

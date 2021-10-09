@@ -1,15 +1,19 @@
 import React from 'react'
 import * as PropTypes from 'prop-types'
-import moment from 'moment'
+
 import * as generalConstants from 'common/utils/general.constants'
+import * as generalUtils from 'common/utils/general.utils'
+
 import './CompanyCard.scss'
 import CompanyCardBackground from './companyCardBackground.png'
 
 const CompanyCard = ({ translate, event, children }) => {
-  const accessibleDate = moment
+  const accessibleDate = generalUtils.moment
     .unix(event.eventStartTime)
     .format(generalConstants.MOMENT_DAY_MONTH_ACCESSIBLE)
-  const date = moment.unix(event.eventStartTime).format(generalConstants.MOMENT_DAY_MONTH)
+  const date = generalUtils.moment
+    .unix(event.eventStartTime)
+    .format(generalConstants.MOMENT_DAY_MONTH)
 
   return (
     <div className="companyCard">

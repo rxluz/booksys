@@ -19,6 +19,7 @@ import StatusPage from './status/Status.page'
 import ChangePage from './change/Change.page'
 import Warning from 'common/components/warning'
 import SomethingWrongImg from 'common/components/warning/something-wrong.svg'
+import Loading from 'common/components/loading'
 
 const Booking = (
   { booking, setBookingStatus, setBookingData, history, company },
@@ -74,7 +75,7 @@ const Booking = (
     [bookingConstants.PAGE_STATE.UNAVAILABLE]: () => (
       <ChangePage translate={translate} event={company.event} onBook={getBookingData} />
     ),
-    [bookingConstants.PAGE_STATE.LOADING]: () => translate('Please wait ...'),
+    [bookingConstants.PAGE_STATE.LOADING]: () => <Loading translate={translate} />,
     [bookingConstants.PAGE_STATE.NOT_FOUND]: () => (
       <Warning
         image={SomethingWrongImg}

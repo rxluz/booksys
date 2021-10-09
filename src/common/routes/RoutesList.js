@@ -3,6 +3,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Create from 'modules/booking/create/Create'
 import Booking from 'modules/booking/Booking'
+import NotFound from 'modules/main/NotFound'
 
 const RoutesList = () => (
   <Switch>
@@ -15,7 +16,7 @@ const RoutesList = () => (
     </Route>
 
     <Route path="*" exact={true}>
-      Sorry this page doesn't exists
+      <NotFound />
     </Route>
   </Switch>
 )

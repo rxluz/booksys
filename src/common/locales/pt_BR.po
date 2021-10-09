@@ -1,190 +1,221 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: pt_BR\n"
+
 #: src/common/components/companyCard/CompanyCard.js
 msgid "Event name"
-msgstr ""
+msgstr "Nome do evento"
 
 #: src/common/components/companyCard/CompanyCard.js
 msgid "Get directions"
-msgstr ""
+msgstr "Ver direções"
 
 #: src/common/components/input/Input.js
 msgid "Clear field value"
-msgstr ""
+msgstr "Limpar campo"
 
 #: src/common/components/loading/Loading.js
 #: src/modules/booking/create/Create.page.js
 #: src/modules/booking/status/Status.page.js
 msgid "Please wait ..."
-msgstr ""
+msgstr "Por favor aguarde …"
 
 #: src/common/components/officeCard/OfficeCard.js
 msgid "Time: {time}"
-msgstr ""
+msgstr "Horário: {time}"
 
 #: src/common/components/officeCard/OfficeCard.js
 msgid "Seats available: {seat}"
-msgstr ""
+msgstr "Assentos disponíveis: {seat}"
 
 #: src/common/components/officeCard/OfficeCard.js
 msgid "Book"
-msgstr ""
+msgstr "Agendar"
 
 #: src/common/components/pagination/Pagination.js
 msgid "Page {num}"
-msgstr ""
+msgstr "Página {num}"
 
 #: src/common/utils/general.utils.js
 msgid "Your email looks incorrect"
-msgstr ""
+msgstr "Seu email está incorreto"
 
 #: src/common/utils/general.utils.js
-msgid "This email is not acceptable, please make sure to use your corporate email"
-msgstr ""
+msgid ""
+"This email is not acceptable, please make sure to use your corporate email"
+msgstr "Esse email nāo é aceitável, por favor use o seu email corporativo"
 
 #: src/modules/booking/Booking.constants.js
-msgid "Congratulations! Your reservation has been successfully confirmed. Here is a brief summary of your booking details:"
+msgid ""
+"Congratulations! Your reservation has been successfully confirmed. Here is a "
+"brief summary of your booking details:"
 msgstr ""
+"Parabéns! Sua reserva foi efetuada com sucesso. Veja abaixo um resumo do seu "
+"agendamento:"
 
 #: src/modules/booking/Booking.constants.js
-msgid "You cancelled your booking. Here is a brief summary of your cancelled booking details:"
+msgid ""
+"You cancelled your booking. Here is a brief summary of your cancelled "
+"booking details:"
 msgstr ""
+"Você cancelou seu agendamento. Abaixo esta um resumo do agendamento "
+"cancelado:"
 
 #: src/modules/booking/Booking.constants.js
 msgid "Confirmed"
-msgstr ""
+msgstr "Confirmado"
 
 #: src/modules/booking/Booking.constants.js
 msgid "Cancelled"
-msgstr ""
+msgstr "Cancelado"
 
 #: src/modules/booking/Booking.js
 msgid "Are you sure that you want to cancel your booking"
-msgstr ""
+msgstr "Você tem certeza que deseja cancelar esse agendamento?"
 
-#: src/modules/booking/Booking.js
-#: src/modules/booking/create/Create.page.js
+#: src/modules/booking/Booking.js src/modules/booking/create/Create.page.js
 msgid "Something wrong happened"
-msgstr ""
+msgstr "Algo inesperado aconteceu"
 
 #: src/modules/booking/Booking.js
 msgid "Unable to find your booking"
-msgstr ""
+msgstr "Nāo conseguimos encontrar seu agendamento"
 
 #: src/modules/booking/change/Change.page.js
-msgid "Unfortunately the time that you selected isn't available anymore. Please select a new option below"
+msgid ""
+"Unfortunately the time that you selected isn't available anymore. Please "
+"select a new option below"
 msgstr ""
+"Infelizmente esse horário não esta mais disponível. Por favor selecione uma "
+"nova opção abaixo"
 
 #: src/modules/booking/change/Change.page.js
 msgid "Time/Seats filters"
-msgstr ""
+msgstr "Filtros de horário / assentos"
 
 #: src/modules/booking/change/Change.page.js
 msgid "Select a time"
-msgstr ""
+msgstr "Selecione um horário "
 
 #: src/modules/booking/change/Change.page.js
 #: src/modules/booking/create/Create.page.js
 msgid "Number of seats"
-msgstr ""
+msgstr "Numero de assentos"
 
 #: src/modules/booking/change/Change.page.js
 msgid "Available offices"
-msgstr ""
+msgstr "Salas disponíveis"
 
 #: src/modules/booking/change/Change.page.js
 msgid "Navigate into available offices list"
-msgstr ""
+msgstr "Navegue na lista de salas disponíveis "
 
 #: src/modules/booking/create/Create.page.js
 msgid "Email illustration"
-msgstr ""
+msgstr "Ilustração de email"
 
 #: src/modules/booking/create/Create.page.js
 msgid "Check your email"
-msgstr ""
+msgstr "Verifique o seu email"
 
 #: src/modules/booking/create/Create.page.js
-msgid "You are almost there to reserve your room for this event! Please make sure to finish your reservation as soon as possible to avoid losing your booking."
+msgid ""
+"You are almost there to reserve your room for this event! Please make sure "
+"to finish your reservation as soon as possible to avoid losing your booking."
 msgstr ""
+"Você esta quase la para reservar a sua sala nesse evento! Por favor se "
+"assegure de finalizar a sua reserva o quanto antes para evitar perder o seu "
+"agendamento."
 
 #: src/modules/booking/create/Create.page.js
 msgid "If you can't found the email, check your spam folder."
 msgstr ""
+"Se você nāo encontrar o email, por favor verifique a sua caixa de spam."
 
 #: src/modules/booking/create/Create.page.js
 #: src/modules/booking/status/Status.page.js
 msgid "New booking"
-msgstr ""
+msgstr "Novo agendamento"
 
 #: src/modules/booking/create/Create.page.js
 msgid "This event has ended"
-msgstr ""
+msgstr "Esse evento está encerrado"
 
 #: src/modules/booking/create/Create.page.js
 msgid "Fill in the details below to make your office reservation"
-msgstr ""
+msgstr "Preencha seus detalhes abaixo para fazer a sua reserva de sala"
 
 #: src/modules/booking/create/Create.page.js
 msgid "Office reservation"
-msgstr ""
+msgstr "Reserva de sala"
 
 #: src/modules/booking/create/Create.page.js
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: src/modules/booking/create/Create.page.js
 msgid "Corporate email"
-msgstr ""
+msgstr "E-mail corporativo"
 
 #: src/modules/booking/create/Create.page.js
 msgid "Book your preferences for this event"
-msgstr ""
+msgstr "Defina as suas preferencias para esse evento"
 
 #: src/modules/booking/create/Create.page.js
 msgid "Preferred time"
-msgstr ""
+msgstr "Horário preferido"
 
 #: src/modules/booking/create/Create.page.js
 msgid "Your booking preferences has changed"
-msgstr ""
+msgstr "Suas preferencias de agendamento foram alteradas"
 
 #: src/modules/booking/create/Create.page.js
 msgid "Continue"
-msgstr ""
+msgstr "Continuar"
 
 #: src/modules/booking/status/Status.page.js
 msgid "Time"
-msgstr ""
+msgstr "Horário"
 
 #: src/modules/booking/status/Status.page.js
 msgid "Office"
-msgstr ""
+msgstr "Sala"
 
 #: src/modules/booking/status/Status.page.js
 msgid "Seats"
-msgstr ""
+msgstr "Assentos"
 
 #: src/modules/booking/status/Status.page.js
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: src/modules/booking/status/Status.page.js
 msgid "Hey {name},"
-msgstr ""
+msgstr "Oi {name},"
 
 #: src/modules/booking/status/Status.page.js
 msgid "Reservation code: {code}"
-msgstr ""
+msgstr "Código de reserva: {code}"
 
 #: src/modules/main/Main.js
 msgid "Booksys logo"
-msgstr ""
+msgstr "Logo da Booksys"
 
 #: src/modules/main/NotFound.js
 msgid "Image with a alien spaceship abducting somebody"
-msgstr ""
+msgstr "Imagem com uma nave espacial abduzindo alguém"
 
 #. 404 main text
 #: src/modules/main/NotFound.js
 msgid "Page not found"
-msgstr ""
-
+msgstr "Pagina nāo encontrada"
