@@ -27,7 +27,7 @@ CompanyPage.defaultProps = {
 }
 
 CompanyPage.propTypes = {
-  state: PropTypes.oneOf(companyConstants.PAGE_STATE).isRequired,
+  state: PropTypes.oneOf(companyConstants.PAGE_STATE),
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   translate: PropTypes.func,
   data: PropTypes.shape({

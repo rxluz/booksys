@@ -58,7 +58,7 @@ const Company = ({ children, company, setCompanyData }, { t: translate }) => {
 Company.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   company: PropTypes.object,
-  setCompanyData: PropTypes.func.isRequired,
+  setCompanyData: PropTypes.func,
 }
 
 Company.contextTypes = {
