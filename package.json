@@ -39,11 +39,12 @@
     "uuid": "^7.0.3"
   },
   "scripts": {
-    "predeploy": "npm run build && npm run build-storybook && npm run bundle-analysis",
-    "deploy": "npm run predeploy && gh-pages -d build",
+    "deploy": "npm run build && npm run build-storybook && npm run bundle-analysis && npm run build-storybook && CI=true react-scripts test --coverage --silent && cd build && cd .. && cp -r ./coverage ./build/coverage && npm run lighthouse && gh-pages -d build",
     "start": "react-scripts start",
     "build": "PUBLIC_URL=https://rxluz.github.io/booksys && react-scripts build",
+    "test:coverage": "CI=true react-scripts test --coverage",
     "test": "react-scripts test",
+    "lighthouse": "mkdir -p ./build/lighthouse && npx lighthouse https://rxluz.github.io/booksys/ --output-path=./build/lighthouse/report.html",
     "build-storybook": "build-storybook -s public -o build/storybook",
     "bundle-analysis": "npx cra-bundle-analyzer -r bundle-analysis.htm",
     "eject": "react-scripts eject",
