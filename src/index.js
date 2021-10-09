@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { HashRouter } from 'react-router-dom'
 import I18n from 'redux-i18n'
-import detectBrowserLanguage from 'detect-browser-language'
+import * as generalUtils from 'common/utils/general.utils'
 import { PersistGate } from 'redux-persist/integration/react'
 
 import { translations } from 'common/locales/translations'
@@ -19,7 +19,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <I18n translations={translations} initialLang={detectBrowserLanguage()} fallbackLang="en">
+        <I18n
+          translations={translations}
+          initialLang={generalUtils.detectBrowserLanguage()}
+          fallbackLang="en"
+        >
           <HashRouter>
             <Main />
           </HashRouter>

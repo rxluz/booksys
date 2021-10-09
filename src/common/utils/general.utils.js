@@ -3,10 +3,6 @@ import momentLib from 'moment'
 import 'moment/locale/pt'
 
 import hash from 'object-hash'
-import detectBrowserLanguage from 'detect-browser-language'
-momentLib.locale(detectBrowserLanguage())
-
-export const moment = momentLib
 
 export const emptyFunc = (param) => param
 
@@ -18,6 +14,20 @@ export const onChangeValue = ({ onChange, isValid, valueForced = 'NO', isTouched
     isValid,
     isTouched,
   })
+
+export const getParamURL = (param) =>
+  window.location.search.split(`${param}=`)[1]
+    ? window.location.search.split(`${param}=`)[1]
+    : false
+
+export const detectBrowserLanguage = () => {
+  const forcedLang = getParamURL('lang')
+
+  const browserLang =
+    (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage
+
+  return forcedLang || browserLang
+}
 
 export const setFieldInitialState = (isValid = true, value = '') => ({
   value,
@@ -31,27 +41,6 @@ const validate = (translate) => ({
     message: () => translate('Your email looks incorrect'),
   },
 })
-
-export const getPreferredTimeData = (availableTimesAndSeats) =>
-  (availableTimesAndSeats || []).reduce(
-    (times, { time }) => {
-      const now = moment().unix()
-      if (now > time) {
-        return times
-      }
-
-      const hour = moment.unix(time).format(generalConstants.MOMENT_TIME)
-
-      times.push({
-        value: time,
-        text: hour,
-      })
-
-      return times
-    },
-
-    [],
-  )
 
 export const getSeatsAndTime = (availableTimesAndSeats) =>
   availableTimesAndSeats.reduce(
@@ -102,3 +91,28 @@ export const filterByPage = ({ items, itemsPerPage, page }) =>
 
 export const removeEmptyObjValues = (obj) =>
   Object.fromEntries(Object.entries(obj).filter(([_, value]) => Boolean(value)))
+
+momentLib.locale(detectBrowserLanguage())
+
+export const moment = momentLib
+
+export const getPreferredTimeData = (availableTimesAndSeats) =>
+  (availableTimesAndSeats || []).reduce(
+    (times, { time }) => {
+      const now = moment().unix()
+      if (now > time) {
+        return times
+      }
+
+      const hour = moment.unix(time).format(generalConstants.MOMENT_TIME)
+
+      times.push({
+        value: time,
+        text: hour,
+      })
+
+      return times
+    },
+
+    [],
+  )
