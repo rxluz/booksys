@@ -29,15 +29,14 @@
     </li>
     <li>
       <a href="#installation">Installation</a>
-
-      <ol>
+      <ul>
         <li>
           <a href="#pre-conditions">Pre-conditions</a>
         </li>
         <li>
           <a href="#available-scripts">Available scripts</a>
         </li>
-      </ol>
+      </ul>
     </li>
 
   </ol>
