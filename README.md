@@ -1,3 +1,26 @@
+<!-- PROJECT LOGO -->
+<div align="center">
+  <a href="https://rxluz.github.io/booksys">
+    <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/public/logoSocial.svg" alt="Logo" height="80">
+  </a>
+
+  <h3 align="center">Booksys</h3>
+
+  <p align="center">
+    Booksys is a booking system that allows different companies to book offices in a given event.
+    <br />
+    <a href="https://github.com/rxluz/booksys/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://rxluz.github.io/booksys">View Demo</a>
+    ·
+    <a href="https://github.com/rxluz/booksys/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/rxluz/booksys/issues">Request Feature</a>
+  </p>
+</div>
+
+- Introduction
 - Original requirements
 - Project install
   - Pre-conditions
@@ -80,7 +103,9 @@ Two companies, COKE and PEPSI, are sharing an office building but as they are co
 The booking system has the following functionalities:
 
 ● Users can see meeting rooms availability
+
 ● Users can book meeting rooms by the hour (first come first served)
+
 ● Users can cancel their own reservations
 
 ## Project install
