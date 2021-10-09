@@ -38,30 +38,76 @@
         </li>
       </ul>
     </li>
+    <li>
+      <a href="#resources-list">Resources list</a>
+    </li>
+    <li>
+      <a href="#conception">Conception</a>
+      <ul>
+        <li>
+          <a href="#research">Research</a>
+        </li>
+        <li>
+          <a href="#wireframes">Wireframes</a>
+        </li>
+        <li>
+          <a href="#mockups">Mockups</a>
+        </li>
+        <li>
+          <a href="#prototypes">Prototypes</a>
+        </li>
+        <li>
+          <a href="#features-list">Features list</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#system-design">System design</a>
+      <ul>
+        <li>
+          <a href="#business-rules-diagram">Business rules diagram</a>
+        </li>
+        <li>
+          <a href="#static-pages-and-assets">Static pages and assets</a>
+        </li>
+        <li>
+          <a href="#folder-structure">Folder structure</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#api">API</a>
+      <ul>
+        <li>
+          <a href="#database-schema">Database schema</a>
+        </li>
+        <li>
+          <a href="#api-schema">API schema</a>
+        </li>
+        <li>
+          <a href="#mock-data">Mock data</a>
+        </li>
+        <li>
+          <a href="#security">Security</a>
+        </li>
+        <li>
+          <a href="#https">HTTPS</a>
+        </li>
+        <li>
+          <a href="#dns-protection">DNS Protection</a>
+        </li>
+        <li>
+          <a href="#csp">CSP (Content Security Policy)</a>
+        </li>
+        <li>
+          <a href="#headers">Headers</a>
+        </li>
+      </ul>
+    </li>
 
   </ol>
 </details>
 
-- Resources list
-- Conception
-  - Research
-  - Wireframes
-  - Mockups
-  - Prototypes
-  - Features list
-- System design
-  - Business rules UML
-  - Static pages and assets
-  - Folder structure
-- API
-  - Database schema
-  - API schema
-  - Mock data
-  - Security
-  - HTTPS
-  - DNS Protection
-  - CSP
-  - Headers
 - Frontend
   - Empty/Invalid states
   - No Javascript allowed
