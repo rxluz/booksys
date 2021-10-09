@@ -39,12 +39,13 @@
     "uuid": "^7.0.3"
   },
   "scripts": {
-    "predeploy": "npm run build && npm run build-storybook",
+    "predeploy": "npm run build && npm run build-storybook && npm run bundle-analysis",
     "deploy": "npm run predeploy && gh-pages -d build",
     "start": "react-scripts start",
     "build": "PUBLIC_URL=https://rxluz.github.io/booksys && react-scripts build",
     "test": "react-scripts test",
     "build-storybook": "build-storybook -s public -o build/storybook",
+    "bundle-analysis": "npx cra-bundle-analyzer -r bundle-analysis.htm",
     "eject": "react-scripts eject",
     "translation:extract": "i18n_extract --pattern=translate --source=src --locales=src/common/locales",
     "translation:import": "i18n_import --translations=src/common/locales --locales=src/common/locales",
@@ -84,9 +85,12 @@
     "@storybook/node-logger": "^6.3.10",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.10",
+    "cra-bundle-analyzer": "^0.1.0",
     "gh-pages": "^2.2.0",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8",
-    "storybook-addon-designs": "^6.2.0"
+    "storybook-addon-designs": "^6.2.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.9.0"
   }
 }
