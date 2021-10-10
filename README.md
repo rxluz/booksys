@@ -624,6 +624,12 @@ Some `4xx` errors that could be handled programmatically and include an error 
 <summary>
 <a name="accessibility-tests-results"></a> Tests results
 </summary>
+
+<br/>
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/accessibilityTestResult.png?raw=true">
+<br/>
+<a href="https://rxluz.github.io/booksys/lighthouse/report.html#accessibility">View full report</a>
+
 </details>
 
 ### <a name="performance"></a> Performance
@@ -636,25 +642,27 @@ Some `4xx` errors that could be handled programmatically and include an error 
 
 <details>
 <summary>
-<a name="performance-lighthouse-tests"></a> Lighthouse tests
+<a name="performance-lighthouse-tests"></a> Tests results
 </summary>
+
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/performanceTestResult.png?raw=true">
+<br/>
+<a href="https://rxluz.github.io/booksys/lighthouse/report.html#performance">View full report</a>
 </details>
 
 <details>
 <summary>
 <a name="performance-bundle-size-report"></a> Bundle size report
 </summary>
+
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/bundleSizeReport.png?raw=true">
+<br/>
+<a href="https://rxluz.github.io/booksys/bundle-analysis.htm">View full report</a>
 </details>
 
 <details>
 <summary>
 <a name="performance-assets-split"></a> Assets split
-</summary>
-</details>
-
-<details>
-<summary>
-<a name="performance-tests-results"></a> Tests results
 </summary>
 </details>
 
