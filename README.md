@@ -376,15 +376,13 @@ The booking system has the following functionalities:
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-two.jpg?raw=true">
+      <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-three.jpg?raw=true">
     </td>
   </tr>
   <tr>
     <td>Third wireframe iteration</td>
   </tr>
 </table>
-
-<a href="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframes.pdf">View full wireframe doc</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
@@ -424,9 +422,8 @@ The booking system has the following functionalities:
 <summary>
 <a name="system-design-application-flow-diagram"></a> Flow diagram
 </summary>
-<div class="bg-white">
+
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/BRDiagram.drawio.svg">
-</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
@@ -453,6 +450,10 @@ The booking system has the following functionalities:
 <summary>
 <a name="api-database-schema"></a> Database schema
 </summary>
+
+<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbSchema.png">
+<a href="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbScheme.mwb">Download database schema</a>
+<a href="https://github.com/rxluz/booksys/blob/main/migrations/tables.sql">View database migrations</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
