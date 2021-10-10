@@ -64,7 +64,7 @@
       <a href="#system-design">System design</a>
       <ul>
         <li>
-          <a href="#system-design-business-rules-diagram">Business rules diagram</a>
+          <a href="#system-design-application-flow-diagram">Application flow diagram</a>
         </li>
         <li>
           <a href="#system-design-static-pages-and-assets">Static pages and assets</a>
@@ -414,7 +414,7 @@ The booking system has the following functionalities:
 
 <details>
 <summary>
-<a name="system-design-business-rules-diagram"></a> Business rules diagram
+<a name="system-design-application-flow-diagram"></a> Flow diagram
 </summary>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/BRDiagram.drawio.svg">
