@@ -193,7 +193,7 @@ Expand
 <summary>
 <a name="system-design-folder-structure"></a> Folder structure
 </summary>
-
+```bash
 ├── CHANGELOG.md
 ├── CNAME
 ├── LICENSE
@@ -336,6 +336,7 @@ Expand
 │   └── setupTests.js
 ├── yarn-error.log
 └── yarn.lock
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
