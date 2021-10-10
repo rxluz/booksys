@@ -401,12 +401,12 @@ Expand
     <td>Second wireframe iteration</td>
   </tr>
   <tr>
-    <td>
+    <td colspan="2">
       <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-three.jpg?raw=true">
     </td>
   </tr>
   <tr>
-    <td>Third wireframe iteration</td>
+    <td colspan="2">Third wireframe iteration</td>
   </tr>
 </table>
 
@@ -940,12 +940,12 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
     </td>
   </tr>
   <tr>
-    <td>
+    <td colspan="2">
       <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/slackShare.png?raw=true">
     </td>
   </tr>
   <tr>
-    <td>
+    <td colspan="2">
     Slack card
     </td>
   </tr>
