@@ -240,6 +240,10 @@ Some `4xx` errors that could be handled programmatically and include an error 
 <a name="api-mock-data"></a> Mock data
 </summary>
 
+Booksys uses Postman to mock data and store the URL in [`general.constants.js`](https://github.com/rxluz/booksys/blob/main/src/common/utils/general.constants.js#L3) file in [`src/common/utils/`](https://github.com/rxluz/booksys/tree/main/src/common/utils) folder.
+
+The current mock system has some limitations, so it isn't possible to return a different simulated output when sending additional post content.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
@@ -488,11 +492,11 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 
 - Run `npm run client:translation:extract`
 - Download [Poedit](https://poedit.net/)
-- Using [Poedit](https://poedit.net/) open the file `template.pot` in `src/common/locales/` folder
+- Using [Poedit](https://poedit.net/) open the file [`template.pot`](https://github.com/rxluz/booksys/blob/main/src/common/locales/template.pot) in [`src/common/locales/`](https://github.com/rxluz/booksys/tree/main/src/common/locales) folder
 - Create `.mo` and `.po` file translation in [Poedit](https://poedit.net/) and save this translation in the folder above
 - Run `npm run client:translation:import`
 - This command will update the file `translations.js`
-- Case needed import new languages packages to [moment](https://momentjs.com/docs/#/i18n/) and add it inside the `general.utils.js` file in `src/common/utils` folder. (eg.: `import 'moment/locale/es'`
+- Case needed import new languages packages to [moment](https://momentjs.com/docs/#/i18n/) and add it inside the [`general.utils.js`](https://github.com/rxluz/booksys/blob/main/src/common/utils/general.utils.js) file in [`src/common/utils`](https://github.com/rxluz/booksys/tree/main/src/common/utils) folder. (eg.: `import 'moment/locale/es'`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -503,7 +507,7 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 <a name="internationalization-change-translations"></a> Change translations
 </summary>
 <br>
-You can change the translations using [Poedit](https://poedit.net/) and reimport the file or change the `translation.js` in the `src/common/locales` folder.
+You can change the translations using [Poedit](https://poedit.net/) and reimport the file or change the `translation.js` in the [`src/common/locales/`](https://github.com/rxluz/booksys/tree/main/src/common/locales) folder.
 
 Some situations require changing this file straight due to a bug to export plurals; you need to edit this file directly when you need plurals.
 
@@ -561,7 +565,7 @@ However, due to modern CSS units, we can't guarantee that everything will work p
 <br>
 This application isn't intended to be a social application or an application that needs to be well-positioned in Google Search. The SEO actions were mainly focused on ensuring that the shared images would appear correctly.
 
-To do that was added inside `index.html` several [metatags](https://github.com/rxluz/booksys/blob/main/public/index.html#L21) to allow the crawlers to display the Booksys website thumbnail correctly.
+To do that was added inside [`index.html`](https://github.com/rxluz/booksys/blob/main/public/index.html) several [metatags](https://github.com/rxluz/booksys/blob/main/public/index.html#L21) to allow the crawlers to display the Booksys website thumbnail correctly.
 
 Also, the application is connected with [Google Analytics](https://github.com/rxluz/booksys/blob/main/public/index.html#L52) to collect valuable insights about the performance and general improvements.
 
