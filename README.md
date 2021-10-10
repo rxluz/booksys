@@ -452,7 +452,7 @@ The booking system has the following functionalities:
 </summary>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbSchema.png">
-<a href="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbScheme.mwb">Download database schema</a>
+<a href="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbScheme.mwb">Download database schema</a> <br />
 <a href="https://github.com/rxluz/booksys/blob/main/migrations/tables.sql">View database migrations</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -462,6 +462,22 @@ The booking system has the following functionalities:
 <summary>
 <a name="api-schema"></a> API schema
 </summary>
+
+## Introduction
+
+The **Booksys API** is organized around REST. Our API has predictable resource-oriented URLs, allows form-encoded request bodies, returns JSON-encoded responses, and uses conventional HTTP response codes, authentication, and verbs.
+
+You can utilize the Booksys API in test mode, which does not alter your live data. Use the links available in the example request section to mock the endpoints.
+
+Note that the mock API will not change according to the post parameters.
+
+# Errors
+
+Booksys uses conventional HTTP response codes to indicate the success or failure of an API request. In general: Codes in the `2xx` range indicate success. Codes in the `4xx` range indicate an error that failed given the information provided (e.g., a required parameter was omitted, a charge failed, etc.). Codes in the `5xx` range indicate an error with Booksys's servers.
+
+Some `4xx` errors that could be handled programmatically and include an error array in the response body section that briefly explains the error reported.
+
+<a href="https://documenter.getpostman.com/view/1217791/UUy38mGk">View full API documentation</a> <br />
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
