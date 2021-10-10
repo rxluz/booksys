@@ -16,273 +16,14 @@
   </p>
 </div>
 
-<details>
-
-<summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#introduction">Introduction</a>
-    </li>
-    <li>
-      <a href="#original-requirements">Original requirements</a>
-    </li>
-    <li>
-      <a href="#installation">Installation</a>
-      <ul>
-        <li>
-          <a href="#installation-pre-conditions">Pre-conditions</a>
-        </li>
-        <li>
-          <a href="#installation-available-scripts">Available scripts</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#resources-list">Resources list</a>
-    </li>
-    <li>
-      <a href="#conception">Conception</a>
-      <ul>
-        <li>
-          <a href="#conception-research">Research</a>
-        </li>
-        <li>
-          <a href="#conception-wireframes">Wireframes</a>
-        </li>
-        <li>
-          <a href="#conception-mockups">Mockups</a>
-        </li>
-        <li>
-          <a href="#conception-prototypes">Prototypes</a>
-        </li>
-        <li>
-          <a href="#conception-features-list">Features list</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#system-design">System design</a>
-      <ul>
-        <li>
-          <a href="#system-design-application-flow-diagram">Application flow diagram</a>
-        </li>
-        <li>
-          <a href="#system-design-static-pages-and-assets">Static pages and assets</a>
-        </li>
-        <li>
-          <a href="#system-design-folder-structure">Folder structure</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#api">API</a>
-      <ul>
-        <li>
-          <a href="#api-database-schema">Database schema</a>
-        </li>
-        <li>
-          <a href="#api-schema">API schema</a>
-        </li>
-        <li>
-          <a href="#api-mock-data">Mock data</a>
-        </li>
-        <li>
-          <a href="#api-security">Security</a>
-        </li>
-        <li>
-          <a href="#api-https">HTTPS</a>
-        </li>
-        <li>
-          <a href="#api-dns-protection">DNS Protection</a>
-        </li>
-        <li>
-          <a href="#api-csp">CSP (Content Security Policy)</a>
-        </li>
-        <li>
-          <a href="#api-headers">Headers</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#components">Frontend components</a>
-      <ul>
-        <li>
-          <a href="#components-list">List</a>
-        </li>
-        <li>
-          <a href="#components-storybook">Storybook</a>
-        </li>
-        <li>
-          <a href="#components-invalid-states">Invalid states</a>
-          <ul>
-            <li>
-              <a href="#components-invalid-states">Empty/Invalid states</a>
-            </li>
-            <li>
-              <a href="#components-invalid-states">No Javascript allowed</a>
-            </li>
-            <li>
-              <a href="#components-invalid-states">404 pages</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#responsiveness">Responsiveness</a>
-      <ul>
-        <li>
-          <a href="#responsiveness-tests-result-in-light-mode">Tests result in light mode</a>
-        </li>
-        <li>
-          <a href="#responsiveness-tests-result-in-dark-mode">Tests result in dark mode</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#accessibility">Accessibility</a>
-      <ul>
-        <li>
-          <a href="#accessibility-main-actions">Main actions</a>
-        </li>
-        <li>
-          <a href="#accessibility-tests-results">Tests results</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#performance">Performance</a>
-      <ul>
-        <li>
-          <a href="#performance-main-actions">Main actions</a>
-        </li>
-        <li>
-          <a href="#performance-lighthouse-tests">Lighthouse tests</a>
-        </li>
-        <li>
-          <a href="#performance-bundle-size-report">Bundle size report</a>
-        </li>
-        <li>
-          <a href="#performance-assets-split">Assets split</a>
-        </li>
-        <li>
-          <a href="#performance-tests-results">Tests results</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#internationalization">Internationalization</a>
-      <ul>
-        <li>
-          <a href="#internationalization-how-it-works">How it works</a>
-        </li>
-        <li>
-          <a href="#internationalization-use-a-different-language">Use a different language</a>
-        </li>
-        <li>
-          <a href="#internationalization-add-a-new-language">Add a new language</a>
-        </li>
-        <li>
-          <a href="#internationalization-change-translations">Change translations</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#security">Security</a>
-      <ul>
-        <li>
-          <a href="#security-main-actions">Main actions</a>
-        </li>
-        <li>
-          <a href="#security-npm-audit-integrated-with-husky">NPM Audit integrated with Husky</a>
-        </li>
-        <li>
-          <a href="#security-content-security-policy">Content Security Policy (CSP)</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#browser-compatibility">Browser compatibility</a>
-      <ul>
-        <li>
-          <a href="#browser-compatibility-main-actions">Main actions</a>
-        </li>
-        <li>
-          <a href="#browser-tests-results">Tests results</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#seo">SEO</a>
-      <ul>
-        <li>
-          <a href="#seo-tracking">Tracking</a>
-        </li>
-        <li>
-          <a href="#seo-social-share">Social share</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#ci-qa">CI / QA</a>
-      <ul>
-        <li>
-          <a href="#ci-qa-eslint-with-airbnb-rules">ESLint with Airbnb rules</a>
-        </li>
-        <li>
-          <a href="#ci-qa-prototypes">Prototypes (React)</a>
-        </li>
-        <li>
-          <a href="#ci-qa-sentry-integration">Sentry integration</a>
-        </li>
-        <li>
-          <a href="#ci-qa-flow-on-open-a-new-pr">Flow on open a new PR</a>
-        </li>
-        <li>
-          <a href="#ci-qa-flow-on-merge-a-pr-with-the-main-branch">Flow on merge a PR with the main branch</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#tests">Tests</a>
-      <ul>
-        <li>
-          <a href="#tests-run-tests">Run tests</a>
-        </li>
-        <li>
-          <a href="#tests-add-new-tests">Add new tests</a>
-        </li>
-        <li>
-          <a href="#tests-coverage-report">Coverage report</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#misc">Misc</a>
-      <ul>
-        <li>
-          <a href="#misc-main-tools">Main tools</a>
-        </li>
-        <li>
-          <a href="#misc-todo-list">Todo list</a>
-        </li>
-        <li>
-          <a href="#misc-project-numbers">Project numbers</a>
-        </li>
-        <li>
-          <a href="#misc-known-issues">Known issues</a>
-        </li>
-        <li>
-          <a href="#misc-acknowledgements">Acknowledgements</a>
-        </li>
-      </ul>
-    </li>
-  </ol>
-</details>
-
 ### <a name="introduction"></a> Introduction
 
-### <a name="original-requirements"></a> Original requirements
+### <a name="original-requirements"></a> Spec
+
+<details>
+<summary>
+<a name="installation-pre-conditions"></a> Expand
+</summary>
 
 Two companies, COKE and PEPSI, are sharing an office building but as they are competitors, they don’t trust each other. Tomorrow is COLA day (for one day), that the two companies are celebrating. They are gathering a number of business partners in the building. In order to optimize space utilization, they have decided to set-up a joint booking system where any user can book one of the 20 meeting rooms available, 10 from each company (C01, C02, ..., C10 and P01, P02, ...., P10).
 
@@ -295,6 +36,7 @@ The booking system has the following functionalities:
 ● Users can cancel their own reservations
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+</details>
 
 ### <a name="installation"></a> Installation
 
@@ -331,6 +73,11 @@ The booking system has the following functionalities:
 
 ### <a name="resources-list"></a> Resources list
 
+<details>
+<summary>
+Expand
+</summary>
+
 | Title                                                                                                    | Description                                                                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Lighthouse report](https://rxluz.github.io/booksys/lighthouse/report.html)                              | Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO and more. |
@@ -345,6 +92,9 @@ The booking system has the following functionalities:
 | [API Documentation](https://documenter.getpostman.com/view/1217791/UUy38mGk)                             | Show all available endpoints, fields and methods                                                                                                                                                                                                |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
 
 ### <a name="conception"></a> Conception
 
@@ -758,6 +508,11 @@ Some `4xx` errors that could be handled programmatically and include an error 
 <summary>
 <a name="tests-coverage-report"></a> Coverage report
 </summary>
+
+<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/prototype.png">
+<a href="https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys">View full prototype doc</a>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
 ### <a name="tests"></a> Misc
