@@ -1,4 +1,3 @@
-<!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://rxluz.github.io/booksys">
     <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/public/logoSocial.svg" alt="Booksys logo" height="80">
@@ -31,10 +30,10 @@
       <a href="#installation">Installation</a>
       <ul>
         <li>
-          <a href="#pre-conditions">Pre-conditions</a>
+          <a href="#installation-pre-conditions">Pre-conditions</a>
         </li>
         <li>
-          <a href="#available-scripts">Available scripts</a>
+          <a href="#installation-available-scripts">Available scripts</a>
         </li>
       </ul>
     </li>
@@ -45,19 +44,19 @@
       <a href="#conception">Conception</a>
       <ul>
         <li>
-          <a href="#research">Research</a>
+          <a href="#conception-research">Research</a>
         </li>
         <li>
-          <a href="#wireframes">Wireframes</a>
+          <a href="#conception-wireframes">Wireframes</a>
         </li>
         <li>
-          <a href="#mockups">Mockups</a>
+          <a href="#conception-mockups">Mockups</a>
         </li>
         <li>
-          <a href="#prototypes">Prototypes</a>
+          <a href="#conception-prototypes">Prototypes</a>
         </li>
         <li>
-          <a href="#features-list">Features list</a>
+          <a href="#conception-features-list">Features list</a>
         </li>
       </ul>
     </li>
@@ -65,13 +64,13 @@
       <a href="#system-design">System design</a>
       <ul>
         <li>
-          <a href="#business-rules-diagram">Business rules diagram</a>
+          <a href="#system-design-business-rules-diagram">Business rules diagram</a>
         </li>
         <li>
-          <a href="#static-pages-and-assets">Static pages and assets</a>
+          <a href="#system-design-static-pages-and-assets">Static pages and assets</a>
         </li>
         <li>
-          <a href="#folder-structure">Folder structure</a>
+          <a href="#system-design-folder-structure">Folder structure</a>
         </li>
       </ul>
     </li>
@@ -79,53 +78,53 @@
       <a href="#api">API</a>
       <ul>
         <li>
-          <a href="#database-schema">Database schema</a>
+          <a href="#api-database-schema">Database schema</a>
         </li>
         <li>
           <a href="#api-schema">API schema</a>
         </li>
         <li>
-          <a href="#mock-data">Mock data</a>
+          <a href="#api-mock-data">Mock data</a>
         </li>
         <li>
-          <a href="#security">Security</a>
+          <a href="#api-security">Security</a>
         </li>
         <li>
-          <a href="#https">HTTPS</a>
+          <a href="#api-https">HTTPS</a>
         </li>
         <li>
-          <a href="#dns-protection">DNS Protection</a>
+          <a href="#api-dns-protection">DNS Protection</a>
         </li>
         <li>
-          <a href="#csp">CSP (Content Security Policy)</a>
+          <a href="#api-csp">CSP (Content Security Policy)</a>
         </li>
         <li>
-          <a href="#headers">Headers</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#frontend">Invalid states</a>
-      <ul>
-        <li>
-          <a href="#empty-invalid-states">Empty/Invalid states</a>
-        </li>
-        <li>
-          <a href="#no-javascript-allowed">No Javascript allowed</a>
-        </li>
-        <li>
-          <a href="#404-pages">404 pages</a>
+          <a href="#api-headers">Headers</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#frontend">Components</a>
+      <a href="#components">Frontend components</a>
       <ul>
         <li>
-          <a href="#list">List</a>
+          <a href="#components-list">List</a>
         </li>
         <li>
-          <a href="#storybook">Storybook</a>
+          <a href="#components-storybook">Storybook</a>
+        </li>
+        <li>
+          <a href="#components-invalid-states">Invalid states</a>
+          <ul>
+            <li>
+              <a href="#components-invalid-states">Empty/Invalid states</a>
+            </li>
+            <li>
+              <a href="#components-invalid-states">No Javascript allowed</a>
+            </li>
+            <li>
+              <a href="#components-invalid-states">404 pages</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </li>
@@ -133,10 +132,10 @@
       <a href="#responsiveness">Responsiveness</a>
       <ul>
         <li>
-          <a href="#tests-result-in-light-mode">Tests result in light mode</a>
+          <a href="#responsiveness-tests-result-in-light-mode">Tests result in light mode</a>
         </li>
         <li>
-          <a href="#tests-result-in-dark-mode">Tests result in dark mode</a>
+          <a href="#responsiveness-tests-result-in-dark-mode">Tests result in dark mode</a>
         </li>
       </ul>
     </li>
@@ -211,9 +210,6 @@
         <li>
           <a href="#browser-tests-results">Tests results</a>
         </li>
-        <li>
-          <a href="#security-content-security-policy">Content Security Policy (CSP)</a>
-        </li>
       </ul>
     </li>
     <li>
@@ -284,7 +280,9 @@
   </ol>
 </details>
 
-### Original requirements
+### <a name="introduction"></a> Introduction
+
+### <a name="original-requirements"></a> Original requirements
 
 Two companies, COKE and PEPSI, are sharing an office building but as they are competitors, they don’t trust each other. Tomorrow is COLA day (for one day), that the two companies are celebrating. They are gathering a number of business partners in the building. In order to optimize space utilization, they have decided to set-up a joint booking system where any user can book one of the 20 meeting rooms available, 10 from each company (C01, C02, ..., C10 and P01, P02, ...., P10).
 
@@ -298,11 +296,40 @@ The booking system has the following functionalities:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Project install
+### <a name="installation"></a> Installation
+
+<details>
+<summary>
+<a name="installation-pre-conditions"></a> Pre conditions
+</summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+</details>
 
-### Resources list
+<details>
+<summary>
+<a name="installation-pre-conditions"></a> Available scripts
+</summary>
+
+| Command                              | Description                                                                                                                    |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| `npm run client:start`               | Start the frontend application in watch mode                                                                                   |
+| `npm run client:build`               | Generate the frontend assets in `build` folder                                                                                 |
+| `npm run client:deploy`              | Deploy the application to GitHub Pages                                                                                         |
+| `npm run client:test`                | Run the tests created after the last commit and watch for new tests                                                            |
+| `npm run client:test:coverage`       | Run the tests and generate a coverage report in `coverage` folder                                                              |
+| `npm run client:lighthouse`          | Generate a lighthouse report in `build/lighhouse` folder                                                                       |
+| `npm run client:build-storybook`     | Generate the storybook assets in `build/storybook` folder                                                                      |
+| `npm run client:bundle-analysis`     | Generate the bundle size report in `build` folder                                                                              |
+| `npm run client:eject`               | Allows to customize the configuration under Create-React-App, please note that this is a one-way operation and can't be undone |
+| `npm run client:translation:extract` | Extract from code all the translatable strings                                                                                 |
+| `npm run client:translation:import`  | Import from .po files the translations                                                                                         |
+| `npm run client:storybook`           | Run the storybook in watch mode                                                                                                |
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+### <a name="resources-list"></a> Resources list
 
 | Title                                                                                                    | Description                                                                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -315,5 +342,358 @@ The booking system has the following functionalities:
 | [Wireframes](https://github.com/rxluz/booksys/blob/main/docs/wireframes/wireframes.pdf)                  | The initial draft to build booksys                                                                                                                                                                                                              |
 | [Mockups](https://app.moqups.com/pSG0jJ9bhn/view/page/ad64222d5)                                         | Low fidelity layout                                                                                                                                                                                                                             |
 | [Figma](https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys)                                       | High fidelity layout                                                                                                                                                                                                                            |
+| [API Documentation](https://documenter.getpostman.com/view/1217791/UUy38mGk)                             | Show all available endpoints, fields and methods                                                                                                                                                                                                |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+### <a name="conception"></a> Conception
+
+<details>
+<summary>
+<a name="conception-research"></a> Research
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="conception-wireframes"></a> Wireframes
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="conception-mockups"></a> Mockups
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="conception-prototypes"></a> Prototypes
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="conception-features-list"></a> Features list
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+### <a name="system-design"></a> System design
+
+<details>
+<summary>
+<a name="system-design-business-rules-diagram"></a> Business rules diagram
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="system-design-static-pages-and-assets"></a> Static pages and assets
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="system-design-folder-structure"></a> Folder structure
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+### <a name="api"></a> API
+
+<details>
+<summary>
+<a name="api-database-schema"></a> Database schema
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="api-schema"></a> API schema
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="api-mock-data"></a> Mock data
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="api-security"></a> Security
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="api-https"></a> HTTPS
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="api-dns-protection"></a> DNS Protection
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="api-csp"></a> CSP (Content Security Policy)
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="api-headers"></a> Headers
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+### <a name="components"></a> Frontend components
+
+<details>
+<summary>
+<a name="components-list"></a> List
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="components-storybook"></a> Storybook
+</summary>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+<details>
+<summary>
+<a name="components-invalid-states"></a> Invalid states
+</summary>
+
+#### Empty/Invalid states
+
+#### No Javascript allowed
+
+#### 404 pages
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+</details>
+
+### <a name="responsiveness"></a> Responsiveness
+
+<details>
+<summary>
+<a name="responsiveness-tests-result-in-light-mode"></a> Tests result in light mode
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="responsiveness-tests-result-in-dark-mode"></a> Tests result in dark mode
+</summary>
+</details>
+
+### <a name="accessibility"></a> Accessibility
+
+<details>
+<summary>
+<a name="accessibility-main-actions"></a> Main actions
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="accessibility-tests-results"></a> Tests results
+</summary>
+</details>
+
+### <a name="performance"></a> Performance
+
+<details>
+<summary>
+<a name="performance-main-actions"></a> Main actions
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="performance-lighthouse-tests"></a> Lighthouse tests
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="performance-bundle-size-report"></a> Bundle size report
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="performance-assets-split"></a> Assets split
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="performance-tests-results"></a> Tests results
+</summary>
+</details>
+
+### <a name="internationalization"></a> Internationalization
+
+<details>
+<summary>
+<a name="internationalization-how-it-works"></a> How it works
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="internationalization-use-a-different-language"></a> Use a different language
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="internationalization-add-a-new-language"></a> Add a new language
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="internationalization-change-translations"></a> Change translations
+</summary>
+</details>
+
+### <a name="security"></a> Security
+
+<details>
+<summary>
+<a name="security-main-actions"></a> Main actions
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with Husky
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="security-content-security-policy"></a> Content Security Policy (CSP)
+</summary>
+</details>
+
+### <a name="browser-compatibility"></a> Browser compatibility
+
+<details>
+<summary>
+<a name="compatibility-main-actions"></a> Main actions
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="browser-tests-results"></a> Tests results
+</summary>
+</details>
+
+### <a name="seo"></a> SEO
+
+<details>
+<summary>
+<a name="seo-tracking"></a> Tracking
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="seo-social-share"></a> Social share
+</summary>
+</details>
+
+### <a name="tests"></a> Tests
+
+<details>
+<summary>
+<a name="tests-run-tests"></a> Run tests
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="tests-add-new-tests"></a> Add new tests
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="tests-coverage-report"></a> Coverage report
+</summary>
+</details>
+
+### <a name="tests"></a> Misc
+
+<details>
+<summary>
+<a name="misc-main-tools"></a> Main tools
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="misc-todo-list"></a> Todo list
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="misc-project-numbers"></a> Project numbers
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="misc-known-issues"></a> Known issues
+</summary>
+</details>
+
+<details>
+<summary>
+<a name="misc-acknowledgements"></a> Acknowledgements
+</summary>
+</details>

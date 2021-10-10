@@ -39,18 +39,18 @@
     "uuid": "^7.0.3"
   },
   "scripts": {
-    "deploy": "npm run build && npm run build-storybook && npm run bundle-analysis && npm run build-storybook && CI=true react-scripts test --coverage --silent && cd build && cd .. && cp -r ./coverage ./build/coverage && npm run lighthouse && gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "PUBLIC_URL=https://rxluz.github.io/booksys && react-scripts build",
-    "test:coverage": "CI=true react-scripts test --coverage",
-    "test": "react-scripts test",
-    "lighthouse": "mkdir -p ./build/lighthouse && npx lighthouse https://rxluz.github.io/booksys/ --output-path=./build/lighthouse/report.html",
-    "build-storybook": "build-storybook -s public -o build/storybook",
-    "bundle-analysis": "npx cra-bundle-analyzer -r bundle-analysis.htm",
-    "eject": "react-scripts eject",
-    "translation:extract": "i18n_extract --pattern=translate --source=src --locales=src/common/locales",
-    "translation:import": "i18n_import --translations=src/common/locales --locales=src/common/locales",
-    "storybook": "start-storybook -p 6006 -s public"
+    "client:start": "react-scripts start",
+    "client:build": "PUBLIC_URL=https://rxluz.github.io/booksys && react-scripts build",
+    "client:deploy": "npm run client:build && npm run client:build-storybook && npm run client:bundle-analysis && npm run client:build-storybook && CI=true react-scripts test --coverage --silent && cd build && cd .. && cp -r ./coverage ./build/coverage && npm run client:lighthouse && gh-pages -d build",
+    "client:test": "react-scripts test",
+    "client:test:coverage": "CI=true react-scripts test --coverage",
+    "client:lighthouse": "mkdir -p ./build/lighthouse && npx lighthouse https://rxluz.github.io/booksys/ --output-path=./build/lighthouse/report.html",
+    "client:bundle-analysis": "npx cra-bundle-analyzer -r bundle-analysis.htm",
+    "client:eject": "react-scripts eject",
+    "client:translation:extract": "i18n_extract --pattern=translate --source=src --locales=src/common/locales",
+    "client:translation:import": "i18n_import --translations=src/common/locales --locales=src/common/locales",
+    "client:storybook": "start-storybook -p 6006 -s public",
+    "client:build-storybook": "build-storybook -s public -o build/storybook"
   },
   "eslintConfig": {
     "extends": "react-app",
