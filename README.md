@@ -194,6 +194,149 @@ Expand
 <a name="system-design-folder-structure"></a> Folder structure
 </summary>
 
+├── CHANGELOG.md
+├── CNAME
+├── LICENSE
+├── Procfile
+├── README.md
+├── build
+├── coverage
+│   ├── clover.xml
+│   ├── coverage-final.json
+│   ├── lcov-report
+│   └── lcov.info
+├── cypress
+│   └── integration
+│   └── home_spec.js
+├── docs
+├── eslint-config.json
+├── jsconfig.json
+├── migrations
+│   └── tables.sql
+├── package-lock.json
+├── package.json
+├── public
+├── security_report.json
+├── src
+│   ├── common
+│   │   ├── components
+│   │   │   ├── button
+│   │   │   │   ├── Button.js
+│   │   │   │   ├── Button.scss
+│   │   │   │   ├── Button.spec.js
+│   │   │   │   ├── Button.stories.js
+│   │   │   │   └── index.js
+│   │   │   ├── companyCard
+│   │   │   │   ├── CompanyCard.js
+│   │   │   │   ├── CompanyCard.scss
+│   │   │   │   ├── CompanyCard.spec.js
+│   │   │   │   ├── CompanyCard.stories.js
+│   │   │   │   ├── companyCardBackground.png
+│   │   │   │   └── index.js
+│   │   │   ├── input
+│   │   │   │   ├── Input.js
+│   │   │   │   ├── Input.scss
+│   │   │   │   ├── Input.spec.js
+│   │   │   │   ├── Input.stories.js
+│   │   │   │   └── index.js
+│   │   │   ├── loading
+│   │   │   │   ├── Loading.js
+│   │   │   │   ├── Loading.spec.js
+│   │   │   │   └── index.js
+│   │   │   ├── officeCard
+│   │   │   │   ├── OfficeCard.js
+│   │   │   │   ├── OfficeCard.scss
+│   │   │   │   ├── OfficeCard.spec.js
+│   │   │   │   ├── OfficeCard.stories.js
+│   │   │   │   └── index.js
+│   │   │   ├── pagination
+│   │   │   │   ├── Pagination.js
+│   │   │   │   ├── Pagination.scss
+│   │   │   │   ├── Pagination.spec.js
+│   │   │   │   ├── Pagination.stories.js
+│   │   │   │   └── index.js
+│   │   │   └── warning
+│   │   │   ├── Warning.js
+│   │   │   ├── Warning.scss
+│   │   │   ├── Warning.spec.js
+│   │   │   ├── Warning.stories.js
+│   │   │   ├── email.svg
+│   │   │   ├── index.js
+│   │   │   └── something-wrong.svg
+│   │   ├── locales
+│   │   │   ├── en.mo
+│   │   │   ├── en.po
+│   │   │   ├── pt_BR.mo
+│   │   │   ├── pt_BR.po
+│   │   │   ├── template.pot
+│   │   │   └── translations.js
+│   │   ├── routes
+│   │   │   ├── RoutesList.js
+│   │   │   └── TestRoute.js
+│   │   └── utils
+│   │   ├── browser.utils.js
+│   │   ├── colours.constants.js
+│   │   ├── colours.scss
+│   │   ├── general.constants.js
+│   │   ├── general.utils.js
+│   │   ├── os.utils.js
+│   │   ├── state.utils.js
+│   │   ├── storybookMode.js
+│   │   ├── storybookMode.scss
+│   │   └── test.utils.js
+│   ├── enhancers
+│   │   └── monitorReducer.js
+│   ├── index.css
+│   ├── index.js
+│   ├── middleware
+│   │   └── logger.js
+│   ├── modules
+│   │   ├── booking
+│   │   │   ├── Booking.actions.js
+│   │   │   ├── Booking.constants.js
+│   │   │   ├── Booking.js
+│   │   │   ├── Booking.services.js
+│   │   │   ├── change
+│   │   │   │   ├── Change.page.js
+│   │   │   │   ├── Change.scss
+│   │   │   │   └── Change.spec.js
+│   │   │   ├── create
+│   │   │   │   ├── Create.constants.js
+│   │   │   │   ├── Create.js
+│   │   │   │   ├── Create.page.js
+│   │   │   │   ├── Create.scss
+│   │   │   │   ├── Create.services.js
+│   │   │   │   └── Create.spec.js
+│   │   │   └── status
+│   │   │   ├── Status.page.js
+│   │   │   ├── Status.scss
+│   │   │   └── Status.spec.js
+│   │   ├── company
+│   │   │   ├── Company.actions.js
+│   │   │   ├── Company.constants.js
+│   │   │   ├── Company.js
+│   │   │   ├── Company.page.js
+│   │   │   └── Company.services.js
+│   │   └── main
+│   │   ├── BodyClasses.js
+│   │   ├── Main.js
+│   │   ├── Main.scss
+│   │   ├── NotFound.js
+│   │   ├── NotFound.svg
+│   │   ├── background.png
+│   │   ├── loading.svg
+│   │   └── logo.svg
+│   ├── reducers
+│   │   ├── booking.js
+│   │   ├── company.js
+│   │   ├── configureStore.js
+│   │   ├── index.js
+│   │   └── settings.js
+│   ├── serviceWorker.js
+│   └── setupTests.js
+├── yarn-error.log
+└── yarn.lock
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
@@ -476,7 +619,7 @@ This plugin has an option to import data from PO files. Thus the person responsi
 <br>
 There are two ways to use a different language:
 
-- **Auto-detected**: Booksys detects your browser preferred language, and in case the application has this language package available, it displays the website in this language. Otherwise, the application displays English as default.
+- **Auto-detected**: Booksys [detects your browser preferred language](https://github.com/rxluz/booksys/blob/95c6ca1292d5399976ad9028a2b0a41a34585ab1/src/common/utils/general.utils.js#L23), and in case the application has this language package available, it displays the website in this language. Otherwise, the application displays English as default.
 - **Using the `lang` parameter**: The application allows the user to set the language manually, sending in the URL the prefered language; for instance, you can see Booksys in Portuguese using the following URL:
 
 https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/booking123
@@ -506,7 +649,7 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 <summary>
 <a name="internationalization-change-translations"></a> Change translations
 </summary>
-<br>
+
 You can change the translations using [Poedit](https://poedit.net/) and reimport the file or change the `translation.js` in the [`src/common/locales/`](https://github.com/rxluz/booksys/tree/main/src/common/locales) folder.
 
 Some situations require changing this file straight due to a bug to export plurals; you need to edit this file directly when you need plurals.
