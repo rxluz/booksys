@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1633891763437" clover="3.2.0">
-  <project timestamp="1633891763437" name="All files">
-    <metrics statements="468" coveredstatements="152" conditionals="182" coveredconditionals="57" methods="191" coveredmethods="45" elements="841" coveredelements="254" complexity="0" loc="468" ncloc="468" packages="20" files="58" classes="58"/>
+<coverage generated="1633892103654" clover="3.2.0">
+  <project timestamp="1633892103654" name="All files">
+    <metrics statements="469" coveredstatements="152" conditionals="182" coveredconditionals="57" methods="191" coveredmethods="45" elements="842" coveredelements="254" complexity="0" loc="469" ncloc="469" packages="20" files="58" classes="58"/>
     <package name="src">
       <metrics statements="46" coveredstatements="0" conditionals="32" coveredconditionals="0" methods="17" coveredmethods="0"/>
       <file name="index.js" path="/Users/rxluz/Documents/GitHub/booksys/src/index.js">
@@ -356,7 +356,7 @@
       </file>
     </package>
     <package name="src.modules.booking">
-      <metrics statements="44" coveredstatements="6" conditionals="9" coveredconditionals="0" methods="20" coveredmethods="2"/>
+      <metrics statements="45" coveredstatements="6" conditionals="9" coveredconditionals="0" methods="20" coveredmethods="2"/>
       <file name="Booking.actions.js" path="/Users/rxluz/Documents/GitHub/booksys/src/modules/booking/Booking.actions.js">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
@@ -373,38 +373,39 @@
         <line num="35" count="1" type="stmt"/>
       </file>
       <file name="Booking.js" path="/Users/rxluz/Documents/GitHub/booksys/src/modules/booking/Booking.js">
-        <metrics statements="31" coveredstatements="0" conditionals="9" coveredconditionals="0" methods="15" coveredmethods="0"/>
+        <metrics statements="32" coveredstatements="0" conditionals="9" coveredconditionals="0" methods="15" coveredmethods="0"/>
         <line num="24" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
-        <line num="31" count="0" type="cond" truecount="0" falsecount="3"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="33" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="41" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="42" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="43" count="0" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
-        <line num="54" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="55" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="56" count="0" type="stmt"/>
         <line num="57" count="0" type="stmt"/>
-        <line num="63" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
         <line num="73" count="0" type="stmt"/>
         <line num="74" count="0" type="stmt"/>
-        <line num="76" count="0" type="stmt"/>
-        <line num="78" count="0" type="stmt"/>
-        <line num="80" count="0" type="stmt"/>
-        <line num="88" count="0" type="stmt"/>
-        <line num="91" count="0" type="stmt"/>
-        <line num="99" count="0" type="stmt"/>
-        <line num="103" count="0" type="stmt"/>
-        <line num="105" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="100" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
         <line num="106" count="0" type="stmt"/>
+        <line num="107" count="0" type="stmt"/>
       </file>
       <file name="Booking.services.js" path="/Users/rxluz/Documents/GitHub/booksys/src/modules/booking/Booking.services.js">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
