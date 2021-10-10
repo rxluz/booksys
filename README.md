@@ -361,6 +361,23 @@ The booking system has the following functionalities:
 <a name="conception-wireframes"></a> Wireframes
 </summary>
 
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-one.jpg?raw=true">
+    </td>
+    <td>
+      <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-two.jpg?raw=true">
+    </td>
+  </tr>
+  <tr>
+    <td>First wireframe draft</td>
+    <td>Last wireframe</td>
+  </tr>
+</table>
+
+<a href="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframes.pdf">View full wireframe doc</a>
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
