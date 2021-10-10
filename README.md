@@ -386,6 +386,8 @@ The booking system has the following functionalities:
 <a name="conception-mockups"></a> Mockups
 </summary>
 
+<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/mockups.png">
+<a href="https://github.com/rxluz/booksys/blob/feat-docs/docs/mockups.pdf">View full mockup doc</a>
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
@@ -393,6 +395,9 @@ The booking system has the following functionalities:
 <summary>
 <a name="conception-prototypes"></a> Prototypes
 </summary>
+
+<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/prototype.png">
+<a href="https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys">View full prototype doc</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
