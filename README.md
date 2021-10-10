@@ -61,6 +61,7 @@ download poedit
 | `npm run client:build`               | Generate the frontend assets in `build` folder                                                                                 |
 | `npm run client:deploy`              | Deploy the application to GitHub Pages                                                                                         |
 | `npm run client:test`                | Run the tests created after the last commit and watch for new tests                                                            |
+| `npm run client:cypress:open`        | Run the E2E tests                                                                                                              |
 | `npm run client:test:coverage`       | Run the tests and generate a coverage report in `coverage` folder                                                              |
 | `npm run client:lighthouse`          | Generate a lighthouse report in `build/lighhouse` folder                                                                       |
 | `npm run client:build-storybook`     | Generate the storybook assets in `build/storybook` folder                                                                      |
@@ -608,12 +609,29 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
 <summary>
 <a name="tests-run-tests"></a> Run tests
 </summary>
+
+Booksys utilises testing-library and Jest to do unit tests and Cypress to do E2E tests; the following commands are available to run tests:
+
+| Command                        | Description                                                         |
+| ------------------------------ | ------------------------------------------------------------------- |
+| `npm run client:test`          | Run the tests created after the last commit and watch for new tests |
+| `npm run client:cypress:open`  | Run the E2E tests                                                   |
+| `npm run client:test:coverage` | Run the tests and generate a coverage report in `coverage` folder   |
+
+The coverage tests report is initially generated in the `/coverage/lcov-report/` folder, but these files are copied to the `build/` folder during the deployment.
+
 </details>
 
 <details>
 <summary>
 <a name="tests-add-new-tests"></a> Add new tests
 </summary>
+
+To add new tests to the application, do the following procedure according to the test type:
+
+- **Unit tests**: The unit tests should be done inside the component folder using the exact name of the component, adding `.spec.js` at the end
+- **E2E tests**: All E2E tests should be located inside the `cypress/integration` folder, and they need to finish the file name with `_spec.js`
+
 </details>
 
 <details>
@@ -639,6 +657,10 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
 <summary>
 <a name="misc-todo-list"></a> Todo list
 </summary>
+
+improve tests coverage
+add e2e tests
+
 </details>
 
 <details>
