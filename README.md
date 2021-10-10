@@ -488,6 +488,30 @@ Some `4xx` errors that could be handled programmatically and include an error 
 <summary>
 <a name="seo-social-share"></a> Social share
 </summary>
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/whatsAppShare.png?raw=true">
+    </td>
+    <td>
+      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/facebookShare.png?raw=true">
+    </td>
+    <td>
+      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/slackShare.png?raw=true">
+    </td>
+  </tr>
+  <tr>
+    <td>
+    Whatsapp card
+    </td>
+    <td>
+    Facebook card
+    </td>
+    <td>
+    Slack card
+    </td>
+  </tr>
+</table>
 </details>
 
 ### <a name="tests"></a> Tests
@@ -509,8 +533,8 @@ Some `4xx` errors that could be handled programmatically and include an error 
 <a name="tests-coverage-report"></a> Coverage report
 </summary>
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/prototype.png">
-<a href="https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys">View full prototype doc</a>
+<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/docs/coverageTestResult.png">
+<a href="https://rxluz.github.io/booksys/coverage/lcov-report/index.html">View full coverage report</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
