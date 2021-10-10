@@ -6,7 +6,7 @@
     <br />
     <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Generic%20Laptop.jpg?raw=true">
     <br />
-    **Booksys is a booking system that allows different companies to book offices in a given event.**
+    <b>Booksys is a booking system that allows different companies to book offices in a given event.</b>
     <br />
     <a href="https://github.com/rxluz/booksys/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
