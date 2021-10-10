@@ -18,6 +18,20 @@
 
 ### <a name="introduction"></a> Introduction
 
+Booksys is a project focused on the frontend features; However the API, DB schema, migrations are all defined but not implemented; the project uses mock data to display the backend resources correctly.
+
+Bellow is the URL to check the different application states:
+
+| URL                                                                                                                | State                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| https://rxluz.github.io/booksys/#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6                                             | Initial request booking form to Coca Cola users, only accepts emails with the following domains: - cocacola.com - cocacola.ie |
+| https://rxluz.github.io/booksys/#/f76a49f4-73c4-44ce-1fa1-7242bd3d3cc6                                             | Initial page to Pepsi Cola users, only accepts emails with the following domains: - pepsi.com - pepsi.ie                      |
+| https://rxluz.github.io/booksys/#/f76a49f4-73c4-44ce-1fa1-7242bd3d3ac6                                             | Page displayed when the event already happened                                                                                |
+| https://rxluz.github.io/booksys/#/invalidCompanyId                                                                 | Page displayed when the company doesn't exist                                                                                 |
+| https://rxluz.github.io/booksys#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/a76a49f4-73c4-44ce-8fa1-7242bd3d3cc6 | Success page that is displayed when the user confirmed the booking using the link sent by their email.                        |
+| https://rxluz.github.io/booksys#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/a7aa49f4-73c4-44ce-8fa1-7242bd3d3cc6 | Cancel booking page that is displayed when the user cancel the booking.                                                       |
+| https://rxluz.github.io/booksys#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/a74t49f4-73c4-44ce-8fa1-7242bd3d3cc6 | Change booking page that is displayed when the requested time and seats preferences isn't available anymore.                  |
+
 ### <a name="original-requirements"></a> Spec
 
 <details>
@@ -687,7 +701,9 @@ Some situations require changing this file straight due to a bug to export plura
 <a name="compatibility-main-actions"></a> Main actions
 </summary>
 <br>
+
 The application is compatible with the following browsers:
+
 - Microsoft Edge
 - Opera
 - Firefox
@@ -696,7 +712,7 @@ The application is compatible with the following browsers:
 
 This application uses [Polyfill.io](https://polyfill.io/v3/) to ensure that the application will run in an old browser. Also, all code is compiled to ES5 to avoid breaking the application due to some modern JS syntax.
 
-However, due to modern CSS units, we can't guarantee that everything will work properly in an old browser like Internet Explorer.
+However, due to modern CSS units, it not guaranteed that everything will work properly in an old browser like Internet Explorer.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
@@ -809,6 +825,9 @@ To add new tests to the application, do the following procedure according to the
 
 improve tests coverage
 add e2e tests
+use better accessibility tests tools
+remove moment
+improve support to ie11
 
 </details>
 
