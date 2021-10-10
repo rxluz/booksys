@@ -193,6 +193,7 @@ Expand
 <summary>
 <a name="system-design-folder-structure"></a> Folder structure
 </summary>
+
 ```bash
 ├── CHANGELOG.md
 ├── CNAME
