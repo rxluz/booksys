@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://rxluz.github.io/booksys">
-    <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/public/logoSocial.svg" alt="Booksys logo" height="80">
+    <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/public/logoSocial.svg" alt="Booksys logo" height="80">
   </a>
   <p align="center">
     Booksys is a booking system that allows different companies to book offices in a given event.
@@ -997,6 +997,7 @@ add e2e tests
 use better accessibility tests tools
 remove moment
 improve support to ie11
+remove object hash
 
 <h4>
 <a name="misc-project-numbers"></a> Project numbers
