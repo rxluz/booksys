@@ -34,7 +34,6 @@ Bellow is the URL to check the different application states:
 
 ### <a name="original-requirements"></a> Spec
 
-<details>
 <summary>
 <a name="installation-pre-conditions"></a> Expand
 </summary>
@@ -50,11 +49,9 @@ The booking system has the following functionalities:
 ● Users can cancel their own reservations
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="installation"></a> Installation
 
-<details>
 <summary>
 <a name="installation-pre-conditions"></a> Pre conditions
 </summary>
@@ -62,9 +59,7 @@ The booking system has the following functionalities:
 download poedit
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="installation-pre-conditions"></a> Available scripts
 </summary>
@@ -86,11 +81,9 @@ download poedit
 | `npm run client:storybook`           | Run the storybook in watch mode                                                                                                |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="resources-list"></a> Resources list
 
-<details>
 <summary>
 Expand
 </summary>
@@ -111,19 +104,15 @@ Expand
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="conception"></a> Conception
 
-<details>
 <summary>
 <a name="conception-research"></a> Research
 </summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="conception-wireframes"></a> Wireframes
 </summary>
@@ -152,9 +141,7 @@ Expand
 </table>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="conception-mockups"></a> Mockups
 </summary>
@@ -162,9 +149,7 @@ Expand
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/mockups.png">
 <a href="https://github.com/rxluz/booksys/blob/feat-docs/docs/mockups.pdf">View full mockup doc</a>
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="conception-prototypes"></a> Prototypes
 </summary>
@@ -173,19 +158,15 @@ Expand
 <a href="https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys">View full prototype doc</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="conception-features-list"></a> Features list
 </summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="system-design"></a> System design
 
-<details>
 <summary>
 <a name="system-design-application-flow-diagram"></a> Flow diagram
 </summary>
@@ -193,17 +174,13 @@ Expand
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/BRDiagram.drawio.svg">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="system-design-static-pages-and-assets"></a> Static pages and assets
 </summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="system-design-folder-structure"></a> Folder structure
 </summary>
@@ -354,11 +331,9 @@ Expand
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="api"></a> API
 
-<details>
 <summary>
 <a name="api-database-schema"></a> Database schema
 </summary>
@@ -368,9 +343,7 @@ Expand
 <a href="https://github.com/rxluz/booksys/blob/main/migrations/tables.sql">View database migrations</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="api-schema"></a> API schema
 </summary>
@@ -392,9 +365,7 @@ Some `4xx` errors that could be handled programmatically and include an error 
 <a href="https://documenter.getpostman.com/view/1217791/UUy38mGk">View full API documentation</a> <br />
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="api-mock-data"></a> Mock data
 </summary>
@@ -404,67 +375,51 @@ Booksys uses Postman to mock data and store the URL in [`general.constants.js`](
 The current mock system has some limitations, so it isn't possible to return a different simulated output when sending additional post content.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="api-security"></a> Security
 </summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="api-https"></a> HTTPS
 </summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="api-dns-protection"></a> DNS Protection
 </summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="api-csp"></a> CSP (Content Security Policy)
 </summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="api-headers"></a> Headers
 </summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="components"></a> Frontend components
 
-<details>
 <summary>
 <a name="components-list"></a> List
 </summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="components-storybook"></a> Storybook
 </summary>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="components-invalid-states"></a> Invalid states
 </summary>
@@ -476,11 +431,9 @@ The current mock system has some limitations, so it isn't possible to return a d
 #### 404 pages
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="responsiveness"></a> Responsiveness
 
-<details>
 <summary>
 <a name="responsiveness-tests-result-in-light-mode"></a> Tests result in light mode
 </summary>
@@ -503,9 +456,7 @@ The current mock system has some limitations, so it isn't possible to return a d
 | MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="responsiveness-tests-result-in-dark-mode"></a> Tests result in dark mode
 </summary>
@@ -528,17 +479,13 @@ The current mock system has some limitations, so it isn't possible to return a d
 | MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="accessibility"></a> Accessibility
 
-<details>
 <summary>
 <a name="accessibility-main-actions"></a> Main actions
 </summary>
-</details>
 
-<details>
 <summary>
 <a name="accessibility-tests-results"></a> Tests results
 </summary>
@@ -548,17 +495,13 @@ The current mock system has some limitations, so it isn't possible to return a d
 <br/>
 <a href="https://rxluz.github.io/booksys/lighthouse/report.html#accessibility">View full report</a>
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="performance"></a> Performance
 
-<details>
 <summary>
 <a name="performance-main-actions"></a> Main actions
 </summary>
-</details>
 
-<details>
 <summary>
 <a name="performance-lighthouse-tests"></a> Tests results
 </summary>
@@ -568,9 +511,7 @@ The current mock system has some limitations, so it isn't possible to return a d
 <br/>
 <a href="https://rxluz.github.io/booksys/lighthouse/report.html#performance">View full report</a>
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="performance-bundle-size-report"></a> Bundle size report
 </summary>
@@ -580,17 +521,13 @@ The current mock system has some limitations, so it isn't possible to return a d
 <br/>
 <a href="https://rxluz.github.io/booksys/bundle-analysis.htm">View full report</a>
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
-<details>
 <summary>
 <a name="performance-assets-split"></a> Assets split
 </summary>
-</details>
 
 ### <a name="internationalization"></a> Internationalization
 
-<details>
 <summary>
 <a name="internationalization-how-it-works"></a> How it works
 </summary>
@@ -626,9 +563,6 @@ This plugin has an option to import data from PO files. Thus the person responsi
 <a href="https://github.com/rxluz/booksys/tree/main/src/common/locales">View translation folder</a>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-</details>
-
-<details>
 <summary>
 <a name="internationalization-use-a-different-language"></a> Use a different language
 </summary>
@@ -642,9 +576,6 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-</details>
-
-<details>
 <summary>
 <a name="internationalization-add-a-new-language"></a> Add a new language
 </summary>
@@ -659,9 +590,6 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-</details>
-
-<details>
 <summary>
 <a name="internationalization-change-translations"></a> Change translations
 </summary>
@@ -672,31 +600,22 @@ Some situations require changing this file straight due to a bug to export plura
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-</details>
-
 ### <a name="security"></a> Security
 
-<details>
 <summary>
 <a name="security-main-actions"></a> Main actions
 </summary>
-</details>
 
-<details>
 <summary>
 <a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with Husky
 </summary>
-</details>
 
-<details>
 <summary>
 <a name="security-content-security-policy"></a> Content Security Policy (CSP)
 </summary>
-</details>
 
 ### <a name="browser-compatibility"></a> Browser compatibility
 
-<details>
 <summary>
 <a name="compatibility-main-actions"></a> Main actions
 </summary>
@@ -715,11 +634,9 @@ This application uses [Polyfill.io](https://polyfill.io/v3/) to ensure that the 
 However, due to modern CSS units, it not guaranteed that everything will work properly in an old browser like Internet Explorer.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="seo"></a> SEO
 
-<details>
 <summary>
 <a name="seo-tracking"></a> Main actions
 </summary>
@@ -732,9 +649,6 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-</details>
-
-<details>
 <summary>
 <a name="seo-social-share"></a> Social share screenshots
 </summary>
@@ -766,11 +680,9 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
     </td>
   </tr>
 </table>
-</details>
 
 ### <a name="tests"></a> Tests
 
-<details>
 <summary>
 <a name="tests-run-tests"></a> Run tests
 </summary>
@@ -785,9 +697,6 @@ Booksys utilises testing-library and Jest to do unit tests and Cypress to do E2E
 
 The coverage tests report is initially generated in the `/coverage/lcov-report/` folder, but these files are copied to the `build/` folder during the deployment.
 
-</details>
-
-<details>
 <summary>
 <a name="tests-add-new-tests"></a> Add new tests
 </summary>
@@ -797,9 +706,6 @@ To add new tests to the application, do the following procedure according to the
 - **Unit tests**: The unit tests should be done inside the component folder using the exact name of the component, adding `.spec.js` at the end
 - **E2E tests**: All E2E tests should be located inside the `cypress/integration` folder, and they need to finish the file name with `_spec.js`
 
-</details>
-
-<details>
 <summary>
 <a name="tests-coverage-report"></a> Coverage report
 </summary>
@@ -808,17 +714,13 @@ To add new tests to the application, do the following procedure according to the
 <a href="https://rxluz.github.io/booksys/coverage/lcov-report/index.html">View full coverage report</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-</details>
 
 ### <a name="tests"></a> Misc
 
-<details>
 <summary>
 <a name="misc-main-tools"></a> Main tools
 </summary>
-</details>
 
-<details>
 <summary>
 <a name="misc-todo-list"></a> Todo list
 </summary>
@@ -829,25 +731,16 @@ use better accessibility tests tools
 remove moment
 improve support to ie11
 
-</details>
-
-<details>
 <summary>
 <a name="misc-project-numbers"></a> Project numbers
 </summary>
-</details>
 
-<details>
 <summary>
 <a name="misc-known-issues"></a> Known issues
 </summary>
 
 plurals in translations
 
-</details>
-
-<details>
 <summary>
 <a name="misc-acknowledgements"></a> Acknowledgements
 </summary>
-</details>
