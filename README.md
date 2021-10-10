@@ -502,7 +502,7 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 <a name="internationalization-change-translations"></a> Change translations
 </summary>
 <br>
-You can change the translations using Poedit and reimport the file or change the `translation.js` in the `src/common/locales/` folder.
+You can change the translations using [Poedit](https://poedit.net/) and reimport the file or change the `translation.js` in the `src/common/locales` folder.
 
 Some situations require changing this file straight due to a bug to export plurals; you need to edit this file directly when you need plurals.
 
@@ -536,25 +536,41 @@ Some situations require changing this file straight due to a bug to export plura
 <summary>
 <a name="compatibility-main-actions"></a> Main actions
 </summary>
-</details>
+<br>
+The application is compatible with the following browsers:
+- Microsoft Edge
+- Opera
+- Firefox
+- Safari
+- Chrome
 
-<details>
-<summary>
-<a name="browser-tests-results"></a> Tests results
-</summary>
+This application uses [Polyfill.io](https://polyfill.io/v3/) to ensure that the application will run in an old browser. Also, all code is compiled to ES5 to avoid breaking the application due to some modern JS syntax.
+
+However, due to modern CSS units, we can't guarantee that everything will work properly in an old browser like Internet Explorer.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
 ### <a name="seo"></a> SEO
 
 <details>
 <summary>
-<a name="seo-tracking"></a> Tracking
+<a name="seo-tracking"></a> Main actions
 </summary>
+<br>
+This application isn't intended to be a social application or an application that needs to be well-positioned in Google Search. The SEO actions were mainly focused on ensuring that the shared images would appear correctly.
+
+To do that was added inside `index.html` several [metatags](https://github.com/rxluz/booksys/blob/main/public/index.html#L21) to allow the crawlers to display the Booksys website thumbnail correctly.
+
+Also, the application is connected with [Google Analytics](https://github.com/rxluz/booksys/blob/main/public/index.html#L52) to collect valuable insights about the performance and general improvements.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 </details>
 
 <details>
 <summary>
-<a name="seo-social-share"></a> Social share
+<a name="seo-social-share"></a> Social share screenshots
 </summary>
 <table>
   <tr>
