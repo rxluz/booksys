@@ -457,6 +457,11 @@ Another advantage is we don’t need to create JSON files. Instead, just code an
 
 This plugin has an option to import data from PO files. Thus the person responsible for translations doesn’t need to change internal files in your application, beyond easy is more secure.
 
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/poeditExample.png?raw=true">
+<br/>
+<a href="https://github.com/rxluz/booksys/tree/main/src/common/locales">View translation folder</a>
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 </details>
 
 <details>
@@ -470,6 +475,8 @@ There are two ways to use a different language:
 - **Using the `lang` parameter**: The application allows the user to set the language manually, sending in the URL the prefered language; for instance, you can see Booksys in Portuguese using the following URL:
 
 https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/booking123
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 </details>
 
@@ -486,12 +493,21 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 - This command will update the file `translations.js`
 - Case needed import new languages packages to [moment](https://momentjs.com/docs/#/i18n/) and add it inside the `general.utils.js` file in `src/common/utils` folder. (eg.: `import 'moment/locale/es'`
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 </details>
 
 <details>
 <summary>
 <a name="internationalization-change-translations"></a> Change translations
 </summary>
+<br>
+You can change the translations using Poedit and reimport the file or change the `translation.js` in the `src/common/locales/` folder.
+
+Some situations require changing this file straight due to a bug to export plurals; you need to edit this file directly when you need plurals.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 </details>
 
 ### <a name="security"></a> Security
@@ -619,6 +635,9 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 <summary>
 <a name="misc-known-issues"></a> Known issues
 </summary>
+
+plurals in translations
+
 </details>
 
 <details>
