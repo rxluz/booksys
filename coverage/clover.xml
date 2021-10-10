@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1633781017734" clover="3.2.0">
-  <project timestamp="1633781017734" name="All files">
-    <metrics statements="466" coveredstatements="151" conditionals="182" coveredconditionals="57" methods="190" coveredmethods="45" elements="838" coveredelements="253" complexity="0" loc="466" ncloc="466" packages="20" files="58" classes="58"/>
+<coverage generated="1633854928959" clover="3.2.0">
+  <project timestamp="1633854928959" name="All files">
+    <metrics statements="467" coveredstatements="152" conditionals="182" coveredconditionals="57" methods="190" coveredmethods="45" elements="839" coveredelements="254" complexity="0" loc="467" ncloc="467" packages="20" files="58" classes="58"/>
     <package name="src">
       <metrics statements="46" coveredstatements="0" conditionals="32" coveredconditionals="0" methods="17" coveredmethods="0"/>
       <file name="index.js" path="/Users/rxluz/Documents/GitHub/booksys/src/index.js">
@@ -231,7 +231,7 @@
       </file>
     </package>
     <package name="src.common.utils">
-      <metrics statements="72" coveredstatements="38" conditionals="48" coveredconditionals="16" methods="43" coveredmethods="16"/>
+      <metrics statements="73" coveredstatements="39" conditionals="48" coveredconditionals="16" methods="43" coveredmethods="16"/>
       <file name="browser.utils.js" path="/Users/rxluz/Documents/GitHub/booksys/src/common/utils/browser.utils.js">
         <metrics statements="3" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="3" type="stmt"/>
@@ -243,7 +243,7 @@
         <line num="1" count="0" type="stmt"/>
       </file>
       <file name="general.constants.js" path="/Users/rxluz/Documents/GitHub/booksys/src/common/utils/general.constants.js">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="6" type="stmt"/>
         <line num="3" count="6" type="stmt"/>
         <line num="5" count="6" type="stmt"/>
@@ -252,6 +252,7 @@
         <line num="9" count="6" type="stmt"/>
         <line num="11" count="6" type="stmt"/>
         <line num="13" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
       </file>
       <file name="general.utils.js" path="/Users/rxluz/Documents/GitHub/booksys/src/common/utils/general.utils.js">
         <metrics statements="42" coveredstatements="25" conditionals="26" coveredconditionals="12" methods="25" coveredmethods="12"/>
@@ -650,9 +651,9 @@
         <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
       </file>
       <file name="NotFound.js" path="/Users/rxluz/Documents/GitHub/booksys/src/modules/main/NotFound.js">
         <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>

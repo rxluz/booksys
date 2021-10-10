@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/booksys/static/css/main.8abec381.chunk.css",
-    "main.js": "/booksys/static/js/main.dc6bfe84.chunk.js",
-    "main.js.map": "/booksys/static/js/main.dc6bfe84.chunk.js.map",
+    "main.js": "/booksys/static/js/main.7046a36f.chunk.js",
+    "main.js.map": "/booksys/static/js/main.7046a36f.chunk.js.map",
     "runtime-main.js": "/booksys/static/js/runtime-main.004094f0.js",
     "runtime-main.js.map": "/booksys/static/js/runtime-main.004094f0.js.map",
     "static/css/2.54793866.chunk.css": "/booksys/static/css/2.54793866.chunk.css",
     "static/js/2.ad7c40dc.chunk.js": "/booksys/static/js/2.ad7c40dc.chunk.js",
     "static/js/2.ad7c40dc.chunk.js.map": "/booksys/static/js/2.ad7c40dc.chunk.js.map",
     "index.html": "/booksys/index.html",
-    "precache-manifest.3dbc91f2b016fbd92321db823a5ecc49.js": "/booksys/precache-manifest.3dbc91f2b016fbd92321db823a5ecc49.js",
+    "precache-manifest.f8a468febbb996ab4e56099e783f9d17.js": "/booksys/precache-manifest.f8a468febbb996ab4e56099e783f9d17.js",
     "service-worker.js": "/booksys/service-worker.js",
     "static/css/2.54793866.chunk.css.map": "/booksys/static/css/2.54793866.chunk.css.map",
     "static/css/main.8abec381.chunk.css.map": "/booksys/static/css/main.8abec381.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.54793866.chunk.css",
     "static/js/2.ad7c40dc.chunk.js",
     "static/css/main.8abec381.chunk.css",
-    "static/js/main.dc6bfe84.chunk.js"
+    "static/js/main.7046a36f.chunk.js"
   ]
 }
