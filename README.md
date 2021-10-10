@@ -16,6 +16,273 @@
   </p>
 </div>
 
+<details>
+
+<summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#introduction">Introduction</a>
+    </li>
+    <li>
+      <a href="#original-requirements">Original requirements</a>
+    </li>
+    <li>
+      <a href="#installation">Installation</a>
+      <ul>
+        <li>
+          <a href="#pre-conditions">Pre-conditions</a>
+        </li>
+        <li>
+          <a href="#available-scripts">Available scripts</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#resources-list">Resources list</a>
+    </li>
+    <li>
+      <a href="#conception">Conception</a>
+      <ul>
+        <li>
+          <a href="#research">Research</a>
+        </li>
+        <li>
+          <a href="#wireframes">Wireframes</a>
+        </li>
+        <li>
+          <a href="#mockups">Mockups</a>
+        </li>
+        <li>
+          <a href="#prototypes">Prototypes</a>
+        </li>
+        <li>
+          <a href="#features-list">Features list</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#system-design">System design</a>
+      <ul>
+        <li>
+          <a href="#business-rules-diagram">Business rules diagram</a>
+        </li>
+        <li>
+          <a href="#static-pages-and-assets">Static pages and assets</a>
+        </li>
+        <li>
+          <a href="#folder-structure">Folder structure</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#api">API</a>
+      <ul>
+        <li>
+          <a href="#database-schema">Database schema</a>
+        </li>
+        <li>
+          <a href="#api-schema">API schema</a>
+        </li>
+        <li>
+          <a href="#mock-data">Mock data</a>
+        </li>
+        <li>
+          <a href="#security">Security</a>
+        </li>
+        <li>
+          <a href="#https">HTTPS</a>
+        </li>
+        <li>
+          <a href="#dns-protection">DNS Protection</a>
+        </li>
+        <li>
+          <a href="#csp">CSP (Content Security Policy)</a>
+        </li>
+        <li>
+          <a href="#headers">Headers</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#frontend">Invalid states</a>
+      <ul>
+        <li>
+          <a href="#empty-invalid-states">Empty/Invalid states</a>
+        </li>
+        <li>
+          <a href="#no-javascript-allowed">No Javascript allowed</a>
+        </li>
+        <li>
+          <a href="#404-pages">404 pages</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#frontend">Components</a>
+      <ul>
+        <li>
+          <a href="#list">List</a>
+        </li>
+        <li>
+          <a href="#storybook">Storybook</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#responsiveness">Responsiveness</a>
+      <ul>
+        <li>
+          <a href="#tests-result-in-light-mode">Tests result in light mode</a>
+        </li>
+        <li>
+          <a href="#tests-result-in-dark-mode">Tests result in dark mode</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#accessibility">Accessibility</a>
+      <ul>
+        <li>
+          <a href="#accessibility-main-actions">Main actions</a>
+        </li>
+        <li>
+          <a href="#accessibility-tests-results">Tests results</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#performance">Performance</a>
+      <ul>
+        <li>
+          <a href="#performance-main-actions">Main actions</a>
+        </li>
+        <li>
+          <a href="#performance-lighthouse-tests">Lighthouse tests</a>
+        </li>
+        <li>
+          <a href="#performance-bundle-size-report">Bundle size report</a>
+        </li>
+        <li>
+          <a href="#performance-assets-split">Assets split</a>
+        </li>
+        <li>
+          <a href="#performance-tests-results">Tests results</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#internationalization">Internationalization</a>
+      <ul>
+        <li>
+          <a href="#internationalization-how-it-works">How it works</a>
+        </li>
+        <li>
+          <a href="#internationalization-use-a-different-language">Use a different language</a>
+        </li>
+        <li>
+          <a href="#internationalization-add-a-new-language">Add a new language</a>
+        </li>
+        <li>
+          <a href="#internationalization-change-translations">Change translations</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#security">Security</a>
+      <ul>
+        <li>
+          <a href="#security-main-actions">Main actions</a>
+        </li>
+        <li>
+          <a href="#security-npm-audit-integrated-with-husky">NPM Audit integrated with Husky</a>
+        </li>
+        <li>
+          <a href="#security-content-security-policy">Content Security Policy (CSP)</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#browser-compatibility">Browser compatibility</a>
+      <ul>
+        <li>
+          <a href="#browser-compatibility-main-actions">Main actions</a>
+        </li>
+        <li>
+          <a href="#browser-tests-results">Tests results</a>
+        </li>
+        <li>
+          <a href="#security-content-security-policy">Content Security Policy (CSP)</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#seo">SEO</a>
+      <ul>
+        <li>
+          <a href="#seo-tracking">Tracking</a>
+        </li>
+        <li>
+          <a href="#seo-social-share">Social share</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#ci-qa">CI / QA</a>
+      <ul>
+        <li>
+          <a href="#ci-qa-eslint-with-airbnb-rules">ESLint with Airbnb rules</a>
+        </li>
+        <li>
+          <a href="#ci-qa-prototypes">Prototypes (React)</a>
+        </li>
+        <li>
+          <a href="#ci-qa-sentry-integration">Sentry integration</a>
+        </li>
+        <li>
+          <a href="#ci-qa-flow-on-open-a-new-pr">Flow on open a new PR</a>
+        </li>
+        <li>
+          <a href="#ci-qa-flow-on-merge-a-pr-with-the-main-branch">Flow on merge a PR with the main branch</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#tests">Tests</a>
+      <ul>
+        <li>
+          <a href="#tests-run-tests">Run tests</a>
+        </li>
+        <li>
+          <a href="#tests-add-new-tests">Add new tests</a>
+        </li>
+        <li>
+          <a href="#tests-coverage-report">Coverage report</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#misc">Misc</a>
+      <ul>
+        <li>
+          <a href="#misc-main-tools">Main tools</a>
+        </li>
+        <li>
+          <a href="#misc-todo-list">Todo list</a>
+        </li>
+        <li>
+          <a href="#misc-project-numbers">Project numbers</a>
+        </li>
+        <li>
+          <a href="#misc-known-issues">Known issues</a>
+        </li>
+        <li>
+          <a href="#misc-acknowledgements">Acknowledgements</a>
+        </li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
 ### <a name="introduction"></a> Introduction
 
 Booksys is a project focused on the frontend features; However the API, DB schema, migrations are all defined but not implemented; the project uses mock data to display the backend resources correctly.
