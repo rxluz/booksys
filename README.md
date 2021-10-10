@@ -1,9 +1,11 @@
 <div align="center">
   <a href="https://rxluz.github.io/booksys">
-    <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/public/logoSocial.svg" alt="Booksys logo" height="80">
+    <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/public/logoSocialDark.svg" alt="Booksys logo" height="80">
   </a>
   <p align="center">
     Booksys is a booking system that allows different companies to book offices in a given event.
+    <br />
+    <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Generic%20Laptop.jpg?raw=true">
     <br />
     <a href="https://github.com/rxluz/booksys/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
