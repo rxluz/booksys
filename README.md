@@ -45,6 +45,8 @@ The booking system has the following functionalities:
 <a name="installation-pre-conditions"></a> Pre conditions
 </summary>
 
+download poedit
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
@@ -336,6 +338,7 @@ Some `4xx` errors that could be handled programmatically and include an error 
 | MacBook Pro 13          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2013.jpg?raw=true)            |
 | MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
 <details>
@@ -360,6 +363,7 @@ Some `4xx` errors that could be handled programmatically and include an error 
 | MacBook Pro 13          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2013.jpg?raw=true)            |
 | MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
 ### <a name="accessibility"></a> Accessibility
@@ -379,7 +383,7 @@ Some `4xx` errors that could be handled programmatically and include an error 
 <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/accessibilityTestResult.png?raw=true">
 <br/>
 <a href="https://rxluz.github.io/booksys/lighthouse/report.html#accessibility">View full report</a>
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
 ### <a name="performance"></a> Performance
@@ -395,9 +399,11 @@ Some `4xx` errors that could be handled programmatically and include an error 
 <a name="performance-lighthouse-tests"></a> Tests results
 </summary>
 
+<br/>
 <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/performanceTestResult.png?raw=true">
 <br/>
 <a href="https://rxluz.github.io/booksys/lighthouse/report.html#performance">View full report</a>
+<p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
 <details>
@@ -405,9 +411,11 @@ Some `4xx` errors that could be handled programmatically and include an error 
 <a name="performance-bundle-size-report"></a> Bundle size report
 </summary>
 
+<br/>
 <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/bundleSizeReport.png?raw=true">
 <br/>
 <a href="https://rxluz.github.io/booksys/bundle-analysis.htm">View full report</a>
+<p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
 <details>
@@ -422,18 +430,62 @@ Some `4xx` errors that could be handled programmatically and include an error 
 <summary>
 <a name="internationalization-how-it-works"></a> How it works
 </summary>
+
+I’ve tested some different ways to translate web applications, and I noticed that most of the developers work with strings inside a JSON file like this:
+
+```
+{
+    "ACTION_ACTIVE":"Aktiv",
+    "ACTION_CANCEL":"Cancel",
+    "ACTION_ADD":"Hinzufügen",
+    "ACTION_ADD_CUSTOMER":"Neuen Kunden hinzufügen",
+    "ACTION_BACK_TO_MENU":"Zurück zum Menü",
+    "ACTION_BACK_TO_LIST":"Zurück zur Liste",
+    "ACTION_CHECK":"Klick zum prüfen",
+    "ACTION_CHECK_NO_CV":"Keine CVV für diese Karte generieren",
+    "ACTION_CHECKOUT":"Check-out",
+}
+```
+
+Unfortunately, there are a lot of problems with this approach, JSON strings aren’t friendly to translators professionals. It is a typical pattern to developers but a nightmare for people who don’t know rules like putting quotation marks, commas, and brackets.
+
+When you have a number or a variable in the middle of the text, some situations will demand two strings. However, these strings together probably won’t make sense in other languages because different languages have different structures.
+
+I used [Redux i18n](https://www.npmjs.com/package/redux-i18n) to manage translations; with this plugin, you can use POT files, and this file is readable by [Poedit](https://poedit.net/), which translation professionals primarily use.
+
+Another advantage is we don’t need to create JSON files. Instead, just code and the plugin will extract your code the strings; looks cute, right?
+
+This plugin has an option to import data from PO files. Thus the person responsible for translations doesn’t need to change internal files in your application, beyond easy is more secure.
+
 </details>
 
 <details>
 <summary>
 <a name="internationalization-use-a-different-language"></a> Use a different language
 </summary>
+<br>
+There are two ways to use a different language:
+
+- **Auto-detected**: Booksys detects your browser preferred language, and in case the application has this language package available, it displays the website in this language. Otherwise, the application displays English as default.
+- **Using the `lang` parameter**: The application allows the user to set the language manually, sending in the URL the prefered language; for instance, you can see Booksys in Portuguese using the following URL:
+
+https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/booking123
+
 </details>
 
 <details>
 <summary>
 <a name="internationalization-add-a-new-language"></a> Add a new language
 </summary>
+
+- Run `npm run client:translation:extract`
+- Download [Poedit](https://poedit.net/)
+- Using [Poedit](https://poedit.net/) open the file `template.pot` in `src/common/locales/` folder
+- Create `.mo` and `.po` file translation in [Poedit](https://poedit.net/) and save this translation in the folder above
+- Run `npm run client:translation:import`
+- This command will update the file `translations.js`
+- Case needed import new languages packages to [moment](https://momentjs.com/docs/#/i18n/) and add it inside the `general.utils.js` file in `src/common/utils` folder. (eg.: `import 'moment/locale/es'`
+
 </details>
 
 <details>
@@ -490,14 +542,11 @@ Some `4xx` errors that could be handled programmatically and include an error 
 </summary>
 <table>
   <tr>
-    <td>
+    <td> 
       <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/whatsAppShare.png?raw=true">
     </td>
     <td>
       <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/facebookShare.png?raw=true">
-    </td>
-    <td>
-      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/slackShare.png?raw=true">
     </td>
   </tr>
   <tr>
@@ -507,6 +556,13 @@ Some `4xx` errors that could be handled programmatically and include an error 
     <td>
     Facebook card
     </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/slackShare.png?raw=true">
+    </td>
+  </tr>
+  <tr>
     <td>
     Slack card
     </td>
