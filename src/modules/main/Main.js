@@ -11,14 +11,16 @@ import LogoImg from './logo.svg'
 import RoutesList from 'common/routes/RoutesList'
 import BodyClasses from 'modules/main/BodyClasses'
 import Company from 'modules/company/Company'
-
+import * as generalConstants from 'common/utils/general.constants'
 import NotFound from 'modules/main/NotFound'
 
-const Main = (_props, { t: translate }) => (
+const Main = (_, { t: translate }) => (
   <BodyClasses>
     <div className="app" style={{ backgroundImage: `url(${BackgroundImg})` }}>
       <div className="app__logo">
-        <img src={LogoImg} alt={translate('Booksys logo')} />
+        <a href={generalConstants.BOOKSYS_REPO_URL}>
+          <img src={LogoImg} href alt={translate('Booksys logo')} />
+        </a>
       </div>
 
       <Switch>

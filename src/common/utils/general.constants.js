@@ -10,6 +10,8 @@ const GOOGLE_MAPS_URL = 'https://www.google.com/maps/search/'
 
 export const MAPS_URL = (address) => `${GOOGLE_MAPS_URL}${address}`
 
+export const BOOKSYS_REPO_URL = 'https://github.com/rxluz/booksys'
+
 export const BOOKSYS_CONSOLE_MESSAGE = `
 
 ██████╗      ██████╗      ██████╗     ██╗  ██╗    ███████╗    ██╗   ██╗    ███████╗
