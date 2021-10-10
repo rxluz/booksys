@@ -371,8 +371,16 @@ The booking system has the following functionalities:
     </td>
   </tr>
   <tr>
-    <td>First wireframe draft</td>
-    <td>Last wireframe</td>
+    <td>First wireframe iteration</td>
+    <td>Second wireframe iteration</td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-two.jpg?raw=true">
+    </td>
+  </tr>
+  <tr>
+    <td>Third wireframe iteration</td>
   </tr>
 </table>
 
@@ -416,8 +424,9 @@ The booking system has the following functionalities:
 <summary>
 <a name="system-design-application-flow-diagram"></a> Flow diagram
 </summary>
-
+<div class="bg-white">
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/BRDiagram.drawio.svg">
+</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
