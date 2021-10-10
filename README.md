@@ -417,6 +417,8 @@ The booking system has the following functionalities:
 <a name="system-design-business-rules-diagram"></a> Business rules diagram
 </summary>
 
+<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/BRDiagram.drawio.svg">
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 </details>
 
