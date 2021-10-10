@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc2e4a567edc6c29050ff2770cc9444a",
+    "revision": "288483678884a153f2b350e300166729",
     "url": "/booksys/index.html"
   },
   {
