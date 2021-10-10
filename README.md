@@ -18,7 +18,7 @@
 
 <details>
 
-<summary>Table of Contents</summary>
+<summary><a name="table-contents"></a>Table of Contents</summary>
   <ol>
     <li>
       <a href="#introduction">Introduction</a>
@@ -301,9 +301,9 @@ Bellow is the URL to check the different application states:
 
 ### <a name="original-requirements"></a> Spec
 
-<summary>
+<h4>
 <a name="installation-pre-conditions"></a> Expand
-</summary>
+</h4>
 
 Two companies, COKE and PEPSI, are sharing an office building but as they are competitors, they don’t trust each other. Tomorrow is COLA day (for one day), that the two companies are celebrating. They are gathering a number of business partners in the building. In order to optimize space utilization, they have decided to set-up a joint booking system where any user can book one of the 20 meeting rooms available, 10 from each company (C01, C02, ..., C10 and P01, P02, ...., P10).
 
@@ -315,21 +315,21 @@ The booking system has the following functionalities:
 
 ● Users can cancel their own reservations
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="installation"></a> Installation
 
-<summary>
+<h4>
 <a name="installation-pre-conditions"></a> Pre conditions
-</summary>
+</h4>
 
 download poedit
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="installation-pre-conditions"></a> Available scripts
-</summary>
+</h4>
 
 | Command                              | Description                                                                                                                    |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -347,13 +347,13 @@ download poedit
 | `npm run client:translation:import`  | Import from .po files the translations                                                                                         |
 | `npm run client:storybook`           | Run the storybook in watch mode                                                                                                |
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="resources-list"></a> Resources list
 
-<summary>
+<h4>
 Expand
-</summary>
+</h4>
 
 | Title                                                                                                    | Description                                                                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -368,21 +368,21 @@ Expand
 | [Figma](https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys)                                       | High fidelity layout                                                                                                                                                                                                                            |
 | [API Documentation](https://documenter.getpostman.com/view/1217791/UUy38mGk)                             | Show all available endpoints, fields and methods                                                                                                                                                                                                |
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="conception"></a> Conception
 
-<summary>
+<h4>
 <a name="conception-research"></a> Research
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="conception-wireframes"></a> Wireframes
-</summary>
+</h4>
 
 <table>
   <tr>
@@ -407,50 +407,50 @@ Expand
   </tr>
 </table>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="conception-mockups"></a> Mockups
-</summary>
+</h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/mockups.png">
 <a href="https://github.com/rxluz/booksys/blob/feat-docs/docs/mockups.pdf">View full mockup doc</a>
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="conception-prototypes"></a> Prototypes
-</summary>
+</h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/prototype.png">
 <a href="https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys">View full prototype doc</a>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="conception-features-list"></a> Features list
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="system-design"></a> System design
 
-<summary>
+<h4>
 <a name="system-design-application-flow-diagram"></a> Flow diagram
-</summary>
+</h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/BRDiagram.drawio.svg">
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="system-design-static-pages-and-assets"></a> Static pages and assets
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="system-design-folder-structure"></a> Folder structure
-</summary>
+</h4>
 
 ```bash
 ├── CHANGELOG.md
@@ -597,23 +597,23 @@ Expand
 └── yarn.lock
 ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="api"></a> API
 
-<summary>
+<h4>
 <a name="api-database-schema"></a> Database schema
-</summary>
+</h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbSchema.png">
 <a href="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbScheme.mwb">Download database schema</a> <br />
 <a href="https://github.com/rxluz/booksys/blob/main/migrations/tables.sql">View database migrations</a>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="api-schema"></a> API schema
-</summary>
+</h4>
 
 ## Introduction
 
@@ -631,65 +631,65 @@ Some `4xx` errors that could be handled programmatically and include an error 
 
 <a href="https://documenter.getpostman.com/view/1217791/UUy38mGk">View full API documentation</a> <br />
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="api-mock-data"></a> Mock data
-</summary>
+</h4>
 
 Booksys uses Postman to mock data and store the URL in [`general.constants.js`](https://github.com/rxluz/booksys/blob/main/src/common/utils/general.constants.js#L3) file in [`src/common/utils/`](https://github.com/rxluz/booksys/tree/main/src/common/utils) folder.
 
 The current mock system has some limitations, so it isn't possible to return a different simulated output when sending additional post content.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="api-security"></a> Security
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="api-https"></a> HTTPS
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="api-dns-protection"></a> DNS Protection
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="api-csp"></a> CSP (Content Security Policy)
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="api-headers"></a> Headers
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="components"></a> Frontend components
 
-<summary>
+<h4>
 <a name="components-list"></a> List
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="components-storybook"></a> Storybook
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="components-invalid-states"></a> Invalid states
-</summary>
+</h4>
 
 #### Empty/Invalid states
 
@@ -697,13 +697,13 @@ The current mock system has some limitations, so it isn't possible to return a d
 
 #### 404 pages
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="responsiveness"></a> Responsiveness
 
-<summary>
+<h4>
 <a name="responsiveness-tests-result-in-light-mode"></a> Tests result in light mode
-</summary>
+</h4>
 
 | Devices                 | Change booking page                                                                                                                                      | Create booking page                                                                                                                                     | Booking status page                                                                                                                                     |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -722,11 +722,11 @@ The current mock system has some limitations, so it isn't possible to return a d
 | MacBook Pro 13          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2013.jpg?raw=true)            |
 | MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="responsiveness-tests-result-in-dark-mode"></a> Tests result in dark mode
-</summary>
+</h4>
 
 | Devices                 | Change booking page                                                                                                                                     | Create booking page                                                                                                                                    | Booking status page                                                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -745,59 +745,59 @@ The current mock system has some limitations, so it isn't possible to return a d
 | MacBook Pro 13          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2013.jpg?raw=true)            |
 | MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="accessibility"></a> Accessibility
 
-<summary>
+<h4>
 <a name="accessibility-main-actions"></a> Main actions
-</summary>
+</h4>
 
-<summary>
+<h4>
 <a name="accessibility-tests-results"></a> Tests results
-</summary>
+</h4>
 
 <br/>
 <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/accessibilityTestResult.png?raw=true">
 <br/>
 <a href="https://rxluz.github.io/booksys/lighthouse/report.html#accessibility">View full report</a>
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="performance"></a> Performance
 
-<summary>
+<h4>
 <a name="performance-main-actions"></a> Main actions
-</summary>
+</h4>
 
-<summary>
+<h4>
 <a name="performance-lighthouse-tests"></a> Tests results
-</summary>
+</h4>
 
 <br/>
 <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/performanceTestResult.png?raw=true">
 <br/>
 <a href="https://rxluz.github.io/booksys/lighthouse/report.html#performance">View full report</a>
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="performance-bundle-size-report"></a> Bundle size report
-</summary>
+</h4>
 
 <br/>
 <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/bundleSizeReport.png?raw=true">
 <br/>
 <a href="https://rxluz.github.io/booksys/bundle-analysis.htm">View full report</a>
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="performance-assets-split"></a> Assets split
-</summary>
+</h4>
 
 ### <a name="internationalization"></a> Internationalization
 
-<summary>
+<h4>
 <a name="internationalization-how-it-works"></a> How it works
-</summary>
+</h4>
 
 I’ve tested some different ways to translate web applications, and I noticed that most of the developers work with strings inside a JSON file like this:
 
@@ -828,11 +828,11 @@ This plugin has an option to import data from PO files. Thus the person responsi
 <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/poeditExample.png?raw=true">
 <br/>
 <a href="https://github.com/rxluz/booksys/tree/main/src/common/locales">View translation folder</a>
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="internationalization-use-a-different-language"></a> Use a different language
-</summary>
+</h4>
 <br>
 There are two ways to use a different language:
 
@@ -841,11 +841,11 @@ There are two ways to use a different language:
 
 https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/booking123
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="internationalization-add-a-new-language"></a> Add a new language
-</summary>
+</h4>
 
 - Run `npm run client:translation:extract`
 - Download [Poedit](https://poedit.net/)
@@ -855,37 +855,37 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 - This command will update the file `translations.js`
 - Case needed import new languages packages to [moment](https://momentjs.com/docs/#/i18n/) and add it inside the [`general.utils.js`](https://github.com/rxluz/booksys/blob/main/src/common/utils/general.utils.js) file in [`src/common/utils`](https://github.com/rxluz/booksys/tree/main/src/common/utils) folder. (eg.: `import 'moment/locale/es'`
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="internationalization-change-translations"></a> Change translations
-</summary>
+</h4>
 
 You can change the translations using [Poedit](https://poedit.net/) and reimport the file or change the `translation.js` in the [`src/common/locales/`](https://github.com/rxluz/booksys/tree/main/src/common/locales) folder.
 
 Some situations require changing this file straight due to a bug to export plurals; you need to edit this file directly when you need plurals.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="security"></a> Security
 
-<summary>
+<h4>
 <a name="security-main-actions"></a> Main actions
-</summary>
+</h4>
 
-<summary>
+<h4>
 <a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with Husky
-</summary>
+</h4>
 
-<summary>
+<h4>
 <a name="security-content-security-policy"></a> Content Security Policy (CSP)
-</summary>
+</h4>
 
 ### <a name="browser-compatibility"></a> Browser compatibility
 
-<summary>
+<h4>
 <a name="compatibility-main-actions"></a> Main actions
-</summary>
+</h4>
 <br>
 
 The application is compatible with the following browsers:
@@ -900,13 +900,13 @@ This application uses [Polyfill.io](https://polyfill.io/v3/) to ensure that the 
 
 However, due to modern CSS units, it not guaranteed that everything will work properly in an old browser like Internet Explorer.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="seo"></a> SEO
 
-<summary>
+<h4>
 <a name="seo-tracking"></a> Main actions
-</summary>
+</h4>
 <br>
 This application isn't intended to be a social application or an application that needs to be well-positioned in Google Search. The SEO actions were mainly focused on ensuring that the shared images would appear correctly.
 
@@ -914,11 +914,11 @@ To do that was added inside [`index.html`](https://github.com/rxluz/booksys/blob
 
 Also, the application is connected with [Google Analytics](https://github.com/rxluz/booksys/blob/main/public/index.html#L52) to collect valuable insights about the performance and general improvements.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<summary>
+<h4>
 <a name="seo-social-share"></a> Social share screenshots
-</summary>
+</h4>
 <table>
   <tr>
     <td> 
@@ -950,9 +950,9 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
 
 ### <a name="tests"></a> Tests
 
-<summary>
+<h4>
 <a name="tests-run-tests"></a> Run tests
-</summary>
+</h4>
 
 Booksys utilises testing-library and Jest to do unit tests and Cypress to do E2E tests; the following commands are available to run tests:
 
@@ -964,33 +964,33 @@ Booksys utilises testing-library and Jest to do unit tests and Cypress to do E2E
 
 The coverage tests report is initially generated in the `/coverage/lcov-report/` folder, but these files are copied to the `build/` folder during the deployment.
 
-<summary>
+<h4>
 <a name="tests-add-new-tests"></a> Add new tests
-</summary>
+</h4>
 
 To add new tests to the application, do the following procedure according to the test type:
 
 - **Unit tests**: The unit tests should be done inside the component folder using the exact name of the component, adding `.spec.js` at the end
 - **E2E tests**: All E2E tests should be located inside the `cypress/integration` folder, and they need to finish the file name with `_spec.js`
 
-<summary>
+<h4>
 <a name="tests-coverage-report"></a> Coverage report
-</summary>
+</h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/docs/coverageTestResult.png">
 <a href="https://rxluz.github.io/booksys/coverage/lcov-report/index.html">View full coverage report</a>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="tests"></a> Misc
 
-<summary>
+<h4>
 <a name="misc-main-tools"></a> Main tools
-</summary>
+</h4>
 
-<summary>
+<h4>
 <a name="misc-todo-list"></a> Todo list
-</summary>
+</h4>
 
 improve tests coverage
 add e2e tests
@@ -998,16 +998,16 @@ use better accessibility tests tools
 remove moment
 improve support to ie11
 
-<summary>
+<h4>
 <a name="misc-project-numbers"></a> Project numbers
-</summary>
+</h4>
 
-<summary>
+<h4>
 <a name="misc-known-issues"></a> Known issues
-</summary>
+</h4>
 
 plurals in translations
 
-<summary>
+<h4>
 <a name="misc-acknowledgements"></a> Acknowledgements
-</summary>
+</h4>
