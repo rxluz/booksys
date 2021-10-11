@@ -7,6 +7,8 @@ import * as generalConstants from 'common/utils/general.constants'
 import * as generalUtils from 'common/utils/general.utils'
 import { PersistGate } from 'redux-persist/integration/react'
 import colors from 'colors'
+import * as Sentry from '@sentry/react'
+import { Integrations } from '@sentry/tracing'
 
 import { translations } from 'common/locales/translations'
 import configureStore from 'reducers/configureStore'
@@ -16,6 +18,12 @@ import './index.css'
 import * as serviceWorker from './serviceWorker'
 
 const { store, persistor } = configureStore()
+
+Sentry.init({
+  dsn: generalConstants.SENTRY_URL,
+  integrations: [new Integrations.BrowserTracing()],
+  tracesSampleRate: 1.0,
+})
 
 ReactDOM.render(
   <React.StrictMode>

@@ -22,3 +22,6 @@ export const BOOKSYS_CONSOLE_MESSAGE = `
 ╚═════╝      ╚═════╝      ╚═════╝     ╚═╝  ╚═╝    ╚══════╝       ╚═╝       ╚══════╝
 
 `
+
+export const SENTRY_URL =
+  'https://254dd7d42eb4454582f8f5ee626210fb@o1034630.ingest.sentry.io/6001277'
