@@ -160,7 +160,7 @@
       </ul>
     </li>
     <li>
-      <a href="#-internationalization">Internationalization</a>
+      <a href="#-i18n">i18n</a>
       <ul>
         <li>
           <a href="#-how-it-works">How it works</a>
@@ -833,10 +833,10 @@ There are several performance improvements opportunities that Booksys didn't imp
 <a href="https://rxluz.github.io/booksys/bundle-analysis.htm">View full report</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-### <a name="internationalization"></a> Internationalization
+### <a name="i18n"></a> i18n
 
 <h4><b>
-<a name="internationalization-how-it-works"></a> How it works
+<a name="i18n-how-it-works"></a> How it works
 </b></h4>
 
 I’ve tested some different ways to translate web applications, and I noticed that most of the developers work with strings inside a JSON file like this:
@@ -871,7 +871,7 @@ This plugin has an option to import data from PO files. Thus the person responsi
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 <h4><b>
-<a name="internationalization-use-a-different-language"></a> Use a different language
+<a name="i18n-use-a-different-language"></a> Use a different language
 </b></h4>
 <br>
 There are two ways to use a different language:
@@ -885,7 +885,7 @@ https://rxluz.github.io/booksys/?lang=pt#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6 -
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 <h4><b>
-<a name="internationalization-add-a-new-language"></a> Add a new language
+<a name="i18n-add-a-new-language"></a> Add a new language
 </b></h4>
 
 - Run `yarn client:translation:extract`
@@ -899,7 +899,7 @@ https://rxluz.github.io/booksys/?lang=pt#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6 -
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 <h4><b>
-<a name="internationalization-change-translations"></a> Change translations
+<a name="i18n-change-translations"></a> Change translations
 </b></h4>
 
 You can change the translations using [Poedit](https://poedit.net/) and reimport the file or change the `translation.js` in the [`src/common/locales/`](https://github.com/rxluz/booksys/tree/main/src/common/locales) folder.
