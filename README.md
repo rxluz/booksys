@@ -738,17 +738,39 @@ The Booksys will follow these headers to design the backend API and ensure the s
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
+<h4>
+<a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with [Husky](https://www.npmjs.com/package/husky)
+</h4>
+[NPM Audit](https://docs.npmjs.com/cli/v7/commands/npm-audit) is a helpful tool to detect security problems in external dependencies. To ensure that all new packages are safe, Booksys uses a [hook](https://github.com/rxluz/booksys/blob/feat-doc/.husky/postinstall) automatically called after any new package installation to integrate it with the developer flow.
+
 ### <a name="components"></a> Frontend components
 
 <h4>
 <a name="components-list"></a> List
 </h4>
 
+Booksys stores all the stateless components in the [`src/common/components`](https://github.com/rxluz/booksys/tree/main/src/common/components) folder; also, to separate state from visual, all the pages have two files, one to manage states, routes, API services communication and the other to control the presentational components, responsiveness and local state.
+
+Storybook stores all the [stateless components list](https://rxluz.github.io/booksys/storybook/).
+
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 <h4>
 <a name="components-storybook"></a> Storybook
 </h4>
+
+Booksys uses Storybook with the following addons:
+
+- **Parameters control:** Allow to change all the parameters from a stateless component without creating several stories
+  storybookControls
+
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/storybookControls.png?raw=true">
+
+- **Integration with Figma:** Shortcut to access the prototype
+  <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/storybookFigma.png?raw=true">
+
+- **Accessibility:** Display any component accessibility errors
+  <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/storybookAccessibility.png?raw=true">
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -932,20 +954,6 @@ Some situations require changing this file straight due to a bug to export plura
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-### <a name="security"></a> Security
-
-<h4>
-<a name="security-main-actions"></a> Main actions
-</h4>
-
-<h4>
-<a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with Husky
-</h4>
-
-<h4>
-<a name="security-content-security-policy"></a> Content Security Policy (CSP)
-</h4>
-
 ### <a name="browser-compatibility"></a> Browser compatibility
 
 <h4>
@@ -1077,3 +1085,4 @@ plurals in translations
 <h4>
 <a name="misc-acknowledgements"></a> Acknowledgements
 </h4>
+https://dev.to/shostarsson/security-headers-to-use-on-your-webserver-3id5
