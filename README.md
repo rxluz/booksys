@@ -1050,7 +1050,7 @@ To add new tests to the application, do the following procedure according to the
 <a name="misc-project-numbers"></a> Project numbers
 </b></h4>
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/main/docs/timeStats.svg" alt="Booksys logo" height="80">
+<img src="https://github.com/rxluz/booksys/blob/main/docs/timeStats.jpeg?raw=true" alt="Booksys logo" height="80">
 
 Directory /src
 
