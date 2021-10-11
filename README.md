@@ -36,52 +36,52 @@
           <a href="#-pre-requirements">Pre-requirements</a>
         </li>
         <li>
-          <a href="#available-scripts">Available scripts</a>
+          <a href="#-available-scripts">Available scripts</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#resources-list">Resources list</a>
+      <a href="#-resources-list">Resources list</a>
     </li>
     <li>
-      <a href="#conception">Conception</a>
+      <a href="#-conception">Conception</a>
       <ul>
         <li>
-          <a href="#research">Research</a>
+          <a href="#-research">Research</a>
         </li>
         <li>
-          <a href="#wireframes">Wireframes</a>
+          <a href="#-wireframes">Wireframes</a>
         </li>
         <li>
-          <a href="#mockups">Mockups</a>
+          <a href="#-mockups">Mockups</a>
         </li>
         <li>
-          <a href="#prototypes">Prototypes</a>
+          <a href="#-prototypes">Prototypes</a>
         </li>
         <li>
-          <a href="#features-list">Features list</a>
+          <a href="#-features-list">Features list</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#system-design">System design</a>
+      <a href="#-system-design">System design</a>
       <ul>
         <li>
-          <a href="#business-rules-diagram">Business rules diagram</a>
+          <a href="#-flow-diagram">Flow diagram</a>
         </li>
         <li>
-          <a href="#static-pages-and-assets">Static pages and assets</a>
+          <a href="#-static-pages-and-assets">Static pages and assets</a>
         </li>
         <li>
-          <a href="#folder-structure">Folder structure</a>
+          <a href="#-folder-structure">Folder structure</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#api">API</a>
+      <a href="#-api">API</a>
       <ul>
         <li>
-          <a href="#database-schema">Database schema</a>
+          <a href="#-database-schema">Database schema</a>
         </li>
         <li>
           <a href="#api-schema">API schema</a>
