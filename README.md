@@ -107,20 +107,6 @@
       </ul>
     </li>
     <li>
-      <a href="#frontend">Invalid states</a>
-      <ul>
-        <li>
-          <a href="#empty-invalid-states">Empty/Invalid states</a>
-        </li>
-        <li>
-          <a href="#no-javascript-allowed">No Javascript allowed</a>
-        </li>
-        <li>
-          <a href="#404-pages">404 pages</a>
-        </li>
-      </ul>
-    </li>
-    <li>
       <a href="#frontend">Components</a>
       <ul>
         <li>
@@ -318,41 +304,47 @@ The booking system has the following functionalities:
 
 ### <a name="installation"></a> Installation
 
-<h4>
-<a name="installation-pre-conditions"></a> Pre conditions
-</h4>
+<h4><b>
+<a name="installation-pre-conditions"></a> Pre-requirements
+</b></h4>
 
-download poedit
+- Install [Poedit](https://poedit.net/) to edit/add translations
+- Install latest [NodeJS](https://nodejs.org/en/download/) and [NPM](https://npmjs.org) versions
+- Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- `npm install --global yarn`
+- `git clone https://github.com/rxluz/booksys`
+- `cd booksys`
+- `yarn install`
+- `cp .env.example .env` (Mac/Linux) or `copy .env.example .env` (Windows)
+- `yarn client:start`
+
+The application will run in `localhost:3000/booksys#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6`
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="installation-pre-conditions"></a> Available scripts
-</h4>
+</b></h4>
 
-| Command                              | Description                                                                                                                    |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| `npm run client:start`               | Start the frontend application in watch mode                                                                                   |
-| `npm run client:build`               | Generate the frontend assets in `build` folder                                                                                 |
-| `npm run client:deploy`              | Deploy the application to GitHub Pages                                                                                         |
-| `npm run client:test`                | Run the tests created after the last commit and watch for new tests                                                            |
-| `npm run client:cypress:open`        | Run the E2E tests                                                                                                              |
-| `npm run client:test:coverage`       | Run the tests and generate a coverage report in `coverage` folder                                                              |
-| `npm run client:lighthouse`          | Generate a lighthouse report in `build/lighhouse` folder                                                                       |
-| `npm run client:build-storybook`     | Generate the storybook assets in `build/storybook` folder                                                                      |
-| `npm run client:bundle-analysis`     | Generate the bundle size report in `build` folder                                                                              |
-| `npm run client:eject`               | Allows to customize the configuration under Create-React-App, please note that this is a one-way operation and can't be undone |
-| `npm run client:translation:extract` | Extract from code all the translatable strings                                                                                 |
-| `npm run client:translation:import`  | Import from .po files the translations                                                                                         |
-| `npm run client:storybook`           | Run the storybook in watch mode                                                                                                |
+| Command                           | Description                                                                                                                    |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `yarn client:start`               | Start the frontend application in watch mode                                                                                   |
+| `yarn client:build`               | Generate the frontend assets in `build` folder                                                                                 |
+| `yarn client:deploy`              | Deploy the application to GitHub Pages                                                                                         |
+| `yarn client:test`                | Run the tests created after the last commit and watch for new tests                                                            |
+| `yarn client:cypress:open`        | Run the E2E tests                                                                                                              |
+| `yarn client:test:coverage`       | Run the tests and generate a coverage report in `coverage` folder                                                              |
+| `yarn client:lighthouse`          | Generate a lighthouse report in `build/lighhouse` folder                                                                       |
+| `yarn client:build-storybook`     | Generate the storybook assets in `build/storybook` folder                                                                      |
+| `yarn client:bundle-analysis`     | Generate the bundle size report in `build` folder                                                                              |
+| `yarn client:eject`               | Allows to customize the configuration under Create-React-App, please note that this is a one-way operation and can't be undone |
+| `yarn client:translation:extract` | Extract from code all the translatable strings                                                                                 |
+| `yarn client:translation:import`  | Import from .po files the translations                                                                                         |
+| `yarn client:storybook`           | Run the storybook in watch mode                                                                                                |
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="resources-list"></a> Resources list
-
-<h4>
-Expand
-</h4>
 
 | Title                                                                                                    | Description                                                                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -369,19 +361,31 @@ Expand
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<p align="right">(<a href="#table-contents">back to top</a>)</p>
-
 ### <a name="conception"></a> Conception
 
-<h4>
+<h4><b>
 <a name="conception-research"></a> Research
-</h4>
+</b></h4>
+
+The initial idea was to find a way to connect Booksys with the Metamask wallet; the purpose was to allow the users to log in with [Metamask](https://metamask.io/) to see their bookings.
+
+Once this is a fabulous solution from a technical perspective, it wasn't so good from a business perspective; the main problems found were:
+Users cannot log in from Mobile devices using [Metamask](https://metamask.io/) wallets
+Users with Metamask wallet could be users not authorised to do this action (non-Pepsi/coca-cola employees)
+
+So, to ensure that the application will run on mobile devices and only authorised users will use this, the solution required a booking confirmation from the corporate user emails; in this way, we avoid any attempts to fake bookings.
+
+Another problem found was about the booking offices privacy; the initial solution was to display a calendar to the user with the available times and seats, however when the user access this application for the first time, we can't guarantee that this user is an authorised user.
+
+The solution was to display the office availability only after the users confirmed their identity using a unique link sent by their emails.
+
+Finally, to ensure that Pepsi users don't see the initial Coca-cola office availability and vice-versa, the Booksys URL to each company is different. This solution doesn't guarantee 100% privacy about each company office availability, but it solves most privacy issues cases.
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="conception-wireframes"></a> Wireframes
-</h4>
+</b></h4>
 
 <table>
   <tr>
@@ -408,48 +412,66 @@ Expand
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="conception-mockups"></a> Mockups
-</h4>
+</b></h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/mockups.png">
 <a href="https://github.com/rxluz/booksys/blob/feat-docs/docs/mockups.pdf">View full mockup doc</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="conception-prototypes"></a> Prototypes
-</h4>
+</b></h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/prototype.png">
 <a href="https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys">View full prototype doc</a>
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="conception-features-list"></a> Features list
-</h4>
+</b></h4>
+
+Users can:
+
+- See the event name, address and date
+- Get directions to the event
+- Book a new office with the user preferences about seats and time
+- Confirm a booking via email
+- See other preferences options in their confirmation email
+- See their confirmed bookings
+- Cancel a booking
+- See their cancelled bookings
+- Find other seats and times options
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="system-design"></a> System design
 
-<h4>
+<h4><b>
 <a name="system-design-application-flow-diagram"></a> Flow diagram
-</h4>
+</b></h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/BRDiagram.drawio.svg">
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="system-design-static-pages-and-assets"></a> Static pages and assets
-</h4>
+</b></h4>
+
+Booksys uses [GitHub Pages](https://pages.github.com/) to store all the frontend assets. To make it faster, [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) with [Webpack](https://webpack.js.org/) splits the Javascript and CSS assets in chunks to ensure that a Booksys page only will call the resources required to load that specific page.
+
+Also, we use [Google Fonts](https://fonts.google.com/) to load the [main font](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L41) ([Maven Pro](https://fonts.google.com/specimen/Maven+Pro#standard-styles)) and the library [animate.css](https://daneden.github.io/animate.css/) stored in [CloudFlare](https://www.cloudflare.com/) to create some animations like fade-in in change booking page pagination.
+
+Lastly, the application uses [Polyfill.io](https://polyfill.io/v3/) to ensure [compatibility with different browsers](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L50), [Google Analytics](https://analytics.google.com/analytics/web/) to [track](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L52) the user behaviour and [Sentry](https://sentry.io/) to [track](https://github.com/rxluz/booksys/blob/feat-doc/src/index.js) applications errors.
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="system-design-folder-structure"></a> Folder structure
-</h4>
+</b></h4>
 
 ```bash
 ├── CHANGELOG.md
@@ -600,9 +622,15 @@ Expand
 
 ### <a name="api"></a> API
 
-<h4>
+<h4><b>
 <a name="api-database-schema"></a> Database schema
-</h4>
+</b></h4>
+
+The design adopted in the DB Schema allows to manage more than two companies and more than one event; the idea is allowing Booksys to control future events without the need to change tables.
+
+This version doesn't manage the users directly; instead, it stores the user information (name and email) on the booking page.
+
+Once the DB is multi-event ready, the API only allows one event per client; this is a limitation that could be easly removed in future versions due to how DB is structured.
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbSchema.png">
 <a href="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbScheme.mwb">Download database schema</a> <br />
@@ -610,9 +638,9 @@ Expand
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="api-schema"></a> API schema
-</h4>
+</b></h4>
 
 #### Introduction
 
@@ -632,9 +660,9 @@ Some `4xx` errors that could be handled programmatically and include an error 
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="api-mock-data"></a> Mock data
-</h4>
+</b></h4>
 
 Booksys uses Postman to mock data and store the URL in [`general.constants.js`](https://github.com/rxluz/booksys/blob/main/src/common/utils/general.constants.js#L3) file in [`src/common/utils/`](https://github.com/rxluz/booksys/tree/main/src/common/utils) folder.
 
@@ -642,67 +670,101 @@ The current mock system has some limitations, so it isn't possible to return a d
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="api-security"></a> Security
-</h4>
+</b></h4>
+
+Security is an extensive topic and cannot be ensured only with code measures; it also requires an Architecture that avoids leak data to non-authorized users and many other actions.
+
+The main thing that Booksys does to ensure security only allows users using email from authorized domains to confirm their bookings, but Booksys also does several code actions that we will detail in the topics below:
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="api-https"></a> HTTPS
-</h4>
+</b></h4>
+
+Booksys uses HTTPS protocol to transport all the data, including the mock API; the index.html page also has a script to redirect the page from HTTP to HTTPS automatically.
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="api-dns-protection"></a> DNS Protection
-</h4>
+</b></h4>
+
+Booksys didn't create the backend, but the proposed API uses CloudFlare to avoid any DDOS attack.
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="api-csp"></a> CSP (Content Security Policy)
-</h4>
+</b></h4>
+
+One of the ways that many attackers use to steal data from the application is using malicious code that sends to their servers sensitive information like email, passwords or credit card numbers.
+
+There are several ways to avoid this, but one of the most powerful ways is to define a CSP in the index.html file and the API; the CSP defined in the index list the allowed domains authorized to receive information from this application.
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="api-headers"></a> Headers
-</h4>
+</b></h4>
+
+The Booksys will follow these headers to design the backend API and ensure the security:
+
+| Header                         | Value                                                                                                                                                                                                                                                                                                                                                                                                                    | Explanation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| X-XSS-Protection               | 1;mode=block                                                                                                                                                                                                                                                                                                                                                                                                             | XSS filter enabled and prevented rendering the page if attack detected                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| X-Frame-Options                | DENY                                                                                                                                                                                                                                                                                                                                                                                                                     | Prevent any domain to embed your content using frame/iframe.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| X-Content-Type-Options         | nosniff                                                                                                                                                                                                                                                                                                                                                                                                                  | Consider files types as defined and disallow content sniffing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Referrer Policy                | no-referrer                                                                                                                                                                                                                                                                                                                                                                                                              | The Referer header will be omitted entirely.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| HTTP Strict Transport Security | max-age=31536000; includeSubDomains                                                                                                                                                                                                                                                                                                                                                                                      | HTTP Strict Transport Security (HSTS) is a web security policy mechanism which helps to protect websites against protocol downgrade attacks and cookie hijacking. It allows web servers to declare that web browsers (or other complying user agents) should only interact with it using secure HTTPS connections, and never via the insecure HTTP protocol.                                                                                                                                                                                                                                                                                                                                    |
+| Cookies                        | Secure=True; HttpOnly=True, SameSite=strict                                                                                                                                                                                                                                                                                                                                                                              | "Secure" Cookie A secure cookie is only sent to the server with an encrypted request over the HTTPS protocol. Even with Secure, sensitive information should never be stored in cookies, as they are inherently insecure and this flag can't offer real protection. Starting with Chrome 52 and Firefox 52, insecure sites (http:) can't set cookies with the Secure directive. "HttpOnly" Cookie To prevent cross-site scripting (XSS) attacks, HttpOnly cookies are inaccessible to JavaScript's Document.cookie API; they are only sent to the server. For example, cookies that persist server-side sessions don't need to be available to JavaScript, and the HttpOnly flag should be set. |
+| Content-Security-Policy        | default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://o1034630.ingest.sentry.io/ https://www.google-analytics.com https://www.googletagmanager.com https://fonts.gstatic.com https://fonts.googleapis.com http://cdn.polyfill.io https://cdnjs.cloudflare.com https://29b0050b-7001-4162-994f-acfec6195274.mock.pstmn.io; report-uri https://29b0050b-7001-4162-994f-acfec6195274.mock.pstmn.io/security/report | The Content Security Policy prevent XSS , clickjacking , code injection attacks by implementing the Content Security Policy (CSP) header in your web page HTTP response.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4><b>
+<a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with Husky
+</b></h4>
+[NPM Audit](https://docs.npmjs.com/cli/v7/commands/npm-audit) is a helpful tool to detect security problems in external dependencies. To ensure that all new packages are safe, Booksys uses a [hook](https://github.com/rxluz/booksys/blob/feat-doc/.husky/postinstall) automatically called after any new package installation to integrate it with the developer flow.
 
 ### <a name="components"></a> Frontend components
 
-<h4>
+<h4><b>
 <a name="components-list"></a> List
-</h4>
+</b></h4>
+
+Booksys stores all the stateless components in the [`src/common/components`](https://github.com/rxluz/booksys/tree/main/src/common/components) folder; also, to separate state from visual, all the pages have two files, one to manage states, routes, API services communication and the other to control the presentational components, responsiveness and local state.
+
+Storybook stores all the [stateless components list](https://rxluz.github.io/booksys/storybook/).
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="components-storybook"></a> Storybook
-</h4>
+</b></h4>
 
-<p align="right">(<a href="#table-contents">back to top</a>)</p>
+Booksys uses Storybook with the following addons:
 
-<h4>
-<a name="components-invalid-states"></a> Invalid states
-</h4>
+- **Parameters control:** Allow to change all the parameters from a stateless component without creating several stories
+  storybookControls
 
-#### Empty/Invalid states
+<img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookControls.png?raw=true">Add
 
-#### No Javascript allowed
+- **Integration with Figma:** Shortcut to access the prototype
+  <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookFigma.png?raw=true">
 
-#### 404 pages
+- **Accessibility:** Display any component accessibility errors
+  <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookAccessibility.png?raw=true">
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="responsiveness"></a> Responsiveness
 
-<h4>
+<h4><b>
 <a name="responsiveness-tests-result-in-light-mode"></a> Tests result in light mode
-</h4>
+</b></h4>
 
 | Devices                 | Change booking page                                                                                                                                      | Create booking page                                                                                                                                     | Booking status page                                                                                                                                     |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -723,9 +785,9 @@ The current mock system has some limitations, so it isn't possible to return a d
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="responsiveness-tests-result-in-dark-mode"></a> Tests result in dark mode
-</h4>
+</b></h4>
 
 | Devices                 | Change booking page                                                                                                                                     | Create booking page                                                                                                                                    | Booking status page                                                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -748,13 +810,26 @@ The current mock system has some limitations, so it isn't possible to return a d
 
 ### <a name="accessibility"></a> Accessibility
 
-<h4>
+<h4><b>
 <a name="accessibility-main-actions"></a> Main actions
-</h4>
+</b></h4>
 
-<h4>
+Booksys do several actions to ensure that this application is a universal application and all the users can use it; the project was designed in a way that allows users with disabilities but also users living in places with low internet quality or slow/old devices.
+
+- [Remove any zoom limitation from the pages](https://github.com/rxluz/booksys/blob/main/public/index.html#L9): Ideally, to mock app contacts, we usually disable the zoom option, making the mobile experience remember the native experience; however, some users with visual impairment need the zoom to see all the details.
+- [Added](https://github.com/rxluz/booksys/pull/6/files#diff-c7434dd5e5c3b4d601b4bc991fddf9649b4142926619cf169a37498df2183695R18) `role=presentation aria-hidden=true` to all elements that don't bring any valuable information to screen readers
+- [Added](https://github.com/rxluz/booksys/pull/6/files#diff-c7434dd5e5c3b4d601b4bc991fddf9649b4142926619cf169a37498df2183695R17) `role=alert` to warning messages
+- [Added](https://github.com/rxluz/booksys/pull/6/files#diff-9ce934ed0937222049cf4f2e62df9e114e60884cda7c5d1d17afb38c55f3141fR127) ` aria-live="polite" aria-busy="true"` to loading sections
+- [Added](https://github.com/rxluz/booksys/pull/6/files#diff-c7434dd5e5c3b4d601b4bc991fddf9649b4142926619cf169a37498df2183695R88) `aria-label and role="button"` to all clickable icons
+- The dates format used the long-form inside `aria-label` tags
+- Improved pagination navigation using `aria-valuenow`
+- [Added](https://github.com/rxluz/booksys/pull/6/files#diff-6e28726e02868e2384284926f433abd6e90133c8935e248c7b708bfa3a2a1eacR6) better fields description to seats and time filters
+- [Added form tag](https://github.com/rxluz/booksys/pull/6/files#diff-426fa8a660645e310da70299bdcf2c95d428a1085f73a18475608cad52b1064fR98) in creating a booking page
+- [Added](https://github.com/rxluz/booksys/pull/6/files#diff-99a3fbe4a7e63e39aad55aebfe639332027c517129e03c8f9b25f364470cbcbfR14) role="status" to booking status field
+
+<h4><b>
 <a name="accessibility-tests-results"></a> Tests results
-</h4>
+</b></h4>
 
 <br/>
 <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/accessibilityTestResult.png?raw=true">
@@ -764,13 +839,23 @@ The current mock system has some limitations, so it isn't possible to return a d
 
 ### <a name="performance"></a> Performance
 
-<h4>
+<h4><b>
 <a name="performance-main-actions"></a> Main actions
-</h4>
+</b></h4>
 
-<h4>
+Booksys uses [GitHub Pages](https://pages.github.com/) to store all the frontend assets. To make it faster, [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) with [Webpack](https://webpack.js.org/) splits the Javascript and CSS assets in chunks to ensure that a Booksys page only will call the resources required to load that specific page.
+
+There are several performance improvements opportunities that Booksys didn't implement, but it would be great for future versions:
+
+- Use NextJS to generate pre-rendered pages and static pages
+- Use nextgen images format
+- Use Brotli as CSS/JS compression method.
+- Remove moment and object_hash packages
+- Remove blocking scripts
+
+<h4><b>
 <a name="performance-lighthouse-tests"></a> Tests results
-</h4>
+</b></h4>
 
 <br/>
 <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/performanceTestResult.png?raw=true">
@@ -778,9 +863,9 @@ The current mock system has some limitations, so it isn't possible to return a d
 <a href="https://rxluz.github.io/booksys/lighthouse/report.html#performance">View full report</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="performance-bundle-size-report"></a> Bundle size report
-</h4>
+</b></h4>
 
 <br/>
 <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/bundleSizeReport.png?raw=true">
@@ -788,15 +873,15 @@ The current mock system has some limitations, so it isn't possible to return a d
 <a href="https://rxluz.github.io/booksys/bundle-analysis.htm">View full report</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="performance-assets-split"></a> Assets split
-</h4>
+</b></h4>
 
 ### <a name="internationalization"></a> Internationalization
 
-<h4>
+<h4><b>
 <a name="internationalization-how-it-works"></a> How it works
-</h4>
+</b></h4>
 
 I’ve tested some different ways to translate web applications, and I noticed that most of the developers work with strings inside a JSON file like this:
 
@@ -829,9 +914,9 @@ This plugin has an option to import data from PO files. Thus the person responsi
 <a href="https://github.com/rxluz/booksys/tree/main/src/common/locales">View translation folder</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="internationalization-use-a-different-language"></a> Use a different language
-</h4>
+</b></h4>
 <br>
 There are two ways to use a different language:
 
@@ -842,23 +927,23 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="internationalization-add-a-new-language"></a> Add a new language
-</h4>
+</b></h4>
 
-- Run `npm run client:translation:extract`
+- Run `yarn client:translation:extract`
 - Download [Poedit](https://poedit.net/)
 - Using [Poedit](https://poedit.net/) open the file [`template.pot`](https://github.com/rxluz/booksys/blob/main/src/common/locales/template.pot) in [`src/common/locales/`](https://github.com/rxluz/booksys/tree/main/src/common/locales) folder
 - Create `.mo` and `.po` file translation in [Poedit](https://poedit.net/) and save this translation in the folder above
-- Run `npm run client:translation:import`
+- Run `yarn client:translation:import`
 - This command will update the file `translations.js`
 - Case needed import new languages packages to [moment](https://momentjs.com/docs/#/i18n/) and add it inside the [`general.utils.js`](https://github.com/rxluz/booksys/blob/main/src/common/utils/general.utils.js) file in [`src/common/utils`](https://github.com/rxluz/booksys/tree/main/src/common/utils) folder. (eg.: `import 'moment/locale/es'`
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="internationalization-change-translations"></a> Change translations
-</h4>
+</b></h4>
 
 You can change the translations using [Poedit](https://poedit.net/) and reimport the file or change the `translation.js` in the [`src/common/locales/`](https://github.com/rxluz/booksys/tree/main/src/common/locales) folder.
 
@@ -866,25 +951,11 @@ Some situations require changing this file straight due to a bug to export plura
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-### <a name="security"></a> Security
-
-<h4>
-<a name="security-main-actions"></a> Main actions
-</h4>
-
-<h4>
-<a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with Husky
-</h4>
-
-<h4>
-<a name="security-content-security-policy"></a> Content Security Policy (CSP)
-</h4>
-
 ### <a name="browser-compatibility"></a> Browser compatibility
 
-<h4>
+<h4><b>
 <a name="compatibility-main-actions"></a> Main actions
-</h4>
+</b></h4>
 <br>
 
 The application is compatible with the following browsers:
@@ -903,9 +974,9 @@ However, due to modern CSS units, it not guaranteed that everything will work pr
 
 ### <a name="seo"></a> SEO
 
-<h4>
+<h4><b>
 <a name="seo-tracking"></a> Main actions
-</h4>
+</b></h4>
 <br>
 This application isn't intended to be a social application or an application that needs to be well-positioned in Google Search. The SEO actions were mainly focused on ensuring that the shared images would appear correctly.
 
@@ -915,9 +986,9 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4>
+<h4><b>
 <a name="seo-social-share"></a> Social share screenshots
-</h4>
+</b></h4>
 <table>
   <tr>
     <td> 
@@ -949,32 +1020,32 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
 
 ### <a name="tests"></a> Tests
 
-<h4>
+<h4><b>
 <a name="tests-run-tests"></a> Run tests
-</h4>
+</b></h4>
 
 Booksys utilises testing-library and Jest to do unit tests and Cypress to do E2E tests; the following commands are available to run tests:
 
-| Command                        | Description                                                         |
-| ------------------------------ | ------------------------------------------------------------------- |
-| `npm run client:test`          | Run the tests created after the last commit and watch for new tests |
-| `npm run client:cypress:open`  | Run the E2E tests                                                   |
-| `npm run client:test:coverage` | Run the tests and generate a coverage report in `coverage` folder   |
+| Command                     | Description                                                         |
+| --------------------------- | ------------------------------------------------------------------- |
+| `yarn client:test`          | Run the tests created after the last commit and watch for new tests |
+| `yarn client:cypress:open`  | Run the E2E tests                                                   |
+| `yarn client:test:coverage` | Run the tests and generate a coverage report in `coverage` folder   |
 
 The coverage tests report is initially generated in the `/coverage/lcov-report/` folder, but these files are copied to the `build/` folder during the deployment.
 
-<h4>
+<h4><b>
 <a name="tests-add-new-tests"></a> Add new tests
-</h4>
+</b></h4>
 
 To add new tests to the application, do the following procedure according to the test type:
 
 - **Unit tests**: The unit tests should be done inside the component folder using the exact name of the component, adding `.spec.js` at the end
 - **E2E tests**: All E2E tests should be located inside the `cypress/integration` folder, and they need to finish the file name with `_spec.js`
 
-<h4>
+<h4><b>
 <a name="tests-coverage-report"></a> Coverage report
-</h4>
+</b></h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/docs/coverageTestResult.png">
 <a href="https://rxluz.github.io/booksys/coverage/lcov-report/index.html">View full coverage report</a>
@@ -983,13 +1054,13 @@ To add new tests to the application, do the following procedure according to the
 
 ### <a name="tests"></a> Misc
 
-<h4>
+<h4><b>
 <a name="misc-main-tools"></a> Main tools
-</h4>
+</b></h4>
 
-<h4>
+<h4><b>
 <a name="misc-todo-list"></a> Todo list
-</h4>
+</b></h4>
 
 improve tests coverage
 add e2e tests
@@ -998,16 +1069,17 @@ remove moment
 improve support to ie11
 remove object hash
 
-<h4>
+<h4><b>
 <a name="misc-project-numbers"></a> Project numbers
-</h4>
+</b></h4>
 
-<h4>
+<h4><b>
 <a name="misc-known-issues"></a> Known issues
-</h4>
+</b></h4>
 
 plurals in translations
 
-<h4>
+<h4><b>
 <a name="misc-acknowledgements"></a> Acknowledgements
-</h4>
+</b></h4>
+https://dev.to/shostarsson/security-headers-to-use-on-your-webserver-3id5
