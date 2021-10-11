@@ -132,7 +132,7 @@
       </ul>
     </li>
     <li>
-      <a href="#-accessibility">Accessibility</a>
+      <a href="#-a11y">a11y</a>
       <ul>
         <li>
           <a href="#-main-actions">Main actions</a>
@@ -306,18 +306,18 @@ The application will run in `localhost:3000/booksys#/f76a49f4-73c4-44ce-8fa1-724
 
 ### <a name="resources-list"></a> Resources list
 
-| Title                                                                                                    | Description                                                                                                                                                                                                                                     |
-| -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Lighthouse report](https://rxluz.github.io/booksys/lighthouse/report.html)                              | Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO and more. |
-| [Storybook components](https://rxluz.github.io/booksys/storybook/?path=/story/components-button--button) | Storybook is an open-source tool for building UI components and pages in isolation. It streamlines UI development, testing, and documentation.                                                                                                  |
-| [Tests coverage report](https://rxluz.github.io/booksys/coverage/lcov-report/index.html)                 | Show all the tests done and how much they cover the code.                                                                                                                                                                                       |
-| [Devices screenshots](https://github.com/rxluz/booksys/tree/main/docs/devices-screenshots)               | Application screenshots                                                                                                                                                                                                                         |
-| [Application diagrams](https://github.com/rxluz/booksys/blob/main/docs/applicationDiagrams.pdf)          | All flows and rules available in the app                                                                                                                                                                                                        |
-| [DB Schema](https://github.com/rxluz/booksys/blob/main/docs/dbScheme.mwb)                                | Show the database tables, foreign keys and fields                                                                                                                                                                                               |
-| [Wireframes](https://github.com/rxluz/booksys/blob/main/docs/wireframes/wireframes.pdf)                  | The initial draft to build booksys                                                                                                                                                                                                              |
-| [Mockups](https://app.moqups.com/pSG0jJ9bhn/view/page/ad64222d5)                                         | Low fidelity layout                                                                                                                                                                                                                             |
-| [Figma](https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys)                                       | High fidelity layout                                                                                                                                                                                                                            |
-| [API Documentation](https://documenter.getpostman.com/view/1217791/UUy38mGk)                             | Show all available endpoints, fields and methods                                                                                                                                                                                                |
+| Title                                                                                                    | Description                                                                                                                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Lighthouse report](https://rxluz.github.io/booksys/lighthouse/report.html)                              | Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, a11y, progressive web apps, SEO and more. |
+| [Storybook components](https://rxluz.github.io/booksys/storybook/?path=/story/components-button--button) | Storybook is an open-source tool for building UI components and pages in isolation. It streamlines UI development, testing, and documentation.                                                                                         |
+| [Tests coverage report](https://rxluz.github.io/booksys/coverage/lcov-report/index.html)                 | Show all the tests done and how much they cover the code.                                                                                                                                                                              |
+| [Devices screenshots](https://github.com/rxluz/booksys/tree/main/docs/devices-screenshots)               | Application screenshots                                                                                                                                                                                                                |
+| [Application diagrams](https://github.com/rxluz/booksys/blob/main/docs/applicationDiagrams.pdf)          | All flows and rules available in the app                                                                                                                                                                                               |
+| [DB Schema](https://github.com/rxluz/booksys/blob/main/docs/dbScheme.mwb)                                | Show the database tables, foreign keys and fields                                                                                                                                                                                      |
+| [Wireframes](https://github.com/rxluz/booksys/blob/main/docs/wireframes/wireframes.pdf)                  | The initial draft to build booksys                                                                                                                                                                                                     |
+| [Mockups](https://app.moqups.com/pSG0jJ9bhn/view/page/ad64222d5)                                         | Low fidelity layout                                                                                                                                                                                                                    |
+| [Figma](https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys)                                       | High fidelity layout                                                                                                                                                                                                                   |
+| [API Documentation](https://documenter.getpostman.com/view/1217791/UUy38mGk)                             | Show all available endpoints, fields and methods                                                                                                                                                                                       |
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -715,8 +715,8 @@ Booksys uses Storybook with the following addons:
 - **Integration with Figma:** Shortcut to access the prototype
   <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookFigma.png?raw=true">
 
-- **Accessibility:** Display any component accessibility errors
-  <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookAccessibility.png?raw=true">
+- **a11y:** Display any component a11y errors
+  <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybooka11y.png?raw=true">
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -768,10 +768,10 @@ Booksys uses Storybook with the following addons:
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-### <a name="accessibility"></a> Accessibility
+### <a name="a11y"></a> a11y
 
 <h4><b>
-<a name="accessibility-main-actions"></a> Main actions
+<a name="a11y-main-actions"></a> Main actions
 </b></h4>
 
 Booksys do several actions to ensure that this application is a universal application and all the users can use it; the project was designed in a way that allows users with disabilities but also users living in places with low internet quality or slow/old devices.
@@ -788,13 +788,13 @@ Booksys do several actions to ensure that this application is a universal applic
 - [Added](https://github.com/rxluz/booksys/pull/6/files#diff-99a3fbe4a7e63e39aad55aebfe639332027c517129e03c8f9b25f364470cbcbfR14) role="status" to booking status field
 
 <h4><b>
-<a name="accessibility-tests-results"></a> Tests results
+<a name="a11y-tests-results"></a> Tests results
 </b></h4>
 
 <br/>
-<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/accessibilityTestResult.png?raw=true">
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/a11yTestResult.png?raw=true">
 <br/>
-<a href="https://rxluz.github.io/booksys/lighthouse/report.html#accessibility">View full report</a>
+<a href="https://rxluz.github.io/booksys/lighthouse/report.html#a11y">View full report</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="performance"></a> Performance
@@ -1039,7 +1039,7 @@ To add new tests to the application, do the following procedure according to the
 
 - Improve tests coverage
 - Add e2e tests
-- Use better accessibility tests tools
+- Use better a11y tests tools
 - Remove moment
 - Improve support to ie11
 - Remove object hash
