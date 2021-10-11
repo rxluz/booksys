@@ -716,7 +716,7 @@ Booksys uses Storybook with the following addons:
   <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookFigma.png?raw=true">
 
 - **a11y:** Display any component a11y errors
-  <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybooka11y.png?raw=true">
+  <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookAccessibility.png?raw=true">
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
