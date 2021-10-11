@@ -425,7 +425,7 @@ Booksys uses [GitHub Pages](https://pages.github.com/) to store all the frontend
 
 Also, we use [Google Fonts](https://fonts.google.com/) to load the [main font](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L41) ([Maven Pro](https://fonts.google.com/specimen/Maven+Pro#standard-styles)) and the library [animate.css](https://daneden.github.io/animate.css/) stored in [CloudFlare](https://www.cloudflare.com/) to create some animations like fade-in in change booking page pagination.
 
-Lastly, the application uses [Polyfill.io](https://polyfill.io/v3/) to ensure [compatibility with different browsers](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L50), [Google Analytics](https://analytics.google.com/analytics/web/) to [track](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L52) the user behaviour and [Sentry](https://sentry.io/) to [track](https://github.com/rxluz/booksys/blob/feat-doc/src/index.js) applications errors.
+Lastly, the application uses [Polyfill.io](https://polyfill.io/v3/) to ensure [compatibility with different browsers](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L50), [Google Analytics](https://analytics.google.com/analytics/web/) to [track](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L52) the user behaviour and [Sentry](https://sentry.io/) to [track](https://github.com/rxluz/booksys/blob/main/src/index.js#L22) applications errors.
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -709,9 +709,8 @@ Storybook stores all the [stateless components list](https://rxluz.github.io/boo
 Booksys uses Storybook with the following addons:
 
 - **Parameters control:** Allow to change all the parameters from a stateless component without creating several stories
-  storybookControls
 
-<img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookControls.png?raw=true">Add
+<img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookControls.png?raw=true">
 
 - **Integration with Figma:** Shortcut to access the prototype
   <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookFigma.png?raw=true">
@@ -1046,6 +1045,7 @@ To add new tests to the application, do the following procedure according to the
 - Remove object hash
 - Add NextJS
 - Create the backend
+- Implement CI/CD
 
 <h4><b>
 <a name="misc-project-numbers"></a> Project numbers
