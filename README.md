@@ -727,6 +727,7 @@ The Booksys will follow these headers to design the backend API and ensure the s
 <h4><b>
 <a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with Husky
 </b></h4>
+
 [NPM Audit](https://docs.npmjs.com/cli/v7/commands/npm-audit) is a helpful tool to detect security problems in external dependencies. To ensure that all new packages are safe, Booksys uses a [hook](https://github.com/rxluz/booksys/blob/feat-doc/.husky/postinstall) automatically called after any new package installation to integrate it with the developer flow.
 
 ### <a name="components"></a> Frontend components
@@ -1058,28 +1059,94 @@ To add new tests to the application, do the following procedure according to the
 <a name="misc-main-tools"></a> Main tools
 </b></h4>
 
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Babel](https://babeljs.io/)
+- [VSCode](https://code.visualstudio.com/)
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/)
+- [React](https://reactjs.org/)
+- [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
+- [Webpack](https://webpack.js.org/)
+- [Sass](https://sass-lang.com/)
+- [BEM](http://getbem.com/introduction/)
+- [Testing Library](https://testing-library.com/)
+- [Jest](https://jestjs.io/)
+- [Github](https://github.com/)
+- [Redux](https://redux.js.org/)
+- [React Router](https://reactrouter.com/)
+- [NPM](https://www.npmjs.com/)
+- [NodeJS](https://nodejs.org/en/)
+
 <h4><b>
 <a name="misc-todo-list"></a> Todo list
 </b></h4>
 
-improve tests coverage
-add e2e tests
-use better accessibility tests tools
-remove moment
-improve support to ie11
-remove object hash
+- Improve tests coverage
+- Add e2e tests
+- Use better accessibility tests tools
+- Remove moment
+- Improve support to ie11
+- Remove object hash
+- Add NextJS
+- Create the backend
 
 <h4><b>
 <a name="misc-project-numbers"></a> Project numbers
 </b></h4>
 
+<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/public/timeStats.svg" alt="Booksys logo" height="80">
+
+Directory /src
+
+Total: 87 files, 3241 codes, 49 comments, 613 blanks, all 3903 lines
+
+**Languages**
+
+| language   | files |  code | comment | blank | total |
+| :--------- | ----: | ----: | ------: | ----: | ----: |
+| JavaScript |    69 | 2,189 |      48 |   433 | 2,670 |
+| SCSS       |    12 |   858 |       1 |   174 | 1,033 |
+| XML        |     5 |   188 |       0 |     5 |   193 |
+| CSS        |     1 |     6 |       0 |     1 |     7 |
+
+**Directories**
+
+| path                          | files |  code | comment | blank | total |
+| :---------------------------- | ----: | ----: | ------: | ----: | ----: |
+| .                             |    87 | 3,241 |      49 |   613 | 3,903 |
+| common                        |    48 | 1,748 |       1 |   317 | 2,066 |
+| common/components             |    35 | 1,368 |       0 |   221 | 1,589 |
+| common/components/button      |     5 |   136 |       0 |    27 |   163 |
+| common/components/companyCard |     5 |   259 |       0 |    45 |   304 |
+| common/components/input       |     5 |   343 |       0 |    45 |   388 |
+| common/components/loading     |     3 |    21 |       0 |     8 |    29 |
+| common/components/officeCard  |     5 |   165 |       0 |    38 |   203 |
+| common/components/pagination  |     5 |   129 |       0 |    26 |   155 |
+| common/components/warning     |     7 |   315 |       0 |    32 |   347 |
+| common/locales                |     1 |    68 |       0 |     1 |    69 |
+| common/routes                 |     2 |    23 |       0 |     8 |    31 |
+| common/utils                  |    10 |   289 |       1 |    87 |   377 |
+| enhancers                     |     1 |    15 |       0 |     6 |    21 |
+| middleware                    |     1 |     4 |       6 |     3 |    13 |
+| modules                       |    28 | 1,234 |       7 |   237 | 1,478 |
+| modules/booking               |    16 |   915 |       7 |   171 | 1,093 |
+| modules/booking/change        |     3 |   208 |       0 |    40 |   248 |
+| modules/booking/create        |     6 |   326 |       0 |    55 |   381 |
+| modules/booking/status        |     3 |   241 |       0 |    48 |   289 |
+| modules/company               |     5 |   119 |       0 |    30 |   149 |
+| modules/main                  |     7 |   200 |       0 |    36 |   236 |
+| reducers                      |     5 |    89 |       0 |    26 |   115 |
+
 <h4><b>
 <a name="misc-known-issues"></a> Known issues
 </b></h4>
 
-plurals in translations
+- Extract translations isn't generating the plurals
 
 <h4><b>
 <a name="misc-acknowledgements"></a> Acknowledgements
 </b></h4>
-https://dev.to/shostarsson/security-headers-to-use-on-your-webserver-3id5
+
+[Rémi Lavedrine](https://dev.to/shostarsson/security-headers-to-use-on-your-webserver-3id5)
+[Uncle Bob](https://twitter.com/unclebobmartin)
+[Lola Oliveira](https://www.behance.net/iamlola)
