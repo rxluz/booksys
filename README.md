@@ -84,75 +84,75 @@
           <a href="#-database-schema">Database schema</a>
         </li>
         <li>
-          <a href="#api-schema">API schema</a>
+          <a href="#-api-schema">API schema</a>
         </li>
         <li>
-          <a href="#mock-data">Mock data</a>
+          <a href="#-mock-data">Mock data</a>
         </li>
         <li>
-          <a href="#security">Security</a>
+          <a href="#-security">Security</a>
         </li>
         <li>
-          <a href="#https">HTTPS</a>
+          <a href="#-https">HTTPS</a>
         </li>
         <li>
-          <a href="#dns-protection">DNS Protection</a>
+          <a href="#-dns-protection">DNS Protection</a>
         </li>
         <li>
-          <a href="#csp">CSP (Content Security Policy)</a>
+          <a href="#-csp-content-security-policy">CSP (Content Security Policy)</a>
         </li>
         <li>
-          <a href="#headers">Headers</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#frontend">Components</a>
-      <ul>
-        <li>
-          <a href="#list">List</a>
+          <a href="#-headers">Headers</a>
         </li>
         <li>
-          <a href="#storybook">Storybook</a>
+          <a href="#-npm-audit-integrated-with-husky">NPM Audit integrated with Husky</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#responsiveness">Responsiveness</a>
+      <a href="#-frontend-components">Frontend Components</a>
       <ul>
         <li>
-          <a href="#tests-result-in-light-mode">Tests result in light mode</a>
+          <a href="#-list">List</a>
         </li>
         <li>
-          <a href="#tests-result-in-dark-mode">Tests result in dark mode</a>
+          <a href="#-storybook">Storybook</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#accessibility">Accessibility</a>
+      <a href="#-responsiveness">Responsiveness</a>
       <ul>
         <li>
-          <a href="#accessibility-main-actions">Main actions</a>
+          <a href="#-tests-result-in-light-mode">Tests result in light mode</a>
         </li>
         <li>
-          <a href="#accessibility-tests-results">Tests results</a>
+          <a href="#-tests-result-in-dark-mode">Tests result in dark mode</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#performance">Performance</a>
+      <a href="#-accessibility">Accessibility</a>
       <ul>
         <li>
-          <a href="#performance-main-actions">Main actions</a>
+          <a href="#-main-actions">Main actions</a>
         </li>
         <li>
-          <a href="#performance-lighthouse-tests">Lighthouse tests</a>
+          <a href="#-tests-results">Tests results</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#-performance">Performance</a>
+      <ul>
+        <li>
+          <a href="#-main-actions-1">Main actions</a>
         </li>
         <li>
-          <a href="#performance-bundle-size-report">Bundle size report</a>
+          <a href="#-tests-results-1">Tests results</a>
         </li>
         <li>
-          <a href="#performance-assets-split">Assets split</a>
+          <a href="#-bundle-size-report">Bundle size report</a>
         </li>
         <li>
           <a href="#performance-tests-results">Tests results</a>
@@ -160,106 +160,66 @@
       </ul>
     </li>
     <li>
-      <a href="#internationalization">Internationalization</a>
+      <a href="#-internationalization">Internationalization</a>
       <ul>
         <li>
-          <a href="#internationalization-how-it-works">How it works</a>
+          <a href="#-how-it-works">How it works</a>
         </li>
         <li>
-          <a href="#internationalization-use-a-different-language">Use a different language</a>
+          <a href="#-use-a-different-language">Use a different language</a>
         </li>
         <li>
-          <a href="#internationalization-add-a-new-language">Add a new language</a>
+          <a href="#-add-a-new-language">Add a new language</a>
         </li>
         <li>
-          <a href="#internationalization-change-translations">Change translations</a>
+          <a href="#-change-translations">Change translations</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#security">Security</a>
+      <a href="#-browser-compatibility">Browser compatibility</a>
       <ul>
         <li>
-          <a href="#security-main-actions">Main actions</a>
-        </li>
-        <li>
-          <a href="#security-npm-audit-integrated-with-husky">NPM Audit integrated with Husky</a>
-        </li>
-        <li>
-          <a href="#security-content-security-policy">Content Security Policy (CSP)</a>
+          <a href="#-main-actions-2">Main actions</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#browser-compatibility">Browser compatibility</a>
+      <a href="#-seo">SEO</a>
       <ul>
         <li>
-          <a href="#browser-compatibility-main-actions">Main actions</a>
+          <a href="#-main-actions-3">Main actions</a>
         </li>
         <li>
-          <a href="#browser-tests-results">Tests results</a>
-        </li>
-        <li>
-          <a href="#security-content-security-policy">Content Security Policy (CSP)</a>
+          <a href="#-social-share-screenshots">Social share screenshots</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#seo">SEO</a>
+      <a href="#-tests">Tests</a>
       <ul>
         <li>
-          <a href="#seo-tracking">Tracking</a>
+          <a href="#-run-tests">Run tests</a>
         </li>
         <li>
-          <a href="#seo-social-share">Social share</a>
+          <a href="#-add-new-tests">Add new tests</a>
+        </li>
+        <li>
+          <a href="#-coverage-report">Coverage report</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#ci-qa">CI / QA</a>
+      <a href="#-misc">Misc</a>
       <ul>
         <li>
-          <a href="#ci-qa-eslint-with-airbnb-rules">ESLint with Airbnb rules</a>
+          <a href="#-main-tools">Main tools</a>
         </li>
         <li>
-          <a href="#ci-qa-prototypes">Prototypes (React)</a>
+          <a href="#-todo-list">Todo list</a>
         </li>
         <li>
-          <a href="#ci-qa-sentry-integration">Sentry integration</a>
-        </li>
-        <li>
-          <a href="#ci-qa-flow-on-open-a-new-pr">Flow on open a new PR</a>
-        </li>
-        <li>
-          <a href="#ci-qa-flow-on-merge-a-pr-with-the-main-branch">Flow on merge a PR with the main branch</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#tests">Tests</a>
-      <ul>
-        <li>
-          <a href="#tests-run-tests">Run tests</a>
-        </li>
-        <li>
-          <a href="#tests-add-new-tests">Add new tests</a>
-        </li>
-        <li>
-          <a href="#tests-coverage-report">Coverage report</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#misc">Misc</a>
-      <ul>
-        <li>
-          <a href="#misc-main-tools">Main tools</a>
-        </li>
-        <li>
-          <a href="#misc-todo-list">Todo list</a>
-        </li>
-        <li>
-          <a href="#misc-project-numbers">Project numbers</a>
+          <a href="#-project-numbers">Project numbers</a>
         </li>
         <li>
           <a href="#misc-known-issues">Known issues</a>
@@ -874,10 +834,6 @@ There are several performance improvements opportunities that Booksys didn't imp
 <a href="https://rxluz.github.io/booksys/bundle-analysis.htm">View full report</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<h4><b>
-<a name="performance-assets-split"></a> Assets split
-</b></h4>
-
 ### <a name="internationalization"></a> Internationalization
 
 <h4><b>
@@ -1094,7 +1050,7 @@ To add new tests to the application, do the following procedure according to the
 <a name="misc-project-numbers"></a> Project numbers
 </b></h4>
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/public/timeStats.svg" alt="Booksys logo" height="80">
+<img src="https://raw.githubusercontent.com/rxluz/booksys/main/docs/timeStats.svg" alt="Booksys logo" height="80">
 
 Directory /src
 
