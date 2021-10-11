@@ -329,7 +329,7 @@ The booking system has the following functionalities:
 - `git clone https://github.com/rxluz/booksys`
 - `cd booksys`
 - `yarn install`
-- `cp .env.example .env` (mac/linux) or `copy .env.example .env` (windows)
+- `cp .env.example .env` (Mac/Linux) or `copy .env.example .env` (Windows)
 - `yarn client:start`
 
 The application will run in `localhost:3000/booksys#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6`
@@ -688,11 +688,17 @@ The current mock system has some limitations, so it isn't possible to return a d
 <a name="api-security"></a> Security
 </h4>
 
+Security is an extensive topic and cannot be ensured only with code measures; it also requires an Architecture that avoids leak data to non-authorized users and many other actions.
+
+The main thing that Booksys does to ensure security only allows users using email from authorized domains to confirm their bookings, but Booksys also does several code actions that we will detail in the topics below:
+
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 <h4>
 <a name="api-https"></a> HTTPS
 </h4>
+
+Booksys uses HTTPS protocol to transport all the data, including the mock API; the index.html page also has a script to redirect the page from HTTP to HTTPS automatically.
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -700,17 +706,35 @@ The current mock system has some limitations, so it isn't possible to return a d
 <a name="api-dns-protection"></a> DNS Protection
 </h4>
 
+Booksys didn't create the backend, but the proposed API uses CloudFlare to avoid any DDOS attack.
+
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 <h4>
 <a name="api-csp"></a> CSP (Content Security Policy)
 </h4>
 
+One of the ways that many attackers use to steal data from the application is using malicious code that sends to their servers sensitive information like email, passwords or credit card numbers.
+
+There are several ways to avoid this, but one of the most powerful ways is to define a CSP in the index.html file and the API; the CSP defined in the index list the allowed domains authorized to receive information from this application.
+
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 <h4>
 <a name="api-headers"></a> Headers
 </h4>
+
+The Booksys will follow these headers to design the backend API and ensure the security:
+
+| Header                         | Value                                                                                                                                                                                                                                                                                                                                                                                                                    | Explanation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| X-XSS-Protection               | 1;mode=block                                                                                                                                                                                                                                                                                                                                                                                                             | XSS filter enabled and prevented rendering the page if attack detected                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| X-Frame-Options                | DENY                                                                                                                                                                                                                                                                                                                                                                                                                     | Prevent any domain to embed your content using frame/iframe.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| X-Content-Type-Options         | nosniff                                                                                                                                                                                                                                                                                                                                                                                                                  | Consider files types as defined and disallow content sniffing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Referrer Policy                | no-referrer                                                                                                                                                                                                                                                                                                                                                                                                              | The Referer header will be omitted entirely.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| HTTP Strict Transport Security | max-age=31536000; includeSubDomains                                                                                                                                                                                                                                                                                                                                                                                      | HTTP Strict Transport Security (HSTS) is a web security policy mechanism which helps to protect websites against protocol downgrade attacks and cookie hijacking. It allows web servers to declare that web browsers (or other complying user agents) should only interact with it using secure HTTPS connections, and never via the insecure HTTP protocol.                                                                                                                                                                                                                                                                                                                                    |
+| Cookies                        | Secure=True; HttpOnly=True, SameSite=strict                                                                                                                                                                                                                                                                                                                                                                              | "Secure" Cookie A secure cookie is only sent to the server with an encrypted request over the HTTPS protocol. Even with Secure, sensitive information should never be stored in cookies, as they are inherently insecure and this flag can't offer real protection. Starting with Chrome 52 and Firefox 52, insecure sites (http:) can't set cookies with the Secure directive. "HttpOnly" Cookie To prevent cross-site scripting (XSS) attacks, HttpOnly cookies are inaccessible to JavaScript's Document.cookie API; they are only sent to the server. For example, cookies that persist server-side sessions don't need to be available to JavaScript, and the HttpOnly flag should be set. |
+| Content-Security-Policy        | default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://o1034630.ingest.sentry.io/ https://www.google-analytics.com https://www.googletagmanager.com https://fonts.gstatic.com https://fonts.googleapis.com http://cdn.polyfill.io https://cdnjs.cloudflare.com https://29b0050b-7001-4162-994f-acfec6195274.mock.pstmn.io; report-uri https://29b0050b-7001-4162-994f-acfec6195274.mock.pstmn.io/security/report | The Content Security Policy prevent XSS , clickjacking , code injection attacks by implementing the Content Security Policy (CSP) header in your web page HTTP response.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
