@@ -234,7 +234,7 @@
 
 ### <a name="introduction"></a> Introduction
 
-Booksys is a project focused on the frontend features; However the [API](https://documenter.getpostman.com/view/1217791/UUy38mGk), [DB schema](https://github.com/rxluz/booksys/tree/feat-doc#-database-schema) and [migrations](https://github.com/rxluz/booksys/blob/main/migrations/tables.sql) are all defined but not implemented; the project uses [mock data](https://github.com/rxluz/booksys/tree/feat-doc#-mock-data) to display the backend resources correctly.
+Booksys is a project focused mainly on the frontend features; However the [API](https://documenter.getpostman.com/view/1217791/UUy38mGk), [DB schema](https://github.com/rxluz/booksys/tree/feat-doc#-database-schema) and [migrations](https://github.com/rxluz/booksys/blob/main/migrations/tables.sql) are all defined but not implemented; the project uses [mock data](https://github.com/rxluz/booksys/tree/feat-doc#-mock-data) to display the backend resources correctly.
 
 Bellow is the URLs to check the different application states:
 
