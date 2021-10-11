@@ -792,7 +792,7 @@ Booksys do several actions to ensure that this application is a universal applic
 </b></h4>
 
 <br/>
-<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/a11yTestResult.png?raw=true">
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/accessibilityTestResult.png?raw=true">
 <br/>
 <a href="https://rxluz.github.io/booksys/lighthouse/report.html#a11y">View full report</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
