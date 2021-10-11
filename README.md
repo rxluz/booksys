@@ -319,10 +319,20 @@ The booking system has the following functionalities:
 ### <a name="installation"></a> Installation
 
 <h4>
-<a name="installation-pre-conditions"></a> Pre conditions
+<a name="installation-pre-conditions"></a> Pre-requirements
 </h4>
 
-download poedit
+- Install [Poedit](https://poedit.net/) to edit/add translations
+- Install latest [NodeJS](https://nodejs.org/en/download/) and [NPM](https://npmjs.org) versions
+- Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- `npm install --global yarn`
+- `git clone https://github.com/rxluz/booksys`
+- `cd booksys`
+- `yarn install`
+- `cp .env.example .env` (mac/linux) or `copy .env.example .env` (windows)
+- `yarn client:start`
+
+The application will run in `localhost:3000/booksys#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6`
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -330,29 +340,25 @@ download poedit
 <a name="installation-pre-conditions"></a> Available scripts
 </h4>
 
-| Command                              | Description                                                                                                                    |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| `npm run client:start`               | Start the frontend application in watch mode                                                                                   |
-| `npm run client:build`               | Generate the frontend assets in `build` folder                                                                                 |
-| `npm run client:deploy`              | Deploy the application to GitHub Pages                                                                                         |
-| `npm run client:test`                | Run the tests created after the last commit and watch for new tests                                                            |
-| `npm run client:cypress:open`        | Run the E2E tests                                                                                                              |
-| `npm run client:test:coverage`       | Run the tests and generate a coverage report in `coverage` folder                                                              |
-| `npm run client:lighthouse`          | Generate a lighthouse report in `build/lighhouse` folder                                                                       |
-| `npm run client:build-storybook`     | Generate the storybook assets in `build/storybook` folder                                                                      |
-| `npm run client:bundle-analysis`     | Generate the bundle size report in `build` folder                                                                              |
-| `npm run client:eject`               | Allows to customize the configuration under Create-React-App, please note that this is a one-way operation and can't be undone |
-| `npm run client:translation:extract` | Extract from code all the translatable strings                                                                                 |
-| `npm run client:translation:import`  | Import from .po files the translations                                                                                         |
-| `npm run client:storybook`           | Run the storybook in watch mode                                                                                                |
+| Command                           | Description                                                                                                                    |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `yarn client:start`               | Start the frontend application in watch mode                                                                                   |
+| `yarn client:build`               | Generate the frontend assets in `build` folder                                                                                 |
+| `yarn client:deploy`              | Deploy the application to GitHub Pages                                                                                         |
+| `yarn client:test`                | Run the tests created after the last commit and watch for new tests                                                            |
+| `yarn client:cypress:open`        | Run the E2E tests                                                                                                              |
+| `yarn client:test:coverage`       | Run the tests and generate a coverage report in `coverage` folder                                                              |
+| `yarn client:lighthouse`          | Generate a lighthouse report in `build/lighhouse` folder                                                                       |
+| `yarn client:build-storybook`     | Generate the storybook assets in `build/storybook` folder                                                                      |
+| `yarn client:bundle-analysis`     | Generate the bundle size report in `build` folder                                                                              |
+| `yarn client:eject`               | Allows to customize the configuration under Create-React-App, please note that this is a one-way operation and can't be undone |
+| `yarn client:translation:extract` | Extract from code all the translatable strings                                                                                 |
+| `yarn client:translation:import`  | Import from .po files the translations                                                                                         |
+| `yarn client:storybook`           | Run the storybook in watch mode                                                                                                |
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="resources-list"></a> Resources list
-
-<h4>
-Expand
-</h4>
 
 | Title                                                                                                    | Description                                                                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -369,13 +375,25 @@ Expand
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<p align="right">(<a href="#table-contents">back to top</a>)</p>
-
 ### <a name="conception"></a> Conception
 
 <h4>
 <a name="conception-research"></a> Research
 </h4>
+
+The initial idea was to find a way to connect Booksys with the Metamask wallet; the purpose was to allow the users to log in with [Metamask](https://metamask.io/) to see their bookings.
+
+Once this is a fabulous solution from a technical perspective, it wasn't so good from a business perspective; the main problems found were:
+Users cannot log in from Mobile devices using [Metamask](https://metamask.io/) wallets
+Users with Metamask wallet could be users not authorised to do this action (non-Pepsi/coca-cola employees)
+
+So, to ensure that the application will run on mobile devices and only authorised users will use this, the solution required a booking confirmation from the corporate user emails; in this way, we avoid any attempts to fake bookings.
+
+Another problem found was about the booking offices privacy; the initial solution was to display a calendar to the user with the available times and seats, however when the user access this application for the first time, we can't guarantee that this user is an authorised user.
+
+The solution was to display the office availability only after the users confirmed their identity using a unique link sent by their emails.
+
+Finally, to ensure that Pepsi users don't see the initial Coca-cola office availability and vice-versa, the Booksys URL to each company is different. This solution doesn't guarantee 100% privacy about each company office availability, but it solves most privacy issues cases.
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -429,6 +447,18 @@ Expand
 <a name="conception-features-list"></a> Features list
 </h4>
 
+Users can:
+
+- See the event name, address and date
+- Get directions to the event
+- Book a new office with the user preferences about seats and time
+- Confirm a booking via email
+- See other preferences options in their confirmation email
+- See their confirmed bookings
+- Cancel a booking
+- See their cancelled bookings
+- Find other seats and times options
+
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="system-design"></a> System design
@@ -444,6 +474,12 @@ Expand
 <h4>
 <a name="system-design-static-pages-and-assets"></a> Static pages and assets
 </h4>
+
+Booksys uses [GitHub Pages](https://pages.github.com/) to store all the frontend assets. To make it faster, [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) with [Webpack](https://webpack.js.org/) splits the Javascript and CSS assets in chunks to ensure that a Booksys page only will call the resources required to load that specific page.
+
+Also, we use [Google Fonts](https://fonts.google.com/) to load the [main font](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L41) ([Maven Pro](https://fonts.google.com/specimen/Maven+Pro#standard-styles)) and the library [animate.css](https://daneden.github.io/animate.css/) stored in [CloudFlare](https://www.cloudflare.com/) to create some animations like fade-in in change booking page pagination.
+
+Lastly, the application uses [Polyfill.io](https://polyfill.io/v3/) to ensure [compatibility with different browsers](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L50), [Google Analytics](https://analytics.google.com/analytics/web/) to [track](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L52) the user behaviour and [Sentry](https://sentry.io/) to [track](https://github.com/rxluz/booksys/blob/feat-doc/src/index.js) applications errors.
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -603,6 +639,12 @@ Expand
 <h4>
 <a name="api-database-schema"></a> Database schema
 </h4>
+
+The design adopted in the DB Schema allows to manage more than two companies and more than one event; the idea is allowing Booksys to control future events without the need to change tables.
+
+This version doesn't manage the users directly; instead, it stores the user information (name and email) on the booking page.
+
+Once the DB is multi-event ready, the API only allows one event per client; this is a limitation that could be easly removed in future versions due to how DB is structured.
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbSchema.png">
 <a href="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbScheme.mwb">Download database schema</a> <br />
@@ -846,11 +888,11 @@ https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc
 <a name="internationalization-add-a-new-language"></a> Add a new language
 </h4>
 
-- Run `npm run client:translation:extract`
+- Run `yarn client:translation:extract`
 - Download [Poedit](https://poedit.net/)
 - Using [Poedit](https://poedit.net/) open the file [`template.pot`](https://github.com/rxluz/booksys/blob/main/src/common/locales/template.pot) in [`src/common/locales/`](https://github.com/rxluz/booksys/tree/main/src/common/locales) folder
 - Create `.mo` and `.po` file translation in [Poedit](https://poedit.net/) and save this translation in the folder above
-- Run `npm run client:translation:import`
+- Run `yarn client:translation:import`
 - This command will update the file `translations.js`
 - Case needed import new languages packages to [moment](https://momentjs.com/docs/#/i18n/) and add it inside the [`general.utils.js`](https://github.com/rxluz/booksys/blob/main/src/common/utils/general.utils.js) file in [`src/common/utils`](https://github.com/rxluz/booksys/tree/main/src/common/utils) folder. (eg.: `import 'moment/locale/es'`
 
@@ -955,11 +997,11 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
 
 Booksys utilises testing-library and Jest to do unit tests and Cypress to do E2E tests; the following commands are available to run tests:
 
-| Command                        | Description                                                         |
-| ------------------------------ | ------------------------------------------------------------------- |
-| `npm run client:test`          | Run the tests created after the last commit and watch for new tests |
-| `npm run client:cypress:open`  | Run the E2E tests                                                   |
-| `npm run client:test:coverage` | Run the tests and generate a coverage report in `coverage` folder   |
+| Command                     | Description                                                         |
+| --------------------------- | ------------------------------------------------------------------- |
+| `yarn client:test`          | Run the tests created after the last commit and watch for new tests |
+| `yarn client:cypress:open`  | Run the E2E tests                                                   |
+| `yarn client:test:coverage` | Run the tests and generate a coverage report in `coverage` folder   |
 
 The coverage tests report is initially generated in the `/coverage/lcov-report/` folder, but these files are copied to the `build/` folder during the deployment.
 
