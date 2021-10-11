@@ -739,7 +739,7 @@ The Booksys will follow these headers to design the backend API and ensure the s
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 <h4>
-<a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with [Husky](https://www.npmjs.com/package/husky)
+<a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with Husky
 </h4>
 [NPM Audit](https://docs.npmjs.com/cli/v7/commands/npm-audit) is a helpful tool to detect security problems in external dependencies. To ensure that all new packages are safe, Booksys uses a [hook](https://github.com/rxluz/booksys/blob/feat-doc/.husky/postinstall) automatically called after any new package installation to integrate it with the developer flow.
 
@@ -764,13 +764,13 @@ Booksys uses Storybook with the following addons:
 - **Parameters control:** Allow to change all the parameters from a stateless component without creating several stories
   storybookControls
 
-<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/storybookControls.png?raw=true">
+<img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookControls.png?raw=true">
 
 - **Integration with Figma:** Shortcut to access the prototype
-  <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/storybookFigma.png?raw=true">
+  <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookFigma.png?raw=true">
 
 - **Accessibility:** Display any component accessibility errors
-  <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/storybookAccessibility.png?raw=true">
+  <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookAccessibility.png?raw=true">
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
