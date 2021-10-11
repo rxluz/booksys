@@ -1,9 +1,12 @@
 <div align="center">
   <a href="https://rxluz.github.io/booksys">
-    <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/public/logoSocial.svg" alt="Booksys logo" height="80">
+    <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/public/logoSocialDark.svg" alt="Booksys logo" height="80">
   </a>
   <p align="center">
-    Booksys is a booking system that allows different companies to book offices in a given event.
+    <br />
+    <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Generic%20Laptop.jpg?raw=true">
+    <br />
+    <b>Booksys is a booking system that allows different companies to book offices in a given event.</b>
     <br />
     <a href="https://github.com/rxluz/booksys/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
@@ -18,7 +21,7 @@
 
 <details>
 
-<summary>Table of Contents</summary>
+<summary><a name="table-contents"></a>Table of Contents</summary>
   <ol>
     <li>
       <a href="#introduction">Introduction</a>
@@ -30,10 +33,10 @@
       <a href="#installation">Installation</a>
       <ul>
         <li>
-          <a href="#installation-pre-conditions">Pre-conditions</a>
+          <a href="#pre-conditions">Pre-conditions</a>
         </li>
         <li>
-          <a href="#installation-available-scripts">Available scripts</a>
+          <a href="#available-scripts">Available scripts</a>
         </li>
       </ul>
     </li>
@@ -44,19 +47,19 @@
       <a href="#conception">Conception</a>
       <ul>
         <li>
-          <a href="#conception-research">Research</a>
+          <a href="#research">Research</a>
         </li>
         <li>
-          <a href="#conception-wireframes">Wireframes</a>
+          <a href="#wireframes">Wireframes</a>
         </li>
         <li>
-          <a href="#conception-mockups">Mockups</a>
+          <a href="#mockups">Mockups</a>
         </li>
         <li>
-          <a href="#conception-prototypes">Prototypes</a>
+          <a href="#prototypes">Prototypes</a>
         </li>
         <li>
-          <a href="#conception-features-list">Features list</a>
+          <a href="#features-list">Features list</a>
         </li>
       </ul>
     </li>
@@ -64,13 +67,13 @@
       <a href="#system-design">System design</a>
       <ul>
         <li>
-          <a href="#system-design-application-flow-diagram">Application flow diagram</a>
+          <a href="#business-rules-diagram">Business rules diagram</a>
         </li>
         <li>
-          <a href="#system-design-static-pages-and-assets">Static pages and assets</a>
+          <a href="#static-pages-and-assets">Static pages and assets</a>
         </li>
         <li>
-          <a href="#system-design-folder-structure">Folder structure</a>
+          <a href="#folder-structure">Folder structure</a>
         </li>
       </ul>
     </li>
@@ -78,53 +81,53 @@
       <a href="#api">API</a>
       <ul>
         <li>
-          <a href="#api-database-schema">Database schema</a>
+          <a href="#database-schema">Database schema</a>
         </li>
         <li>
           <a href="#api-schema">API schema</a>
         </li>
         <li>
-          <a href="#api-mock-data">Mock data</a>
+          <a href="#mock-data">Mock data</a>
         </li>
         <li>
-          <a href="#api-security">Security</a>
+          <a href="#security">Security</a>
         </li>
         <li>
-          <a href="#api-https">HTTPS</a>
+          <a href="#https">HTTPS</a>
         </li>
         <li>
-          <a href="#api-dns-protection">DNS Protection</a>
+          <a href="#dns-protection">DNS Protection</a>
         </li>
         <li>
-          <a href="#api-csp">CSP (Content Security Policy)</a>
+          <a href="#csp">CSP (Content Security Policy)</a>
         </li>
         <li>
-          <a href="#api-headers">Headers</a>
+          <a href="#headers">Headers</a>
         </li>
       </ul>
     </li>
     <li>
-      <a href="#components">Frontend components</a>
+      <a href="#frontend">Invalid states</a>
       <ul>
         <li>
-          <a href="#components-list">List</a>
+          <a href="#empty-invalid-states">Empty/Invalid states</a>
         </li>
         <li>
-          <a href="#components-storybook">Storybook</a>
+          <a href="#no-javascript-allowed">No Javascript allowed</a>
         </li>
         <li>
-          <a href="#components-invalid-states">Invalid states</a>
-          <ul>
-            <li>
-              <a href="#components-invalid-states">Empty/Invalid states</a>
-            </li>
-            <li>
-              <a href="#components-invalid-states">No Javascript allowed</a>
-            </li>
-            <li>
-              <a href="#components-invalid-states">404 pages</a>
-            </li>
-          </ul>
+          <a href="#404-pages">404 pages</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#frontend">Components</a>
+      <ul>
+        <li>
+          <a href="#list">List</a>
+        </li>
+        <li>
+          <a href="#storybook">Storybook</a>
         </li>
       </ul>
     </li>
@@ -132,10 +135,10 @@
       <a href="#responsiveness">Responsiveness</a>
       <ul>
         <li>
-          <a href="#responsiveness-tests-result-in-light-mode">Tests result in light mode</a>
+          <a href="#tests-result-in-light-mode">Tests result in light mode</a>
         </li>
         <li>
-          <a href="#responsiveness-tests-result-in-dark-mode">Tests result in dark mode</a>
+          <a href="#tests-result-in-dark-mode">Tests result in dark mode</a>
         </li>
       </ul>
     </li>
@@ -210,6 +213,9 @@
         <li>
           <a href="#browser-tests-results">Tests results</a>
         </li>
+        <li>
+          <a href="#security-content-security-policy">Content Security Policy (CSP)</a>
+        </li>
       </ul>
     </li>
     <li>
@@ -282,7 +288,21 @@
 
 ### <a name="introduction"></a> Introduction
 
-### <a name="original-requirements"></a> Original requirements
+Booksys is a project focused on the frontend features; However the [API](https://documenter.getpostman.com/view/1217791/UUy38mGk), [DB schema](https://github.com/rxluz/booksys/tree/feat-doc#-database-schema) and [migrations](https://github.com/rxluz/booksys/blob/main/migrations/tables.sql) are all defined but not implemented; the project uses [mock data](https://github.com/rxluz/booksys/tree/feat-doc#-mock-data) to display the backend resources correctly.
+
+Bellow is the URLs to check the different application states:
+
+| URL                                                                                                                | State                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| https://rxluz.github.io/booksys/#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6                                             | Initial request booking form to Coca Cola users, only accepts emails with the following domains: - cocacola.com - cocacola.ie |
+| https://rxluz.github.io/booksys/#/f76a49f4-73c4-44ce-1fa1-7242bd3d3cc6                                             | Initial page to Pepsi Cola users, only accepts emails with the following domains: - pepsi.com - pepsi.ie                      |
+| https://rxluz.github.io/booksys/#/f76a49f4-73c4-44ce-1fa1-7242bd3d3ac6                                             | Page displayed when the event already happened                                                                                |
+| https://rxluz.github.io/booksys/#/invalidCompanyId                                                                 | Page displayed when the company doesn't exist                                                                                 |
+| https://rxluz.github.io/booksys#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/a76a49f4-73c4-44ce-8fa1-7242bd3d3cc6 | Success page that is displayed when the user confirmed the booking using the link sent by their email.                        |
+| https://rxluz.github.io/booksys#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/a7aa49f4-73c4-44ce-8fa1-7242bd3d3cc6 | Cancel booking page that is displayed when the user cancel the booking.                                                       |
+| https://rxluz.github.io/booksys#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/a74t49f4-73c4-44ce-8fa1-7242bd3d3cc6 | Change booking page that is displayed when the requested time and seats preferences isn't available anymore.                  |
+
+### <a name="original-requirements"></a> Spec
 
 Two companies, COKE and PEPSI, are sharing an office building but as they are competitors, they don’t trust each other. Tomorrow is COLA day (for one day), that the two companies are celebrating. They are gathering a number of business partners in the building. In order to optimize space utilization, they have decided to set-up a joint booking system where any user can book one of the 20 meeting rooms available, 10 from each company (C01, C02, ..., C10 and P01, P02, ...., P10).
 
@@ -294,22 +314,21 @@ The booking system has the following functionalities:
 
 ● Users can cancel their own reservations
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="installation"></a> Installation
 
-<details>
-<summary>
+<h4>
 <a name="installation-pre-conditions"></a> Pre conditions
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+download poedit
 
-<details>
-<summary>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
 <a name="installation-pre-conditions"></a> Available scripts
-</summary>
+</h4>
 
 | Command                              | Description                                                                                                                    |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -317,6 +336,7 @@ The booking system has the following functionalities:
 | `npm run client:build`               | Generate the frontend assets in `build` folder                                                                                 |
 | `npm run client:deploy`              | Deploy the application to GitHub Pages                                                                                         |
 | `npm run client:test`                | Run the tests created after the last commit and watch for new tests                                                            |
+| `npm run client:cypress:open`        | Run the E2E tests                                                                                                              |
 | `npm run client:test:coverage`       | Run the tests and generate a coverage report in `coverage` folder                                                              |
 | `npm run client:lighthouse`          | Generate a lighthouse report in `build/lighhouse` folder                                                                       |
 | `npm run client:build-storybook`     | Generate the storybook assets in `build/storybook` folder                                                                      |
@@ -326,10 +346,13 @@ The booking system has the following functionalities:
 | `npm run client:translation:import`  | Import from .po files the translations                                                                                         |
 | `npm run client:storybook`           | Run the storybook in watch mode                                                                                                |
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="resources-list"></a> Resources list
+
+<h4>
+Expand
+</h4>
 
 | Title                                                                                                    | Description                                                                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -344,22 +367,21 @@ The booking system has the following functionalities:
 | [Figma](https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys)                                       | High fidelity layout                                                                                                                                                                                                                            |
 | [API Documentation](https://documenter.getpostman.com/view/1217791/UUy38mGk)                             | Show all available endpoints, fields and methods                                                                                                                                                                                                |
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="conception"></a> Conception
 
-<details>
-<summary>
+<h4>
 <a name="conception-research"></a> Research
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="conception-wireframes"></a> Wireframes
-</summary>
+</h4>
 
 <table>
   <tr>
@@ -375,166 +397,298 @@ The booking system has the following functionalities:
     <td>Second wireframe iteration</td>
   </tr>
   <tr>
-    <td>
-      <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-two.jpg?raw=true">
+    <td colspan="2">
+      <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-three.jpg?raw=true">
     </td>
   </tr>
   <tr>
-    <td>Third wireframe iteration</td>
+    <td colspan="2">Third wireframe iteration</td>
   </tr>
 </table>
 
-<a href="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframes.pdf">View full wireframe doc</a>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
-
-<details>
-<summary>
+<h4>
 <a name="conception-mockups"></a> Mockups
-</summary>
+</h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/mockups.png">
 <a href="https://github.com/rxluz/booksys/blob/feat-docs/docs/mockups.pdf">View full mockup doc</a>
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="conception-prototypes"></a> Prototypes
-</summary>
+</h4>
 
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/prototype.png">
 <a href="https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys">View full prototype doc</a>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="conception-features-list"></a> Features list
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="system-design"></a> System design
 
-<details>
-<summary>
+<h4>
 <a name="system-design-application-flow-diagram"></a> Flow diagram
-</summary>
-<div class="bg-white">
+</h4>
+
 <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/BRDiagram.drawio.svg">
-</div>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="system-design-static-pages-and-assets"></a> Static pages and assets
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="system-design-folder-structure"></a> Folder structure
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+```bash
+├── CHANGELOG.md
+├── CNAME
+├── LICENSE
+├── Procfile
+├── README.md
+├── build
+├── coverage
+│   ├── clover.xml
+│   ├── coverage-final.json
+│   ├── lcov-report
+│   └── lcov.info
+├── cypress
+│   └── integration
+│   └── home_spec.js
+├── docs
+├── eslint-config.json
+├── jsconfig.json
+├── migrations
+│   └── tables.sql
+├── package-lock.json
+├── package.json
+├── public
+├── security_report.json
+├── src
+│   ├── common
+│   │   ├── components
+│   │   │   ├── button
+│   │   │   │   ├── Button.js
+│   │   │   │   ├── Button.scss
+│   │   │   │   ├── Button.spec.js
+│   │   │   │   ├── Button.stories.js
+│   │   │   │   └── index.js
+│   │   │   ├── companyCard
+│   │   │   │   ├── CompanyCard.js
+│   │   │   │   ├── CompanyCard.scss
+│   │   │   │   ├── CompanyCard.spec.js
+│   │   │   │   ├── CompanyCard.stories.js
+│   │   │   │   ├── companyCardBackground.png
+│   │   │   │   └── index.js
+│   │   │   ├── input
+│   │   │   │   ├── Input.js
+│   │   │   │   ├── Input.scss
+│   │   │   │   ├── Input.spec.js
+│   │   │   │   ├── Input.stories.js
+│   │   │   │   └── index.js
+│   │   │   ├── loading
+│   │   │   │   ├── Loading.js
+│   │   │   │   ├── Loading.spec.js
+│   │   │   │   └── index.js
+│   │   │   ├── officeCard
+│   │   │   │   ├── OfficeCard.js
+│   │   │   │   ├── OfficeCard.scss
+│   │   │   │   ├── OfficeCard.spec.js
+│   │   │   │   ├── OfficeCard.stories.js
+│   │   │   │   └── index.js
+│   │   │   ├── pagination
+│   │   │   │   ├── Pagination.js
+│   │   │   │   ├── Pagination.scss
+│   │   │   │   ├── Pagination.spec.js
+│   │   │   │   ├── Pagination.stories.js
+│   │   │   │   └── index.js
+│   │   │   └── warning
+│   │   │   ├── Warning.js
+│   │   │   ├── Warning.scss
+│   │   │   ├── Warning.spec.js
+│   │   │   ├── Warning.stories.js
+│   │   │   ├── email.svg
+│   │   │   ├── index.js
+│   │   │   └── something-wrong.svg
+│   │   ├── locales
+│   │   │   ├── en.mo
+│   │   │   ├── en.po
+│   │   │   ├── pt_BR.mo
+│   │   │   ├── pt_BR.po
+│   │   │   ├── template.pot
+│   │   │   └── translations.js
+│   │   ├── routes
+│   │   │   ├── RoutesList.js
+│   │   │   └── TestRoute.js
+│   │   └── utils
+│   │   ├── browser.utils.js
+│   │   ├── colours.constants.js
+│   │   ├── colours.scss
+│   │   ├── general.constants.js
+│   │   ├── general.utils.js
+│   │   ├── os.utils.js
+│   │   ├── state.utils.js
+│   │   ├── storybookMode.js
+│   │   ├── storybookMode.scss
+│   │   └── test.utils.js
+│   ├── enhancers
+│   │   └── monitorReducer.js
+│   ├── index.css
+│   ├── index.js
+│   ├── middleware
+│   │   └── logger.js
+│   ├── modules
+│   │   ├── booking
+│   │   │   ├── Booking.actions.js
+│   │   │   ├── Booking.constants.js
+│   │   │   ├── Booking.js
+│   │   │   ├── Booking.services.js
+│   │   │   ├── change
+│   │   │   │   ├── Change.page.js
+│   │   │   │   ├── Change.scss
+│   │   │   │   └── Change.spec.js
+│   │   │   ├── create
+│   │   │   │   ├── Create.constants.js
+│   │   │   │   ├── Create.js
+│   │   │   │   ├── Create.page.js
+│   │   │   │   ├── Create.scss
+│   │   │   │   ├── Create.services.js
+│   │   │   │   └── Create.spec.js
+│   │   │   └── status
+│   │   │   ├── Status.page.js
+│   │   │   ├── Status.scss
+│   │   │   └── Status.spec.js
+│   │   ├── company
+│   │   │   ├── Company.actions.js
+│   │   │   ├── Company.constants.js
+│   │   │   ├── Company.js
+│   │   │   ├── Company.page.js
+│   │   │   └── Company.services.js
+│   │   └── main
+│   │   ├── BodyClasses.js
+│   │   ├── Main.js
+│   │   ├── Main.scss
+│   │   ├── NotFound.js
+│   │   ├── NotFound.svg
+│   │   ├── background.png
+│   │   ├── loading.svg
+│   │   └── logo.svg
+│   ├── reducers
+│   │   ├── booking.js
+│   │   ├── company.js
+│   │   ├── configureStore.js
+│   │   ├── index.js
+│   │   └── settings.js
+│   ├── serviceWorker.js
+│   └── setupTests.js
+├── yarn-error.log
+└── yarn.lock
+```
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="api"></a> API
 
-<details>
-<summary>
+<h4>
 <a name="api-database-schema"></a> Database schema
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbSchema.png">
+<a href="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbScheme.mwb">Download database schema</a> <br />
+<a href="https://github.com/rxluz/booksys/blob/main/migrations/tables.sql">View database migrations</a>
 
-<details>
-<summary>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
 <a name="api-schema"></a> API schema
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+#### Introduction
 
-<details>
-<summary>
+The **Booksys API** is organized around REST. Our API has predictable resource-oriented URLs, allows form-encoded request bodies, returns JSON-encoded responses, and uses conventional HTTP response codes, authentication, and verbs.
+
+You can utilize the Booksys API in test mode, which does not alter your live data. Use the links available in the example request section to mock the endpoints.
+
+Note that the mock API will not change according to the post parameters.
+
+#### Errors
+
+Booksys uses conventional HTTP response codes to indicate the success or failure of an API request. In general: Codes in the `2xx` range indicate success. Codes in the `4xx` range indicate an error that failed given the information provided (e.g., a required parameter was omitted, a charge failed, etc.). Codes in the `5xx` range indicate an error with Booksys's servers.
+
+Some `4xx` errors that could be handled programmatically and include an error array in the response body section that briefly explains the error reported.
+
+<a href="https://documenter.getpostman.com/view/1217791/UUy38mGk">View full API documentation</a> <br />
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
 <a name="api-mock-data"></a> Mock data
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+Booksys uses Postman to mock data and store the URL in [`general.constants.js`](https://github.com/rxluz/booksys/blob/main/src/common/utils/general.constants.js#L3) file in [`src/common/utils/`](https://github.com/rxluz/booksys/tree/main/src/common/utils) folder.
 
-<details>
-<summary>
+The current mock system has some limitations, so it isn't possible to return a different simulated output when sending additional post content.
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
 <a name="api-security"></a> Security
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="api-https"></a> HTTPS
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="api-dns-protection"></a> DNS Protection
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="api-csp"></a> CSP (Content Security Policy)
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="api-headers"></a> Headers
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="components"></a> Frontend components
 
-<details>
-<summary>
+<h4>
 <a name="components-list"></a> List
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="components-storybook"></a> Storybook
-</summary>
+</h4>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-<details>
-<summary>
+<h4>
 <a name="components-invalid-states"></a> Invalid states
-</summary>
+</h4>
 
 #### Empty/Invalid states
 
@@ -542,191 +696,318 @@ The booking system has the following functionalities:
 
 #### 404 pages
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-</details>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="responsiveness"></a> Responsiveness
 
-<details>
-<summary>
+<h4>
 <a name="responsiveness-tests-result-in-light-mode"></a> Tests result in light mode
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+| Devices                 | Change booking page                                                                                                                                      | Create booking page                                                                                                                                     | Booking status page                                                                                                                                     |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 4k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/4K%20Display.jpg?raw=true)                  |
+| 5k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/5K%20Display.jpg?raw=true)                  |
+| Galaxy Fold             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Galaxy%20Fold.jpg?raw=true)                 |
+| Moto G4                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Moto%20G4.jpg?raw=true)                     |
+| Pixel 2                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Pixel%202.jpg?raw=true)                     |
+| Surface Duo             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Surface%20Duo.jpg?raw=true)                 |
+| iPhone 5-SE             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/iPhone%205-SE.jpg?raw=true)                 |
+| iPhone X                | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/iPhone%20X.jpg?raw=true)                    |
+| iPad                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/iPad.jpg?raw=true)                          |
+| iPad Pro                | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/iPad%20Pro.jpg?raw=true)                    |
+| Generic Laptop          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Generic%20Laptop.jpg?raw=true)              |
+| Laptop with MDPI screen | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) |
+| MacBook Pro 13          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2013.jpg?raw=true)            |
+| MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
 <a name="responsiveness-tests-result-in-dark-mode"></a> Tests result in dark mode
-</summary>
-</details>
+</h4>
+
+| Devices                 | Change booking page                                                                                                                                     | Create booking page                                                                                                                                    | Booking status page                                                                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 4k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/4K%20Display.jpg?raw=true)                  |
+| 5k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/5K%20Display.jpg?raw=true)                  |
+| Galaxy Fold             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Galaxy%20Fold.jpg?raw=true)                 |
+| Moto G4                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Moto%20G4.jpg?raw=true)                     |
+| Pixel 2                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Pixel%202.jpg?raw=true)                     |
+| Surface Duo             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Surface%20Duo.jpg?raw=true)                 |
+| iPhone 5-SE             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/iPhone%205-SE.jpg?raw=true)                 |
+| iPhone X                | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/iPhone%20X.jpg?raw=true)                    |
+| iPad                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/iPad.jpg?raw=true)                          |
+| iPad Pro                | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/iPad%20Pro.jpg?raw=true)                    |
+| Generic Laptop          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Generic%20Laptop.jpg?raw=true)              |
+| Laptop with MDPI screen | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) |
+| MacBook Pro 13          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2013.jpg?raw=true)            |
+| MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="accessibility"></a> Accessibility
 
-<details>
-<summary>
+<h4>
 <a name="accessibility-main-actions"></a> Main actions
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+<h4>
 <a name="accessibility-tests-results"></a> Tests results
-</summary>
-</details>
+</h4>
+
+<br/>
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/accessibilityTestResult.png?raw=true">
+<br/>
+<a href="https://rxluz.github.io/booksys/lighthouse/report.html#accessibility">View full report</a>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="performance"></a> Performance
 
-<details>
-<summary>
+<h4>
 <a name="performance-main-actions"></a> Main actions
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
-<a name="performance-lighthouse-tests"></a> Lighthouse tests
-</summary>
-</details>
+<h4>
+<a name="performance-lighthouse-tests"></a> Tests results
+</h4>
 
-<details>
-<summary>
+<br/>
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/performanceTestResult.png?raw=true">
+<br/>
+<a href="https://rxluz.github.io/booksys/lighthouse/report.html#performance">View full report</a>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
 <a name="performance-bundle-size-report"></a> Bundle size report
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+<br/>
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/bundleSizeReport.png?raw=true">
+<br/>
+<a href="https://rxluz.github.io/booksys/bundle-analysis.htm">View full report</a>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
 <a name="performance-assets-split"></a> Assets split
-</summary>
-</details>
-
-<details>
-<summary>
-<a name="performance-tests-results"></a> Tests results
-</summary>
-</details>
+</h4>
 
 ### <a name="internationalization"></a> Internationalization
 
-<details>
-<summary>
+<h4>
 <a name="internationalization-how-it-works"></a> How it works
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+I’ve tested some different ways to translate web applications, and I noticed that most of the developers work with strings inside a JSON file like this:
+
+```
+{
+    "ACTION_ACTIVE":"Aktiv",
+    "ACTION_CANCEL":"Cancel",
+    "ACTION_ADD":"Hinzufügen",
+    "ACTION_ADD_CUSTOMER":"Neuen Kunden hinzufügen",
+    "ACTION_BACK_TO_MENU":"Zurück zum Menü",
+    "ACTION_BACK_TO_LIST":"Zurück zur Liste",
+    "ACTION_CHECK":"Klick zum prüfen",
+    "ACTION_CHECK_NO_CV":"Keine CVV für diese Karte generieren",
+    "ACTION_CHECKOUT":"Check-out",
+}
+```
+
+Unfortunately, there are a lot of problems with this approach, JSON strings aren’t friendly to translators professionals. It is a typical pattern to developers but a nightmare for people who don’t know rules like putting quotation marks, commas, and brackets.
+
+When you have a number or a variable in the middle of the text, some situations will demand two strings. However, these strings together probably won’t make sense in other languages because different languages have different structures.
+
+I used [Redux i18n](https://www.npmjs.com/package/redux-i18n) to manage translations; with this plugin, you can use POT files, and this file is readable by [Poedit](https://poedit.net/), which translation professionals primarily use.
+
+Another advantage is we don’t need to create JSON files. Instead, just code and the plugin will extract your code the strings; looks cute, right?
+
+This plugin has an option to import data from PO files. Thus the person responsible for translations doesn’t need to change internal files in your application, beyond easy is more secure.
+
+<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/poeditExample.png?raw=true">
+<br/>
+<a href="https://github.com/rxluz/booksys/tree/main/src/common/locales">View translation folder</a>
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
 <a name="internationalization-use-a-different-language"></a> Use a different language
-</summary>
-</details>
+</h4>
+<br>
+There are two ways to use a different language:
 
-<details>
-<summary>
+- **Auto-detected**: Booksys [detects your browser preferred language](https://github.com/rxluz/booksys/blob/95c6ca1292d5399976ad9028a2b0a41a34585ab1/src/common/utils/general.utils.js#L23), and in case the application has this language package available, it displays the website in this language. Otherwise, the application displays English as default.
+- **Using the `lang` parameter**: The application allows the user to set the language manually, sending in the URL the prefered language; for instance, you can see Booksys in Portuguese using the following URL:
+
+https://rxluz.github.io/booksys/?lang=pt%2F#/f76a49f4-73c4-44ce-8fa1-7242bd3d3cc6/booking/booking123
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
 <a name="internationalization-add-a-new-language"></a> Add a new language
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+- Run `npm run client:translation:extract`
+- Download [Poedit](https://poedit.net/)
+- Using [Poedit](https://poedit.net/) open the file [`template.pot`](https://github.com/rxluz/booksys/blob/main/src/common/locales/template.pot) in [`src/common/locales/`](https://github.com/rxluz/booksys/tree/main/src/common/locales) folder
+- Create `.mo` and `.po` file translation in [Poedit](https://poedit.net/) and save this translation in the folder above
+- Run `npm run client:translation:import`
+- This command will update the file `translations.js`
+- Case needed import new languages packages to [moment](https://momentjs.com/docs/#/i18n/) and add it inside the [`general.utils.js`](https://github.com/rxluz/booksys/blob/main/src/common/utils/general.utils.js) file in [`src/common/utils`](https://github.com/rxluz/booksys/tree/main/src/common/utils) folder. (eg.: `import 'moment/locale/es'`
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
 <a name="internationalization-change-translations"></a> Change translations
-</summary>
-</details>
+</h4>
+
+You can change the translations using [Poedit](https://poedit.net/) and reimport the file or change the `translation.js` in the [`src/common/locales/`](https://github.com/rxluz/booksys/tree/main/src/common/locales) folder.
+
+Some situations require changing this file straight due to a bug to export plurals; you need to edit this file directly when you need plurals.
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="security"></a> Security
 
-<details>
-<summary>
+<h4>
 <a name="security-main-actions"></a> Main actions
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+<h4>
 <a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with Husky
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+<h4>
 <a name="security-content-security-policy"></a> Content Security Policy (CSP)
-</summary>
-</details>
+</h4>
 
 ### <a name="browser-compatibility"></a> Browser compatibility
 
-<details>
-<summary>
+<h4>
 <a name="compatibility-main-actions"></a> Main actions
-</summary>
-</details>
+</h4>
+<br>
 
-<details>
-<summary>
-<a name="browser-tests-results"></a> Tests results
-</summary>
-</details>
+The application is compatible with the following browsers:
+
+- Microsoft Edge
+- Opera
+- Firefox
+- Safari
+- Chrome
+
+This application uses [Polyfill.io](https://polyfill.io/v3/) to ensure that the application will run in an old browser. Also, all code is compiled to ES5 to avoid breaking the application due to some modern JS syntax.
+
+However, due to modern CSS units, it not guaranteed that everything will work properly in an old browser like Internet Explorer.
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="seo"></a> SEO
 
-<details>
-<summary>
-<a name="seo-tracking"></a> Tracking
-</summary>
-</details>
+<h4>
+<a name="seo-tracking"></a> Main actions
+</h4>
+<br>
+This application isn't intended to be a social application or an application that needs to be well-positioned in Google Search. The SEO actions were mainly focused on ensuring that the shared images would appear correctly.
 
-<details>
-<summary>
-<a name="seo-social-share"></a> Social share
-</summary>
-</details>
+To do that was added inside [`index.html`](https://github.com/rxluz/booksys/blob/main/public/index.html) several [metatags](https://github.com/rxluz/booksys/blob/main/public/index.html#L21) to allow the crawlers to display the Booksys website thumbnail correctly.
+
+Also, the application is connected with [Google Analytics](https://github.com/rxluz/booksys/blob/main/public/index.html#L52) to collect valuable insights about the performance and general improvements.
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+<h4>
+<a name="seo-social-share"></a> Social share screenshots
+</h4>
+<table>
+  <tr>
+    <td> 
+      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/whatsAppShare.png?raw=true">
+    </td>
+    <td>
+      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/facebookShare.png?raw=true">
+    </td>
+  </tr>
+  <tr>
+    <td>
+    Whatsapp card
+    </td>
+    <td>
+    Facebook card
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/slackShare.png?raw=true">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    Slack card
+    </td>
+  </tr>
+</table>
 
 ### <a name="tests"></a> Tests
 
-<details>
-<summary>
+<h4>
 <a name="tests-run-tests"></a> Run tests
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+Booksys utilises testing-library and Jest to do unit tests and Cypress to do E2E tests; the following commands are available to run tests:
+
+| Command                        | Description                                                         |
+| ------------------------------ | ------------------------------------------------------------------- |
+| `npm run client:test`          | Run the tests created after the last commit and watch for new tests |
+| `npm run client:cypress:open`  | Run the E2E tests                                                   |
+| `npm run client:test:coverage` | Run the tests and generate a coverage report in `coverage` folder   |
+
+The coverage tests report is initially generated in the `/coverage/lcov-report/` folder, but these files are copied to the `build/` folder during the deployment.
+
+<h4>
 <a name="tests-add-new-tests"></a> Add new tests
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+To add new tests to the application, do the following procedure according to the test type:
+
+- **Unit tests**: The unit tests should be done inside the component folder using the exact name of the component, adding `.spec.js` at the end
+- **E2E tests**: All E2E tests should be located inside the `cypress/integration` folder, and they need to finish the file name with `_spec.js`
+
+<h4>
 <a name="tests-coverage-report"></a> Coverage report
-</summary>
-</details>
+</h4>
+
+<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/docs/coverageTestResult.png">
+<a href="https://rxluz.github.io/booksys/coverage/lcov-report/index.html">View full coverage report</a>
+
+<p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 ### <a name="tests"></a> Misc
 
-<details>
-<summary>
+<h4>
 <a name="misc-main-tools"></a> Main tools
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+<h4>
 <a name="misc-todo-list"></a> Todo list
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+improve tests coverage
+add e2e tests
+use better accessibility tests tools
+remove moment
+improve support to ie11
+remove object hash
+
+<h4>
 <a name="misc-project-numbers"></a> Project numbers
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+<h4>
 <a name="misc-known-issues"></a> Known issues
-</summary>
-</details>
+</h4>
 
-<details>
-<summary>
+plurals in translations
+
+<h4>
 <a name="misc-acknowledgements"></a> Acknowledgements
-</summary>
-</details>
+</h4>

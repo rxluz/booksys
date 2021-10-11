@@ -30,5 +30,6 @@ export const STATUS_NAMES = (translate) => ({
   [PAGE_STATE.CANCELLED]: translate('Cancelled'),
 })
 
-export const BOOKING_CONFIRM_URL = `${generalConstants.BASE_URL}/booking/confirm`
+export const BOOKING_CONFIRM_URL = (bookingId) =>
+  `${generalConstants.BASE_URL}/booking/confirm/${bookingId}`
 export const BOOKING_CANCEL_URL = `${generalConstants.BASE_URL}/booking/cancel`

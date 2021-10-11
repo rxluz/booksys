@@ -50,7 +50,8 @@
     "client:translation:extract": "i18n_extract --pattern=translate --source=src --locales=src/common/locales",
     "client:translation:import": "i18n_import --translations=src/common/locales --locales=src/common/locales",
     "client:storybook": "start-storybook -p 6006 -s public",
-    "client:build-storybook": "build-storybook -s public -o build/storybook"
+    "client:build-storybook": "build-storybook -s public -o build/storybook",
+    "client:cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -87,6 +88,7 @@
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.10",
     "cra-bundle-analyzer": "^0.1.0",
+    "cypress": "^8.5.0",
     "gh-pages": "^2.2.0",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8",

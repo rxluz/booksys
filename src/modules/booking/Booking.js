@@ -85,7 +85,7 @@ const Booking = (
     ),
   }
 
-  return PAGES_BY_STATE[booking.status]()
+  return PAGES_BY_STATE[booking.status] ? PAGES_BY_STATE[booking.status]() : null
 }
 
 Booking.propTypes = {
