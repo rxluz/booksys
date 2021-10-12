@@ -413,7 +413,7 @@ Users can:
 <a name="system-design-application-flow-diagram"></a> Flow diagram
 </b></h4>
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/BRDiagram.drawio.svg">
+<img src="https://raw.githubusercontent.com/rxluz/booksys/main/docs/flowDiagram.drawio.svg">
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
