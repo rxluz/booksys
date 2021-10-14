@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1633892523514" clover="3.2.0">
-  <project timestamp="1633892523514" name="All files">
-    <metrics statements="468" coveredstatements="152" conditionals="184" coveredconditionals="57" methods="191" coveredmethods="45" elements="843" coveredelements="254" complexity="0" loc="468" ncloc="468" packages="20" files="58" classes="58"/>
+<coverage generated="1634209206549" clover="3.2.0">
+  <project timestamp="1634209206550" name="All files">
+    <metrics statements="481" coveredstatements="162" conditionals="184" coveredconditionals="57" methods="198" coveredmethods="49" elements="863" coveredelements="268" complexity="0" loc="481" ncloc="481" packages="20" files="58" classes="58"/>
     <package name="src">
-      <metrics statements="46" coveredstatements="0" conditionals="32" coveredconditionals="0" methods="17" coveredmethods="0"/>
+      <metrics statements="47" coveredstatements="0" conditionals="32" coveredconditionals="0" methods="17" coveredmethods="0"/>
       <file name="index.js" path="/Users/rxluz/Documents/GitHub/booksys/src/index.js">
-        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="18" count="0" type="stmt"/>
+        <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="20" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
       </file>
       <file name="serviceWorker.js" path="/Users/rxluz/Documents/GitHub/booksys/src/serviceWorker.js">
         <metrics statements="39" coveredstatements="0" conditionals="32" coveredconditionals="0" methods="16" coveredmethods="0"/>
@@ -84,10 +85,10 @@
         <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="50" count="1" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
       </file>
       <file name="CompanyCard.stories.js" path="/Users/rxluz/Documents/GitHub/booksys/src/common/components/companyCard/CompanyCard.stories.js">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -178,9 +179,9 @@
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="6" count="2" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
       </file>
       <file name="Pagination.stories.js" path="/Users/rxluz/Documents/GitHub/booksys/src/common/components/pagination/Pagination.stories.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -231,7 +232,7 @@
       </file>
     </package>
     <package name="src.common.utils">
-      <metrics statements="73" coveredstatements="39" conditionals="48" coveredconditionals="16" methods="43" coveredmethods="16"/>
+      <metrics statements="84" coveredstatements="48" conditionals="48" coveredconditionals="16" methods="50" coveredmethods="20"/>
       <file name="browser.utils.js" path="/Users/rxluz/Documents/GitHub/booksys/src/common/utils/browser.utils.js">
         <metrics statements="3" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="3" type="stmt"/>
@@ -243,37 +244,37 @@
         <line num="1" count="0" type="stmt"/>
       </file>
       <file name="general.constants.js" path="/Users/rxluz/Documents/GitHub/booksys/src/common/utils/general.constants.js">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="6" type="stmt"/>
         <line num="3" count="6" type="stmt"/>
         <line num="5" count="6" type="stmt"/>
-        <line num="6" count="6" type="stmt"/>
         <line num="7" count="6" type="stmt"/>
         <line num="9" count="6" type="stmt"/>
         <line num="11" count="6" type="stmt"/>
-        <line num="13" count="6" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
       </file>
       <file name="general.utils.js" path="/Users/rxluz/Documents/GitHub/booksys/src/common/utils/general.utils.js">
-        <metrics statements="42" coveredstatements="25" conditionals="26" coveredconditionals="12" methods="25" coveredmethods="12"/>
-        <line num="7" count="6" type="stmt"/>
-        <line num="9" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="19" count="6" type="cond" truecount="1" falsecount="1"/>
-        <line num="23" count="6" type="stmt"/>
-        <line num="24" count="6" type="stmt"/>
-        <line num="27" count="6" type="cond" truecount="2" falsecount="2"/>
-        <line num="29" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="38" count="6" type="stmt"/>
-        <line num="40" count="2" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="45" count="6" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
+        <metrics statements="55" coveredstatements="36" conditionals="26" coveredconditionals="12" methods="32" coveredmethods="16"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="7" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="25" count="4" type="cond" truecount="2" falsecount="2"/>
+        <line num="27" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="43" count="6" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
         <line num="62" count="6" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
         <line num="65" count="0" type="stmt"/>
@@ -289,15 +290,26 @@
         <line num="92" count="6" type="stmt"/>
         <line num="93" count="0" type="stmt"/>
         <line num="95" count="6" type="stmt"/>
-        <line num="97" count="6" type="stmt"/>
-        <line num="99" count="6" type="stmt"/>
-        <line num="100" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="102" count="0" type="stmt"/>
-        <line num="103" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="104" count="0" type="stmt"/>
-        <line num="107" count="0" type="stmt"/>
-        <line num="109" count="0" type="stmt"/>
-        <line num="114" count="0" type="stmt"/>
+        <line num="96" count="2" type="stmt"/>
+        <line num="97" count="2" type="stmt"/>
+        <line num="98" count="2" type="stmt"/>
+        <line num="101" count="6" type="stmt"/>
+        <line num="102" count="7" type="stmt"/>
+        <line num="103" count="7" type="stmt"/>
+        <line num="106" count="6" type="stmt"/>
+        <line num="107" count="2" type="stmt"/>
+        <line num="108" count="2" type="stmt"/>
+        <line num="109" count="2" type="stmt"/>
+        <line num="112" count="6" type="stmt"/>
+        <line num="114" count="6" type="stmt"/>
+        <line num="115" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="119" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="120" count="0" type="stmt"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="125" count="0" type="stmt"/>
+        <line num="130" count="0" type="stmt"/>
+        <line num="135" count="0" type="stmt"/>
       </file>
       <file name="os.utils.js" path="/Users/rxluz/Documents/GitHub/booksys/src/common/utils/os.utils.js">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -415,9 +427,9 @@
       </file>
     </package>
     <package name="src.modules.booking.change">
-      <metrics statements="37" coveredstatements="20" conditionals="12" coveredconditionals="1" methods="10" coveredmethods="2"/>
+      <metrics statements="38" coveredstatements="21" conditionals="12" coveredconditionals="1" methods="10" coveredmethods="2"/>
       <file name="Change.page.js" path="/Users/rxluz/Documents/GitHub/booksys/src/modules/booking/change/Change.page.js">
-        <metrics statements="37" coveredstatements="20" conditionals="12" coveredconditionals="1" methods="10" coveredmethods="2"/>
+        <metrics statements="38" coveredstatements="21" conditionals="12" coveredconditionals="1" methods="10" coveredmethods="2"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -451,10 +463,11 @@
         <line num="70" count="1" type="stmt"/>
         <line num="72" count="1" type="stmt"/>
         <line num="74" count="1" type="stmt"/>
-        <line num="120" count="0" type="stmt"/>
-        <line num="139" count="1" type="stmt"/>
-        <line num="140" count="0" type="stmt"/>
-        <line num="143" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="121" count="0" type="stmt"/>
+        <line num="140" count="1" type="stmt"/>
+        <line num="141" count="0" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.modules.booking.create">
