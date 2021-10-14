@@ -41,26 +41,28 @@ const validate = (translate) => ({
 })
 
 export const getSeatsAndTime = (availableTimesAndSeats) =>
-  availableTimesAndSeats.reduce(
-    (seatsAndTime, { time, seats }) => {
-      seats.forEach((seat, index) => {
-        seatsAndTime.push({
-          id: `${time}-${seat}-${index}`,
-          seat,
-          time,
+  availableTimesAndSeats
+    .reduce(
+      (seatsAndTime, { time, seats }) => {
+        seats.forEach((seat, index) => {
+          seatsAndTime.push({
+            id: `${time}-${seat}-${index}`,
+            seat,
+            time,
+          })
         })
-      })
 
-      return seatsAndTime
-    },
+        return seatsAndTime
+      },
 
-    [],
-  )
+      [],
+    )
+    .sort((a, b) => timeToNum(formattedRoundHour(a.time)) - timeToNum(formattedRoundHour(b.time)))
 
 export const getSeatsByTime = (availableTimesAndSeats, translate) =>
   availableTimesAndSeats.reduce(
     (seatsDict, { time, seats }) => {
-      seatsDict[time] = seats.map((seat) => ({
+      seatsDict[String(time)] = seats.map((seat) => ({
         value: seat,
         text: seat === 1 ? translate('One seat') : translate(`{num} seats`, { num: seat }),
       }))
