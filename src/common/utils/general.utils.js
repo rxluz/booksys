@@ -1,10 +1,8 @@
 import * as generalConstants from './general.constants'
-import momentLib from 'moment'
-import 'moment/locale/pt'
-
-import hash from 'object-hash'
 
 export const emptyFunc = (param) => param
+
+export const unix = () => Math.round(+new Date() / 1000)
 
 export const onChangeValue = ({ onChange, isValid, valueForced = 'NO', isTouched = false }) => (
   event,
@@ -47,7 +45,7 @@ export const getSeatsAndTime = (availableTimesAndSeats) =>
     (seatsAndTime, { time, seats }) => {
       seats.forEach((seat, index) => {
         seatsAndTime.push({
-          id: hash({ seat, time, index }),
+          id: `${time}-${seat}-${index}`,
           seat,
           time,
         })
@@ -92,27 +90,44 @@ export const filterByPage = ({ items, itemsPerPage, page }) =>
 export const removeEmptyObjValues = (obj) =>
   Object.fromEntries(Object.entries(obj).filter(([_, value]) => Boolean(value)))
 
-momentLib.locale(detectBrowserLanguage())
+export const formattedDate = (unixTime) => {
+  const date = new Date(unixTime * 1000)
+  const options = { weekday: 'short', day: 'numeric', month: 'short' }
+  return date.toLocaleDateString(detectBrowserLanguage(), options)
+}
 
-export const moment = momentLib
+export const formattedRoundHour = (unixTime) => {
+  const date = new Date(unixTime * 1000)
+  return `${date.getHours()}:00`
+}
+
+export const accessibleFormattedDate = (unixTime) => {
+  const date = new Date(unixTime * 1000)
+  const options = { weekday: 'long', day: 'numeric', month: 'long' }
+  return date.toLocaleDateString(detectBrowserLanguage(), options)
+}
+
+const timeToNum = (time) => time.split(':').join('')
 
 export const getPreferredTimeData = (availableTimesAndSeats) =>
-  (availableTimesAndSeats || []).reduce(
-    (times, { time }) => {
-      const now = moment().unix()
-      if (now > time) {
+  (availableTimesAndSeats || [])
+    .reduce(
+      (times, { time }) => {
+        const now = unix()
+        if (now > time) {
+          return times
+        }
+
+        const hour = formattedRoundHour(time)
+
+        times.push({
+          value: time,
+          text: hour,
+        })
+
         return times
-      }
+      },
 
-      const hour = moment.unix(time).format(generalConstants.MOMENT_TIME)
-
-      times.push({
-        value: time,
-        text: hour,
-      })
-
-      return times
-    },
-
-    [],
-  )
+      [],
+    )
+    .sort((a, b) => timeToNum(a.text) - timeToNum(b.text))

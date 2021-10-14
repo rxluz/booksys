@@ -15,7 +15,7 @@ const isFormValid = (fields) =>
   Object.values(fields).every(({ value, isValid }) => !!value && isValid)
 
 const getPageState = ({ eventEndTime, showSuccessState }) => {
-  const isEventExpired = eventEndTime < generalUtils.moment().unix()
+  const isEventExpired = eventEndTime < generalUtils.unix()
 
   if (isEventExpired) {
     return createConstants.PAGE_STATE.EXPIRED

@@ -2,14 +2,14 @@ import React from 'react'
 import * as PropTypes from 'prop-types'
 
 import * as generalUtils from 'common/utils/general.utils'
-import * as generalConstants from 'common/utils/general.constants'
+
 import { BiChair } from 'react-icons/bi'
 import Button from 'common/components/button'
 
 import './OfficeCard.scss'
 
 const OfficeCard = ({ time, seat, onBook, translate }) => {
-  const timeFormatted = generalUtils.moment.unix(time).format(generalConstants.MOMENT_TIME)
+  const timeFormatted = generalUtils.formattedRoundHour(time)
 
   return (
     <div className="office-card animate__animated animate__fadeIn" role="listitem">
