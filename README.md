@@ -207,7 +207,7 @@
       </ul>
     </li>
     <li>
-      <a href="#-ci-cd">CI/CD</a>
+      <a href="#-cicd">CI/CD</a>
     </li>
     <li>
       <a href="#-misc">Misc</a>
