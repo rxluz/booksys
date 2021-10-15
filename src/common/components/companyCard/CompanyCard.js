@@ -8,12 +8,9 @@ import './CompanyCard.scss'
 import CompanyCardBackground from './companyCardBackground.png'
 
 const CompanyCard = ({ translate, event, children }) => {
-  const accessibleDate = generalUtils.moment
-    .unix(event.eventStartTime)
-    .format(generalConstants.MOMENT_DAY_MONTH_ACCESSIBLE)
-  const date = generalUtils.moment
-    .unix(event.eventStartTime)
-    .format(generalConstants.MOMENT_DAY_MONTH)
+  const accessibleDate = generalUtils.accessibleFormattedDate(event.eventStartTime)
+
+  const date = generalUtils.formattedDate(event.eventStartTime)
 
   return (
     <div className="companyCard">

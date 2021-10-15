@@ -7,12 +7,16 @@ const Pagination = ({ current, total, onPageChange, label, translate }) => (
   <nav
     role="slider"
     aria-label={label}
-    aria-valuenow={current}
+    aria-valuenow={Math.floor(current)}
     aria-valuemin="1"
-    aria-valuemax={total}
+    aria-valuemax={Math.ceil(total)}
     aria-valuetext={translate('Page {num}', { num: current })}
   >
-    <PaginationLib current={current} total={total} onPageChange={onPageChange} />
+    <PaginationLib
+      current={Math.floor(current)}
+      total={Math.ceil(total)}
+      onPageChange={onPageChange}
+    />
   </nav>
 )
 

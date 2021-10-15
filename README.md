@@ -132,7 +132,7 @@
       </ul>
     </li>
     <li>
-      <a href="#-a11y">a11y</a>
+      <a href="#-a11y">A11y</a>
       <ul>
         <li>
           <a href="#-main-actions">Main actions</a>
@@ -154,13 +154,10 @@
         <li>
           <a href="#-bundle-size-report">Bundle size report</a>
         </li>
-        <li>
-          <a href="#performance-tests-results">Tests results</a>
-        </li>
       </ul>
     </li>
     <li>
-      <a href="#-i18n">i18n</a>
+      <a href="#-i18n">I18n</a>
       <ul>
         <li>
           <a href="#-how-it-works">How it works</a>
@@ -208,6 +205,9 @@
           <a href="#-coverage-report">Coverage report</a>
         </li>
       </ul>
+    </li>
+    <li>
+      <a href="#-cicd">CI/CD</a>
     </li>
     <li>
       <a href="#-misc">Misc</a>
@@ -768,7 +768,7 @@ Booksys uses Storybook with the following addons:
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
-### <a name="a11y"></a> a11y
+### <a name="a11y"></a> A11y
 
 <h4><b>
 <a name="a11y-main-actions"></a> Main actions
@@ -1008,6 +1008,10 @@ To add new tests to the application, do the following procedure according to the
 <a href="https://rxluz.github.io/booksys/coverage/lcov-report/index.html">View full coverage report</a>
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
+
+### <a name="ci-cd"></a> CI/CD
+
+<img src="https://raw.githubusercontent.com/rxluz/booksys/refact-remove-moment/docs/ciCD.png">
 
 ### <a name="tests"></a> Misc
 

@@ -21,7 +21,7 @@ const filterAvailableSeatsAndTimes = ({ seats, preferredTime, availableTimesAndS
         return true
       }
 
-      return String(seats.value) === '' || String(seats.value) === seat ? true : false
+      return String(seats.value) === '' || String(seats.value) === String(seat) ? true : false
     })
 
     availableTimesAndSeatsFinal.push({
@@ -71,6 +71,7 @@ const Change = ({ translate, event, onBook }) => {
 
   const displayPaginator = totalRecords > itemsPerPage
 
+  console.log({ preferredTime })
   return (
     <section className="booking-change animate__animated animate__fadeIn">
       <div className="booking-change__title" role="alert">

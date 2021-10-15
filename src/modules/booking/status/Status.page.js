@@ -20,7 +20,7 @@ const Title = ({ status, translate }) => (
 const Time = ({ time, translate }) => (
   <div className="booking-status__row">
     <div className="booking-status__row--title">{translate('Time')}</div>
-    <div className="booking-status__row--value">{generalUtils.moment.unix(time).format('h A')}</div>
+    <div className="booking-status__row--value">{generalUtils.formattedRoundHour(time)}</div>
   </div>
 )
 
