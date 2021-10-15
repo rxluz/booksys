@@ -1011,7 +1011,7 @@ To add new tests to the application, do the following procedure according to the
 
 ### <a name="ci-cd"></a> CI/CD
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/refact-remove-moment/docs/CI_CD.png">
+<img src="https://raw.githubusercontent.com/rxluz/booksys/refact-remove-moment/docs/ciCD.png">
 
 ### <a name="tests"></a> Misc
 
