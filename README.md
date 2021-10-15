@@ -1,10 +1,10 @@
 <div align="center">
   <a href="https://rxluz.github.io/booksys">
-    <img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/public/logoSocialDark.svg" alt="Booksys logo" height="80">
+    <img src="https://raw.githubusercontent.com/rxluz/booksys/main/public/logoSocialDark.svg" alt="Booksys logo" height="80">
   </a>
   <p align="center">
     <br />
-    <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Generic%20Laptop.jpg?raw=true">
+    <img src="https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/Generic%20Laptop.jpg?raw=true">
     <br />
     <b>Booksys is a booking system that allows different companies to book offices in a given event.</b>
     <br />
@@ -234,7 +234,7 @@
 
 ### <a name="introduction"></a> Introduction
 
-Booksys is a project focused mainly on the frontend features; However the [API](https://documenter.getpostman.com/view/1217791/UUy38mGk), [DB schema](https://github.com/rxluz/booksys/tree/feat-doc#-database-schema) and [migrations](https://github.com/rxluz/booksys/blob/main/migrations/tables.sql) are all defined but not implemented; the project uses [mock data](https://github.com/rxluz/booksys/tree/feat-doc#-mock-data) to display the backend resources correctly.
+Booksys is a project focused mainly on the frontend features; However the [API](https://documenter.getpostman.com/view/1217791/UUy38mGk), [DB schema](https://github.com/rxluz/booksys/tree/main#-database-schema) and [migrations](https://github.com/rxluz/booksys/blob/main/migrations/tables.sql) are all defined but not implemented; the project uses [mock data](https://github.com/rxluz/booksys/tree/main#-mock-data) to display the backend resources correctly.
 
 Bellow is the URLs to check the different application states:
 
@@ -350,10 +350,10 @@ Finally, to ensure that Pepsi users don't see the initial Coca-cola office avail
 <table>
   <tr>
     <td>
-      <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-one.jpg?raw=true">
+      <img src="https://github.com/rxluz/booksys/blob/mains/docs/wireframe-iteration-one.jpg?raw=true">
     </td>
     <td>
-      <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-two.jpg?raw=true">
+      <img src="https://github.com/rxluz/booksys/blob/mains/docs/wireframe-iteration-two.jpg?raw=true">
     </td>
   </tr>
   <tr>
@@ -362,7 +362,7 @@ Finally, to ensure that Pepsi users don't see the initial Coca-cola office avail
   </tr>
   <tr>
     <td colspan="2">
-      <img src="https://github.com/rxluz/booksys/blob/feat-docs/docs/wireframe-iteration-three.jpg?raw=true">
+      <img src="https://github.com/rxluz/booksys/blob/mains/docs/wireframe-iteration-three.jpg?raw=true">
     </td>
   </tr>
   <tr>
@@ -376,15 +376,15 @@ Finally, to ensure that Pepsi users don't see the initial Coca-cola office avail
 <a name="conception-mockups"></a> Mockups
 </b></h4>
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/mockups.png">
-<a href="https://github.com/rxluz/booksys/blob/feat-docs/docs/mockups.pdf">View full mockup doc</a>
+<img src="https://raw.githubusercontent.com/rxluz/booksys/mains/docs/mockups.png">
+<a href="https://github.com/rxluz/booksys/blob/mains/docs/mockups.pdf">View full mockup doc</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 <h4><b>
 <a name="conception-prototypes"></a> Prototypes
 </b></h4>
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/prototype.png">
+<img src="https://raw.githubusercontent.com/rxluz/booksys/mains/docs/prototype.png">
 <a href="https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys">View full prototype doc</a>
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
@@ -423,9 +423,9 @@ Users can:
 
 Booksys uses [GitHub Pages](https://pages.github.com/) to store all the frontend assets. To make it faster, [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) with [Webpack](https://webpack.js.org/) splits the Javascript and CSS assets in chunks to ensure that a Booksys page only will call the resources required to load that specific page.
 
-Also, we use [Google Fonts](https://fonts.google.com/) to load the [main font](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L41) ([Maven Pro](https://fonts.google.com/specimen/Maven+Pro#standard-styles)) and the library [animate.css](https://daneden.github.io/animate.css/) stored in [CloudFlare](https://www.cloudflare.com/) to create some animations like fade-in in change booking page pagination.
+Also, we use [Google Fonts](https://fonts.google.com/) to load the [main font](https://github.com/rxluz/booksys/blob/main/public/index.html#L41) ([Maven Pro](https://fonts.google.com/specimen/Maven+Pro#standard-styles)) and the library [animate.css](https://daneden.github.io/animate.css/) stored in [CloudFlare](https://www.cloudflare.com/) to create some animations like fade-in in change booking page pagination.
 
-Lastly, the application uses [Polyfill.io](https://polyfill.io/v3/) to ensure [compatibility with different browsers](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L50), [Google Analytics](https://analytics.google.com/analytics/web/) to [track](https://github.com/rxluz/booksys/blob/feat-doc/public/index.html#L52) the user behaviour and [Sentry](https://sentry.io/) to [track](https://github.com/rxluz/booksys/blob/main/src/index.js#L22) applications errors.
+Lastly, the application uses [Polyfill.io](https://polyfill.io/v3/) to ensure [compatibility with different browsers](https://github.com/rxluz/booksys/blob/main/public/index.html#L50), [Google Analytics](https://analytics.google.com/analytics/web/) to [track](https://github.com/rxluz/booksys/blob/main/public/index.html#L52) the user behaviour and [Sentry](https://sentry.io/) to [track](https://github.com/rxluz/booksys/blob/main/src/index.js#L22) applications errors.
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -592,8 +592,8 @@ This version doesn't manage the users directly; instead, it stores the user info
 
 Once the DB is multi-event ready, the API only allows one event per client; this is a limitation that could be easly removed in future versions due to how DB is structured.
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbSchema.png">
-<a href="https://raw.githubusercontent.com/rxluz/booksys/feat-docs/docs/dbScheme.mwb">Download database schema</a> <br />
+<img src="https://raw.githubusercontent.com/rxluz/booksys/main/docs/dbSchemaNew.png">
+<a href="https://raw.githubusercontent.com/rxluz/booksys/main/docs/dbScheme.mwb">Download database schema</a> <br />
 <a href="https://github.com/rxluz/booksys/blob/main/migrations/tables.sql">View database migrations</a>
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
@@ -688,7 +688,7 @@ The Booksys will follow these headers to design the backend API and ensure the s
 <a name="security-npm-audit-integrated-with-husky"></a> NPM Audit integrated with Husky
 </b></h4>
 
-[NPM Audit](https://docs.npmjs.com/cli/v7/commands/npm-audit) is a helpful tool to detect security problems in external dependencies. To ensure that all new packages are safe, Booksys uses a [hook](https://github.com/rxluz/booksys/blob/feat-doc/.husky/postinstall) automatically called after any new package installation to integrate it with the developer flow.
+[NPM Audit](https://docs.npmjs.com/cli/v7/commands/npm-audit) is a helpful tool to detect security problems in external dependencies. To ensure that all new packages are safe, Booksys uses a [hook](https://github.com/rxluz/booksys/blob/main/.husky/postinstall) automatically called after any new package installation to integrate it with the developer flow.
 
 ### <a name="components"></a> Frontend components
 
@@ -710,13 +710,13 @@ Booksys uses Storybook with the following addons:
 
 - **Parameters control:** Allow to change all the parameters from a stateless component without creating several stories
 
-<img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookControls.png?raw=true">
+<img src="https://github.com/rxluz/booksys/blob/main/docs/storybookControls.png?raw=true">
 
 - **Integration with Figma:** Shortcut to access the prototype
-  <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookFigma.png?raw=true">
+  <img src="https://github.com/rxluz/booksys/blob/main/docs/storybookFigma.png?raw=true">
 
 - **a11y:** Display any component a11y errors
-  <img src="https://github.com/rxluz/booksys/blob/feats-misc/docs/storybookAccessibility.png?raw=true">
+  <img src="https://github.com/rxluz/booksys/blob/main/docs/storybookAccessibility.png?raw=true">
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -726,22 +726,22 @@ Booksys uses Storybook with the following addons:
 <a name="responsiveness-tests-result-in-light-mode"></a> Tests result in light mode
 </b></h4>
 
-| Devices                 | Change booking page                                                                                                                                      | Create booking page                                                                                                                                     | Booking status page                                                                                                                                     |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 4k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/4K%20Display.jpg?raw=true)                  |
-| 5k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/5K%20Display.jpg?raw=true)                  |
-| Galaxy Fold             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Galaxy%20Fold.jpg?raw=true)                 |
-| Moto G4                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Moto%20G4.jpg?raw=true)                     |
-| Pixel 2                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Pixel%202.jpg?raw=true)                     |
-| Surface Duo             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Surface%20Duo.jpg?raw=true)                 |
-| iPhone 5-SE             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/iPhone%205-SE.jpg?raw=true)                 |
-| iPhone X                | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/iPhone%20X.jpg?raw=true)                    |
-| iPad                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/iPad.jpg?raw=true)                          |
-| iPad Pro                | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/iPad%20Pro.jpg?raw=true)                    |
-| Generic Laptop          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Generic%20Laptop.jpg?raw=true)              |
-| Laptop with MDPI screen | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) |
-| MacBook Pro 13          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2013.jpg?raw=true)            |
-| MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
+| Devices                 | Change booking page                                                                                                                                  | Create booking page                                                                                                                                 | Booking status page                                                                                                                                 |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 4k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/4K%20Display.jpg?raw=true)                  |
+| 5k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/5K%20Display.jpg?raw=true)                  |
+| Galaxy Fold             | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/Galaxy%20Fold.jpg?raw=true)                 |
+| Moto G4                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/Moto%20G4.jpg?raw=true)                     |
+| Pixel 2                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/Pixel%202.jpg?raw=true)                     |
+| Surface Duo             | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/Surface%20Duo.jpg?raw=true)                 |
+| iPhone 5-SE             | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/iPhone%205-SE.jpg?raw=true)                 |
+| iPhone X                | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/iPhone%20X.jpg?raw=true)                    |
+| iPad                    | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/iPad.jpg?raw=true)                          |
+| iPad Pro                | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/iPad%20Pro.jpg?raw=true)                    |
+| Generic Laptop          | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/Generic%20Laptop.jpg?raw=true)              |
+| Laptop with MDPI screen | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) |
+| MacBook Pro 13          | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2013.jpg?raw=true)            |
+| MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/light-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -749,22 +749,22 @@ Booksys uses Storybook with the following addons:
 <a name="responsiveness-tests-result-in-dark-mode"></a> Tests result in dark mode
 </b></h4>
 
-| Devices                 | Change booking page                                                                                                                                     | Create booking page                                                                                                                                    | Booking status page                                                                                                                                    |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 4k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/4K%20Display.jpg?raw=true)                  |
-| 5k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/5K%20Display.jpg?raw=true)                  |
-| Galaxy Fold             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Galaxy%20Fold.jpg?raw=true)                 |
-| Moto G4                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Moto%20G4.jpg?raw=true)                     |
-| Pixel 2                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Pixel%202.jpg?raw=true)                     |
-| Surface Duo             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Surface%20Duo.jpg?raw=true)                 |
-| iPhone 5-SE             | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/iPhone%205-SE.jpg?raw=true)                 |
-| iPhone X                | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/iPhone%20X.jpg?raw=true)                    |
-| iPad                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/iPad.jpg?raw=true)                          |
-| iPad Pro                | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/iPad%20Pro.jpg?raw=true)                    |
-| Generic Laptop          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Generic%20Laptop.jpg?raw=true)              |
-| Laptop with MDPI screen | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) |
-| MacBook Pro 13          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2013.jpg?raw=true)            |
-| MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/feat-doc/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
+| Devices                 | Change booking page                                                                                                                                 | Create booking page                                                                                                                                | Booking status page                                                                                                                                |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 4k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/4K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/4K%20Display.jpg?raw=true)                  |
+| 5k Display              | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/5K%20Display.jpg?raw=true)                  | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/5K%20Display.jpg?raw=true)                  |
+| Galaxy Fold             | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/Galaxy%20Fold.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/Galaxy%20Fold.jpg?raw=true)                 |
+| Moto G4                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/Moto%20G4.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/Moto%20G4.jpg?raw=true)                     |
+| Pixel 2                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/Pixel%202.jpg?raw=true)                     | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/Pixel%202.jpg?raw=true)                     |
+| Surface Duo             | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/Surface%20Duo.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/Surface%20Duo.jpg?raw=true)                 |
+| iPhone 5-SE             | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/iPhone%205-SE.jpg?raw=true)                 | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/iPhone%205-SE.jpg?raw=true)                 |
+| iPhone X                | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/iPhone%20X.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/iPhone%20X.jpg?raw=true)                    |
+| iPad                    | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/iPad.jpg?raw=true)                          | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/iPad.jpg?raw=true)                          |
+| iPad Pro                | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/iPad%20Pro.jpg?raw=true)                    | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/iPad%20Pro.jpg?raw=true)                    |
+| Generic Laptop          | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/Generic%20Laptop.jpg?raw=true)              | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/Generic%20Laptop.jpg?raw=true)              |
+| Laptop with MDPI screen | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/Laptop%20with%20MDPI%20screen.jpg?raw=true) |
+| MacBook Pro 13          | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2013.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2013.jpg?raw=true)            |
+| MacBook Pro 16          | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/booking-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/create-page/MacBook%20Pro%2016.jpg?raw=true)            | [Screenshot](https://github.com/rxluz/booksys/blob/main/docs/devices-screenshots/dark-mode/status-page/MacBook%20Pro%2016.jpg?raw=true)            |
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -792,7 +792,7 @@ Booksys do several actions to ensure that this application is a universal applic
 </b></h4>
 
 <br/>
-<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/accessibilityTestResult.png?raw=true">
+<img src="https://github.com/rxluz/booksys/blob/main/docs/accessibilityTestResult.png?raw=true">
 <br/>
 <a href="https://rxluz.github.io/booksys/lighthouse/report.html#a11y">View full report</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
@@ -818,7 +818,7 @@ There are several performance improvements opportunities that Booksys didn't imp
 </b></h4>
 
 <br/>
-<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/performanceTestResult.png?raw=true">
+<img src="https://github.com/rxluz/booksys/blob/main/docs/performanceTestResult.png?raw=true">
 <br/>
 <a href="https://rxluz.github.io/booksys/lighthouse/report.html#performance">View full report</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
@@ -828,7 +828,7 @@ There are several performance improvements opportunities that Booksys didn't imp
 </b></h4>
 
 <br/>
-<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/bundleSizeReport.png?raw=true">
+<img src="https://github.com/rxluz/booksys/blob/main/docs/bundleSizeReport.png?raw=true">
 <br/>
 <a href="https://rxluz.github.io/booksys/bundle-analysis.htm">View full report</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
@@ -865,7 +865,7 @@ Another advantage is we don’t need to create JSON files. Instead, just code an
 
 This plugin has an option to import data from PO files. Thus the person responsible for translations doesn’t need to change internal files in your application, beyond easy is more secure.
 
-<img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/poeditExample.png?raw=true">
+<img src="https://github.com/rxluz/booksys/blob/main/docs/poeditExample.png?raw=true">
 <br/>
 <a href="https://github.com/rxluz/booksys/tree/main/src/common/locales">View translation folder</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
@@ -949,10 +949,10 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
 <table>
   <tr>
     <td> 
-      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/whatsAppShare.png?raw=true">
+      <img src="https://github.com/rxluz/booksys/blob/main/docs/whatsAppShare.png?raw=true">
     </td>
     <td>
-      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/facebookShare.png?raw=true">
+      <img src="https://github.com/rxluz/booksys/blob/main/docs/facebookShare.png?raw=true">
     </td>
   </tr>
   <tr>
@@ -965,7 +965,7 @@ Also, the application is connected with [Google Analytics](https://github.com/rx
   </tr>
   <tr>
     <td colspan="2">
-      <img src="https://github.com/rxluz/booksys/blob/feat-doc/docs/slackShare.png?raw=true">
+      <img src="https://github.com/rxluz/booksys/blob/main/docs/slackShare.png?raw=true">
     </td>
   </tr>
   <tr>
@@ -1004,7 +1004,7 @@ To add new tests to the application, do the following procedure according to the
 <a name="tests-coverage-report"></a> Coverage report
 </b></h4>
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/feat-doc/docs/coverageTestResult.png">
+<img src="https://raw.githubusercontent.com/rxluz/booksys/main/docs/coverageTestResult.png">
 <a href="https://rxluz.github.io/booksys/coverage/lcov-report/index.html">View full coverage report</a>
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
