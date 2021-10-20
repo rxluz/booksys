@@ -350,10 +350,10 @@ Finally, to ensure that Pepsi users don't see the initial Coca-cola office avail
 <table>
   <tr>
     <td>
-      <img src="https://github.com/rxluz/booksys/blob/mains/docs/wireframe-iteration-one.jpg?raw=true">
+      <img src="https://raw.githubusercontent.com/rxluz/booksys/2096f7b1776e37c5828b1089ee5c1295b53da98c/docs/wireframe-iteration-one.jpg?raw=true">
     </td>
     <td>
-      <img src="https://github.com/rxluz/booksys/blob/mains/docs/wireframe-iteration-two.jpg?raw=true">
+      <img src="https://raw.githubusercontent.com/rxluz/booksys/2096f7b1776e37c5828b1089ee5c1295b53da98c/docs/wireframe-iteration-two.jpg?raw=true">
     </td>
   </tr>
   <tr>
@@ -362,7 +362,7 @@ Finally, to ensure that Pepsi users don't see the initial Coca-cola office avail
   </tr>
   <tr>
     <td colspan="2">
-      <img src="https://github.com/rxluz/booksys/blob/mains/docs/wireframe-iteration-three.jpg?raw=true">
+      <img src="https://raw.githubusercontent.com/rxluz/booksys/2096f7b1776e37c5828b1089ee5c1295b53da98c/docs/wireframe-iteration-three.jpg?raw=true">
     </td>
   </tr>
   <tr>
