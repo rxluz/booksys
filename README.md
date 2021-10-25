@@ -376,15 +376,15 @@ Finally, to ensure that Pepsi users don't see the initial Coca-cola office avail
 <a name="conception-mockups"></a> Mockups
 </b></h4>
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/mains/docs/mockups.png">
-<a href="https://github.com/rxluz/booksys/blob/mains/docs/mockups.pdf">View full mockup doc</a>
+<img src="https://raw.githubusercontent.com/rxluz/booksys/main/docs/mockups.png">
+<a href="https://github.com/rxluz/booksys/blob/main/docs/mockups.pdf">View full mockup doc</a>
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
 <h4><b>
 <a name="conception-prototypes"></a> Prototypes
 </b></h4>
 
-<img src="https://raw.githubusercontent.com/rxluz/booksys/mains/docs/prototype.png">
+<img src="https://raw.githubusercontent.com/rxluz/booksys/main/docs/prototype.png">
 <a href="https://www.figma.com/file/pFx6z24OMgktLQL64aKYjG/Booksys">View full prototype doc</a>
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
